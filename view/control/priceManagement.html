@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title>报价方案</title>	
+		<!-- Bootstrap -->
+		<link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/priceManagement.css"/>
+		<script src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script src="../../static/c/js/priceManagement.js"></script>
+		<script src="../../static/c/js/publicJS.js"></script>
+		<script src="../../static/c/js/bootstrap.js"></script>
+	</head>
+	<body onload="textColors()">
+		<!-- con start -->	
+		<div class="navRuler">
+			<!-- contentBox start -->
+			<div id="contentBox">
+				<div id="phoneCon">
+					<h3 class="phoneTitle">手机管理</h3>
+					<div class="pDetails clearfix">
+						<div style="width: 36%;float: left">
+							<!-- brand start -->
+							<div class="brand fl" style="width: 100%">
+								<div class="brandTitle clearfix">
+									<h4 class="fl">手机品牌</h4>
+								</div>
+								<div class="brandList" >
+									<select class="blueBg pull" id="brandlist" onchange="blueBgLi(this),getTypes(this.value)">
+										<!-- 品牌列表 -->
+									</select>
+								</div>
+								<!-- 品牌id -->
+								<input type="hidden" id="brandid" value=""/>
+							</div>
+							<!-- brand end -->
+							<!-- model start -->
+							<div class="model fl" style="width: 100%">
+								<div class="modelTitle clearfix">
+									<h4 class="fl">手机型号</h4>
+									<div id="modeledit" class="fr">
+										<div class="editBtn">
+											<a class="edit" href="javascript:;" onclick="modelEdit(this),clickNone()">编辑</a>
+										</div>
+										<div class="savaBtns clearfix" style="display: none;">
+											<a class="no fl" href="javascript:;" onclick="modelNo(this),clickYes()">取消</a>
+											<a class="yes fl" href="javascript:;" onclick="modelYes(this),clickYes()">保存</a>
+										</div>
+									</div>
+									<!-- 型号id -->
+									<input type="hidden" id="typeid" value=""/>
+								</div>
+								<div class="search clearfix">
+									<input type="text" value="" id="typeKey" class="searchText fl"/>
+									<a href="javascript:;" onclick="searchTypes()" class="sraechBtn fr"></a>
+								</div>
+								<div class="modelList">
+									<div class="listTitle clearfix">
+										<p class="left fl">型号</p>
+										<span class="center fl">市价</span>
+										<span class="right fl">基价</span>
+									</div>
+									<table class="blueBg form" id="typelist">
+										<!-- 型号列表 -->
+									</table>
+								</div>
+							</div>
+							<!-- model end -->
+						</div>
+						<!-- property start -->
+						<div class="property fr">
+							<div class="properTitle clearfix">
+								<h4 class="fl">信息属性</h4>
+								<div id="properedit" class="fr">
+									<div class="editBtn">
+										<a class="edit" href="javascript:;" onclick="properEdit(this),clickNone()">编辑</a>
+									</div>
+									<div class="savaBtns clearfix" style="display: none;">
+										<a class="no fl" href="javascript:;" onclick="properNo(this),textColors(),clickYes()">取消</a>										
+										<a class="yes fl" href="javascript:;" onclick="saveAttrPri(),properYes(this),textColors(),clickYes()">保存</a>										
+									</div>
+								</div>
+							</div>
+							<div class="properScroll">
+								<!-- 属性内容 -->
+							</div>
+						<!-- property start -->
+					</div>
+				</div>
+			</div>
+			<!-- contentBox start -->
+		</div>
+		<!-- con end -->
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_quote.js"></script>
+		<script type="text/javascript">
+			load(2);
+		</script>
+	</body>
+</html>

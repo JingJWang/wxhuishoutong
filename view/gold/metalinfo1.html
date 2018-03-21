@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>等待预支付详情</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet/less" href="../../static/gold/css/listWaitPay.less" />
+		<script src="../../static/gold/js/less.min.js"></script>
+		<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="javascript:history.go(-1);" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png"  />
+				<p>返回</p>
+			</a>
+			<h1>订单详细</h1>
+		</header>
+		<div class="content">
+			<p>订单编号：  <font>20160307511001019039</font></p>
+		</div>
+		<div class="purity">
+			<img src="../../static/gold/img/content.jpg" />
+			<p>24K黄金<font>等待商家预支付</font></p>
+		</div>
+		<div class="assess">
+			<p>
+				<font>3.65g</font>
+				/ 回收估价 ￥
+				<font>1120.23</font>
+			</p>
+		</div>
+		<div class="timer">
+			<img src="../../static/gold/img/timer.jpg" />
+			<p>2016.03.07 12:23:25</p>
+		</div>
+		<div class="message">
+			<span>产品信息</span>
+		</div>
+		<div class="recycle">
+			<span>
+				<p>
+					回收品类：<font>黄金</font>
+				</p>
+			</span>
+			<span class="recycle-span">
+				<p>
+					交易方式：<font>库存</font>
+				</p>
+			</span>
+		</div>
+		<div class="classes">
+			<p>
+				纯度：<font>24K/99.99%</font>
+			</p>
+			<p>
+				单价：<font>281/克</font>
+			</p>
+			<p>
+				今日金价：<font>281/克</font>
+			</p>
+			<p>
+				分类：<font>投资金条</font>
+			</p>
+			<p>
+				克数：<font>8</font>
+			</p>
+		</div>
+		<div class="explain">
+			<p>
+				<font>将入库24K黄金：</font><font>8g</font>
+			</p>
+			<p>最终价格以我们接到货物时价格为准</p>
+		</div>
+		<div class="prompt">
+			<p>提示：当前状态为等待商家预支付，请您留意订单状态，商家支付预支付贷款后您即可发货</p>
+		</div>
+		<h1 class="productMessage_h1">收货信息</h1>
+		<div class="RInformation">
+			<P>名称： 回收通</P>
+			<p>地址：  北京市朝阳区北四环千鹤家园1号楼904</p>
+			<p>电话： 010-88888888</p>
+		</div>
+		<div class="relation"><!--联系客服-->
+			联系客服：400-641-5080
+		</div>
+		<div class="footer">
+			
+		</div>
+		<!--二次确认-->
+		<div class="payPassword_box" style="display: none;">
+			<div class="payPassword">
+				<p class="payPassword_h1">您确定要取消交易吗？</p>
+				<div class="payBtn">
+					<a class="cancelJY">取消</a>
+					<a href="#" class="affirmJY">确认</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/gold/js/rem.js"></script>	
+	<script type="text/javascript">
+		var id=getUrlParam('id');
+		metalOrdre.orderInfo(2,id);
+	</script>
+	<script>
+		var pasHeight = $(window).height(); //浏览器当前窗口可视区域高度 
+		$('.payPassword_box').css('height',pasHeight);
+		//二次确认
+		$('.cancelBtn').click(function(){
+			$('.payPassword_box').css('display','block');
+		});
+		$('.payBtn a').click(function(){
+			$('.payPassword_box').css('display','none');
+		});
+	</script>
+</html>

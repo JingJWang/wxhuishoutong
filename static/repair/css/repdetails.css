@@ -1,0 +1,415 @@
+body{
+	background: #f5f5f5;	
+}
+header {
+    width: 100%;
+    height: 1.9rem;
+    background: #58ab22;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+header a:link {
+    color: #ffffff;
+}
+header a:visited {
+    color: #ffffff;
+}
+header .FirstA {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0.625rem;
+    height: 0.75rem;
+}
+.back{
+	height: 1.9rem;
+	line-height: 1.9rem;
+    font-size: 0.62rem;
+    color: #fff;
+    background: url(../../gold/img/header-img1.png) no-repeat left center;
+    background-size: 0.4rem 0.7rem;
+    padding-left: 0.6rem;
+}
+header h1 {
+    width: 100%;
+    height: 1.9rem;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    line-height: 1.9rem;
+    font-size: 0.67rem;
+    font-weight: normal;
+}
+.repTop{
+	width: 14.7rem;
+	height: 2.2rem;
+	padding: 0 0.65rem;
+	border-bottom: solid 1px #ececec;
+	margin-top: 1.9rem;
+	float: left;
+	background: #fff;
+}
+.repFont{
+	padding-left: 1rem;
+	color: #696969;
+	font-size: 0.68rem;
+	background: url(../img/details.png) no-repeat left center;
+	background-size: 0.7rem 0.7rem;
+	line-height: 2.2rem;
+	float: left;
+	margin-left: 3px;
+}
+.state{
+	float: right;
+	color: #f96b39;
+	line-height: 2.2rem;
+	font-size: 0.65rem;
+	padding-right: 0.3rem;
+}
+.repDetail{
+	float: left;
+	padding: 0.7rem 0.8rem 0.6rem 0.8rem;
+	width: 14.4rem;
+	background: #fff;
+}
+.repCont{
+	float: left;
+	width: 13.5rem;
+	height: auto;
+	margin-bottom: 0.4rem;
+}
+.repCont p{
+	line-height: 0.875rem;
+	height: 0.875rem;
+	font-size: 0.57rem;
+	color: #5c5c5c;
+	float: left;
+}
+.name{
+	padding-right: 0.1rem;
+}
+.property_rep{ 
+	width: 10rem;
+}
+.repP{
+	word-wrap: break-word; 
+	word-break: normal;
+	float: left;
+}
+/*地址*/
+.repaddr{
+	width: 100%;
+	float: left;
+	background: #f1f1f1;	
+}
+.firstp{
+	margin:0.875rem 0 0 0.65rem;
+	padding-left: 0.2rem;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	font-size: 0.65rem;
+	border-left: solid 2px #f35f1b;
+	color: #6a6a6a;
+	float: left;
+}
+.secondp{
+	float: left;
+	font-size: 0.5rem;
+	text-indent: 0.65rem;
+	line-height: 0.65rem;
+	color: #f35e1e;
+	padding-top: 0.875rem;
+	padding-bottom: 0.45rem;
+}
+.rep{
+	width: 100%;
+	height: 1.35rem;
+	float: left;
+	line-height: 1.35rem;
+	color: #f35e1e;
+	font-size: 0.5rem;
+	text-indent: 0.65rem;
+}
+.repAddress{
+	float: left;
+	width: 14.35rem;
+	background: #fff;
+	border-bottom: solid 1px #e8e7e7;
+	padding: 0.65rem 1rem 0.3rem 0.65rem;
+}
+.repAddress p{
+	width: 100%;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	font-size: 0.58rem;
+	color: #5c5c5c;
+	margin-bottom: 0.6rem;
+}
+.kuaidi{
+	padding: 0.4rem 0.65rem 0.65rem 0.65rem;
+	float: left;
+	width: 14.7rem;
+	background: #fff;
+	border-bottom: solid 1px #e8e7e7;
+	margin-bottom: 1.6rem;
+}
+.kdmess{
+	float: left;
+	width: 100%;
+	border-bottom: solid 1px #efefef;
+	margin-bottom: 0.6rem;
+}
+.kdname{
+	float: left;
+	width: 2.95rem;
+	height: 1.35rem;
+	line-height: 1.35rem;
+	font-size: 0.58rem;
+	color: #616161;
+}
+.kdnum{
+	float: left;
+	height: 1.35rem;
+	line-height: 1.35rem;
+	font-size: 0.58rem;
+	color: #787878;
+}
+.messBtn{
+	display: block;
+	float: right;
+	width: 4.25rem;
+	height: 1.25rem;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 1.25rem;
+	font-size: 0.58rem;
+	margin-right: 0.65rem
+}
+.sureBtn{
+	background: #f3621f;
+	color: #fff;
+	/*margin-left: 5.45rem;*/
+}
+.cancelBtn{
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	color: #959595;
+	margin-left: 0.65rem;
+}
+.sureBtn:hover{color: #fff;}
+.sureBtn:visited{color: #fff;}
+.sureBtn:active{color: #fff;}
+/*已发货*/
+.kdyet{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.kdnump{
+	float: left;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	font-size: 0.55rem;
+	color: #616161;
+}
+.fahuo{
+	padding: 0.5rem 0.65rem 0.5rem 0.65rem;
+	margin-bottom: 1rem;
+}
+/*订单维修中*/
+.repd{
+	float: left;
+	width: 16rem;
+	background: #fff;
+	border-bottom: solid 1px #eeeeee;
+}
+.inpmessage{
+	margin: 0.65rem 0 0.3rem 0.65rem;
+	width: 13.5rem;
+	text-indent: 0.5rem;
+	float: left;
+	font-size: 0.6rem;
+	outline: none;
+	border: none;
+	color: #595959;
+	font-family: "微软雅黑";
+}
+.surelist{
+	background: #f3621f;
+	color: #fff;
+	margin-left: 6rem;
+}
+.surelist:hover{color: #fff;}
+.surelist:visited{color: #fff;}
+.surelist:active{color: #fff;}
+.cancellist{
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	color: #959595;
+	margin-left: 0.65rem;
+}
+.btndiv{
+	float: left;
+	width: 16rem;
+	background: #fff;
+	padding: 0.5rem 0;
+	margin-bottom: 1.1rem;
+	border-bottom: solid 1px #e8e7e7;
+}
+/*已完成*/
+.repp{
+	padding-left: 0.65rem;
+	height: 3rem;
+	line-height: 1rem;
+	font-size: 0.55rem;
+	color: #595959;
+	margin-top: 0.65rem;
+	float: left;
+}
+.surelast{
+	margin-bottom: 1rem;
+}
+.havediv{
+	margin-bottom: 0;
+}
+/*新写*/
+.leftrep{
+	float: left;
+	width: 3.5rem;
+}
+.leftp{
+	line-height: 1.2rem;
+	float: left;
+	width: 100%;
+	font-size: 0.58rem;
+	color: #5c5c5c;
+}
+.rightp{
+	float: left;
+	width: 10.9rem;
+}
+.rightp .repP{
+	display: block;
+	width: 100%;
+	line-height: 1.2rem;
+	float: left;
+	font-size: 0.58rem;
+	color: #5c5c5c;
+}
+/*支付*/
+.payb{
+    width: 12rem;
+    height: 8.8rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6.4rem;
+    margin-left: -6rem;
+    border-radius: 10px;
+}
+.shadow{
+	display:none;
+	width: 100%;
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    left: 0;
+    width: 16rem;
+    background: rgba(0,0,0,.3);
+    z-index: 999;
+}
+.payname{
+	float: left;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.65rem;
+	color: #313131;
+}
+.myLi{
+	margin-top: 1rem;
+	width: 100%;
+	height: 1.7rem;
+	float: left;
+	/* background: url(../../gold/img/label_a.png) no-repeat right center; */
+}
+.bg_img{
+	width: 0.9rem;
+	height: 1.7rem;
+	display: block;
+	float: left;
+	background: url(../img/checkImg.jpg) no-repeat right center;
+	background-size: 0.9rem 0.9rem;
+	margin: 0 2rem 0 0.6rem;
+}
+.bg_img_hover{
+	width: 0.9rem;
+	height: 1.7rem;
+	display: block;
+	float: left;
+	background: url(../img/checkActive.jpg) no-repeat right center;
+	background-size: 0.9rem 0.9rem;
+	margin: 0 2rem 0 0.6rem;
+}
+.bg_name{
+	display: block;
+	margin-left:2rem;
+	width: 5rem;
+	height: 1.7rem;
+	background: url(../img/wxbg.png) no-repeat left center;
+	background-size: 1.1rem 1.1rem;
+	float: left;
+	padding-left: 1.3rem;
+	line-height: 1.7rem;
+	font-size: 0.6rem;
+}
+.btn{
+	float: left;
+	width: 100%;
+	margin-top:1.5rem;
+}
+.btnpay{
+	width: 4rem;
+	height: 1.3rem;
+	border-radius: 5px;
+	float: left;
+	font-size: 0.58rem;
+	text-align: center;
+	line-height: 1.3rem;
+}
+.yesbtn:hover{color: #fff;}
+.yesbtn:visited{color: #fff;}
+.yesbtn:active{color: #fff;}
+.nobtn:hover{color: #343434;}
+.nobtn:visited{color: #343434;}
+.nobtn:active{color: #343434;}
+.yesbtn{
+	margin-left: 1.7rem;
+	background: #ff7d38;;
+	color: #fff;
+}
+.nobtn{
+	border: solid 1px #C5C0B9;
+	color: #343434;
+	margin-left: 0.5rem;
+}
+/*支付订单按钮*/
+.payBtnNew{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #f3621f;
+	height: 42px;
+	line-height: 42px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 0.6rem;
+	letter-spacing: 1px;
+}
+#weixiuzhong .surelast{
+	margin-bottom: 2.2rem;
+}

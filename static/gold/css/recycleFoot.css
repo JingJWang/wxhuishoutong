@@ -1,0 +1,80 @@
+footer{
+	width: 100%;
+	height: 2.175rem;
+	position: fixed;
+	background: #ffffff;
+	bottom: 0;
+}
+.way{
+	width: 60%;
+	height: 2.175rem;
+	float: left;
+	overflow: hidden;
+	box-shadow: 1px 2px 5px #666666;
+}
+.way .wayMoney{
+	width: 100%;
+	height: 2.175rem;
+	background: #ffffff;
+	line-height: 2.125rem;
+	font-size: 0.5rem;
+	color: #707070;
+	text-indent: 0.65rem;
+}
+.way .wayMoney font{
+	font-size: 0.55rem;
+	color: #474747;
+}
+.way .wayStock{
+	width: 100%;
+	height: 2.175rem;
+}
+.way .wayStock p{
+	display: block;
+	color: #646464;
+	width: 3.15rem;
+	height: 2.55rem;
+	line-height: 2rem;
+	font-size: 0.5rem;
+	float: left;
+	text-align: right;
+}
+.way .wayStock span{
+	display: block;
+	width: 6.2rem;
+	height: 2.55rem;
+	float: right;
+}
+.way .wayStock span b{
+	font-weight: normal;
+	height: 1rem;
+	line-height: 1rem;
+	float: left ;
+	font-size: 0.65rem;
+	color: #464646;
+	margin-top: 0.2rem;
+}
+.way .wayStock span s{
+	width: 100%;
+	text-decoration: none;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	float: left ;
+	font-size: 0.4rem;
+	color: #464646;
+}
+footer a{
+	display: block;
+	width: 40%;
+	height: 2.175rem;
+	line-height: 2.175rem;
+	float: right;
+	border: none;
+	background: #58ab22;
+	text-align: center;
+	font-size: 0.7rem;
+}
+a:link {color:#FFFFFF;}/* 未被访问的链接 */
+a:visited {color:#FFFFFF;}/* 已被访问的链接 */
+a:hover {color:#FFFFFF;}/* 鼠标指针移动到链接上 */
+a:active {color:#FFFFFF;}/* 正在被点击的链接 */

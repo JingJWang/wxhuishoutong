@@ -1,0 +1,122 @@
+body{
+	background: #f5f5f5;
+}
+header .lastA{
+	display: block;
+	position: absolute;
+	top: 0.575rem;
+	right: 0.85rem;
+	font-size: 0.6rem;
+	color: #ffffff;
+}
+.lastA:hover{color: #ffffff;}
+.lastA:link{color: #ffffff;}
+.lastA:visited{color: #ffffff;}
+.lastA:active{color: #ffffff;}
+.priceDetail{
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	margin-top: 1.9rem;
+}
+.priceDetail .priceD{
+	display: block;
+	height: 1.925rem;
+	padding: 0 0.65rem 0 0.65rem;
+	border-bottom: solid 1px #e7e7e7;
+	margin-bottom: 0.625rem;
+}
+.priceDetail .priceD p{
+	width: 4.85rem;
+	height: 1.925rem;
+	line-height: 1.925rem;
+	float: left;
+	font-size: 0.6rem;
+	color: #6d6d6d;
+}
+.priceDetail .priceD p:nth-child(1){
+	text-indent: 0.95rem;
+}
+.priceDetail .priceD p:nth-child(2){
+	text-indent: 0.65rem;
+}
+.priceDetail .priceD p:nth-child(3){
+	text-indent: 2.875rem;
+}
+.priceDetail .priceDetailTrend{
+	height: 1.125rem;
+	padding: 0 0.65rem 0.85rem 0.65rem;
+}
+.priceDetailTrend span{
+	display: block;
+	width: 4.85rem;
+	height: 1.125rem;
+	float: left;
+	font-size: 0.6rem;
+}
+.priceDetailTrend span p{
+	display: block;
+	line-height: 1.125rem;
+	color: #6d6d6d;
+	float: left;
+}
+.priceDetailTrend img{
+	float: left;
+}
+.priceDetailTrend span:nth-child(1) img{
+	width: 0.875rem;
+	height: 1.125rem;
+	margin-left: 5px;
+}
+.priceDetailTrend span:nth-child(2) img{
+	width: 0.725rem;
+	height: 1.125rem;
+}
+.deal{
+	width: 3.15rem;
+	height: 1.125rem;
+	background: #98c21d;
+	color: #ffffff;
+	line-height: 1.125rem;
+	font-size: 0.55rem;
+	float: right;
+	border-radius: 5px;
+	text-align:center;
+	text-online:center;
+}
+.deal:visited{
+	color: #ffffff;
+}
+.deal:hover{
+	color: #ffffff;
+}
+.deal:active{
+	color: #ffffff;
+}
+.deal:link{
+	color: #ffffff;
+}
+footer{
+	width: 100%;
+	height: 2.125rem;
+	position: fixed;
+	bottom: 0;
+	background: #ffffff;
+	box-shadow: #e6e6e6 ;
+}
+footer a{
+	display: block;
+	width: 100%;
+	height: 2.125rem;
+	color: #60ad31;
+	font-size: 0.75rem;
+	text-align: center;
+	box-shadow: 0px -2px 2px #e6e6e6;
+	background: none;
+	text-align: center;
+	line-height: 2.125rem;
+}
+a:link{color: #60ad31;}
+a:hover{color: #60ad31;}
+a:visited{color: #60ad31;}
+a:active{color: #60ad31;}

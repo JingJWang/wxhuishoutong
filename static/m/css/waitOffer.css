@@ -1,0 +1,74 @@
+body{
+    background-color: #f1f1f1;
+}
+.satnav{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #57A921;
+    color:#ffffff;
+    font-size: 18px;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:900;
+}
+.satnav .back{
+    width:48px;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color:#ffffff;
+    display:block;
+    background-image: url(../images/back.png);
+    background-size: 9px 17px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:15px;
+    padding-left:7px;
+}
+.full{
+    width:100%;
+    height:45px;
+}
+.content{
+    width:100%;
+    height:290px;
+    background-color:#ffffff;
+    border-bottom:1px solid #EBEBEA;
+}
+.print{
+    width:100%;
+    height:90px;
+    margin:65px 0px 37px 0px;
+    background-image:url(../images/hint.png);
+    background-size:118px 90px;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.hint{
+    width:100%;
+    line-height: 22px;
+    font-size:14px;
+    color:#626E95;
+    text-align:center;
+}
+.handle{
+    padding:0px 38px;
+    height:44px;
+    margin-top:60px;
+}
+.handle .return{
+    width:100%;
+    height:44px;
+    line-height: 44px;
+    text-align:center;
+    font-size:16px;
+    color:#ffffff;
+    background-color:#59AB23;
+    border-radius: 44px;
+    display:block;
+}

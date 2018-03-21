@@ -1,0 +1,57 @@
+body{ background: #fff;padding-bottom:50px;}
+/*green-------------------------*/
+.green{ height: 124px; background: #67b535; background: url(../images/drawingCashTopBg.png) no-repeat center top; background-size: 100% 124px;}
+.green .back{ width: 100%; height: 40px;}
+.green .back a{ display: block; width: 90%; height: 40px; line-height: 40px; margin: 0 0 0 0px; padding: 0 0 0 33px; background: url(../images/arrBack.png) no-repeat 15px center; background-size: 9px 17px; font-size: 15px; color: #fff;} 
+.green .nowCash{ padding: 0 0 0 15px; color: #fff;}
+.nowCash .money{  height: 50px; line-height: 50px; }
+.nowCash .money span{ display: inline-block; font-size: 15px;}
+.nowCash .money .cur{font-size: 24px;}
+.nowCash .title{ margin: 19px 0 0 0; display: block;}
+/*entry------------------------*/
+.entry input{ border: none;}
+.entry{ padding: 12px 15px 0 15px;}
+.entry .money{ height: 36px; line-height: 36px;}
+.entry .money input::-webkit-input-placeholder{color:#575757;}
+.entry .money input:focus::-webkit-input-placeholder{color:#575757}
+.entry .note input::-webkit-input-placeholder{color:#acacac;}
+.entry .note input:focus::-webkit-input-placeholder{color:#acacac}
+.entry .money .mSpan{ text-align: left; width: 21%; font-size: 15px; margin: 0 5px 0 0;}
+.entry .mInput{ display: inline-block; width: 76%; border-bottom:1px solid #ddd;}
+.entry .mInput input{ width: 66%; padding: 0 0 0 2%; display: inline-block; height: 36px; line-height: 36px; font-size: 14px;}
+.entry .mInput .name{ width: 90%; padding: 0 0 0 2%; display: inline-block; height: 36px; line-height: 36px; font-size: 14px;}
+.entry .mInput span{ width: 28%; display: inline-block; text-align: center; height: 36px; line-height: 36px;}
+.entry .mInput a{ color: #4253cf;}
+/*headerYellow--------------------*/
+.headerYellow{ height: 30px; width: 100%; background: #fdf5a8;}
+.headerYellow p{ height: 30px; line-height: 30px; color: #f07f1a; margin: 0 0 0 15px; padding: 0 0 0 23px; background: url(../images/icon.png) no-repeat left center; background-size: 18px 18px;}
+/*bottomTip------------------------*/
+.bottomTip{ padding: 5px 0 0 15px;}
+.bottomTip p{ color: #888; line-height: 20px; font-size: 12px;}
+/*note-------------------------------*/
+.entry .note{ margin: 16px 0 0 0;}
+.entry .note .mInput span input{ font-size: 12px; display: block; width: 70px; height: 30px; line-height: 30px; color: #fff; background: #acacac; border-radius: 5px;}
+.print{width:100%;height:60px;margin-top: 80px;display:block;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.print img{width:100%;height:100%;}
+/*button-----------------------------*/
+.isCash{ padding: 0 15px; margin: 15px 0 0 0;}
+.isCash button{ display: block; width: 100%; height:36px; background: #acacac; border: none; color: #fff; font-size: 15px; border-radius: 3px;}
+/*cashTip-----------------------------*/
+.cashTip,#codeP,#nameP{ padding: 5px 0 0 78px; color: #f75e25;}
+/*==ifGetOut==*/
+.grayBg{ display: none; width: 100%; height: 100%; position: fixed; z-index: 60; background: rgba(0,0,0,0.2);}
+.ifGetOut{ display: none; width: 280px; height: 150px; background: #fff; border-radius: 10px; position: fixed; z-index: 100; left: 50%; top: 50%; margin: -75px 0 0 -140px;}
+.ifGetOut p{ height: 99px; line-height: 99px; font-size: 15px; color: #888; text-align: center; border-bottom: 1px solid #dddddd;}
+.ifGetOut .btn .yes,.ifGetOut .btn .no{ width: 49.6%; height: 50px; line-height: 50px; text-align: center; display: block; font-size: 15px; color: #888;}
+.ifGetOut .btn .yes{ border-left: 1px solid #ddd; color: #f75e25;}
+
+.billboard{width:100%;height:30px;margin-top: 15px;text-align: center;background-image: url(../images/logo2.jpg);background-size: 280px 30px;background-repeat: no-repeat;background-position: center center;}
+
+@media screen and (max-width: 320px){
+    .print{margin-top: 45px;}
+}
+ 
+
+
+
+

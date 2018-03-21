@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+/*=== con ===*/
+/*== phoneCon ==*/
+#phoneCon{ padding: 15px 0px 0 15px;}
+.top_title{margin-top:10px;height:40px;line-height:40px}
+.top_title a{display: block;width: 150px;height: 40px;background: #7db3ff;float: right;color: #fff;margin-left: 50px;border-radius: 8px;text-align: center;line-height: 40px;font-size: 16px;}
+.goback {height: 30px;line-height: 30px;display: block;float: left;width: 95%;margin: -5px 5% 10px 1%;font-size: 16px;background-image: url(../img/back_j.png);background-repeat: no-repeat;background-position: left center;background-size: 16px 16px;text-indent: 22px;color: #0875fb;}
+.phoneTitle{ font-size: 18px; color: #888; font-weight: normal;}
+.pDetails{ margin: 25px 0 0 0;}
+.pDetails .brand{ width: 20%; margin: 0 1.2% 0 0;}
+.pDetails .model{ width: 20%; height: auto; margin: 0 1.2% 0 0;}
+.pDetails .property{ width: 57.5%; height: auto;}
+/*brandTitle*/
+.brandTitle h4,.modelTitle h4,.properTitle h4{ font-size: 16px; color: #666; height: 24px; line-height: 24px;}
+#properedit{ margin: 0 30px 0 0;}
+#brandedit a,#modeledit a,#properedit a{ width: 60px; display: block; height: 24px; line-height: 22px; font-size: 14px; color: #888; padding: 0 0 0 25px; border: 1px solid #d5d5d5; border-radius: 3px;}
+#brandedit .editBtn .edit,#modeledit .editBtn .edit,#properedit .editBtn .edit{ background: url(../img/spiritPic.png) no-repeat 6px -67px;}
+#brandedit .savaBtns .no,#modeledit .savaBtns .no,#properedit .savaBtns .no{ color: #a0c7ff; background: url(../images/spiritPic.png) no-repeat 9px -89px; border: 1px solid #a0c7ff; margin: 0 10px 0 0;}
+#brandedit .savaBtns .yes,#modeledit .savaBtns .yes,#properedit .savaBtns .yes{ color: #fff; background:#a0c7ff url(../img/spiritPic.png) no-repeat 9px -109px; border:none;}
+/*search*/
+.search{ width: 99.8%; height: 42px; border: 1px solid #e0e0e0; margin: 10px 0 0 0; position: relative;}
+.search .searchText{ width: 100%; height: 40px; line-height: 40px; text-indent: 10px; padding: 0 70px 0 0;}
+.search .sraechBtn{ display: block; width: 60px; height: 40px; border-left: 1px solid #e0e0e0; background: url(../img/spiritPic.png) no-repeat 19px -125px; position: absolute; right: 0px; top: 0px;}
+/*brandList*/
+.brandList,.modelList{ width: 100%; border: 1px solid #ebebeb; margin: 10px 0 0 0; box-shadow: 0px 0px 40px #ebebeb; overflow-y: auto; }
+.brandList ul,.modelList ul{ padding: 2px 15px 30px 4px;}
+.brandList ul li,.modelList ul li{ margin: 6px 0 0 0; height: 38px; line-height: 38px; position: relative;}
+.brandList ul li input,.modelList ul li input{ width: 100%; height: 38px; line-height: 38px; text-indent: 30px; cursor: pointer; transition: background 0.1s;}
+/*input鼠标划上*/
+.brandList .blueBg li input:hover,.modelList .blueBg li input:hover{ background: #7db3ff; color: #fff;}
+/*input鼠标点击*/
+.brandList ul .whiteBgClick input,.modelList ul .whiteBgClick input{ background: #fff; color: #666;}
+.brandList .blueBg .blueBgClick input,.modelList .blueBg .blueBgClick input{ background: #7db3ff; color: #fff;}
+
+.brandList .editInput li input,.modelList .editInput li input{ border: 1px solid #ebebeb; padding: 0 40px 0 0;}
+.brandList .delete,.modelList .delete{ position: absolute; right: 17px; top: 8px; display: block; width: 20px; height: 20px; cursor: pointer; background: url(../img/spiritPic.png) no-repeat 0px -167px;}
+.brandList .addLi,.modelList .addLi{ margin: 0px 10px; width: auto;  border-top: 1px solid #ebebeb; padding: 40px 0;}
+.brandList .addLi a,.modelList .addLi a{ display: block; width: 60%; height: 38px; text-align: center; font-size: 30px; color: #ebebeb; line-height: 38px; border: 1px dashed #dadada; margin: 0 auto;}
+.brandList .addLi a span,.modelList .addLi a span{ display: block; width: 22px; height: 22px; margin: 8px auto; background: url(../img/spiritPic.png) no-repeat 0px -206px;}
+/*=== basicInfor ===*/
+.rightscroll{ overflow: auto;}
+.basicInfor{ width: 100%; height: auto; padding: 0 20px 0 0;}
+.basicInfor h5{ display: block; font-size: 16px; color: #666; height: 20px; line-height: 20px; border-left: 3px solid #ff7160; padding: 0 0 0 8px; margin: 15px 0;}
+.properList,.checkboxList{ width: 100%; height: auto; border: 1px solid #ebebeb; box-shadow: 0px 0px 40px #ebebeb; margin: 10px 0 0 0; padding: 15px 6px;}
+.properList .properLine,.checkboxList .properLine{ display: block; margin: 0 0 0px 0;}
+.properList ul li,.properList .title,.checkboxList ul li{ float: left; height: 40px; line-height: 40px; width: auto; margin: 0 30px 20px 0px; position: relative;}
+.properList .title{ margin-left: 0px; margin-right: 35px; height: auto;}
+.properList ul li input,.properList .title input{ text-align: center; height: 38px; line-height: 38px; padding: 0 10px; border: 1px solid #e0e0e0;width:270px}
+.properList .title input{ border: none; width: 115px;}
+.properList .titlestyle input{ border: 1px solid #7db3ff;}
+.properList li .delete,.checkboxList li .delete{ position: absolute; right: -10px; top: 8px; z-index: 1; display: block; width: 20px; height: 20px; cursor: pointer; background: url(../img/spiritPic.png) no-repeat -0px -167px;}
+.properList .titlestyle .delete{ position: absolute; right: -10px; top: 8px; z-index: 1; display: block; width: 20px; height: 20px; cursor: pointer; background: url(../img/spiritPic.png) no-repeat -39px -167px;}
+/*addLi*/
+.properList .addLi,.checkboxList .addLi{ margin: 0px 0px 20px 0px;}
+.properList .addLi a,.checkboxList .addLi a{ display: block; width: 110px; height: 38px; text-align: center; font-size: 30px; color: #ebebeb; line-height: 38px; border: 1px dashed #dadada; margin: 0 auto;}
+.properList .addLi a span,.checkboxList .addLi a span{ display: block; width: 22px; height: 22px; margin: 8px auto; background: url(../img/spiritPic.png) no-repeat -37px -206px;}
+/*addProper*/
+.properList .addProper{ width: 106px; height: 40px; line-height: 40px; border: 1px dashed #7db3ff;}
+.properList .addProper a{ display: block; height: 40px; line-height: 40px; padding: 0 0 0 30px; color: #7db3ff; background: url(../img/spiritPic.png) no-repeat -68px -198px;}
+/*=== checkbox ===*/
+.checkboxList{ padding: 15px 0 0 15px;}
+.checkBox h5 P{ font-size: 12px; display: inline-block; color: #999;} 
+.checkBox .checkboxList ul li { padding: 0 0 0 20px; margin-right: 10px;}
+.checkBox .checkboxList ul li input{ width: 140px; text-indent: 4px;}
+.checkBox .checkboxList .inputStyle li input{ width: 140px; background: #fafafa; padding: 0 5px; text-align: center; height: 38px; line-height: 38px; padding: 0 10px; border: 1px solid #e0e0e0;}
+.checkBox .checkboxList ul li i{ cursor: pointer; display:block; position: absolute; left: 0px; top: 13px; width: 18px; height: 18px; border: 1px solid #cbcbcb; background: #fafafa; vertical-align: middle; margin: -2px -4px 0 0; border-radius: 2px;}
+.checkBox .checkboxList ul li .right{ border: none; width: 18px; height: 18px; background: url(../img/spiritPic.png) no-repeat -44px 0px;}
+.checkboxList .addLi a{ width: 142px;}
+.checkboxList ul li{ margin-bottom: 10px;} 
+/*nextPage*/
+.nextPage{ width: 100%; height: 46px; margin: 24px 0 0 0;}
+.nextPage a{ display: block; width: 300px; height: 46px; line-height: 46px; font-size: 14px; text-align: center; color: #fff; background: #93c0ff; border-radius: 3px; margin: 0 auto; transition: background-color .5s; }
+.nextPage a:hover{ background: #6aa6fb;}
+.newListLi{position: relative; float: left; height: 40px; line-height: 40px; width: auto;  margin: 0 30px 20px 0px; position: relative; border: 1px solid #e0e0e0; overflow: hidden;}
+.noneBorder{   border:none!important;}
+.absoFont{ position: absolute; top: 0; right: 0; margin-right: 10px; font-weight: normal;}
+/*保障金*/
+.bonds_span{position: absolute; top:-15px; right:100px; display: block; width: 240px; height: 35px; line-height: 35px; font-size: 17px; color: #f7081c; background: rgba(0,0,0,0)}
+.posi_bonds{ position: relative;}
+.bonds{width: 70px; height:33px; border: solid 1px #ddd;text-align:center}
+.bonds_b{ margin-right: 35px;}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+	#contentBox{ margin-left: 150px;}
+	.pDetails{ margin: 15px 0 0 0;}
+	.properList ul li{ margin-right: 20px;}
+	.properList .title{ margin-right: 25px;}
+	.basicInfor{ padding: 0 10px 0 0;}
+}
+
+.sign{
+	background:#7db3ff;color:white;
+}

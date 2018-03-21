@@ -1,0 +1,6 @@
+/*topText------------------*/
+.orderCon .title{ margin: 0 auto; width: 310px; height: 52px; background: url(../img/orderBg.png) no-repeat; background-size: 310px 52px;}
+.orderCon .title p{ font-size: 16px; height: 52px; line-height: 52px; text-align: center;}
+.orderCon .orderAdd{ width: 270px; height: auto; border:1px solid #e8e8e8; border-top: none; margin: 0 auto; padding: 24px 0 15px 36px; background: #fff; }
+.orderCon .orderAdd p{ height: 30px; line-height: 30px; font-size: 15px;}
+.orderCon .orderAdd p span{ color: #888; padding: 0 10px 0 0;}

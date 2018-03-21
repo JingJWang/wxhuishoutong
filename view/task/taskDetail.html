@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>回收通</title>
+<link rel="stylesheet" type="text/css" href="../../static/task/task_two/css/style-02.css?v=1002" />
+<script src="../../static/task/js/jquery-1.9.1.min.js?v=1001"></script>
+<script type="text/javascript" charset='utf-8' src="../../static/task/task_two/js/public.js?v=1001"></script>
+<script src="../../static/task/js/ajax_common.js?v=1001"></script>
+<script src="../../static/task/js/ajax_task.js?v=1006"></script>
+</head>
+	<body>
+		<!-- load start-->
+		<div id="caseBlanche">
+			<div id="rond">
+				<div id="test"></div>
+			</div>
+		</div>
+		<!-- load end-->
+		<!-- grayBg start-->
+		<div class="grayBg"></div>
+		<!-- grayBg end-->
+		<!-- rwdSelect start-->
+		<div class="rwdSelect">
+			<i class="closegreen" onclick="rwdSelClose()"></i>
+			<h3>选择奖励</h3>
+			<ul id="awards">
+			</ul>
+			<!-- <span class="isyes" onclick="isyes()">确 认</span> -->
+		</div>
+		<!-- rwdSelect end-->
+		<!-- rwdSuccess start-->
+		<div class="rwdSuccess">
+			<i class="close" onclick="rwdSucClose()"></i>
+			<div class="topcon">
+				<p class="reawards"></p>
+				<!-- <a href="javascript:;">去通花商城换购礼品</a>
+				<span>今天还可以领8个红包，继续努力吧！</span> -->
+			</div>
+			<div class="botcon">
+
+			</div>
+		</div>
+		<!-- rwdSuccess end-->
+		<div class="content">
+			<div class="invtDiv">
+				<div class="itPic">
+				</div>
+				<div class="itPro">
+					<h3></h3>
+					<p></p>
+				</div>
+				<!-- <a href="javascript:;" class="itBut" onclick="rwdSelectIn()">领取奖励</a> -->
+				<div class="clear"></div>
+				<div class="list-v2 m10">
+
+				</div>
+			</div>
+
+			<div class="miaox">
+				<p><strong>活动说明</strong></p>
+				<p></p>
+				<a href='javascript:;' class='fax'><img src='/static/task/task_two/img/gram1.png' /></a>
+			</div>
+
+			<div class="tsTing">
+				<div class="tsTit"></div>
+				<div style="margin:20px 0px;" class="instruction_content">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="shade" style="display:none"></div>
+		<div class="choice-box" style="display:none">
+			<div class="title">任务选择</div>
+			<a class="classify" href="javascript:;">
+				<div class="graph">
+					<img src="/static/task/task_two/img/ward.jpg"/>
+				</div>
+				<div class="main">做任务得现金</div>
+			</a>
+			<a class="classify" href="javascript:;">
+				<div class="graph">
+					<img src="/static/task/task_two/img/green.png"/>
+				</div>
+				<div class="main">做任务宣传公益</div>
+			</a>
+			<a class="confirm" href="javascript:;" onclick="tourl()">确认</a>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+        var id = getUrlParam('id');
+        getaskInfo(id);
+		task();
+	</script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+//任务选择选中
+$(".choice-box .classify").click(function(){
+	$(".classify.active").removeClass("active");
+	$(this).addClass("active");
+});
+$(".shade").click(function(){
+	$(".shade , .choice-box").hide();
+})
+</script>
+</html>

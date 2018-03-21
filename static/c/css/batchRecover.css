@@ -1,0 +1,320 @@
+.box{
+    padding: 25px 30px 0px 30px;
+    height: auto;
+}
+.box .title{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.sysTitle{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom:30px;
+}
+.title01,.title02{
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+}
+.sysTitle .title01 span,.sysTitle .title02 span{
+    height: 14px;
+    margin: 0 0 0 16px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 0 0 0 9px;
+}
+.sysTitle .current{
+    border: 2px solid #e0e0e0;
+    border-bottom: 2px solid #fff;
+}
+.sysTitle .current span{
+    border-left: 3px solid #ff7160;
+}
+.tabulation{
+    width:100%;
+    height:auto;
+}
+#hasQuote{
+    display:none;
+}
+.indication{
+    width:100%;
+    height:40px;
+    background-color:#EEEEEE;
+    margin-bottom: 10px;
+}
+.indication .raise{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    margin: 13px 0px;
+}
+.indication .raise div{
+    height:14px;
+    padding-left:10px;
+    border-left:1px solid #dddddd;
+}
+.indication .raise .sum{
+    width:6%;
+    margin-left:10px;
+}
+.indication .raise .remark{
+    width:18%;
+}
+.indication .raise .name{
+     width:8%;
+}
+.indication .raise .cardNumber{
+    width:17.5%;
+}
+.indication .raise .bank{
+    width:15%;
+}
+.indication .raise .time{
+    width:17%;
+}
+.indication .raise .offer{
+    width:12%;
+}
+.listing{
+    width:100%;
+    height:auto;
+}
+.listing .nese{
+    width: 100%;
+    height: auto;
+    line-height: 38px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 2px 5px #dddddd;
+    margin-top: 10px;
+    padding:10px 0px;
+}
+.listing .nese div{
+    height:40px;
+    line-height: 40px;
+}
+.listing .nese .sum{
+    width:5%;
+    margin-left:20px;
+}
+.listing .nese div.remark{
+    width:16%;
+    height:auto;
+    padding:8px 10px;
+    background-color:#F9F9F9;
+    margin-right:3%;
+}
+.listing .nese div.remark p{
+    line-height: 24px;
+}
+.listing .nese .name{
+    width:8%;
+}
+.listing .nese .cardNumber{
+    width:17%;
+}
+.listing .nese div.bank{
+    width:14%;
+    height:auto;
+    padding-top:8px;
+    margin-right:2%;
+}
+.listing .nese .bank p{
+    line-height: 24px;
+}
+.listing .nese .time{
+    width:17%;
+}
+.listing .nese .offer{
+    width:15%;
+}
+.listing .nese .offer .quote{
+    height:40px;
+    line-height: 40px;
+    color:#7DB3FF;
+    display:inline-block;
+}
+.listing .nese .offer .quote.disabled{
+    cursor: default;
+    color:#666666;
+}
+.listing .nese .offer .price{
+    height:40px;
+    line-height: 40px;
+}
+.box .page{
+    width:100%;
+    height:21px;
+    text-align: center;
+    line-height: 21px;
+    margin-top:60px;
+}
+.box .page a{
+    padding: 0px 5px;
+    font-size: 16px;
+    margin-right: 8px;
+    display:inline-block;
+}
+.box .page a.dig{
+    background-color: #569DFF;
+    color:#ffffff;
+}
+.shade{
+    width:100%;
+    height:100%;
+    background-color:#3e4042;
+    opacity: 0.2;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:9999;
+    display:none;
+}
+.frame{
+    width:564px;
+    height:424px;
+    background-color:#ffffff;
+    border-radius: 10px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin:-212px 0px 0px -282px;
+    z-index:10000;
+    border:2px solid #C2C3C3;
+    color:#666666;
+    display:none;
+}
+.frame .title{
+    padding-left:30px;
+    width:560px;
+    height:48px;
+    line-height: 48px;
+    font-size:18px;
+    color:#ffffff;
+    background-color:#7DB3FF;
+    position:relative;
+    border-radius: 8px 8px 0px 0px;
+}
+.frame .title .close-btn{
+    width:28px;
+    height:48px;
+    line-height: 44px;
+    text-align:center;
+    font-size:32px;
+    color:#ffffff;
+    position:absolute;
+    top:0px;
+    right:20px;
+}
+.frame .content{
+    width:560px;
+    padding:28px 40px 0px 30px;
+    height:302px;
+}
+.frame .content .amount{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+}
+.frame .content .amount span:nth-of-type(2){
+    padding-left:20px;
+}
+.frame .content .note{
+    width:100%;
+    height:60px;
+    margin:16px 0px 0px 0px;
+}
+.frame .content .note .words{
+    height:22px;
+    line-height: 22px;
+    margin:0px 0px 38px 0px;
+}
+.frame .content .note .desc{
+    margin-left:45px;
+    height:60px;
+}
+.frame .content .note .desc p{
+    line-height: 22px;
+}
+.frame .content .reveal{
+    width:490px;
+    padding-left:8px;
+    height:auto;
+}
+.frame .content .reveal .words{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    font-size:18px;
+}
+.frame .content .reveal .cost{
+    width:100%;
+    height:80px;
+    padding:15px 0px;
+    background-color:#F6F6F6;
+    margin:20px 0px 15px 0px;
+}
+.frame .content .reveal .cost .unit{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:24px;
+    border-right:1px solid #dddddd;
+}
+.frame .content .reveal .cost .entry{
+    margin-left:68px;
+    height:50px;
+}
+.frame .content .reveal .cost .entry .money{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    font-size:30px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    font-family: 'Microsoft Yahei';
+    outline: none;
+    background-color:transparent;
+    color:#666666;
+}
+.frame .content .reveal .cue{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+}
+.frame .handle{
+    padding-left:110px;
+    width:560px;
+    height:40px;
+}
+.frame .handle .affirm{
+    width:160px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    border-radius: 2px;
+    color:#ffffff;
+    background-color:#93C0FF;
+    margin-right:40px;
+    display:inline-block;
+}
+.frame .handle .abolish{
+    width:160px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    border-radius: 2px;
+    color:#93C0FF;
+    border:1px solid #93C0FF;
+    display:inline-block;
+}

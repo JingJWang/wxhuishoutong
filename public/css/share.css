@@ -1,0 +1,79 @@
+﻿@media screen and (width:320px) {
+	body {
+	font-size:14.5454px!important
+}
+}@media screen and (width:360px) {
+	body {
+	font-size:16.3636px!important
+}
+}@media screen {
+	*{margin:0;
+	padding:0;
+	font-family:"Microsoft YaHei","Georgia Pro","Times New Roman",Helvitica,Verdana,Arial,san-serif;
+	-webkit-tap-highlight-color:transparent;
+	overflow:hidden
+}
+html {
+	overflow-y:auto
+}
+body {
+	background-color:#f4f4f4;
+	font-size:13pt;
+	position:relative
+}
+
+body,h1,h2,h3,h4,h5,h6,p,div,form,input,select,ul,ol,li,dl,dt,dd{margin:0px;padding:0px;} 
+ul,ol{list-style:none;} 
+a{outline: none;star:expression(this.onFocus=this.blur());color:black;} 
+.clear{width:0px;height:0px;margin:0px;padding:0px;font-size:0px;line-height:0px;clear:both;} 
+.clearfix{*zoom:1;} 
+.clearfix:after{content:'\20';display:block;height:0;clear:both;} 
+a:link,
+a:visited{ text-decoration:none; }
+a:hover{ text-decoration:none;}
+img{border:0;} 
+textarea {resize:none}
+.f_l{float:left;}
+.f_r{float:right;}
+.red{color:#d00000;}
+.yellow{color:#fff04b;}
+.thisclass{color:#be0000;}
+.bgh{background:#ccc;}
+
+
+.margint20{margin-top:20px;}
+.margint50{margin-top:50px;}
+
+.size16{font-size:16px;}
+
+.t_c{text-align:center;}
+
+
+
+.fenxiang{position:fixed;right:0;top:0;}
+.wrap{width:300px;margin:0 auto;padding: 0;}
+.wrap p,.wrap span{font-weight:bold;line-height:22px;}
+
+.touxiang{float:left;padding:2px;border:1px solid #444;width:50px;height:50px;}
+.wrap .txfont{float:left;display:inline-block;margin-left:20px;line-height:60px;}
+
+.wrap .guanzhu{width:200px;height:50px;line-height:50px;background:#0C0;color:#fff;border:0;font-size:16px;font-weight:bold;margin-top:60px;}
+
+.daijin{height:80px;position:relative;padding:10px;}
+.daijin .btit{font-size:25px;font-weight:bold;line-height:50px;font-family:"黑体";}
+.daijin .stit{font-size:16px;line-height:30px;font-family:"黑体";}
+.daijin img{position:absolute;top:0;right:0;}
+
+.dred{background:#ffb46b;}
+.dyellow{background:#ffd300;}
+.dgreen{background:#7de9b3;}
+.dblue{background:#78bafc;}
+
+
+
+
+
+
+
+
+

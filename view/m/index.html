@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/m_cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/m_index.css"/>
+		<script type="text/javascript" src="../../static/m/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/m/js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="../../static/m/js/jquery.touchSlider.js"></script>
+		<script type="text/javascript" src="../../static/m/js/index.js"></script>
+	</head>
+	<body>
+		<div class="main_visual">
+			<div class="main_image">
+				<ul>
+					<li><span class="img_2"><a href="http://mp.weixin.qq.com/s?__biz=MzA3NTA0NTg3OA==&mid=503255273&idx=1&sn=3d328fee034d298be9f981791f4e6bd7#rd">
+					   <img src="../../static/m/images/pic_home_slider_1.jpg" width="100%" height="140px"/></span></a></li>
+					<li><span class="img_3"><a href="http://www.xingdongliu.com/h5preview/U388fb4f76c1f4d27e90baa243d52b95ce8c27e03?from=singlemessage&isappinstalled=0">
+					   <img src="../../static/m/images/pic_home_slider_2.jpg" width="100%" height="140px"/></span></a></li>
+					<li><span class="img_4"><a href="/index.php/task/usercenter/taskcenter">
+					   <img src="../../static/m/images/pic_home_slider_3.jpg" width="100%" height="140px"/></span></a></li>
+					<li><span class="img_4"><a href="/view/shop/list.html">
+					   <img src="../../static/m/images/pic_home_slider_4.jpg" width="100%" height="140px"/></span></a></li>
+					<li><span class="img_4"><a href="http://m.70c.com/w/CQSGGZF-CAJACWF?s=Test">
+					   <img src="../../static/m/images/pic_home_slider_5.jpg" width="100%" height="140px"/></span></a></li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			</div>
+			<div class="flicking_con">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+			</div>
+		</div>
+		<div class="top_title">
+			<input type="text" name="search" id="" value="" placeholder="输入您的手机品牌型号查询" onclick="pageJump()"/>
+			<div class="category clearfix">
+				<span class="line"></span>
+				<div class="fl">
+					<p class="title">成交单数</p>
+					<p class="number"></p>
+				</div>
+				<div class="fr">
+					<p class="title">成交金额</p>
+					<p class="number"></p>
+				</div>
+			</div>
+		</div>
+		<div class="hotRecov">
+			<div class="title"></div>
+			<div class="fourPic clearfix">
+				<a href="/index.php/nonstandard/submitorder/ViewBrand?id=5" class="phone fl">
+					<p>手机回收</p>
+				</a>
+				<a href="http://mp.weixin.qq.com/s?__biz=MzIzOTE5NTMwMg==&mid=503564960&idx=1&sn=0d024e2283648ec165d9fd70bb9d6803&scene=1&srcid=0428kEmaXZG62yl2PZXth55I#wechat_redirect" class="lux fl">
+					<p>奢侈品回收</p>
+				</a>
+				<a href="/index.php/nonstandard/submitorder/ViewBrand?id=7" class="pad fl">
+					<p>平板回收</p>
+				</a>
+				<a href="/view/nonstandard/order.html" class="offer fl">
+					<p>我的订单</p>
+				</a>
+			</div>
+		</div>
+		<div class="fastWay">
+			<div class="title"></div>
+			<div class="fourPic clearfix">
+				<a href="/index.php/task/usercenter/taskcenter">
+					福利站
+					<i></i>
+				</a>
+				<a href="/view/shop/list.html">
+					通花商城
+				</a>
+				<a href="http://www.xingdongliu.com/h5preview/U388fb4f76c1f4d27e90baa243d52b95ce8c27e03?from=singlemessage&isappinstalled=0">
+					加盟合作
+				</a>
+				<a href="http://m.70c.com/w/CQSGGZF-CAJACWF?s=Test">
+					使用教程
+				</a>
+			</div>
+		</div>
+		<div class="useRecord">
+			<div class="title"></div>
+		</div>
+		<div class="bottomNav">
+			<div class="select">
+				<a href="/index.php/nonstandard/system/welcome" class="select01">交易</a>
+    			<a href="/index.php/task/usercenter/taskcenter">福利</a>
+    			<a href="/view/shop/list.html">商城</a>
+    			<a href="/index.php/nonstandard/center/ViewCenter">我的</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+		<script type="text/javascript" src="../../static/m/ajax/r_nonstandard.js"></script>
+		<script type="text/javascript" src="../../static/m/js/baidudata.js"> </script>
+		<script type="text/javascript">
+		    var code = getUrlParam('code');
+		    var id = getUrlParam('openid');
+            login(code,id);
+        </script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/article/css/article.css"/>
+    <script type="text/javascript" src="/static/article/js/jquery-1.11.1.min.js"></script>
+    <script charset="utf-8" type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript">
+        var AappId = '';
+        var Atimestamp = '';
+        var AnonceStr = '';
+        var Asignature = '';
+        window.shareData = {
+            "timgUrl": "",
+            "timeLineLink": "",
+            "tTitle": "",
+            "tContent": ""
+        };
+        function sharetext(){
+            wx.config({
+                debug: false,
+                appId: AappId,
+                timestamp: Atimestamp,
+                nonceStr: AnonceStr,
+                signature: Asignature,
+                jsApiList: [ // 所有要调用的 API 都要加到这个列表中       
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage'   
+                ]
+            });
+            wx.ready(function () {
+            //监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+                wx.onMenuShareTimeline({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    trigger: function (res) {     
+                     //点击分享是查询粉丝的分享记录，一周内只能领取一次       
+                    },
+                    success: function (res) {
+                        addsharenum();
+                        alert('分享成功');
+                          //分享成功后提示粉丝
+                          // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function (res) {
+                    },
+                    fail: function (res) {
+                      alert(JSON.stringify(res));
+                    }
+                });
+                wx.onMenuShareAppMessage({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    success: function () {
+                        addsharenum();
+                        alert('分享成功');
+                        // 用户确认分享后执行的回调函数
+                      //分享成功后提示粉丝
+                        // alert('成功分享到朋友');
+                        // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function () { 
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+            });
+            wx.error(function(res){
+            //config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新    签名。
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="addtext" style="overflow-x: hidden;position: relative;padding:3px 10px;">
+            
+        </div>
+        <div class="full"></div>
+        <div class="information">
+            <!-- <div class="btn"><a href="javascript:" onclick="share();">点此注册得一元现金</a></div> -->
+        </div>
+    </div>
+    <div class="shadow" style="display:none;"></div>
+    <div class="fuzhi" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);width:100%;height:100%;display:none;">
+        <div style="text-align:center;background:#ffffff;margin:150px 0px 0px 0px;padding-top:10px;">长按复制下面链接分享到微信好友</div>
+        <div class="url" style="text-align:center;background:#ffffff;margin:0px 0px 0px 0px;padding-top:10px;"></div>
+    </div>
+    <div class="ceng" onclick="thclose();" style="display:none;">
+        <div class="share" style="padding-right:20px;"></div>
+    </div>
+    <div class="follow" style="display:none;">
+        <div class="theme">
+            <div class="welfare">
+                <div class="close">
+                    <a class="close-btn" onclick="thclose();">×</a>
+                </div>
+                <div class="title">
+                    <span>关注回收通</span>
+                </div>
+                <div class="guide">关注回收通即可随时随地查看攻略</div>
+                <div class="guide" style="margin-top:5px">福利活动一目了然；抢红包更方便</div>
+                <div class="some" style="margin-top:5px">还可以买/卖数码、奢侈品、领福利</div>
+            </div>
+        </div>
+        <div class="include">
+            <div class="triangle"></div>
+        </div>
+        <div class="box">
+            <div class="code">
+                <img src="/static/article/images/codeg.png" />
+            </div>
+            <div class="explain">长按二维码，关注回收通</div>
+            <div class="search">或微信搜索"huishoutong",关注我们</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/article/ajax/request_common.js"></script>
+    <script type="text/javascript" src="/static/article/ajax/request_knowledge.js?v=1002"></script>
+    <script type="text/javascript" src="/static/article/js/article.js"></script>
+    <script type="text/javascript" src="/static/home/js/ajax_mobile.js"></script>
+    <script type="text/javascript">
+        var code=getUrlParam('code');
+        var id=getUrlParam('openid');
+        var extendnum=getUrlParam('extendnum');
+        getarticleshare(extendnum);
+    </script>
+</body>
+</html>

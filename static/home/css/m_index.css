@@ -1,0 +1,66 @@
+body{ background: #f1f1f1; padding: 0 0 53px 0;}
+/*== banner ==*/
+.main_visual{ width: 100%; height:140px; overflow: hidden; position:relative;}
+.main_visual .main_image{ width: 100%; height: 140px; overflow: hidden; position:relative;}
+.main_image ul{ width: 500%; height: 140px; position: absolute; left: 0px; top: 0px;}
+.main_image ul li{ float: left; display: block; width: 20%; height: 140px;}
+.main_image ul li a{ display: block; width: 100%; height: 140px;}
+.main_image ul li a img{ display: block;}
+.flicking_con{ position: absolute; bottom: 8px; left: 50%; margin: 0 0 0 -45px; }
+.flicking_con a{ display: block; border: 1px solid #fff; width: 7px; height: 7px; background: #fff; border-radius: 50%; margin: 0 10px 0 0; float: left; text-indent:-1000px; box-sizing: border-box;}
+.main_image li span{display:block;width:100%;height:140px;}
+div.flicking_con a.on{ border: 1px solid red;}
+/*== help ==*/
+.main_visual .help{ width: 100%; height: 40px; background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0) 100%); position: absolute; left: 0px; top: 0px; z-index: 100;}
+.main_visual .help a{ font-size: 15px; color: #fff; display: block; height: 32px; line-height: 32px; position: absolute; right: 15px; top: 0px; background: url(../images/helfBg.png) no-repeat left center; background-size: 17px 17px; padding: 0 0 0 22px;}
+/*== top_title ==*/
+.top_title{ padding: 7px 25px 6px; background: #fff; border-top: 1px solid #ebebeb; margin: 10px 0 0 0; box-shadow: 0px 1px 1px #dfdfdf;}
+.top_title .logo{ position: relative;}
+.top_title span{ display: block;}
+.top_title .logo .tit{ display: block; width: 142px; height: 21px; background: url(../images/titlePic.png) no-repeat left bottom; background-size: 142px 17px;}
+.top_title .logo .logo_pic{ display: block; width: 52px; height: 22px; background: url(../images/LOGO.png) no-repeat right center; background-size: 52px 22px;}
+.top_title input{ width: 100%; height: 30px; border: 1px solid #ccc; border-radius: 4px; margin: 6px 0 0 0; text-indent: 45px; background: url(../images/fangdajing.png) no-repeat 10px center; background-size: 20px 17px; font-size: 14px; color: #888;}
+.top_title .text p{ height: 20px; line-height: 24px; font-size: 10px;}
+.top_title .text span{ height: 20px; line-height: 20px; display: inline-block; font-size: 10px;}
+.top_title .text .number{ margin: 0 10px 0 0px;}
+.top_title .amount{ color: #f75e25; font-size: 12px;}
+/*== category ==*/
+.category { width: 100%; height: 100px; background: #fff; margin: 1px 0 10px 0; box-shadow: 0px 1px 1px #dfdfdf;}
+.category a{ color: #888; display: inline-block; width: 32.555%; height: 27px; text-align: center; padding: 73px 0 0 0; }
+.category a:nth-of-type(1) { background: url(../images/phone01.png) no-repeat center 10px; background-size: 51px 51px;}
+.category a:nth-of-type(2) { background: url(../images/phone02.png) no-repeat center 10px; background-size: 51px 51px;}
+.category a:nth-of-type(3) { background: url(../images/phone03.png) no-repeat center 10px; background-size: 51px 51px;}
+/*== successLog ==*/
+.successLog{ background: #fff; padding: 0 0 0 15px; margin: 0 0 5px 0;}
+.successLog .userMsg{ padding: 15px 15px 0 0;}
+.successLog .userMsg span{ color: #888; font-size: 12px;}
+.successLog .userMsg .userName{ margin: 0 10px 0 0;}
+.successLog .tradeMsg{ padding: 12px 0 10px 0; border-bottom: 1px solid #eee;}
+.successLog .tradeMsg p{ color: #333; font-size: 12px;}
+.successLog .tradeMsg span{color: #f75e25;}
+.successLog .assess{ padding: 8px 0;}
+.successLog .assess p{ color: #333;}
+.successLog .assess span{ color: #888;}
+/*== bottomNav ==*/
+.bottomNav{ width: 100%; height: 49px; background: #fff; box-shadow: 0px -1px 3px #d1d1d1; position: fixed; bottom: 0px; left: 0px;}
+.bottomNav a{ display: inline-block; width: 24.111%; height: 15px; color: #888; text-align: center; padding: 31px 0 0 0;}
+.bottomNav a:nth-of-type(1) { background: url(../images/bottomBtnGray01.png) no-repeat center 5px; background-size: 21px 24px;}
+.bottomNav a:nth-of-type(2) { background: url(../images/bottomBtnGray02.png) no-repeat center 5px; background-size: 24px 25px;}
+.bottomNav a:nth-of-type(3) { background: url(../images/bottomBtnGray03.png) no-repeat center 6px; background-size: 24px 23px;}
+.bottomNav a:nth-of-type(4) { background: url(../images/bottomBtnGray04.png) no-repeat center 6px; background-size: 25px 23px;}
+.bottomNav .select .select01{ background-image: url(../images/bottomBtn01.png); color: #58ab22;}
+.bottomNav .select .select02{ background-image: url(../images/bottomBtn02.png); color: #58ab22;}
+.bottomNav .select .select03{ background-image: url(../images/bottomBtn03.png); color: #58ab22;}
+.bottomNav .select .select04{ background-image: url(../images/bottomBtn04.png); color: #58ab22;}
+
+
+
+
+
+
+
+
+
+
+
+

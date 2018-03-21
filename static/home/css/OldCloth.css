@@ -1,0 +1,71 @@
+.bc{padding-left:0.3333333rem; padding-right:0.3333333rem;}
+.main{width:9.324074074074074rem; margin: 0 auto;height:auto; overflow: hidden;}
+.header{background: #fff391; height:1.307rem;font-size: 0.3519rem; line-height:0.4815rem; color:#f75b06; text-align: left; width:100%; padding-top:0.315rem;}
+.headerBg{float: left;margin-top: 0.1852rem; margin-left:0.2rem; margin-right:0.2777rem;width:0.5238rem; height:0.5238rem; }
+.mode1{}
+.tit{width:100%;height:1.259rem; line-height: 1.259rem; background: #efeff4; text-align: left;}
+.h1{font-size: 0.3518rem; color: #6c6c6c; padding-left:0.694rem; background: url("/static/home/images/fBg.png") no-repeat 0.398rem center; background-size:0.1388rem 0.138rem; }
+.modeBox{margin-left:0.398rem; font-size: 0.426rem;}
+.hBox{font-size: 0.426rem; height: 1.37rem; line-height: 1.37rem; border-bottom: 1px solid #ccc;}
+
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear: both;}
+.oh{overflow:hidden;}
+.noBorder{border: none;}
+.pr16{padding-right: 0.407rem;}
+.cf{color:#cfcfcf;}
+.marg{margin-top:0.3rem; padding-bottom: 0.3rem;}
+.bg{ margin-left: 0.7777rem; display: inline-block; width:0.472rem; height:0.240rem;}
+.bg1{background: url("/static/home/images/downBg.png") no-repeat right center;background-size:0.472rem 0.240rem;}
+.bg2{background: url("/static/home/images/upBg.png") no-repeat right center;background-size:0.472rem 0.240rem;}
+.selectBox{width: 100%; height:auto; display: none;max-height:6rem; overflow-y:auto;}
+.selectBox p{width: 100%; height:1.37rem; line-height:1.37rem; border-bottom: 1px solid #ccc; font-size:0.426rem;padding-bottom:0.4rem;}
+.selected{ background:url("/static/home/images/chooseBg.png") no-repeat 8.503rem center; background-size:0.546rem 0.416rem;}
+.mode2{}
+.tit2{width: 100%; height:0.4444rem; background: #efeff4;border-bottom: 1px solid #ccc;}
+.mode2Box{font-size: 0.426rem; margin-left:0.398rem; text-align: left;}
+.Txt{ height: 1.37rem; line-height:1.37rem;}
+.TxtBg{ border-bottom: 1px solid #dcdcdc;}
+.TxtBox{margin-left:0.926rem; font-size:0.426rem;}
+
+#Bao .choose,#Ture .choose{width:0.659rem; height:0.518rem; line-height: 0.518rem; display: inline-block; background: url("/static/home/images/nochooseBg2.png") no-repeat 0 center; background-size:0.472rem; padding-left:0.772rem;}
+.btnY{margin-left:1rem;}
+.btnN{ margin-left:1rem;}
+#Bao label.active,#Ture label.active{background: url("/static/home/images/chooseBg2.png") no-repeat 0 center; background-size:0.472rem;}
+.fhide{display:none;}
+.mode3Box{font-size: 0;text-align: left;}
+.mode3block div{display: inline-block; width:3.2rem;height:1rem; line-height: 1.37rem; text-align: center; border-bottom:1px solid #dcdcdc; font-size:0; margin-top:0.3rem;}
+.mode3block div span{display: block; width:100%; height:0.5rem; line-height:0.5rem; text-align: center;border-right:1px solid #ccc; font-size: 0.426rem;}
+.mode3block div span.brn{border-right:none; }
+.mode3block div.active{background: url("/static/home/images/gou.png")no-repeat right bottom; background-size:0.564rem 0.583rem; }
+.mode3block2 div{display: inline-block; width:3.2rem;height:1rem; text-align: center; padding-top: 0.4rem;}
+.mode3block2 div span{display:block; float: left; width:100%; height:0.5rem;  text-align: center; line-height:0.8rem; border-right:1px solid #ccc; }
+.mode3block2 div span.brn{border-right:none; }
+.mode3block2 div.active{background: url("/static/home/images/gou.png")no-repeat right bottom; background-size:0.564rem 0.583rem; }
+.mode3block2 p{display: inline-block; width:3.2rem;height:1rem; text-align: center; padding-top: 0.4rem;}
+.mode3block2 p span{display:block; float: left; width:100%; height:0.5rem;  text-align: center; line-height:0.8rem; border-right:1px solid #ccc; }
+.mode3block2 p span.brn{border-right:none; }
+
+.mt{margin-top:0.24rem;}
+.desc{font-size: 0.366rem; text-align: left;}
+.imgBox div{width:2.22rem; height:2.22rem; float: left;margin-right: 0.14rem;}
+#textarea{width:100%; height:3.6rem; overflow: auto; line-height:0.566rem; font-size: 0.366rem; border: none;}
+.botBox{width: 100%; height:1.33rem; line-height: 1.33rem;}
+.botBox span{text-align:center;width: 50%; height:1.33rem; line-height: 1.33rem; display: inline-block; color:#58ab22; background: #fff; font-size: 0.466rem; float: left;}
+.botBox span.active{color:#fff; background:#58ab22;}
+
+.PDbox{width:100%; height:auto;overflow-x:hidden; background: #fff;}
+.PDbox .PhoneNum{width:96%; height:1.388rem; line-height:1.388rem; background: #fff; font-size: 0.3518rem; padding-left: 0.398rem; overflow:hidden;}
+.PDbtn{width:100%; height:auto;overflow:hidden; text-align: center;margin-top: 0.926rem;}
+.PDbtn button{ width:8.9rem; height:1.33rem; border-radius:0.06rem; background:#58ab22;color:#fff; font-size: 0.4rem;  }
+
+#scroller{ width:3.4rem;  height:0.8rem;  margin-right:0.5rem;  border:1px solid #ccc;  padding-left:0.4rem;}
+
+.inputBox{ padding-left:0.8rem;width:5rem; height:100%;}
+.inputBox input{width:100%; height:100%; font-size: 0.426rem;}
+
+/*<!--loadingÐ§¹û-->*/
+#turn_gif_box{width:100%; height:100%; background: rgba(255, 255, 255, 0.9); display: none; position:fixed; left:0; top:0; z-index: 10;}
+#turn_gif{width:100%; height:100%; display: table;}
+#turn_gif span{display: table-cell; vertical-align: middle; text-align: center;font-size: 0; }

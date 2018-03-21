@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset 默认样式*/
+body,h1,p,dl,dd,ul,ol,dt,h2,h3,i,b,span,strong,input{margin:0;
+	padding:0; 
+	font-family:微软雅黑;
+	}
+h3,h4,img{ 
+	padding:0;
+	 margin:0;
+	 }
+em{
+	font-style:normal;
+	}
+li{
+	list-style:none; 
+	padding:0;
+	margin:0;
+	}
+a{
+	 padding:0; 
+	 margin:0;
+	 text-decoration:none;
+	 }
+img{
+	border:none; 
+	vertical-align:top;
+	
+	}
+table{
+	border-collapse:collapse;
+	}
+textarea{ 
+	resize:none;
+	overflow:auto;
+	}
+.clear:after{
+	content:'';
+	display:block;
+	 clear:both;
+	}
+.clear{zoom:1;}
+/* end reset */
+
+/*页面样式设置开始*/
+body{
+	background:#ff2e4b;
+	}
+.top{
+	width:100%;
+	}
+.top .top-bg{
+	width:100%;
+	position:absolute;
+	z-index:-1;
+	left:0;
+	top:0;
+	}
+.redbg{
+	width:56%;
+	}
+.redbg img{
+	width:56%;
+	position:absolute;
+	z-index:-1;
+	left:22%;
+	top:28%;
+	}
+.redbg strong{
+	display:block;
+	width:31%;
+	color:red;
+	font-size:1.3125rem;
+	position:absolute;
+	left:36%;
+	top:30%;
+	}
+.redbg span{
+	font-size:2.5rem;
+	}
+.text{
+	width:100%;
+	line-height:24px;
+	font-size:0.75rem;
+	text-align:center;
+	color:#ffe023;
+	position:absolute;
+	top:45%;
+	}
+.go{
+	width:43%;
+	position:absolute;
+	top:52%;
+	left:28.5%;
+	}
+.go a,.go img{
+	display:block;
+	width:100%;
+	}
+
+.bottom-top{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:65%;
+	}
+.bottom-top img{
+	display:block;
+	width:100%;
+	}
+/*红包列表设置*/
+.redbag-list{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:70%;
+	}
+.redbag-list .list{
+	width:100%;
+	padding:10px 0 20px;
+	border-bottom:2px solid #cc0019;
+	}
+.redbag-list .list .imges{
+	display:inline-block;
+	width:19%;
+	height:61px;
+	}
+.redbag-list .list .imges img{
+	display:block;
+	width:61px;
+	height:61px;
+	margin-top:15px;
+	}
+.redbag-list .list-text{
+	display:inline-block;
+	width:57%;
+	font-size:0.8125rem;
+	margin-top:10px;
+	}
+.redbag-list .list-text span{
+	color:#cc0019;
+	}
+.redbag-list .list-text strong{
+	color:#000;
+	}
+.redbag-list .list-money{
+	display:inline-block;
+	font-size:1rem;
+	width:18%;
+	margin-top:15px;
+	}
+.redbag-list .list-money strong{
+	font-size:1rem;
+	color:#FFF;
+	}
+.redbag-list .list-money p{
+	font-size:0.875rem;
+	color:#FC0;
+	}

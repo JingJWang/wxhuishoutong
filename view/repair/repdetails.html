@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/repair/css/repdetails.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../../../index.php/nonstandard/center/ViewCenter" class="FirstA">
+				<p class="back">返回</p>
+			</a>
+			<h1>订单详情</h1>
+		</header>
+		<div class="repTop">
+			<p class="repFont">手机维修</p>
+			<p class="state"></p>
+		</div>
+		<div class="repDetail">
+			<div class="leftrep">
+				<p class="leftp">设备名称：</p>
+				<p class="leftp">设备故障：</p>
+				<p class="leftp">联系人：</p>
+				<p class="leftp">联系电话：</p>
+				<p class="leftp">收货地址：</p>
+				<p class="leftp">下单时间：</p>
+				<p class="leftp">优惠金额：</p>
+				<p class="leftp stas">预估价：</p>
+				<p class="leftp">保障金：</p>
+			</div>
+			<div class="rightp">
+				<p class="property_name repP"></p>
+				<p class="property_content repP"></p>
+				<p class="property_names repP"></p>
+				<p class="property_phone repP"></p>
+				<p class="property_adr repP"></p>
+				<p class="property_time repP"></p>
+				<p class="property_price repP"></p>
+				<p class="property_jiage repP"></p>
+				<p class="property_money repP"></p>
+			</div>
+		</div>
+		<div class="repaddr">
+			<p class="firstp">维修地址</p>
+			<p class="rep">客服与您联系无误后，请把需要维修的手机邮寄到下方地址</p>
+		</div>
+		<div class="repAddress">
+			<p>姓名： 李师傅</p>
+			<p>联系电话： 15650783223</p>
+			<p>客服微信： hst15650783223</p>
+			<p>维修地址 ： 北京市海淀区上地街道雅美科技园B座2030 </p>
+		</div>
+		<!--已下单-->
+		<div id="yixiadan">
+			<div class="repaddr">
+				<p class="firstp">快递信息</p>
+				<p class="secondp">发货时请您核对好您的发货地址</p>
+			</div>
+			<div class="kuaidi">
+				<div class="kdmess">
+					<span class="kdname">快递公司</span>
+					<input type="text" class="kdnum" id="express" placeholder="请输入快递公司名称">
+				</div>
+				<div class="kdmess">
+					<span class="kdname">快递单号</span>
+					<input type="text" class="kdnum" id="num" placeholder="请输入您的快递单号" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+				</div>
+				<a href="javascript:;" onclick="saveOdd()" class="sureBtn messBtn">确认发货</a>
+				<a href="javascript:;" onclick="cancle()" class="cancelBtn messBtn">取消订单</a>
+			</div>
+		</div>
+		<!--已发货-->
+		<div id="yifahuo">
+			<div class="repaddr">
+				<p class="firstp">快递信息</p>
+				<p class="secondp">发货时请您核对好您的发货地址</p>
+			</div>
+			<div class="fahuo kuaidi">
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递公司</span>
+					<p class="kdnump" id="express"></p>
+				</div>
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递单号</span>
+					<p class="kdnump" id="num"></p>
+				</div>
+			</div>
+		</div>
+		<!--订单维修中-->
+		<div  id="weixiuzhong">
+			<div class="repaddr">
+				<p class="firstp">快递信息</p>
+				<p class="secondp">发货时请您核对好您的发货地址</p>
+			</div>
+			<div class="havediv fahuo kuaidi">
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递公司</span>
+					<p class="kdnump" id="express"></p>
+				</div>
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递单号</span>
+					<p class="kdnump" id="num"></p>
+				</div>
+			</div>
+			<div class="repaddr">
+				<p class="firstp">检测反馈预订单协商</p>
+				<p class="rep">订单详情以检测反馈与订单协商修改数据为准</p>
+			</div>
+			<div class="surelast repd">
+				<p class="repp" rows="4">检修检测反馈： 实际故障与描述相符</p>
+			</div>
+			<span href="javascript:;" class="payBtnNew" onclick="shahei()">支付订单</span>
+		</div>
+		<!--已完成订单-->
+		<div id="yiwancheng">
+			<div class="repaddr">
+				<p class="firstp">快递信息</p>
+				<p class="secondp">发货时请您核对好您的发货地址</p>
+			</div>
+			<div class="havediv fahuo kuaidi">
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递公司</span>
+					<p class="kdnump" id="express"></p>
+				</div>
+				<div class="kdyet kdmess">
+					<span class="kdnump kdname">快递单号</span>
+					<p class="kdnump" id="num"></p>
+				</div>
+			</div>
+			<div class="repaddr">
+				<p class="firstp">检测反馈预订单协商</p>
+				<p class="rep">订单详情以检测反馈与订单协商修改数据为准</p>
+			</div>
+			<div class="surelast repd">
+				<p class="repp">检修检测反馈： 实际故障与描述相符</p>
+			</div>
+		</div>
+		<!--弹出支付-->
+		<div class="paybox shadow">
+			<div class="payb">
+				<h1 class="payname">支付方式</h1>
+				<div class="myLi">
+					<p class="bg_name">微信支付</p><span class="bg_img" onclick="hovermyli(this);"></span>
+				</div>
+				<div class="btn">
+					<a href="javascript:;" class="yesbtn btnpay">确认支付</a>
+					<a href="javascript:;" class="nobtn btnpay" onclick="canbox();">取消支付</a>
+				</div>
+			</div>
+		</div>
+		<!--<a href="javascript:;" class="cancelBtn" onclick='cancle()'>取消订单</a>-->
+	<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/home/js/ajax_common.js"></script>
+	<script type="text/javascript" src="../../static/repair/ajax/request_repair.js?v=20170700"></script>
+	<script>
+		window.onload=window.onresize=function(){
+    		document.documentElement.style.fontSize=window.innerWidth/16+'px';
+    	}
+		var id=getUrlParam('id');
+    	getDetail(id);
+	</script>
+	</body>
+</html>

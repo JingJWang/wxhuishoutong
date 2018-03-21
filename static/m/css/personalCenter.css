@@ -1,0 +1,98 @@
+body{padding-bottom:50px;}
+/*green-------------------------*/
+.green{ background: #67b535;}
+.green .back{ width: 100%; height: 40px;}
+.green .back a{ display: block; width: 90%; height: 40px; line-height: 40px; padding: 0 0 0 33px; background: url(../images/arrBack.png) no-repeat 15px center; background-size: 9px 17px; font-size: 15px; color: #fff;} 
+.green .info{ display: block; width: 100%; height: 110px;}
+.green .info .hd{ width: 76px; height: 76px; border: 2px solid #85c05d; border-radius: 50%; margin: 15px 0 0 15px; position: relative; }
+.green .info .hd .photo{ display: block; width: 68px; height: 68px; border-radius: 50%; position: absolute; top: 50%; left: 50%; margin: -34px 0 0 -34px;}
+.green .info .hd .photo img{ display: block; width: 68px; height: 68px; border-radius: 50%;}
+.info .infomat{ margin: 21px 0 0 20px;}
+.info .infomat .name{ display: block; font-size: 16px; color: #fff; height: 40px; line-height: 40px;}
+.info .infomat .number{ display: block; color: #fff; font-size: 14px; height: 15px; line-height: 15px; background: url(../images/phone.png) no-repeat; background-size: 9px 15px; padding: 0 0 0 14px; }
+.green .info .next{ width: 60px; height: 42.5px; background: url(../images/nextArrright.png) no-repeat right center; background-size: 10.5px 22.5px; margin: 25px 15px 0 0;}
+/*money---------------------------*/
+.money{ width: 100%; padding: 0 0 7px 0; background: #fff; border-bottom: 1px solid #dfdfdf; position: relative;}
+.money .left,.money .cen,.money .right{ width: 33.3333%;}
+.money p{ font-size: 14px; width: 100%; text-align: center; height: 35px; line-height: 35px; color: #333;}
+.money .red{ color: #f85e25; !important}
+.money a{ display: block; font-size: 12px; color: #575757; width: 100%; width: 100%; height: 20px; line-height: 20px; text-align: center;}
+.money .left a{ width: 80px; height: 20px; line-height: 20px; text-align: center; border: 1px solid #c8c8c8; border-radius: 4px; margin: 0 auto;}
+.money .lineleft,.money .lineright{ display: block; width: 1px; height: 30px; background: #f1f2f3; position: absolute; top: 15px;}
+.money .lineleft{ left: 33.33333%;}
+.money .lineright{ left: 66.666666%;}
+/*picList---------------------------*/
+.picList{ width: 100%; height: auto; background: #fff;  }
+.picList a{ display: block; width: 25%; height: 28px;  text-align: center; padding: 30px 0 0 0; margin: 13px 0 0 0;}
+.picList a:nth-of-type(1){ background: url(../images/picList_01.png) no-repeat center top; background-size: 26px 25px;}
+.picList a:nth-of-type(2){ background: url(../images/picList_02.png) no-repeat center top;background-size: 26px 25px;}
+.picList a:nth-of-type(3){ background: url(../images/picList_03.png) no-repeat center top;background-size: 26px 25px;}
+.picList a:nth-of-type(4){ background: url(../images/picList_04.png) no-repeat center top; background-size: 26px 25px;}
+/*part01-------------------------------*/
+.part01 p,.part02 p,.part03 p{ font-size: 15px; color: #333;}
+.part01{ margin: 0 0 10px 0; border-top: 1px solid #e8e9e9;}
+.part01.voucher{margin:0px 0px 10px 0px;border-top: 1px solid #dfdfdf;}
+.part01 .flour{ height: 45px; line-height: 45px; position: relative; background: #fff;}
+.part01 .flour .pic{ display: block; width: 22px; height: 17px; background: url(../images/flour.png) no-repeat center center; background-size: 14px 18px; margin: 15px 0 0 10px;}
+.part00 .flour .pic{ background: url(../images/evaluate.png) no-repeat center center; background-size: 17px 17px; margin: 15px 0 0 10px;}
+.part00.shop .flour .pic{background: url(../images/order.png) no-repeat center center; background-size: 16px 16px;}
+.part01 .flour .right{ width: 90%;}
+.part01 .flour .right .picTitle{ margin: 0 0 0 8px;}
+.part01 .flour .right .check{ display: block; width: 60%; height: 45px; line-height: 45px; background: url(../images/grayArrright.png) no-repeat right center; background-size: 7px 13px; position: absolute; right: 15px; top:50%; margin: -22px 0 0 0;}
+.part01 .invite .right{ border-top: 1px solid #dfdfdf;}
+.part01 .invite .pic{ background-image: url(../images/invite.png); background-size: 17px 17px;}
+.part01 .invite .newPic { background-image: url(../images/personalmy.png); background-size: 17px 17px;}
+
+.part01.evalute{margin:0px;}
+.part01.shop{margin:0px;border-bottom: 1px solid #dfdfdf;}
+.part01.repairp{margin:0px;border-bottom: 1px solid #dfdfdf;}
+.part00.repairp .flour .pic {
+    background: url(../images/repira.png) no-repeat center center;
+    background-size: 16px 16px;
+}
+.part00.goods{margin:7px 0px 0px 0px;border-top: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf;}
+.part00.goods .flour .pic{background: url(../images/moneylanzi.png) no-repeat center center;background-size: 15px 17px; margin-top:13px;}
+.part00.voucher .pic{background: url(../images/cons.png) no-repeat center center; background-size: 16px 16px;}
+/*part02--------------------------------*/
+.part02 .flour .pic{ background-image: url(../images/add.png); background-size: 17px 17px;}
+.part02 .invite .pic{ background-image: url(../images/app.png);}
+/*part03--------------------------------*/
+.part03 .flour .pic{ background-image: url(../images/question.png);}
+.part03 .invite .pic{ background-image: url(../images/person.png);}
+.part03 .link .pic{ background-image: url(../images/service.png); background-size: 17px 17px;}
+.part03 .link .right{ border-top: 1px solid #dfdfdf;}
+.part03 .link .ser{ color: #f75e25; font-size: 14px; padding: 0 15px 0 0;}
+.part03 .link .ser span{ color: #888; padding: 0 10px 0 0;}
+.quit{width:100%;height:45px;line-height: 45px;text-align:center;font-size:16px;color:#e43d22;background-color:#ffffff;margin:20px 0px 10px 0px;display:block;}
+/*copy------------------------------------*/
+/*revise*/
+.green .info{ height: 100px;}
+.part01{ border-top: 0px;}
+.money .red span{ font-size: 10px; color: #888;}
+.cashPage .fl span i{ font-style: normal; font-size: 10px;}
+.money .left a{ border: none;}
+.cashPage{ line-height: 40px; color: #fff; background: #4ca21d; padding: 0 15px;}
+.cashPage .fl span{ margin: 0 0 0 5px; font-size: 16px;}
+.cashPage .fr{ display: block; width: 60px; height: 20px; line-height: 20px; text-align: center; border-radius: 3px; border: 1px solid #fff; color: #fff; margin: 10px 0 0 0;}
+/*我的贵金属*/
+.goldDeal{ width: 100%; height: 106px; margin-top: 8px; background: #ffffff;}
+.goldDeal .goldDealClassify_a{ width: 100%; height: 45px; line-height:45px; font-size: 16px; text-indent: 17px; font-weight: normal; border-bottom: 1px solid #dfdfdf; float: left; font-size: 15px; background: url(../images/gold_right.png) right center no-repeat; position: relative;}
+.goldDeal .goldDealClassify_a p{width: 20%; height: 45px; position: absolute; right: 0; top: 0;}
+.goldDeal .goldDealClassify{
+	width: 100%; height: 33px; float: left; padding:13px 0 13px 0;
+}
+.goldDeal .goldDealClassify span{ display: block; width: 25%; height: 33px; float: left; }
+.goldDeal .goldDealClassify span p{ line-height: 18px; text-align: center; color: #595959; font-size:14px;}
+.goldDeal .goldDealClassify span p:last-of-type{ font-size:12px;}
+/*添加充值按钮*/
+.newRecharge{width: 45px; height: 20px; border-radius: 5px; background: #ffffff; color: #218d00; font-size: 12px; border: none; margin-left: 10px;}
+/*9.9福利站入口*/
+.entrance{width: 100%; background: #ffffff; padding: 7px 0;}
+.entrance a{display:block; width: 90%; height: 52px; background: url(../../welfare/img/rukou.png) no-repeat; background-size: 100% 100%; margin-left: 5%;}
+
+@media screen and (min-width:321px) and (max-width:375px){
+	.entrance a{height: 59px;}
+}
+@media screen and (min-width:376px) and (max-width:480px){
+	.entrance a{height: 63px;}
+}

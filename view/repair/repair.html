@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/repair/css/repair.css?v=20170714"/>
+	</head>
+	<body>
+		<header>
+			<a href="javascript:;" class="back" onClick="javascript :history.back(-1);"></a> 
+			<h1 class="repfont">手机故障选择</h1>
+		</header>
+		<div class="goodsImg">
+		</div>
+		<div class="tishi_p">维修订单完成时，由回收通为您承担往返运费，若因用户问题导致维修订单未完成，寄回运费由用户个人承担。</div>
+		<form name="repair" action="#" id="repair" method="post">
+			<div class="radioR">
+				<p class="nameR">故障选择<span>（选择故障或在其它异常中用文字描述）</span></p>
+				<div class="repairList">
+				</div>
+			</div>
+			<div class="allmoney">
+				<span class="bor"></span>
+				<p class="money_p">维修预估价：</p>
+				<p class="money_money"></p>
+				<p class="money_youhui"></p>
+				<span class="yugu_p">维修预估价仅供参考，最终维修价以检测后报价为准。</span>
+			</div>
+			<div class="radioR">
+				<p class="nameR">联系方式<span>（此三项为必填）</span></p>
+				<div class="radioRBox">
+					<div class="inpbox"><input type="text" class="inpa phoneNum" id="name" placeholder="输入您的姓名" oninput="addtype(this);"/></div>
+				</div>
+				<div class="radioRBox">
+					<div class="inpbox"><input type="text" class="inpb phoneNum" id="phone" placeholder="输入您的手机号码" oninput="addtype(this);"/></div>
+				</div>
+				<div class="radioRBox">
+					<div class="inpbox"><input type="text" class="inpc phoneNum" id="address" placeholder="输入您的收货地址" oninput="addtype(this);"/></div>
+				</div>
+			</div>
+			<div class="consent">
+				<span class="consent_span" onclick="consethover(this);"></span>
+				<span class="consent_spant">同意</span>
+				<a href="javascript:;" class="agree" onclick="agreeFun(this,1);">《用户维修协议》</a>
+				<a href="javascript:;" class="agree" onclick="agreeFun(this,2);">《手机维修流程》</a>
+			</div>
+			<div class="repar shadow" onclick="hideagree();">
+				<div class="alls"><div class="xieyi"></div></div>
+			</div>
+			<a href="javascript:;" class="nextB">提 交</a>
+		</form>
+		<!--提交成功-->
+		<div class="success_box shadow" style="display: none;">
+			<div class="succ">
+				<span class="succImg"></span>
+				<p class="succP sp">提交成功</p><p class="succpt sp">稍后会有客服人员与您联系....</p>
+				<a href="javascript:;" class="succBtn" onclick="hide()";>确认</a>
+			</div>
+		</div>
+	<script src="../../static/repair/js/repair.js?v=20170712"></script>
+	<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script src="../../static/repair/ajax/request_repair.js?v=20170713"></script>
+	<script src="../../static/article/ajax/request_common.js"></script>
+	<script>
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		};
+		var name=getUrlParam('name');
+		var id=getUrlParam('id');
+		var adr=getUrlParam('adr');
+		getRepair(name,id);
+		$(function(){
+			$('.nextB').css('background','#b8b8b8');
+			$('input,.mainList li,.consent_span,#other').on('input propertychange click',function(){
+				if(
+					($.trim($('.inpa').val())!=="")&&
+					($.trim($('.inpb').val())!=="")&&
+					($.trim($('.inpc').val())!=="")&&
+					($('.mainList li').hasClass('repLi_hover') || $.trim($('#other').val())!=="")&&
+					($('.consent_span_hover').attr('class') == 'consent_span_hover')
+				){
+					$('.nextB').css('background','#fb632b').attr('onclick','saveRepair()');
+				}else{
+					$('.nextB').css('background','#b8b8b8').removeAttr('onclick');
+				}
+			})
+		})
+	</script>
+	</body>
+</html>

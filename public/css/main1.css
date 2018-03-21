@@ -1,0 +1,47 @@
+.rev_btn{
+    width: 55%;
+    margin: 34% auto;
+}
+.cou_btn_pic span{
+    left: 28%;
+    top: 12%;
+    color: #ff0000;
+    font-size: 1.65rem;
+}
+
+.HB_text{
+	width:65%;		
+}
+.pic_btn{
+	margin-top:3.5rem;
+}
+.re_pic_btn{
+	width:55%;
+	margin:60% auto;	
+}
+.re_pic_btn{
+	margin-bottom:0;
+}
+.footer_1{
+	
+	width:96%;
+	height:60px;
+	padding:0 2%;
+	}
+.footer_1 .img1{
+	display:inline-block;
+	width:4rem;
+	height:4rem;
+	}
+.footer_1 span{
+	font-size:1.1875rem;
+	color:#fff;
+	}
+.footer_1 .money1{
+	font-size:1.25rem;
+	color:#FF0;
+	}
+.img_send{
+	width: 100%;
+    height: 10%;
+}

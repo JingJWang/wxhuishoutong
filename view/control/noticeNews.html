@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title>文章管理</title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="../../static/c/css/luxuryManage.css"/> -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+		<script type="text/javascript" src="../../maijinadmin/kindeditor/kindeditor-all-min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/knowledge.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_noticeNews.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	</head>
+	<body>
+		<div class="navRuler">
+		    <!-- 添加文章 start-->
+			<div id="luxuryCon" style="margin: 0 0 0 200px;font-family:'Hiragino Sans GB', 'Microsoft YaHei','WenQuanYi Micro Hei', 'sans-serif'; display:none;">
+		        <div style="margin:10px;"><a href="#" onclick="closearticle()">关闭</a></div>
+				<div style="margin:20px 0px 0px 20px;">
+					<select name="" id="labels">
+					    <option value="">添加标签</option>
+					</select>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+				    <div style="">
+				        <input id="names" style="border:1px solid;padding:5px" type="text" placeholder='文章名字' value="">
+				    </div>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+				    <div style="">
+				        <input id="imgs" style="border:1px solid;padding:5px;" type="text" placeholder='图片地址' value="">
+				    </div>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+				    <div style="">
+				        <input id="akey" style="border:1px solid;padding:5px;" type="text" placeholder='文章关键字   用,分隔' value="">
+				    </div>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+				    <div style="">
+				        <input id="desc" style="border:1px solid;padding:5px;" type="text" placeholder='文章描述' value="">
+				    </div>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+					<textarea id="contents" name="noticeContent" style="width:700px;height:200px;visibility:hidden;"></textarea>
+				</div>
+				<div style="margin:20px 0px 0px 20px;">
+					是否上线：<input id="is_up" type="checkbox" name="checkbox1" value="checkbox">
+				</div>
+				
+			</div>
+		    <!-- 文章列表 end-->
+		    <div style="margin: 20px 0 0 250px;" class="lists">
+		        <div style="margin-bottom:10px;"><a href="#" onclick="openaddarticle()" class="addarticle">添加文章</a></div>
+		    	<table border="1" style="text-align:center;" class="articlelist">
+		    	   
+		    	</table>
+		    	<div class="pageNumber">
+					<ul class="pagination">
+					    
+					</ul>
+				</div>
+		    </div>
+		</div>
+
+	</body>
+</html>

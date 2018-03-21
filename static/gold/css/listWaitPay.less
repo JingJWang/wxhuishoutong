@@ -1,0 +1,241 @@
+//定义less封装初始化
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height:@h/2/20;
+}
+.p(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top:@pt/2/20;
+    padding-right:@pr/2/20;
+    padding-bottom:@pb/2/20;
+    padding-left:@pl/2/20;   
+}
+.m(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top:@mt/2/20;
+    margin-right:@mr/2/20;
+    margin-bottom:@mb/2/20;
+    margin-left:@ml/2/20;
+}
+.z(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.b(@bt:0px,@br:0px,@bb:0px,@bl:0px){
+    border-top:@bt/2/20 solid #ECECEC;
+    border-right:@br/2/20 solid #ECECEC;
+    border-bottom:@bb/2/20 solid #f0f0f0;
+    border-left:@bl/2/20 solid #f86b3a;
+}
+.bb(@bt:0px,@br:0px,@bb:0px,@bl:0px){
+    border-top:@bt/2/20 solid  #46a010;
+    border-right:@br/2/20 solid  #46a010;
+    border-bottom:@bb/2/20 solid  #46a010;
+    border-left:@bl/2/20 solid  #46a010;
+}
+body{
+    background: #f0f0f0;
+}
+div{
+    overflow: hidden;
+}
+.content{
+    float:left;
+    .m(75rem,0,0,0);
+    .rem(640rem,63rem);
+    .b(0,0,2rem,0);
+    background: #fff;
+    p{
+        .z(19rem,75rem);
+        .m(0,0,0,26rem);
+        .rem(600rem,63rem);
+        color:#7f7e7e;
+    }
+}
+.purity{
+    float:left;
+    .rem(640rem,60rem);
+    background: #fff;
+    img{
+        float:left;
+        .m(30rem,0,0,15rem);
+        .rem(34rem,26rem);
+    }
+    p{
+        float:left;
+        .p(30rem,0,0,9rem);
+        .rem(557rem,30rem);
+        color:#7f7e7e;
+        .z(26rem,30rem);
+        font{
+            float:right;
+            color:#f86b3a;
+        }
+    }
+}
+.assess{
+    float:left;
+    .rem(640rem,81rem);
+    .z(18rem,72rem);
+    background: #fff;
+    color:#7f7e7e;
+    p{
+        float:left;
+        .m(9rem,0,0,55rem);
+        .rem(595rem,72rem);
+    }
+}
+.timer{
+    float:left;
+    .rem(640rem,21rem);
+    background: #fff;
+    .p(0,0,24rem,0);
+    img{
+        float:left;
+        .rem(21rem,21rem);
+        .m(0,0,0,56rem);
+    }
+    p{
+        float:left;
+        .rem(500rem,21rem);
+        .z(17rem,21rem);
+        .m(0,0,0,10rem);
+        color:#7f7e7e;
+    }
+}
+.message{
+    float:left;
+    .rem(640rem,63rem);
+    span{
+        float:left;
+        .rem(400rem,24rem);
+        .m(26rem,0,0,25rem);
+        .b(0,0,0,4rem);
+        .z(24rem,24rem);
+        .p(0,0,0,9rem);
+        color:#656565;
+    }
+}
+.recycle{
+    float:left;
+    .rem(640rem,68rem);
+    border-bottom: solid 1px #EDECEC;
+    span{
+        float:left;
+        .rem(291.5rem,68rem);
+        background: #fff;
+        .z(22rem,68rem);
+        .p(0,0,0,28rem);
+        color:#656565;
+    }
+    .recycle-span{
+        .m(0,0,0,1rem);
+    }
+}
+.classes{
+    float:left;
+    .rem(640rem,216rem);
+    background: #fff;
+    .m(1rem,0,9rem,0);
+    p{
+        float:left;
+        .m(26rem,0,0,25rem);
+        .z(22rem,22rem);
+        .rem(600rem,22rem);
+        color:#656565;
+    }
+}
+.explain{
+    float:left;
+    .rem(640rem,78rem);
+    background: #fff;
+    .m(0,0,14rem,0);
+    p{
+        float:left;
+        .m(35rem,0,0,27rem);
+        font{
+            float: left;
+            .z(22rem,22rem);
+            color:#656565;
+        }
+    }
+    p:last-of-type{
+        float:left;
+        .m(37rem,0,0,10rem);
+        .z(18rem,20rem);
+        color:#7f7e7e;
+    }
+}
+.prompt{
+    float:left;
+    .rem(640rem,82rem);
+    p{
+        float:left;
+        .m(20rem,38rem,0,25rem);
+        .z(19rem,31rem);
+        color:#7f7e7e;
+    }
+}
+.footer{
+    float:left;
+    .rem(640rem,200rem);
+    .m(44rem,0,0,0);
+    button{
+        float:left;
+        .rem(586rem,64rem);
+        .z(24rem,64rem);
+        text-align: center;
+        color: #f3621f;
+        .m(0,0,0,25rem);
+        background: none;
+        border: solid 1px #dddddd;
+    }
+}
+//取消二次确认
+.payPassword_box {
+  width: 16rem;
+  background: rgba(108, 108, 108,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.payPassword_box .payPassword {
+  width: 11.975rem;
+  height: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3.5rem;
+  margin-left: -5.9875rem;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.payPassword_h1{
+    height: 5.2rem;
+    line-height: 5.2rem;
+    font-size: 16px;
+    text-indent: 1rem;
+    color: #838383;
+}
+.payPassword .payBtn {
+  width: 100%;
+  height: 2.125rem;
+  border-top: solid 1px #ebebeb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.payPassword .payBtn a {
+    display: block;
+  width: 49.5%;
+  float: left;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  color: #4fa51a;
+  font-size: 0.625rem;
+  background: #ffffff;
+  text-align: center;
+}
+.payBtn a:last-of-type {
+  color: #848484;
+  border-left: solid 1px #ebebeb;
+}

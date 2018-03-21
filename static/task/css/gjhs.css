@@ -1,0 +1,29 @@
+body,html,div,h1,h2,h3,table,tr,td,ul,li,dl,dt,dd,span,strong,u,s,i,p,br,button{margin: 0;padding: 0;}
+body{
+	width: 16rem;
+font-size: 12px;
+max-width: 2160px;
+margin:0 auto;
+background-attachment: fixed;
+background: #ffffff;
+background-size: 100%;
+font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+-webkit-tap-highlight-color:transparent;
+}
+a{ color:#444; text-decoration:none; hidefocus:"true"}
+a:visited{ color:#444; text-decoration:none;}
+a:hover{ color:#444; text-decoration:none;}
+ul,li{ list-style:none;}
+img{ border:0; display:block;}
+input{ border: none; cursor: pointer; outline:none}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+textarea {  -webkit-appearance: none;}   
+button{ outline:none; border: 0;}
+.fl{ float: left;}
+h1,h2,h3,h4,h5{font-weight: normal;}
+button{ font-family: "微软雅黑";}
+input{ font-family: "微软雅黑";}
+::-webkit-scrollbar {
+	width: 0px;
+}
+.box{width:16rem;height:9.825rem;background-image:url(../../../static/task/images/1.jpg);background-size:16rem 9.825rem;background-repeat:no-repeat;float:left}.jis{width:16rem;height:8.5rem;background-image:url(../../../static/task/images/3.jpg);background-size:16rem 8.5rem;position:relative;float:left}.mobil{width:16rem;height:3.375rem;background-image:url(../../../static/task/images/2.jpg);background-size:16rem 3.375rem;position:relative;float:left}.mob_a{position:absolute;top:0;right:0;margin-top:.875rem;margin-right:.2rem;width:2.35rem;height:1.725rem}.posj{position:absolute;top:0;left:0;margin-top:4.925rem;margin-left:6.45rem;width:3rem}.pos_a{display:block;float:left;width:3rem;height:.75rem;line-height:.75rem;border-radius:3px;background:#057eef;color:#fff;font-size:.45rem;text-align:center;margin-bottom:.3rem}.yq{width:16rem;height:13.925rem;background-image:url(../../../static/task/images/4.jpg);background-size:16rem 13.925rem;float:left}.last{width:16rem;height:9.75rem;background-image:url(../../../static/task/images/5.jpg);background-size:16rem 9.75rem;position:relative;float:left}.last_a{position:absolute;bottom:0;left:50%;margin-left:-1.925rem;margin-bottom:.9rem;display:block;width:3.875rem;height:1.125rem;line-height:1.125rem;border-radius:5px;background:#f05553;color:#fff;font-size:.55rem;text-align:center}a:link{color:#fff}a:hover{color:#fff}a:visited{color:#fff}a:active{color:#fff}.last{margin-bottom:40px}

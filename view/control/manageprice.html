@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>品牌管理</title>
+    <!-- Bootstrap -->
+    <link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/brandmanagement.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="navRuler">
+            <div id="digitalCon" class="menu-content">
+                <div class="contet">
+                    <div class="comprise">
+                        <div class="mere">
+                            <div class="front">
+                                <div class="phoneg">手机品牌</div>
+                                <select class="pulldown" id="brandType"onchange="typeList(1);">
+                                    <!-- 手机品牌列表 -->
+                                </select>
+                                <input type="hidden" id="brandselect" value="">
+                            </div>
+                            <div class="query">
+                                <input type="text" id="typekeyword" placeholder="输入型号查询" class="seats"/>
+                                <div class="seek" onclick="searchType(1);"></div>
+                            </div>
+                            <a href="batchMaMoney.html" class="skip">批量管理</a>
+                        </div>
+                        <div class="manage">
+                            <div class="serial">序号</div>
+                            <div class="brand">名字</div>
+                            <div class="join">市价</div>
+                            <div class="handle">操作</div>
+                        </div>
+						<div id="typelist">
+							<!-- 型号列表 -->
+						</div>
+                        <div class="tab">
+                            <div class="page" id="typepage">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_manageprice.js"></script>
+<script type="text/javascript" src="../../static/c/js/brandmanagement.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+<script type="text/javascript">
+    load(30);navigate(),typeBrandlist();
+</script>
+</body>
+</html>

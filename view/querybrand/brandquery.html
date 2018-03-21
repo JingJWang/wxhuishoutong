@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/brandInquery.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/brandInqueryDefer.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/searchNone.css"/>
+		<script type="text/javascript" src="../../static/mall/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/mall/js/brandIquery.js"></script>
+		
+	</head>
+	<body>
+		<!-- --- top start --- -->
+		<div class="topText">
+			<p>本页面功能仅限于公众号内打开，转发无效!</p>
+			<a href="http://mp.weixin.qq.com/s?__biz=MzIzOTE5NTMwMg==&mid=402419623&idx=1&sn=4f93ecf6b87b80cf902235d233de25f9#rd" class="linka">点击查看关于寄卖奢侈品平台详细介绍>></a>
+			<div class="input clearfix">
+				<div class="mySelect fl">
+			    	<a href="javascript:;" class="selected">皮包</a>
+			        <ul class="msUl">
+			        	<li class="current" value="24"><a href="javascript:;" class="pad">皮包</a></li>
+			        	<li value="25"><a href="javascript:;">腰带</a></li>
+			        </ul>
+			    </div>
+				<input type="text" name="" id="keysword" value="" placeholder="输入您要搜索的品牌查询" class="inputCon fl" />
+				<input type="button" onclick="Brandsearch();" class="inputBtn fl" />
+			</div>
+			<div class="picList">
+				<ul>
+					<!-- <li class="types current01" data-num="24"><a href="javascript:;">皮包</a></li>
+					<li class="types" data-num="34"><a href="javascript:;">腰带</a></li>
+					<li class="types" data-num="25"><a href="javascript:;">衣服</a></li>
+					<li class="types" data-num="35"><a href="javascript:;">手表</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<!-- --- top end --- -->
+		<!-- --- con start --- -->
+		<div class="con">
+			
+		</div>
+		<!-- --- con end --- -->
+		<!-- --- copy start --- -->
+		<!-- <div class="copy"> -->
+			<!-- <p>© 2014  回收通 版权所有，并保留所有权利</p> -->
+		<!-- </div> -->
+		<!-- --- copy end --- -->
+		<script src="/static/mall/js/ajax_common.js"></script>
+		<script src="/static/mall/js/ajax_query.js"></script>
+		<script type="text/javascript">
+			Getbrands();
+		</script>
+		
+	</body>
+</html>

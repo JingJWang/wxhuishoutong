@@ -1,0 +1,163 @@
+head,body{
+    padding:0px;
+    margin:0px;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    background-color: #F1F1F1;
+}
+.location{
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: #ffffff;
+    position:fixed;
+}
+.location .casket{
+    padding:10px 5px 10px 15px;
+    height:30px;
+}
+.location .casket .revert{
+    width:29px;
+    height:30px;
+    background-image: url(../images/back.png);
+    background-size: 10px 17px;
+    background-position: left center;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+    display:block;
+    background-repeat: no-repeat;
+    float:left;
+}
+.location .casket .searbtn{
+    width:36px;
+    height:28px;
+    line-height: 28px;
+    border:1px solid #CCCCCC;
+    float:right;
+    display:block;
+    text-align: center;
+    border-radius: 5px;
+    color:#575757;
+    font-size: 12px;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+    text-decoration: none;
+}
+.location .casket .quill{
+    margin:0px 43px 0px 29px;
+    height:28px;
+    line-height: 28px;
+    border:1px solid #CCCCCC;
+    border-radius: 5px;
+}
+.location .casket .quill .symbol{
+    width:34px;
+    height:30px;
+    background-image: url(../images/seach.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 17px 14px;
+    float:left;
+}
+.location .casket .quill .locate{
+    margin:0px 2px 0px 34px;
+    height:28px;
+    overflow: hidden;
+}
+.location .casket .quill .locate .entry{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font-size: 14px;
+    outline:none;
+}
+.full{
+    width:100%;
+    height:51px;
+}
+.item{
+    width:100%;
+    height:auto;
+    margin-top:4px;
+    background-color: #ffffff;
+}
+.item .motif{
+    padding:0px 20px;
+    height:42px;
+    line-height: 42px;
+    font-size: 14px;
+    color:#888888;
+}
+.item .apellation{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 14px;
+    color:#575757;
+    display:block;
+    text-decoration: none;
+}
+.item .apellation.last{
+    border:0px;
+}
+.resemble{
+    width:100%;
+    height:auto;
+    margin-top: 4px;
+    background-color: #ffffff;
+    display:none;
+}
+.resemble .place{
+    padding:10px 15px;
+    height:90px;
+    border-bottom: 1px solid #DBDBDB;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+    display:block;
+    text-decoration: none;
+}
+.resemble .place .print{
+    width:120px;
+    height:90px;
+    float:left;
+}
+.resemble .place .print img{
+    width:100%;
+    height:100%;
+}
+.resemble .place .instruction{
+    margin-left: 134px;
+    height:90px;
+}
+.resemble .place .instruction .insider{
+    width:100%;
+    height:auto;
+    font-size: 15px;
+    color:#575757;
+    margin-top: 15px;
+    font-weight: 600;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.resemble .place .instruction .price{
+    width:100%;
+    height:auto;
+    margin-top:8px;
+}
+.resemble .place .instruction .price span{
+    font-size: 14px;
+    color:#585858;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.resemble .place .instruction .volume{
+    width:100%;
+    height:auto;
+    margin-top: 2px;
+}
+.resemble .place .instruction .volume span{
+    font-size: 12px;
+    color:#888888;
+}

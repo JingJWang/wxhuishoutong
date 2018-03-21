@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>系统管理</title>
+	<!-- Bootstrap -->
+	<link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+	<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+	<link rel="stylesheet" type="text/css" href="../../static/c/css/systemMag.css"/>
+
+</head>
+<body>
+<div class="constent">
+	<!-- con start -->
+	<div class="navRuler">
+		<!-- dataCon start -->
+		<div class="systemCon" id="contentBox">
+			<div class="systemConTop">
+				<p class="title fl">数据管理</p>
+			</div>
+			<div class="sysTitle">
+				<div class="title01 fl current" onclick="sysTitle(this),title01(),getVolume('1')">
+					<span>成交数据管理</span>
+				</div>
+				<div class="title02 fl" onclick="sysTitle(this),title02(),getRecord('1')">
+					<span>交易记录管理</span>
+				</div>
+			</div>
+
+			<div class="volumes">
+				<div class="casket">
+					<div class="prompt">
+						<div class="name">交易记录列表</div>
+						<div class="add-data">添加数据</div>
+					</div>
+
+					<div class="datalist">
+						<div class="times">展示时间</div>
+						<div class="covers">展示内容</div>
+						<div class="state">状态</div>
+						<div class="edit">编辑</div>
+					</div>
+
+					<div class="indication">
+						<div class="detail" id="volume">
+							<!-- 成交额 成交单数 -->
+						</div>
+						<div class="page" >
+							<div class="embody" id="volumepage">
+							<!-- 分页成交额 成交单数 -->
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="acceptable-first">
+					<div class="name">成交数据添加</div>
+					<div class=" restrain">
+						<div class="case">
+							<div class="palette">展示时间</div>
+							<div class="stuff">
+								<input type="text" id="start" class="entry time laydate-icon"/>
+							</div>
+						</div>
+
+						<div class="case">
+							<div class="palette">成交金额</div>
+							<div class="stuff">
+								<input type="text" id="addvolume" class="entry sum"/>
+							</div>
+						</div>
+
+						<div class="case">
+							<div class="palette">成交单数</div>
+							<div class="stuff">
+								<input type="text" id="addnumber" class="entry money"/>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="refer">
+						<input class="submit" onclick="addVolume();" type="button" value="提交"/>
+					</div>
+				</div>
+
+				<div class="acceptable">
+					<div class="name">成交数据修改</div>
+					<div class=" restrain">
+						<div class="case">
+							<div class="palette">展示时间</div>
+							<div class="stuff">
+								<input type="text" id="start1" class="entry time laydate-icon"/>
+							</div>
+						</div>
+
+						<div class="case">
+							<div class="palette">成交单数</div>
+							<div class="stuff">
+								<input type="text" id="upvolume"class="entry sum"/>
+							</div>
+						</div>
+
+						<div class="case">
+							<div class="palette">成交金额</div>
+							<div class="stuff">
+								<input type="text" id="upnumber" class="entry money"/>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="refer">
+						<input class="submit" type="button" value="提交"/>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="trades">
+				<div class="whole">
+					<div class="raise">
+						<div class="name">交易记录列表</div>
+						<div class="notes">
+							<div class="report" onclick="fase();">交易记录列表 ></div>
+							<div class="word">记录</div>
+						</div>
+						<div class="add-data" onclick="tagged();">添加数据</div>
+					</div>
+
+					<div class="datalist">
+						<div class="times">展示时间</div>
+						<div class="covers">展示内容</div>
+						<div class="state">状态</div>
+						<div class="edit">编辑</div>
+					</div>
+
+					<div class="correct">
+						<div class="user">用户名</div>
+						<div class="contact">手机号码</div>
+						<div class="while">评论时间</div>
+						<div class="model">手机型号</div>
+						<div class="turnover">成交金额</div>
+						<div class="rated">评价内容</div>
+					</div>
+
+
+					<div class="figures">
+						<div class="road" id="ListRecord">
+							<!--  <div class="nese">
+								<div class="owned">
+									<div class="prot">
+										<div class="timedata">2016-07-26  15:00-18:00</div>
+										<div class="further">
+											<span>交易记录</span>
+										</div>
+										<div class="estus">使用中</div>
+										<div class="pick">
+											<span class="look" onclick="seeRecord()" >查看</span>
+											<span class="amend">修改</span>
+											<span class="delete">删除</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="data">
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="include" align="center">
+										<input type="button" value="提交" class="commite"/>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="nese">
+								<div class="owned">
+									<div class="prot">
+										<div class="timedata">2016-07-26  15:00-18:00</div>
+										<div class="further">
+											<span>交易记录</span>
+										</div>
+										<div class="estus">使用中</div>
+										<div class="pick">
+											<span class="look">查看</span>
+											<span class="amend">修改</span>
+											<span class="delete">删除</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="data" >
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+									<div class="stuff active">
+										<input class="user" value="堇色安年" readonly="readonly"/>
+										<input class="contact" value="13203456566" readonly="readonly"/>
+										<input class="while" value="2015/05/09 21:32:26" readonly="readonly"/>
+										<input class="model" value=" 三星Galaxy S7" readonly="readonly"/>
+										<input class="turnover" value="1200现金+600通花" readonly="readonly"/>
+										<input class="rated" value="回收通平台好，回收价格高" readonly="readonly"/>
+									</div>
+
+								</div>
+							</div>-->
+						</div>
+						<div class="page">
+							<div class="embody" id="pageRecord">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="appenddata">
+					<div class="term">交易记录添加</div>
+					<div class="limelight">
+						<div class="interval">展示时间</div>
+						<input id="start2" class="deadline laydate-icon"/>
+						<select class="intergal an" id="startRecord">
+							<option value="0">00:00</option>
+							<option value="1">01:00</option>
+							<option value="2">02:00</option>
+							<option value="3">03:00</option>
+							<option value="4">04:00</option>
+							<option value="5">05:00</option>
+							<option value="6">06:00</option>
+							<option value="7">07:00</option>
+							<option value="8">08:00</option>
+							<option value="9">09:00</option>
+							<option value="10">10:00</option>
+							<option value="11">11:00</option>
+							<option value="12">12:00</option>
+							<option value="13">13:00</option>
+							<option value="14">14:00</option>
+							<option value="15">15:00</option>
+							<option value="16">16:00</option>
+							<option value="17">17:00</option>
+							<option value="18">18:00</option>
+							<option value="19">19:00</option>
+							<option value="20">20:00</option>
+							<option value="21">21:00</option>
+							<option value="22">22:00</option>
+							<option value="23">23:00</option>
+						</select>
+						<select class="intergal am" id="stopRecord">
+							<option value="0">00:00</option>
+							<option value="1">01:00</option>
+							<option value="2">02:00</option>
+							<option value="3">03:00</option>
+							<option value="4">04:00</option>
+							<option value="5">05:00</option>
+							<option value="6">06:00</option>
+							<option value="7">07:00</option>
+							<option value="8">08:00</option>
+							<option value="9">09:00</option>
+							<option value="10">10:00</option>
+							<option value="11">11:00</option>
+							<option value="12">12:00</option>
+							<option value="13">13:00</option>
+							<option value="14">14:00</option>
+							<option value="15">15:00</option>
+							<option value="16">16:00</option>
+							<option value="17">17:00</option>
+							<option value="18">18:00</option>
+							<option value="19">19:00</option>
+							<option value="20">20:00</option>
+							<option value="21">21:00</option>
+							<option value="22">22:00</option>
+							<option value="23">23:00</option>
+						</select>
+					</div>
+					<div class="correct">
+						<div class="user">用户名</div>
+						<div class="contact">手机号码</div>
+						<div class="while">评论时间</div>
+						<div class="model">手机型号</div>
+						<div class="turnover">成交金额</div>
+						<div class="rated">评价内容</div>
+					</div>
+
+					<div class="data">
+					<form  id="Recordinfo">
+						<div class="stuff">
+							<input class="user" name="user[]" type="text"/>
+							<input class="contact" name="mobile[]" type="text"/>
+							<input class="while" name="time[]" type="text"/>
+							<input class="model" name="type[]" type="text"/>
+							<input class="turnover" name="moeny[]" type="text"/>
+							<input class="rated" name="content[]" type="text"/>
+						</div>
+
+						<div class="stuff">
+							<input class="user" name="user[]" type="text"/>
+							<input class="contact" name="mobile[]" type="text"/>
+							<input class="while" name="time[]" type="text"/>
+							<input class="model" name="type[]" type="text"/>
+							<input class="turnover" name="moeny[]" type="text"/>
+							<input class="rated" name="content[]" type="text"/>
+						</div>
+
+						<div class="stuff">
+							<input class="user" name="user[]" type="text"/>
+							<input class="contact" name="mobile[]" type="text"/>
+							<input class="while" name="time[]" type="text"/>
+							<input class="model" name="type[]" type="text"/>
+							<input class="turnover" name="moeny[]" type="text"/>
+							<input class="rated" name="content[]" type="text"/>
+						</div>
+
+						<div class="stuff">
+							<input class="user" name="user[]" type="text"/>
+							<input class="contact" name="mobile[]" type="text"/>
+							<input class="while" name="time[]" type="text"/>
+							<input class="model" name="type[]" type="text"/>
+							<input class="turnover" name="moeny[]" type="text"/>
+							<input class="rated" name="content[]" type="text"/>
+						</div>
+
+						<div class="stuff">
+							<input class="user" name="user[]" type="text"/>
+							<input class="contact" name="mobile[]" type="text"/>
+							<input class="while" name="time[]" type="text"/>
+							<input class="model" name="type[]" type="text"/>
+							<input class="turnover" name="moeny[]" type="text"/>
+							<input class="rated" name="content[]" type="text"/>
+						</div>
+						
+					</form>
+						<div class="include" align="center">
+							<input type="button" onclick="addRecord();" value="提交" class="commite"/>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- dataCon start -->
+	</div>
+	<!-- con end -->
+</div>
+
+<div class="shadow"></div>
+<div class="frame">
+	<div class="premise">
+		<div class="frame-btn">
+			<input class="shutbtn" type="button" value="×" onclick="forgo();"/>
+		</div>
+		<div class="core">删除订单</div>
+	</div>
+	<div class="whether">
+		<div class="determine">确定要删除当前记录?</div>
+		<div class="informative">
+			<input type="button" value="确定" class="confirm" onclick="del();"/>
+			<input type="button" value="取消" class="abollish" onclick="forgo();"/>
+		</div>
+	</div>
+</div>
+<div class="fraed">
+	<div class="premise">
+		<div class="frame-btn">
+			<input class="shutbtn" type="button" value="×" onclick="away();"/>
+		</div>
+		<div class="core">删除订单</div>
+	</div>
+	<div class="whether">
+		<div class="determine">确定要删除当前记录?</div>
+		<div class="informative">
+			<input type="button" value="确定" class="confirm" id="delrecord" onclick=""/>
+			<input type="button" value="取消" class="abollish" onclick="away();"/>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+<script type="text/javascript" src="../../static/c/js/laydate.js"></script>
+<script type="text/javascript" src="../../static/c/js/systemMag.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_data.js"></script>
+<script type="text/javascript">
+load(11);//导入左侧模块列表
+</script>
+</body>
+</html>

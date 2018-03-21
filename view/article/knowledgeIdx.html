@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/article/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/article/css/knowledgeIdx.css?v=1000"/>
+		<script type="text/javascript" src="/static/article/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="/static/article/js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="/static/article/js/jquery.touchSlider.js"></script>
+		<script type="text/javascript" src="/static/article/js/knowledgeIdx.js"></script>
+		<script type="text/javascript" src="/static/article/ajax/request_common.js"></script>
+		<script type="text/javascript" src="/static/article/ajax/request_knowledge.js?v=1002"></script>
+	</head>
+	<body>
+		<div class="main_visual">
+			<div class="green">
+				<div class="back">
+					<a href="/index.php/nonstandard/system/welcome">主页</a>
+				</div>
+			</div>
+			<div class="main_image">
+				<ul>
+					<li><span class="img_1"><a href="javascript:;"><img src="/static/article/images/banner_img01.jpg" width="100%" height="140px"/></a></span></li>
+					<li><span class="img_2"><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx29a596b5eac42c22&redirect_uri=http%3A%2F%2Fwx.recytl.com%2Fview%2Farticle%2Farticle.html?extendnum=2587ed_6&response_type=code&scope=snsapi_base&state=&connect_redirect=1#wechat_redirect"><img src="/static/article/images/banner_img02.jpg" width="100%" height="140px"/></a></span></li>
+					<li><span class="img_3"><a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx29a596b5eac42c22&redirect_uri=http%3A%2F%2Fwx.recytl.com%2Fview%2Farticle%2Farticle.html?extendnum=11da6a_19&response_type=code&scope=snsapi_base&state=&connect_redirect=1#wechat_redirect"><img src="/static/article/images/banner_img03.jpg" width="100%" height="140px"/></a></span></li>
+					<li><span class="img_4"><a href="http://mp.weixin.qq.com/s?__biz=MzA3NTA0NTg3OA==&mid=503255360&idx=2&sn=87ae5e908a951fe8e9acde1b01f5db5a#rd"><img src="/static/article/images/banner_img04.jpg" width="100%" height="140px"/></a></span></li>
+					<li><span class="img_5"><a href="/view/shop/list.html"><img src="/static/article/images/banner_img05.jpg" width="100%" height="140px"/></a></span></li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			</div>
+			<div class="flicking_con">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+			</div>
+		</div>
+		<div class="top_title clearfix">
+			<input type="text" name="search" class="fl" id="seachtext" value="" placeholder=""/>
+			<a href="javascript:;" class="line fl" onclick="seachtext()"></a>
+		</div>
+		<div class="classify">
+			<span class="title"><img src="/static/article/images/classifyTitle.png" width="100%" height="13px" /></span>
+		</div>
+		<div class="default">
+			<div class="layer">
+				<div class="contain">
+					<div class="theme">文章列表<span class='articletype' style="color:#F15B24;font-size:12px;margin-left:4px;"></span></div>
+					<div class="volume">
+						<div class="hits" ontouchstart="sortnumber();">点击量</div>
+						<div class="arrow">
+							<div class="tp"></div>
+							<div class="btm"></div>
+						</div>
+					</div>
+					<div class="timer">
+						<div class="delay" ontouchstart="sorttime();">发布时间</div>
+						<div class="release">
+							<div class="release-tp"></div>
+							<div class="release-btm"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="evalu">
+		</div>
+		<div class="full">正在加载...</div>
+		<div class="information" style="display:none;">
+			<a class="btn" href="/index.php/task/usercenter/isreg">
+				<span>注册回收通立得一元,还能随时查攻略</span>
+			</a>
+		</div>
+
+	</body>
+	<script type="text/javascript">	    
+        $(document).scroll(function(){
+        	if(($(document).scrollTop() >= $(document).height() - $(window).height())&&allnum.isload==true){
+        		getloadlist(allnum.type,allnum.sortnum,allnum.lastime,allnum.contentnum);
+        	}
+        });
+        getlabel();
+	</script>
+</html>

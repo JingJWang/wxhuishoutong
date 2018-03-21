@@ -1,0 +1,31 @@
+
+@charset "utf-8";
+/*公共样式*/
+/*报价列表BaojiaList.html  开始*/
+.BLbox{width:100%; height:auto; overflow:hidden; background: #fff;}
+.BLhead{width:100%; height:0.5rem; line-height: 0.5rem; font-size:0; padding-top:0.37rem; padding-bottom:0.37rem; background:#fafafa;}
+.BLhead span{width:23%; text-align:center; font-size:0.35rem; display: inline-block;border-right: 1px solid #ccc;}
+.BLhead span.brn{border-right:none;}
+.BLhead span.ml{ margin-left:0.25rem;}
+.BLhead span img{width:0.351rem; height:0.17rem; margin-left:0.2rem;}
+.BLhead span img{width:0.351rem; height:0.17rem; margin-left:0.2rem;}
+.BLnav{width:100%; height:auto; background: #d2d2d2;font-size:0; text-align: center;}
+.BLnav span{width:2.166rem; height:0.888rem; line-height:0.888rem; font-size:0.351rem; display: inline-block; border-radius:0.037rem; text-align: center; background: #fff; margin:0.166rem 0.13rem;}
+.BLnav span.fxActive,.BLnav em.fxActive{background: #0707cc; color:#fff;}
+.BLhead span.fxActive{color: #ff110c;}
+.BLnav em{width:2.166rem; height:0.888rem; line-height:0.888rem; font-size:0.351rem; display: inline-block; border-radius:0.037rem; text-align: center; background: #fff; margin:0.166rem 0.13rem;}
+/*头部 和 返回 css*/
+.XDheader{width:100%; height:auto; background:#58ab22; text-align: center;}
+.XDheader .aBack{background:#58ab22 url("../images/backFFF.png")no-repeat 0 center; background-size:0.34375rem 0.625rem; display: inline-block; width:0.34375rem; height:0.625rem;}
+.XDheader div{ height:0.5rem;padding:0.4375rem 0;font-size:0.5rem; color:#fff;background:#58ab22;}
+.main{width:9.2rem; margin: 0 auto;height:auto; overflow: hidden;}
+
+.SXcontent{height:auto;}
+.SXtishi{font-size:0.03rem; margin-top:0.4rem; padding-bottom:1.5rem;}
+.imgtu{font-size:0; width:4.6rem;height:4rem;margin:0.5rem auto;}
+.imgSX{font-size:0; width:1.5rem;height:2.2rem;margin:0 auto; margin-bottom: 1rem;}
+.SXtishi h1{font-size: 0.5rem;}
+.SXtishi .qiXian{font-size: 0.45rem; height:1.2rem; line-height: 1.2rem; color:#999;}
+.SXtishi .Txt{font-size: 0.4rem; color:#999;}
+.SXtishi em{font-size: 0.48rem; color: #000;}
+.SXtishi i{color: #5cb821;}

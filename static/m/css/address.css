@@ -1,0 +1,40 @@
+/*=== green ===*/
+body{ padding: 0 0 30px 0;}
+.green{ width: 100%; background: #67b535;}
+.green .back{ width: 100%; height: 40px; position: relative;}
+.green .back .backBtn{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 33px; background: url(../images/arrBack.png) no-repeat 15px center; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; left: 0px; top: 50%; margin: -20px 0 0 0;} 
+.green .back .home{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 33px; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; right: 0px; top: 50%; margin: -20px 0 0 0;} 
+ .green .back input{display: block; text-align: right; width: 70px; height: 40px; line-height: 40px;
+ font-size: 15px; position: absolute; right: 0px; padding: 0 15px 0 0; top: 50%; margin: -20px 0 0 0; border: none; background: #67b535; color: #fff;}
+.green .back p{ width: 100%; height: 40px; line-height: 40px; font-size: 16px; color: #fff; text-align: center;}
+/*=== phoneNo ===*/
+.phoneNo{ padding: 0 15px; font-size: 14px; background: #fff; margin: 10px 0 0 0;}
+.phoneNo p{ height: 45px; line-height: 45px;}
+.phoneNo .title{color: #666;}
+/*=== house ===*/
+.house input{font:14px "微软雅黑","Arial Narrow",Helvetica; color: #333; display: inline-block; width: 100%; height: 45px; line-height: 45px; text-indent: 15px;}
+/*=== revise ===*/
+.revise{ padding: 0 15px; margin: 30px 0 0 0;}
+.revise a{ display: block; width: 100%; height: 45px; line-height: 45px; background: #67b535; border-radius: 5px; color: #fff; font-size: 16px; text-align: center;}
+/*=== address ===*/
+.address .title{ display: block; font-weight: normal; color: #666; font-size: 14px;  height: 45px; line-height: 45px; padding: 0 0 0 15px;}
+.addressIn{ width: 100%; height: 45px; background: #fff;}
+.addressIn #city{font:14px "微软雅黑","Arial Narrow",Helvetica; color: #666; width: 100%; height: 45px; line-height: 45px; text-indent: 15px; color: #333;}
+
+
+
+
+
+
+#PoPy{ background: #fff;}
+._citys { width: 100%; display: inline-block; border: 2px solid #eee; padding: 0px 0 5px; position: relative; background: #fff; }
+._citys span { color: #67b535; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #67b535; cursor: pointer; }
+._citys0 { width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #67b535; padding: 0; margin: 0; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer;  margin: 0 0 0 15px;}
+.citySel { background-color: #67b535; color: #fff !important; }
+._citys1 { height: 200px; overflow-y: auto; width: 96%; display: inline-block; padding: 10px 2% 0; }
+._citys1 a { width: 24%; margin: 0 0 0 1%; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; /*margin-left: 6px;*/ margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 13px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #56b4f8; }
+.AreaS { background-color: #67b535 !important; color: #fff !important; }

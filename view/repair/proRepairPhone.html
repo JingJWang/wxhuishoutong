@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title>手机属性管理</title>	
+		<!-- Bootstrap -->
+		<link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/repair/css/repairPhone.css"/>
+		<script src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script src="../../static/c/js/productManagement_phone.js"></script>
+		<script src="../../static/c/js/publicJS.js"></script>
+		<script src="../../static/c/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<!-- con start -->	
+		<div class="navRuler">
+			<!-- contentBox start -->
+			<div id="contentBox">
+				<div id="phoneCon">
+					<div class="top_title">
+						<h3 class="phoneTitle">维修型号管理</h3>
+						<a href="/view/repair/repairPhoneedit.html">修改手机故障型号</a>
+						<a href="/view/repair/repairPhoneadd.html">添加手机故障型号</a>
+					</div>
+					<div class="pDetails clearfix">
+						<!-- brand start -->
+						<div class="brand fl">
+							<div class="brandTitle clearfix">
+								<h4 class="fl">手机品牌</h4>
+							</div> 
+							<div class="brandList">
+								<ul class="blueBg" id="brandlist">
+								<!-- 品牌列表 -->
+								</ul>
+								<div class="addLi" style="display: none;" onclick="brandAddLi(this)">
+									<a href="javascript:;"><span></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- brand end -->
+						<!-- model start -->
+						<div class="model fl">
+							<div class="modelTitle clearfix">
+								<h4 class="fl">手机型号</h4>
+							</div>
+							<div class="modelList">
+								<ul class="blueBg" id="typelist">
+									<!-- 型号列表 -->
+								</ul>
+								<div class="addLi" style="display: none;" onclick="modelAddLi(this)">
+									<a href="javascript:;"><span></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- model end -->
+						<!-- property start -->
+						<div class="property fl">
+							<div class="properTitle clearfix">
+								<h4 class="fl">信息属性</h4>
+							</div>
+							<div class="rightscroll"  id="optionlist">
+							</div> 
+						</div>
+						<!-- property start -->
+					</div>
+				</div>
+			</div>
+			<!-- contentBox start -->
+		</div>
+		<!-- con end -->		
+		<script type="text/javascript">
+			load(23);
+		</script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+		<script type="text/javascript" src="../../static/repair/ajax/request_repairhome.js"></script>
+	</body>
+</html>

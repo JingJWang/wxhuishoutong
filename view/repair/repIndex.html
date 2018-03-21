@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/orderDetail.css"/>
+	</head>
+	<body onload="newheight()">
+		<div class="green">
+			<div class="backselect">
+				<a href="JavaScript:history.back(1);" class="backa">返回</a>
+			    <a class="bmselected_wx" style="width: 100%;text-align: center;display: block;color: #fff;height: 40px;line-height: 40px;font-size: 16px;">手机维修</a>
+				<span class="anquan">安全声明</span>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="box">
+			<div class="title clearfix" style="top: 40px;">
+				<div class="titleLeft fl">品牌</div>
+				<div class="titleRight fl">型号</div>
+			</div>	
+			<div class="con clearfix" style="padding-top: 46px;">
+				<div class="conLeft fl" style="top:86px">
+					<ul id="brand">
+					</ul>
+				</div>
+				<div class="conRight fl" style="top:86px; background: #fff;">
+					<ul id="type">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--维修公告-->
+		<div class="shade"></div>
+        	<div class="regulation">
+        		<div class="title">
+                    安全声明
+                    <a class="closeBtn" href="javascript:;">×</a>
+        		</div>
+        		<div class="content">
+        		    <div class="written">
+                        <p style="text-indent: 30px;">回收通在此郑重承诺，我们会本着安全、准确、高效、优质四大原则为您提供最好最安全的服务。在您享受维修服务的过程中，我们会严格守护好您的个人隐私安全，确保您个人信息的安全性。</p>
+        		    </div>
+        		    <div class="aware" align="center">
+                         <a class="realize" href="javascript:;">我知道了</a>
+                    </div>
+                </div>
+        	</div>
+		<script type="text/javascript" src="../../static/m/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/home/js/ajax_common.js"></script>
+		<script type="text/javascript" src="../../static/repair/ajax/request_repair.js?v=20170720"></script>
+		<script type="text/javascript" src="../../static/m/js/myGoods.js?v=20170720"></script>
+		<script>
+			function newheight() {
+				//获取手机屏幕高度
+				var screenHeight = $(window).height();
+				var top = $('.conLeft ').offset().top;
+				var zhi = screenHeight - top;
+				$('.conRight,.conLeft').height(zhi);
+			};
+		</script>
+	</body>
+</html>

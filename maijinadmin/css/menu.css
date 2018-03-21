@@ -1,0 +1,60 @@
+.menu-div{
+	width:300px;
+	float:left;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+	padding:10px;
+}
+
+.menu-group{
+	margin-top:20px;
+}
+.menu-group li{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.one-menu-li{
+	font-weight:bold;
+	background-color: #d9edf7
+}
+.two-menu-li{
+	margin-left:30px;
+	background-color: #dff0d8;
+}
+.lab-menu{
+	cursor:pointer;	
+	display:inline-block;
+	width:190px;
+}
+.lab-menu[level='1']{
+	width:190px;
+}
+.lab-menu[level='2']{
+	width:190px;
+}
+.badge{
+	cursor:pointer;	
+	display:inline-block;
+	width:20px;
+}
+.badge-delete{
+	background:url(../img/a-d.png)0px 0px;
+}
+.badge-add{
+	background:url(../img/a-d.png) 0px 19px;
+}
+.fabu-div{
+	border-top:3px solid #64AC0F;
+	padding-top:10px;
+}
+.two-div{
+	display:none;
+}
+.link-menu{
+	display:none;
+}
+.menu-info{
+	float:left;
+	width:400px;
+	margin-left:30px;
+}

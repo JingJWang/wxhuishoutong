@@ -1,0 +1,83 @@
+body{ background: #f1f1f1; }
+.advert{width:100%;height:170px;display:block; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+.advert img{width:100%;height:100%;}
+/*entry------------------------*/
+.entry{ margin: 15px 0 0 0;padding:0px 15px;}
+.entry.login{
+    margin:10px 0px 0px 0px;
+}
+.phone,.code,.password{ height: 50px; padding: 0 10px 0px 15px; background: #fff; border-bottom: 1px solid #d4d4d4;position:relative;}
+.phone .enter,.code .enter,.password .enter{ font-size: 14px; width:100%;height:50px;line-height:50px;outline:none;font-family: 'Microsoft YaHei';}
+.entry  span input{ font-size: 12px; display: block; border: 1px solid #acacac; width: 70px; height: 30px; line-height: 30px; color: #acacac; background: #fff; border-radius: 5px; margin: 10px 0 0 0;outline:none;position:absolute;right:10px;top:0px;}
+.entry .password .eye{ display: inline-block; width: 30px; height: 30px; background: url(../images/eyes.png) no-repeat center center; background-size: 19px 14px; margin: 10px 0 0 0 ;position:absolute;top:0px;right:10px;}
+.entry .password .open{ background-image: url(../images/eyesopen.png);}
+.entry .password.sn{border:0px;}
+.entry .tip{ font-size: 12px; color: #f46d3a; height: 30px; line-height: 30px;}
+.entry .submit input{ width: 100%; height: 40px; line-height: 40px; border-radius: 4px; background: #58ab23; color: #fff; font-size: 14px; margin: 25px 0 0 0;font-family: 'Microsoft YaHei';letter-spacing: 1px;}
+.discount{padding:0px 15px;height:25px;margin:24px 0px 17px 0px;}
+.discount img{width:100%;height:13px;margin-top: 6px;}
+.explain{padding:0px 15px;height:auto;padding-bottom: 60px;}
+.explain p{font-size: 14px;color:#888888;margin-top: 12px;}
+.eye{display: inline-block; width: 30px; height: 30px; background: url(../images/eyes.png) no-repeat center center; background-size: 19px 14px; margin: 10px 0 0 0 ;position:absolute;right:10px;top:0px;}
+.eye.open{ background-image: url(../images/eyesopen.png);}
+.chart{position:absolute;right:10px;top:0px;}
+.hint{width:24px;height:50px;line-height: 50px;font-size:12px;color:#f46d3a;position:absolute;top:0px;right:15px;}
+.logo{
+    width:100%;
+    height:50px;
+    margin:28px 0px 0px 0px;
+    background-image: url(../images/logo.png);
+    background-size: 121px 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.forget{
+    width:100%;
+    height:16px;
+    margin-top: 12px;
+}
+.forget .forget-btn{
+    height:16px;
+    line-height: 16px;
+    font-size:14px;
+    color:#575757;
+    display:inline-block;
+}
+.enroll{
+    width:100%;
+    height:40px;
+    margin-top:30px;
+}
+.enroll .enroll-btn{
+    width:148px;
+    height:38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    color:#575757;
+    letter-spacing: 1px;
+    border:1px solid #999999;
+    border-radius: 5px;
+    display:inline-block;
+}
+.seize{
+    width:100%;
+    height:10px;
+}
+.cue{
+    padding:0px 15px;
+    height:15px;
+    text-align:left;
+    margin:15px 0px 10px 0px;
+}
+.cue span{
+    height:15px;
+    line-height: 15px;
+    color:#f46d3a;
+    background-image: url(../images/tip.png);
+    background-size: 17px 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 23px;
+    display:inline-block;
+}

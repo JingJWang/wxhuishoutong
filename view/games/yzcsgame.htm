@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="oupengmobile" content="fullscreen,portrait,game">
+    <script type="text/javascript">
+        var to = 0;
+        var AappId = '';
+        var Atimestamp = '';
+		var AnonceStr = '';
+		var Asignature = '';
+    </script>
+    <script language="javascript" type="text/javascript" src="/static/games/js/yzcs/jsgamemin.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/games/js/yzcs/touchmin.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/games/js/yzcs/renzhe.min.js"></script>
+    <script type="text/javascript" src="/static/games/js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/games/ajax/request_game.js"></script>
+
+	<!-- add by zhaoyi start -->
+	<script charset="utf-8" type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+	<!-- add by zhaoyi end -->
+
+	<title>影子传说</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style type="text/css">
+        body{margin:0px ; background-color:#434243; color:#6A6A6A;}
+        /*.bandiv{float:left; width:100%; background-color:#DBD1BB;}*/
+        /*.bandiv div{padding:10px; text-align:left;}*/
+    </style>	
+</head>
+
+<body onLoad="init()">
+	<div style="text-align:center;">
+		<canvas id="jsGameScreen" width="652" height="1200" style="width: 652px; height: 1200px;">
+			<div class="bandiv" style="font-size:0px; height:2px; margin:2px 0px 2px 0px;"></div>
+			<div class="bandiv">
+				<div style="text-align:center;">游戏规则</div>
+			</div>
+			<div class="bandiv" style="font-size:0px; height:2px; margin:2px 0px 5px 0px;"></div>
+			<div class="bandiv">
+				<div>******</div>
+			</div>
+		</canvas>
+	</div>
+	<script language="javascript">
+// 		xxxx:mebtnopenurl 更多游戏链接的页面
+// 				 imgUrl				分享出去的图标
+// 				 timeLineLink 分享出去的链接网址
+// 				 tTitle				分享出去的标题
+// 				 tContent			分享出去的内容
+		var mebtnopenurl = '/view/games/gameIndex.html';
+		window.shareData = {
+		        "timgUrl": "http://wx.recytl.com/static/games/images/gamelist/sore.png",
+		        "timeLineLink": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx29a596b5eac42c22&redirect_uri=http%3A%2F%2Fwx.recytl.com%2Fview%2Fgames%2FgameIndex.html&response_type=code&scope=snsapi_base&state=#wechat_redirect",
+		        "tTitle": "影子传说",
+		        "tContent": "飞檐走壁动作游戏《影子传说》让你挑战反应能力极限！"
+		};
+				
+		function goHome(){
+			window.location=mebtnopenurl;
+		}
+		function dp_submitScore(t){
+// 			xxxx:这里的t是本局得分
+            to = requestgamend(2,t);
+// 			if(t > gHighestScore){
+// 				alert("不错哦！得了"+t+"分！");
+// 				dp_share(t);
+// 			}
+            db_share(t);
+			_sendCmdSubmitScore(gGame, t);
+		}
+		function dp_share(t){
+			// document.title = "我玩《影子传说》飞檐走壁得了" + t + "分，你跑了多远？";
+			// document.getElementById("share").style.display="";
+			// window.shareData.tTitle = document.title;
+			document.getElementById("share").style.display="";
+		}
+		function db_share(t){
+			document.title = "我玩《影子传说》飞檐走壁得了" + t + "分，你跑了多远？";
+			window.shareData.tTitle = document.title;
+			sharegame();
+		}
+		function dp_Ranking(){
+			window.location=mebtnopenurl;
+		}
+		/* del by zhaoyi start
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {		    
+		    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		        WeixinJSBridge.invoke('sendAppMessage', {
+		            "img_url": window.shareData.imgUrl,
+		            "link": window.shareData.timeLineLink,
+		            "desc": window.shareData.tContent,
+		            "title": window.shareData.tTitle
+		        }, function(res) {
+		        	document.location.href = mebtnopenurl;
+		        })
+		    });
+		    WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		        WeixinJSBridge.invoke('shareTimeline', {
+		            "img_url": window.shareData.imgUrl,
+		            "img_width": "640",
+		            "img_height": "640",
+		            "link": window.shareData.timeLineLink,
+		            "desc": window.shareData.tContent,
+		            "title": window.shareData.tTitle
+		        }, function(res) {
+		        	document.location.href = mebtnopenurl;
+		        });
+		    });
+		}, false);
+		del by zhaoyi end */
+
+		//add by zhaoyi start
+		function init() {
+			var tong = requestload(2);
+			_getParam();
+
+			main();
+		}
+
+		var gCode = null;
+		var gCmd = null;
+		var gOpenid = null;
+		var gVersion = "1.0.0";
+		var gWXSdk = null;
+		var gGame = "yzcs";
+
+		var gHighestScore = 0;
+		var gCountScore = 0;
+
+		function _getUrlParam(key) {
+			var params = window.location.search.split("?");
+			var value = null;
+			if (params[0] == window.location.search) {
+				//参数为空
+			}
+			else {
+				var args = params[1].split("&");
+				for (var i = 0; i < args.length; i++) {
+					var str = args[i];
+					var arg = str.split("=");
+					if (arg.length > 1) {
+						if (arg[0] == key) {
+							value = arg[1];
+							break;
+						}
+					}
+				}
+			}
+
+			return value;
+		}
+
+		function _getParam() {
+			var code = _getUrlParam("code");
+			if (code != null) {
+				gCode = code;
+				_initCmd();
+			}
+			else {
+				//使用默认数值
+			}
+		}
+
+		function _initWeiXin() {
+
+		}
+		function sharegame(){
+		wx.config({
+            debug: false,
+            appId: AappId,
+            timestamp: Atimestamp,
+            nonceStr: AnonceStr,
+            signature: Asignature,
+            jsApiList: [ // 所有要调用的 API 都要加到这个列表中       
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage'   
+            ]
+        });
+        wx.ready(function () {
+        //监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+            wx.onMenuShareTimeline({
+                title: window.shareData.tTitle,
+                desc: window.shareData.tContent,
+                link: window.shareData.timeLineLink,
+                imgUrl:window.shareData.timgUrl,
+                trigger: function (res) {     
+                 //点击分享是查询粉丝的分享记录，一周内只能领取一次       
+                },
+                success: function (res) {
+                      alert('分享成功');
+                      //分享成功后提示粉丝
+                      // WeixinJSBridge.call('closeWindow');
+                },
+                cancel: function (res) {
+                },
+                fail: function (res) {
+                  alert(JSON.stringify(res));
+                }
+            });
+            wx.onMenuShareAppMessage({
+                title: window.shareData.tTitle,
+                desc: window.shareData.tContent,
+                link: window.shareData.timeLineLink,
+                imgUrl:window.shareData.timgUrl,
+                success: function () {
+                      alert('分享成功');
+                    // 用户确认分享后执行的回调函数
+                  //分享成功后提示粉丝
+                    // alert('成功分享到朋友');
+                    // WeixinJSBridge.call('closeWindow');
+                },
+                cancel: function () { 
+                    // 用户取消分享后执行的回调函数
+                }
+            });
+        });
+        wx.error(function(res){
+        //config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新    签名。
+        });
+        }
+		// function _initCmd() {
+		// 	//命令行初始化
+		// 	gCmd = new CmdApi(gUrl, gVersion, function(cmd, result, params) {
+		// 		if (result == 0) {
+		// 			_receiveCmd(cmd, params);
+		// 		}
+		// 		else {
+		// 			_toast("command:" + cmd + ", result:" + result);
+		// 		}
+		// 	});
+
+		// 	var url = location.href.split('#')[0];
+		// 	_sendCmdGetKeyByWX(encodeURIComponent(url));
+
+		// 	_sendCmdLoginByWX(gCode);
+		// }
+
+		// function _initByDummy() {
+		// 	gOpenid = "abc";
+
+		// 	//命令行初始化
+		// 	gCmd = new CmdApi(gUrl, gVersion, function(cmd, result, params) {
+		// 		if (result == 0) {
+		// 			_receiveCmd(cmd, params);
+		// 		}
+		// 		else {
+		// 			_toast("command:" + cmd + ", result:" + result);
+		// 		}
+		// 	});
+
+		// 	_sendCmdGetScore(gGame);
+		// }
+
+		// function _receiveCmd(cmd, params) {
+		// 	//命令处理
+		// 	if (cmd == "GetKeyByWX") {
+		// 		switch (params.result) {
+		// 			case 0:
+		// 				//成功
+		// 				//取得用户信息
+		// 				var signPackage = params.signPackage;
+		// 				if (signPackage != null) {
+		// 					var appId = signPackage.appId;
+		// 					var timestamp = signPackage.timestamp;
+		// 					var nonceStr = signPackage.nonceStr;
+		// 					var signature = signPackage.signature;
+
+		// 					gWXSdk = new WXSdk();
+		// 					gWXSdk.init(
+		// 							false,                  // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+		// 							appId,                  // 必填，公众号的唯一标识
+		// 							timestamp,              // 必填，生成签名的时间戳
+		// 							nonceStr,               // 必填，生成签名的随机串
+		// 							signature,              // 必填，签名，见附录1
+		// 							['hideMenuItems', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'],                 // 必填，需要使用的JS接口列表，所有JS接口列表见附录2});
+		// 							function() {
+		// 								gWXSdk.hideWXMenuItem();
+
+		// 								var shareTitle = window.shareData.tTitle;
+		// 								var shareDesc = window.shareData.tContent;
+		// 								var shareLink = window.shareData.timeLineLink;
+		// 								var shareImg = window.shareData.imgUrl;
+
+		// 								gWXSdk.onMenuShareTimeline(shareTitle,
+		// 										shareLink,
+		// 										shareImg,
+		// 										function(result) {
+		// 											if (result == true) {
+		// 												//分享成功
+		// 											}
+		// 											else {
+		// 												//分享取消
+		// 											}
+		// 											document.getElementById('share-wx').style.display = 'none';
+		// 										}
+		// 								);
+
+		// 								gWXSdk.onMenuShareAppMessage(shareTitle,
+		// 										shareDesc,
+		// 										shareLink,
+		// 										shareImg,
+		// 										function(result) {
+		// 											if (result == true) {
+		// 												//分享成功
+		// 											}
+		// 											else {
+		// 												//分享取消
+		// 											}
+		// 											document.getElementById('share-wx').style.display = 'none';
+		// 										}
+		// 								);
+
+		// 								gWXSdk.onMenuShareQQ(shareTitle,
+		// 										shareDesc,
+		// 										shareLink,
+		// 										shareImg,
+		// 										function(result) {
+		// 											if (result == true) {
+		// 												//分享成功
+		// 											}
+		// 											else {
+		// 												//分享取消
+		// 											}
+
+		// 											document.getElementById('share-wx').style.display = 'none';
+		// 										}
+		// 								);
+
+		// 								gWXSdk.onMenuShareWeibo(shareTitle,
+		// 										shareDesc,
+		// 										shareLink,
+		// 										shareImg,
+		// 										function(result) {
+		// 											if (result == true) {
+		// 												//分享成功
+		// 											}
+		// 											else {
+		// 												//分享取消
+		// 											}
+		// 											document.getElementById('share-wx').style.display = 'none';
+		// 										}
+		// 								);
+
+		// 								gWXSdk.onMenuShareQZone(shareTitle,
+		// 										shareDesc,
+		// 										shareLink,
+		// 										shareImg,
+		// 										function(result) {
+		// 											if (result == true) {
+		// 												//分享成功
+		// 											}
+		// 											else {
+		// 												//分享取消
+		// 											}
+		// 											document.getElementById('share-wx').style.display = 'none';
+		// 										}
+		// 								);
+		// 							}
+		// 					);
+		// 				}
+		// 				break;
+		// 			default:
+		// 				//其他错误
+		// //                        alert("error code: " + cmd + result);
+		// //                        _toast("取得微信信息失败!将以访客模式登陆!");
+		// 				break;
+		// 		}
+		// 	}
+		// 	else if (cmd == "LoginByWX") {
+		// 		switch (params.result) {
+		// 			case 0:
+		// 				//成功
+		// 				//取得用户信息
+		// 				var wxUserInfo = params.wxUserInfo;
+		// 				if (wxUserInfo != null) {
+		// 					gOpenid = wxUserInfo.openid;
+		// //						gUserData.nickname = wxUserInfo.nickname;
+		// //						gUserData.language = wxUserInfo.language;
+		// //						gUserData.city = wxUserInfo.city;
+		// //						gUserData.province = wxUserInfo.province;
+		// //						gUserData.country = wxUserInfo.country;
+		// //						gUserData.privilege = wxUserInfo.privilege;
+		// //						gUserData.headimgurl = wxUserInfo.headimgurl;
+
+		// 					_sendCmdGetScore(gGame);
+		// 				}
+
+		// 				break;
+		// 			case 1:
+		// 			//参数错误
+		// 			case 101:
+		// 			//区域信息不存在
+		// 			default:
+		// 				//其他错误
+		// //                        alert("error code: " + cmd + params.result);
+		// 				_toast("登录失败!将以访客模式登陆!");
+		// 				break;
+		// 		}
+		// 	}
+		// 	else if (cmd == "GetScore") {
+		// 		switch (params.result) {
+		// 			case 0:
+		// 				//成功
+		// 				//取得用户信息
+		// 				var highestScoreData = params.highestScoreData;
+		// 				var scoreData = params.scoreData;
+
+		// 				if (highestScoreData != null) {
+		// 					gHighestScore = highestScoreData.score;
+		// 				}
+		// 				if (scoreData != null) {
+		// 					gCountScore = scoreData.score;
+		// 				}
+
+		// 				break;
+		// 			case 1:
+		// 			//参数错误
+		// 			case 101:
+		// 			//区域信息不存在
+		// 			default:
+		// 				//其他错误
+		// //                        alert("error code: " + cmd + result);
+		// 				_toast("积分取得失败!");
+		// 				break;
+		// 		}
+
+		// 	}
+		// 	else if (cmd == "SubmitScore") {
+
+		// 	}
+		// 	else {
+		// 		_toast(cmd);
+		// 	}
+		// }
+
+		/**
+		 * @brief  发送取得微信信息命令函数。
+		 * @author 赵一
+		 */
+		function _sendCmdGetKeyByWX(url) {
+			if (gCmd != null) {
+				//取得用户信息
+				var params = {
+					"url": url
+				};
+				gCmd.send("GetKeyByWX", params);
+			}
+		}
+
+		/**
+		 * @brief     发送取得用户信息命令函数。
+		 * @author    赵一
+		 * @param[in] code 微信code。
+		 */
+		function _sendCmdLoginByWX(code) {
+			if (gCmd != null) {
+				//取得用户信息
+				var params = {
+					"code": code
+				};
+				gCmd.send("LoginByWX", params);
+			}
+		}
+
+		/**
+		 * @brief     发送取得积分信息命令函数。
+		 * @author    赵一
+		 * @param[in] game 游戏名称。
+		 */
+		function _sendCmdGetScore(game) {
+			if (gCmd != null) {
+				//取得用户信息
+				var params = {
+					"openid": gOpenid,
+					"game": game
+				};
+				gCmd.send("GetScore", params);
+			}
+		}
+
+		/**
+		 * @brief     发送取得积分信息命令函数。
+		 * @author    赵一
+		 * @param[in] game  游戏名称。
+		 * @param[in] score 游戏积分。
+		 */
+		function _sendCmdSubmitScore(game, score) {
+			if (gCmd != null) {
+				//取得用户信息
+				var params = {
+					"openid": gOpenid,
+					"game": game,
+					"score": score
+				};
+				gCmd.send("SubmitScore", params);
+			}
+		}
+
+		function _toast(msg) {
+			if ((msg != null) && (msg != "")) {
+				alert(msg);
+			}
+		}
+
+		//add by zhaoyi end
+	</script>
+	<div id="share" style="display:none">
+		<img width="100%" src="/static/games/images/yzcs/2000.png" style="position:absolute;top:0;left:0;display:" onClick="document.getElementById(&#39;share&#39;).style.display=&#39;none&#39;;">
+	</div>	
+</body>
+</html>

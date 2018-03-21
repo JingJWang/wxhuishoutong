@@ -1,0 +1,85 @@
+body{
+    background:#ff2e4b url(../images/indexBG_02.png) no-repeat top center;
+    background-size: 100% auto;
+    max-width:640px;
+    margin: 0 auto;
+    min-width: 300px;
+}
+/*浮层样式*/
+.floating {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	background:#666;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	display:none;
+	}
+.rev_btn{
+    width: 55%;
+    margin: 34% auto;
+}
+.cou_btn_pic span{
+    left: 28%;
+    top: 12%;
+    color: #ff0000;
+    font-size: 1.65rem;
+}
+.rev_btn p{
+    margin-top: 0.65rem;
+    font-size: 0.6rem;
+    left: 10%;
+    color: #ffe023;
+    text-align: center;
+}
+.make_btn{
+    width: 80%;
+   margin: 8% auto;
+}
+.ueser_list{
+	/*padding:0 0.56rem;*/
+	margin-top:16%;
+}
+.user_head{
+	width:2.625rem;
+	height:2.625rem;
+}
+.list{ border-bottom:1px solid #900;}
+.list .img{ margin-top:-2.5rem;}
+.HB_text{
+	width:60%;		
+}
+.amount_info .text{
+	font-size:1rem;
+	color:#fff;
+	font-weight:bold;
+	}
+.amount_info .title{
+	font-size:1rem;
+	color:#FC0;
+	font-weight:bold;
+	}
+.HB_text .ueserName{
+	font-size:0.625rem;
+}
+.empty_btn{
+	margin-top:38%;
+}
+.HB_text .dataTime{color:#cc1025;font-size:0.56rem;}
+.HB_text p{
+	font-size:0.625rem;
+	line-height:1.25rem;
+}
+.pic_btn{
+	margin-top:3.5rem;
+}
+.re_pic_btn{
+	width:55%;
+	margin:60% auto;	
+}
+.re_pic_btn{
+	margin-bottom:0;
+}

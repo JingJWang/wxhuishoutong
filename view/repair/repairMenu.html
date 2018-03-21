@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>品牌管理</title>
+    <!-- Bootstrap -->
+    <link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/repair/css/repairMenu.css"/>
+</head>
+<body>
+
+<div class="box">
+        <div class="navRuler">
+            <div id="digitalCon" class="menu-content">
+            	<p class="title_p">故障配置</p>
+    			<ul class="list">
+    				<li class="list_li hover_list_li" onclick="menu(1,0)">故障类型</li>
+    				<li class="list_li" onclick="menu(2,0)">故障类型详情</li>
+    			</ul>
+    			<!--内容-->
+    			<div class="content">
+    			</div>
+    			<div class="tab">
+                    <div class="pagination" id="typepage">
+                       
+                    </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+    
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/repair/js/rep_menu.js"></script>
+<script type="text/javascript" src="../../static/repair/ajax/request_Menu.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+</body>
+</html>

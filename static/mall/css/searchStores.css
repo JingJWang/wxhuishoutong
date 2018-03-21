@@ -1,0 +1,15 @@
+/*.topText-------------------*/
+.topText{ padding-bottom: 15px;}
+.topText .storeTop{ margin-top: 6px; display: block; line-height: 28px; color: #888; width: 90%;}
+.topText .storeBot{ display: block; line-height: 20px; color: #888; padding: 0 0 19px 0; width: 90%;}
+.topText .input .inputCon{ border-left: 1px solid #b1b0b0; border-radius: 4px 0 0 4px; width: 70%;}
+/*storeCon--------------------*/
+.storeCon{ padding: 151px 5px 40px 5px;}
+.storeCon .storeList{ width: 100%; background: #fff; border-top: 1px solid #e8e9e9; margin: 0 0 10px 0;}
+.storeList .storeInfo{ padding: 12px 15px 11px; border-bottom: 1px solid #dddddd;}
+.storeList .storeInfo h3{ font-weight: normal; color: #575757; font-size: 15px;}
+.storeList .storeInfo p{font-size: 13px; color: #575757; line-height: 21px;}
+.storeList .traffic { background: #f4f4f4;}
+.storeList .traffic ul li{ width: 33%; border-right: 1px solid #ddd; height: 40px; line-height: 40px; text-align: center;}
+.storeList .traffic ul li:nth-of-type(3){ border-right: 0;}
+.storeList .traffic ul li a{ display: block; font-size: 13px; width:100%; height: 40px; line-height: 40px; text-align: center;}

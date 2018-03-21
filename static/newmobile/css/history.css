@@ -1,0 +1,94 @@
+body {
+  background: #fff;
+}
+header {
+  width: 16rem;
+  height: 2.625rem;
+  background: #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header_h1 {
+  width: 100%;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  text-align: center;
+  color: #111a27;
+  font-size: 0.7rem;
+}
+.header_a {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.675rem;
+  border-radius: 50%;
+}
+.back {
+  left: 0.875rem;
+  background-image: url(../img/back.png);
+  background-size: 100% 100%;
+}
+.home {
+  left: 2.75rem;
+  background-image: url(../img/home.png);
+  background-size: 100% 100%;
+}
+.sous{
+	width: 100%;
+	margin-top: 2.625rem;
+	position: relative;
+}
+.inp{
+	width: 80%;
+	height: 1.5rem;
+	border: solid 1px #ccc;
+	border-radius: 18px;
+	margin: 0.5rem 5% 0rem 5%;
+	padding-left: 10%;
+	background: url(../../shop/images/seach.png) 0.5rem center no-repeat;
+	background-size: 0.9rem 0.8rem;
+	font-size: 0.6rem;
+	color: #575757;
+}
+.message{
+	width: 100%;
+}
+.recond{
+	display: block;
+	width: 84%;
+	padding-left: 2%;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	display: block;
+	margin-left: 7%;
+	color: #666;
+	border-bottom: solid 1px #ccc;
+}
+.btn_ss{
+    position: absolute;
+    top: 0.85rem;
+    right: 1.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 0.3rem 0 0.5rem;
+    border-left: solid 1px #ccc;
+    font-size: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

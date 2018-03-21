@@ -1,0 +1,428 @@
+body{
+	background: #f5f5f5;
+	position: relative;
+	overflow: hidden;
+}
+.metalDeal{
+	width: 100%;
+	height: auto;
+	margin-top: 1.9rem;
+}
+.metalDeal ul{
+	height: auto;
+	float: left;
+	background: #ffffff;
+}
+.metalDeal ul li{
+	width: 4.3rem;
+	height: 1.85rem;
+	float: left;
+	line-height: 1.85rem;
+	text-align: center;
+	font-size: 0.625rem;
+	color: #5f5f5fs;
+	border-bottom: none;
+	margin: 0 3.75rem 0 1.8rem;
+	cursor: pointer;
+}
+.metalDeal ul .myHover{
+	border-bottom: solid 1px #2a9400;
+}
+.metalDeal ul li:last-of-type{
+	margin: 0 1.8rem 0 0 ;
+}
+.buySale{
+	width: 16rem;
+	height: 11rem;
+	float: left;
+	overflow: hidden;
+}
+.buySale .buy{
+	width: 100%;
+	height: auto;
+}
+.buy .buy_money{
+	width: 100%;
+	padding: 0.925rem 0 0.5rem 0;
+	float: left;
+}
+.buy .buy_money p{
+	display: block;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	float: left;
+	padding:0 0 0 0.65rem;
+	font-size: 0.6rem;
+	color: #585858;
+}
+.buy .buy_money p:last-of-type{
+	padding:0 0.65rem 0 0 ;
+	float: right;
+}
+.buy .buy_qk{
+	height: 6.1rem;
+	padding: 0 0.65rem 0 0.65rem;
+	margin-bottom: 0.85rem;
+	float: left;
+	background: #fff;
+}
+.buy .buy_qk .buyInputAll{
+	display: block;
+	width: 14.775rem;
+	height: 3.925rem;
+	border-bottom: solid 1px #e9e9e9;
+}
+.asNum{
+    float: left;
+    padding: 0.5rem 0rem 0rem 0rem;
+    color:#818181;
+    position: relative;
+    margin: 0 0 0.5rem 0.65rem;
+}
+.bigSort h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.65rem;
+}
+.asNum div{
+    width: 8.58rem;
+    height: 1.725rem;
+    float: left;
+    background-image: url(../img/asNum.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+.asNum .subtract{
+	display: block;
+    width: 1.78rem;
+    height: 1.725rem;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.asNum .add{
+	display: block;
+    width: 1.78rem;
+    height: 1.725rem;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.asNum .num{
+    -webkit-appearance:none;
+    width: 100%;
+    padding-top: 0.5rem;
+    float: left;
+    font-size: 0.55rem;
+    text-align: center;
+    border: none;
+    background: none;
+}
+.asNum p{
+    padding-left: 0.9rem;
+    line-height: 1.65rem;
+    font-size: 0.65rem;
+    height: 1.65rem;
+    float: left;
+}
+.buy .buy_qk .buy_qk_p{
+	width: 100%;
+	height: 1.375rem;
+	float: left;
+	text-indent: 0.4rem;
+	line-height: 1.375rem;
+	color: #989898;
+}
+.buy .buy_qk .buy_lastP{
+	float: left;
+	width: 100%;
+	height: 2.05rem;
+	line-height: 2.05rem;
+	font-size: 0.7rem;
+	color: #747474;
+	text-indent: 0.4rem;
+}
+.pBtn{
+	display: block;
+	width: 14.75rem;
+	height: 1.65rem;
+	float: left;
+	line-height: 1.65rem;
+	border-radius: 5px;
+	background: #58ab22;
+	color: #FFFFFF;
+	font-size: 0.575rem;
+	text-align: center;
+	margin: 0 0 0 0.65rem;
+}
+.pBtn:link{color: #ffffff;}
+.pBtn:hover{color: #ffffff;}
+.pBtn:visited{color: #ffffff;}
+.pBtn:active{color: #ffffff;}
+/*买入成功--黄金交易    TRSuccess*/
+.addGold_h1{
+	width: 100%;
+	height: 2.15rem;
+	border: solid 2px #eaeaea;
+	background: #ffffff;
+	margin-top: 2.1rem;
+	line-height: 2.15rem;
+	font-size: 0.65rem;
+	color: #666666;
+}
+.addGold_h1 img{
+	width: 0.925rem;
+	height: 0.925rem;
+	margin: 0.65rem 0.3rem 0 5.275rem;
+	float: left;
+}
+.AddGold{
+	padding: 0.55rem 0.675rem 0.55rem 0.675rem;
+	background: #FFFFFF;
+}
+.AddGold p{
+	width: 100%;
+	height: 1.675rem;
+	line-height: 1.675rem;
+	color: #5e5e5e;
+	font-size: 0.6rem;
+}
+.AddGold p:nth-child(2){
+	border-top: solid 1px #e4e4e4;
+	border-bottom: solid 1px #e4e4e4;	
+}
+/*弹出的支付方式*/
+.aboutPayment{
+	width: 16rem;
+	height: 100%;
+	background: rgba(108,108,108,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.aboutPayment .Payment_box{
+	width: 100%;
+	height: 12.8rem;
+	position: absolute;
+	bottom: 0;
+	background: #ffffff;
+}
+.Payment_box h1{
+	width: 100%;
+	height: 2.1rem;
+	position: relative;
+	line-height: 2.1rem;
+	float: left;
+	font-size: 0.6rem;
+	text-indent: 0.675rem;
+	color: #3a3a3a;
+	border-bottom: solid 2px #e8e8e8;
+}
+.Payment_box h1 span{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1.75rem;
+	height: 2.1rem;
+	background: url(../img/payMent2.png) right no-repeat;
+	background-size: 1.75rem 2.1rem;
+}
+.Payment_box ul{
+	width: 14.6rem;
+	margin: 0 auto;
+}
+.Payment_box ul li{
+	width: 100%;
+	height: 1.85rem;
+	float: left;
+	border-bottom: solid 1px #e8e8e8;
+}
+.Payment_box ul li img{
+	display: block;
+	float: left;
+	width: 0.875rem;
+	height: 0.925rem;
+	margin: 0.4625rem 0.3rem 0 0;
+}
+.Payment_box ul li p{
+	height: 1.85rem;
+	float: left;
+	line-height: 1.85rem;
+}
+.Payment_box ul li p:nth-child(2){
+	font-size: 0.6rem;
+	color: #363636;
+}
+.Payment_box ul li p:nth-child(3){
+	font-size: 0.5rem;
+	color: #a5a5a5;
+	margin-left: 0.3rem;
+}
+
+.Payment_box ul li span{
+	width: 0.85rem;
+	height: 1.85rem;
+	float: right;
+}
+.aboutPaymentSpan{
+	background: url(../img/payMent1.png);
+	background-size: 0.85rem 1.85rem;
+}
+/*弹出的支付密码*/
+.payPassword_box {
+  width: 16rem;
+  background: rgba(108, 108, 108,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.payPassword_box .payPassword {
+  width: 11.975rem;
+  height: 9.325rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.1rem;
+  margin-left: -5.9875rem;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.payPassword_box .payPassword_h1 {
+  width: 11.975rem;
+  height: 1.75rem;
+  border-bottom: solid 1px #ebebeb;
+  font-size: 0.675rem;
+  line-height: 1.75rem;
+  text-align: center;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+.payPassword_box .payPassword_h1 {
+  width: 11.975rem;
+  height: 1.75rem;
+  border-bottom: solid 1px #ebebeb;
+  font-size: 0.675rem;
+  line-height: 1.75rem;
+  text-align: center;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+.payPassword .payPwd {
+	position: absolute;
+  width: 11.175rem;
+  height: 1.9rem;
+  background: url(../../../static/gold/img/payPwd_bj.png);
+  background-size: 100% 100%;
+  margin-top: 0.3rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  left: 50%;
+  margin-left: -5.5875rem;
+  text-indent: 1.6em;
+  letter-spacing: 1.63rem;
+  overflow: hidden;
+}
+.payPassword .forgetA {
+	display: block;
+  height: 1.1rem;
+  font-size: 0.45rem;
+  line-height: 1.1rem;
+  color: #3a4bcb;
+  text-align: right;
+  margin-top: 2.4rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 7.1rem;
+}
+.payPassword .payBtn {
+  width: 100%;
+  height: 2.125rem;
+  border-top: solid 1px #ebebeb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.payPassword .payBtn button {
+  width: 50%;
+  float: left;
+  height: 2.125rem;
+  color: #848484;
+  font-size: 0.625rem;
+  background: #ffffff;
+}
+.payBtn button:last-of-type {
+  color: #4fa51a;
+  border-left: solid 1px #ebebeb;
+}
+/*库存*/
+.kucunDiv{
+	width: 16rem;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	z-index: 999;
+}
+.kuCunCenter{
+	position: absolute;
+	top: 50%;
+	margin-top: -6rem;
+	margin-left: 10%;
+	width: 80%;
+	height: 8rem;
+	background: #ffffff;
+	border-radius: 10px;
+}
+.kcDiv{
+	float: left;
+	padding: 1.3rem 0.7rem 1rem 1.1rem;
+	line-height: 1.3rem;
+}
+.kcDiv p{
+	float: left;
+	font-size: 0.65rem;
+	color: #262626;
+}
+.kcDiv span{
+	float: left;
+	font-size: 0.65rem;
+	color: orangered;
+}
+.kcBtn{
+	float: left;
+	padding-left: 10%;
+	width: 80%;
+	margin-top: 0.4rem;
+}
+.kcBtn a{
+	width: 4.5rem;
+	height: 1.7rem;
+	display: block;
+	background: #58ab22;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.7rem;
+	float: left;
+	border-radius: 4px;
+	font-size: 0.65rem;
+}
+.kcBtn a:last-of-type{
+	float: right;
+}
+
+
+
+
+
+
+
+

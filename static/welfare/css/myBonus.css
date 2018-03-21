@@ -1,0 +1,404 @@
+span,
+p,
+s,
+b,
+img {
+  display: block;
+}
+body {
+  background: #f0f1f3;
+  position: relative;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+  width: 16rem;
+  height: 1.75rem;
+}
+.head_a {
+  position: absolute;
+  top: 0;
+  left: 0.625rem;
+}
+.head_a .left {
+  width: 0.425rem;
+  height: 0.725rem;
+  margin-top: 0.55rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: url(../img/header-left.png) center no-repeat;
+  background-size: 0.425rem 0.725rem;
+  float: left;
+}
+header p {
+  font-size: 0.65rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+  float: left;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  line-height: 1.75rem;
+}
+.head_help {
+  position: absolute;
+  top: 0;
+  right: 0.625rem;
+}
+.head_help .right {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-top: 0.55rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: url(../img/head_help.png) center no-repeat;
+  background-size: 0.75rem 0.75rem;
+  float: left;
+}
+.first {
+  width: 16rem;
+  height: 8.55rem;
+  position: relative;
+  float: left;
+  background: url(../img/first_bg.jpg) center no-repeat;
+  background-size: 16rem 8.55rem;
+  margin-bottom: 2.25rem;
+}
+.first_left {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-top: 3.65rem;
+  margin-right: 1.6rem;
+  margin-bottom: 0;
+  margin-left: 1.075rem;
+  float: left;
+  background: #6ceaf9;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.contA {
+  display: block;
+  width: 2.15rem;
+  height: 2.15rem;
+  background: #ffffff;
+  margin-top: 0.075rem;
+  margin-right: 0.075rem;
+  margin-bottom: 0.075rem;
+  margin-left: 0.075rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.first_left a span {
+  width: 2.15rem;
+  height: 2.15rem;
+  background: url(../img/huiyuan.png) center no-repeat;
+  background-size: 2.1rem 2.1rem;
+}
+.first_center {
+  width: 7.825rem;
+  height: 5.5rem;
+  margin-top: 2.15rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  float: left;
+  overflow: hidden;
+}
+.first_center .photo_box {
+  width: 2.6rem;
+  height: 2.6rem;
+  float: left;
+  margin-top: 0;
+  margin-right: 3.5rem;
+  margin-bottom: 0;
+  margin-left: 1.55rem;
+  position: relative;
+}
+.first_center .photo {
+  width: 2.6rem;
+  height: 2.6rem;
+  float: left;
+  border: solid 2px #74e3ed;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.first_center .photoMenter {
+  display: block;
+  width: 2.5rem;
+  height: 0.675rem;
+  background: url(../img/vipbg.png) no-repeat;
+  background-size: 2.5rem 0.675rem;
+  font-size: 0.4rem;
+  line-height: 0.675rem;
+  color: #fefcd3;
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -0.5rem;
+  margin-left: 0.15rem;
+}
+.first_center .huiyuan {
+  width: 100%;
+  height: 1rem;
+  float: left;
+  margin-top: 0.75rem;
+}
+.first_center .uName {
+  color: #ffffff;
+  float: left;
+  height: 1rem;
+  text-indent: 0.9rem;
+  font-size: 0.65rem;
+  line-height: 1rem;
+}
+.first_center .VipImg {
+  width: 0.975rem;
+  height: 0.675rem;
+  display: block;
+  float: left;
+  margin-top: 0.125rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0.25rem;
+}
+.first_center .VipImg img {
+  width: 0.975rem;
+  height: 0.675rem;
+}
+.first_center_p {
+  color: #ffffff;
+  float: left;
+  height: 0.825rem;
+  font-size: 0.5rem;
+  line-height: 0.825rem;
+}
+.first_right {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-top: 3.65rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  float: left;
+  background: #6ceaf9;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.first_right a span {
+  width: 2.15rem;
+  height: 2.15rem;
+  background: url(../img/paihang.png) center no-repeat;
+  background-size: 2.1rem 2.1rem;
+}
+.earnings {
+  position: absolute;
+  left: 0.45rem;
+  bottom: -1.9rem;
+  width: 15.15rem;
+  height: 1.3rem;
+  padding-top: 0.625rem;
+  padding-right: 0;
+  padding-bottom: 0.625rem;
+  padding-left: 0;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.earnings .earnings_p {
+  width: 4.95rem;
+  height: 1.3rem;
+  border-right: solid 2px #66d3f1;
+  float: left;
+}
+.earnings .earnings_p:last-of-type {
+  border-right: none;
+}
+.earnings .earnings_p span {
+  display: block;
+  width: 100%;
+  color: #4590c4;
+  text-align: center;
+  float: left;
+}
+.earnings .earnings_p span:first-of-type {
+  height: 0.6rem;
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  margin-bottom: 0.1rem;
+}
+.earnings .earnings_p span:last-of-type {
+  height: 0.7rem;
+  font-size: 0.55rem;
+  line-height: 0.7rem;
+}
+.earnings_list {
+  float: left;
+  background: #ffffff;
+}
+.earnings_list h1 {
+  width: 16rem;
+  height: 1.6rem;
+  border-top: solid 1px #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
+  float: left;
+  text-align: center;
+  font-size: 0.55rem;
+  line-height: 1.6rem;
+  color: #363636;
+}
+.earCont {
+  width: 16rem;
+  border-bottom: solid 1px #e4e4e4;
+  float: left;
+  padding-top: 0.675rem;
+  padding-right: 0;
+  padding-bottom: 0.45rem;
+  padding-left: 0;
+}
+.earCont img {
+  width: 1.3rem;
+  height: 1.3rem;
+  float: left;
+  margin-top: 0;
+  margin-right: 0.45rem;
+  margin-bottom: 0;
+  margin-left: 0.65rem;
+}
+.earContDetails {
+  width: 10.25rem;
+  float: left;
+}
+.earContDetails .earContDSpan{
+	width: 100%;
+	float: left;
+}
+.earContDetails .earContDSpan s {
+  margin-right: 0.35rem;
+  font-size: 0.45rem;
+  line-height: 0.625rem;
+  color: #363636;
+  float: left;
+  text-decoration: none;
+}.earContDetails .earContDSpan s:last-of-type {
+  margin-right: 0rem;
+}
+.earContDetails span:last-of-type {
+  width: 10.25rem;
+  height: 0.625rem;
+  float: left;
+  font-size: 0.45rem;
+  line-height: 0.625rem;
+  color: #8d8d8d;
+  margin-top: 0.075rem;
+}
+.earContMoney {
+  width: 2.75rem;
+  height: 0.625rem;
+  color: #5b5b5b;
+  text-align: right;
+  font-size: 0.5rem;
+  line-height: 0.625rem;
+  float: left;
+}
+.nonesj{
+	width: 100%;
+	height: 6rem;
+	padding-top: 2.5rem;
+	float: left;
+	background: #ffffff;
+}
+.nonesj span{
+	width: 6rem;
+	height: 6rem;
+	background: url(../img/nosy.png) no-repeat;
+	background-size: 6rem 6rem;
+	margin-left: 5rem;
+}
+.zanw{
+	width: 16rem;
+	float: left;
+	line-height: 1rem;
+	text-align: center;
+	color: #575757;
+	padding-bottom: 6.46rem;
+	font-size: 0.55rem;
+}
+/*帮助*/
+.posiDiv{
+	position: absolute;
+	top: 1.75rem;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	z-index: 999;
+}
+/*关闭*/
+.closeDiv{
+	width: 16rem;
+	height: 1.75rem;
+	background: #81d3fc;
+	float: left;
+}		
+.close{
+	margin-left: 0.65rem;
+	line-height: 1.75rem;
+	padding-left: 0.7rem;
+	color: #fff;
+	font-size: 0.65rem;
+	display: block;
+	background: url(../img/payClose.png) no-repeat left center;
+	background-size: 0.55rem 0.55rem;
+}
+/*内容*/
+.bz_cont{
+	width: 87%;
+	padding: 20px 6% 30px 7%;
+	float: left;
+}
+.cont_bz{
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: auto;
+}
+.cont_bz::-webkit-scrollbar {
+    display: none;
+}
+.bz_cont p{
+	float: left;
+	width: 100%;
+	display: block;
+}
+.title_p{
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.61rem;
+	color: #3c3a3a;
+}
+.content_p{
+	text-indent: 1rem;
+	padding: 0.2rem 0 0.5rem 0;
+	line-height: 0.9rem;
+	font-size: 0.55rem;
+	color: #666;
+}
+@media screen and (min-width:350px) and (max-width:380px){
+  .first_center_p {
+  	margin-left: 0.3rem;
+  }
+}
+@media screen and (min-width:381px) and (max-width:420px){
+  .first_center_p {
+  	margin-left: 0.55rem;
+  }
+}

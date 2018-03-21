@@ -1,0 +1,52 @@
+//初始化封装less
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height: @h/2/20;
+}
+.font(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.pad(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top: @pt/2/20;
+    padding-right: @pr/2/20;
+    padding-bottom: @pb/2/20;
+    padding-left: @pl/2/20; 
+}
+.mar(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top: @mt/2/20;
+    margin-right: @mr/2/20;
+    margin-bottom: @mb/2/20;
+    margin-left: @ml/2/20; 
+}
+//验证原支付密码
+.verification h1{
+    .mar(170rem,0,0,0);
+    .rem(640rem,113rem);
+    .font(28rem,113rem);
+    text-align: center;
+    color: #575757;
+}
+.verification input{
+    .rem(447rem,77rem);
+    margin-left: 97rem/40;
+    text-indent: 40rem/40;
+    letter-spacing: 66rem/40;
+}
+.verification .oldPassword{
+    background: url(../img/payPwd_bj.png);
+    background-size: 11.2rem 1.9rem;
+}
+.verification .newPassword{
+    .rem(447rem,77rem);
+    background: url(../img/changePwdNew_bj.png) 100% 100%;
+    background-size: 11.175rem 1.925rem;
+}
+.verification  button{
+    .rem(570rem,65rem);
+    .mar(67rem,0,0,35rem);
+    background: #58ab22;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 28rem/40;
+}

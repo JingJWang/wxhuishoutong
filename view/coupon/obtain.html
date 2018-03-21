@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/index.css"/>
+    <script charset="utf-8" type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript">
+        var AappId = '';
+        var Atimestamp = '';
+        var AnonceStr = '';
+        var Asignature = '';
+        window.shareData = {
+            "timgUrl": "",
+            "timeLineLink": "",
+            "tTitle": "",
+            "tContent": ""
+        };
+        function sharetext(){
+            wx.config({
+                debug: false,
+                appId: AappId,
+                timestamp: Atimestamp,
+                nonceStr: AnonceStr,
+                signature: Asignature,
+                jsApiList: [ // 所有要调用的 API 都要加到这个列表中       
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage'   
+                ]
+            });
+            wx.ready(function () {
+            //监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+                wx.onMenuShareTimeline({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    trigger: function (res) {     
+                     //点击分享是查询粉丝的分享记录，一周内只能领取一次       
+                    },
+                    success: function (res) {
+                        alert('分享成功');
+                          //分享成功后提示粉丝
+                          // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function (res) {
+                    },
+                    fail: function (res) {
+                      alert(JSON.stringify(res));
+                    }
+                });
+                wx.onMenuShareAppMessage({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    success: function () {
+                        alert('分享成功');
+                        // 用户确认分享后执行的回调函数
+                      //分享成功后提示粉丝
+                        // alert('成功分享到朋友');
+                        // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function () { 
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+            });
+            wx.error(function(res){
+            //config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新    签名。
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="hint">
+    	<p class="hint_p">恭喜您获得回收通增值劵</p>
+    	<p class="hint_p">共计<b class="sum"></b>元</p>
+    </div>
+    <div class="zzqDiv">
+    	<!--增值劵-->
+    </div>
+    <div class="term">增值券有效期至自领取日10日内</div>
+    <a class="submit" href="/index.php/nonstandard/system/welcome">马上报单</a>
+    <div class="account">
+        <span>增值劵已放入<span class="mobile"></span>账户</span>
+        <a class="switch" href="/view/coupon/receive.html">
+            <span>切换账号</span>
+        </a>
+    </div>
+    <div class="title">
+        <div class="motif">优惠券使用规则</div>
+    </div>
+    <p class="depict">1.数码产品回收，最终成交金额大于1000时方可使用</p>
+    <p class="depict">2.选择也大于1000的回收商时提示是否使用优惠券，选完后优惠券后预支付的钱只是本金</p>
+    <p class="depict">3.回收价1000元+50元优惠券本次获得1050元余额里面直接激活那么多钱</p>
+    <div class="copyright">© 2014-2017 回收通 版权所有，并保留所有权利</div>
+<script type="text/javascript" src="/static/coupon/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/coupon/js/index.js"></script>
+<script type="text/javascript" src="/static/article/ajax/request_common.js"></script>
+<script type="text/javascript" src="/static/coupon/ajax/request_coupon.js"></script>
+<script type="text/javascript">
+    var mobile=getUrlParam('mobile');
+    getCouInfo(mobile);
+</script>
+<script type="text/javascript">
+	window.onload=window.onresize=function(){
+		document.documentElement.style.fontSize=window.innerWidth/16+'px';
+	};
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>品牌管理</title>
+    <!-- Bootstrap -->
+    <link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/brandmanagement.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="navRuler">
+            <div id="digitalCon" class="menu-content">
+
+                <div class="contet">
+                    <div class="bottled">品牌管理</div>
+                    <div class="setting">
+                        <ul id="productType" class="nav nav-tabs">
+                            <li role="presentation" class="no-bl active" onclick="toggle();">
+                                <a  href="#">
+                                    <div class="include">
+                                        <div class="licensed">品牌</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation" class="no-bl" onclick="navigate(),typeBrandlist();">
+                                <a  href="#">
+                                    <div class="include">
+                                        <div class="licensed">型号</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="embody">
+                        <div class="mere">
+                            <div class="query">
+                                <input type="text" placeholder="输入品牌查询" class="seats"/>
+                                <div class="seek"></div>
+                            </div>
+                            <div class="append" onclick="addbrand();">添加品牌</div>
+                        </div>
+                        <div class="manage">
+                            <div class="choose">
+                                <span onclick="checkall();">全选</span>/
+                                <span onclick="checkInverse();">取消</span>
+                            </div>
+                            <div class="serial">编号</div>
+                            <div class="brand">品牌</div>
+                            <div class="join">加入时间</div>
+                            <div class="handle">操作</div>
+                        </div>
+                        <div id="brandlist">
+                        	<!-- 品牌列表 -->
+                        </div>
+                        <div class="tab">
+                            <input type="button" value="批量删除" class="delbtn" onclick="delMultiBrand();"/>
+                            <div class="page" id="brandpage">
+                                <!-- 分页 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comprise">
+                        <div class="mere">
+                            <div class="front">
+                                <div class="phoneg">手机品牌</div>
+                                <select class="pulldown" id="brandType"onchange="typeList(1);">
+                                    <!-- 手机品牌列表 -->
+                                </select>
+                                <input type="hidden" id="brandselect" value="">
+                            </div>
+                            <div class="query">
+                                <input type="text" id="typekeyword" placeholder="输入型号查询" class="seats"/>
+                                <div class="seek" onclick="searchType(1);"></div>
+                            </div>
+                            <div class="append" onclick="addmodel();">添加型号</div>
+                        </div>
+                        <div class="manage">
+                            <div class="choose">
+                                <span onclick="checkall1();">全选/</span>
+                                <span onclick="checkInverse1();">取消</span>
+                            </div>
+                            <div class="serial">编号</div>
+                            <div class="brand">型号</div>
+                            <div class="join">加入时间</div>
+                            <div class="handle">操作</div>
+                        </div>
+						<div id="typelist">
+							<!-- 型号列表 -->
+						</div>
+                        <div class="tab">
+                            <input type="button" value="批量删除" class="delbtn" onclick="batch();"/>
+                            <div class="page" id="typepage">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow"></div>
+    <div class="eject">
+        <div class="floor">
+            <input class="close-btn" value="×" type="button" onclick="reveal();"/>
+        </div>
+        <div class="title">添加型号</div>
+        <div class="covers">
+            <div class="botted">
+                <span>手机品牌</span>
+                <select class="pull" id="typebrand">
+                    
+                </select>
+            </div>
+            <div class="model">
+                <span>新增型号</span>
+                <input type="text" id="typename" value="" class="version"/>
+            </div>
+        </div>
+        <input type="button" value="确认添加" class="sure" onclick="adddtype(),reveal();"/>
+    </div>
+
+    <div class="gain">
+        <div class="rise">
+            <input class="clbtn" type="button" value="×" onclick="eyebrow();"/>
+        </div>
+        <div class="motif">添加品牌</div>
+        <div class="addition">
+            <span>新增品牌</span>
+            <input type="text" id="brand" value="iphone" class="entry"/>
+        </div>
+        <div class="tier" align="center">
+            <input type="button" value="确认添加" class="confirm" onclick="addBrnad();"/>
+        </div>
+    </div>
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_mobile.js"></script>
+<script type="text/javascript" src="../../static/c/js/brandmanagement.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+<script type="text/javascript">
+    load(3);
+</script>
+</body>
+</html>

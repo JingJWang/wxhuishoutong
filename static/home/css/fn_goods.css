@@ -1,0 +1,42 @@
+/*我的物品 myGoods.html*/
+.bb{border-bottom: 1px solid #ebebeb;}
+.bt{border-top: 1px solid #ebebeb;}
+.btnS1{border:1px solid #58ab22;  color:#58ab22; margin-right:0.64rem;}
+.btnS2{ border:1px solid #6c6c6c;  color:#6c6c6c; margin-right:0;}
+.MGheader{width:100%; height:1.11rem; line-height: 1.11rem; overflow: hidden;}
+.MGheader span{ display:inline-block; width:1.98rem; height:1.1rem; line-height: 1.2rem; overflow: hidden; font-size:0.3888rem; margin:0 0.5585rem; text-align: center; border-bottom: 2px solid #fff;}
+.MGheader span.active11{border-bottom: 2px solid #58ab22; color:#58ab22; }
+.MGcontent{width:100%; height:auto; overflow: hidden;}
+.MGcontent .mode{width:100%; height:auto; display: none;}
+.MGcontent .active22{display:block;}
+.MGcontent .modeA{width:100%; height:auto;  font-size:0.388rem;}
+.MGcontent .Tit{width:100%; height:0.796rem; line-height:0.796rem; font-size:0.3888rem; background:#ebebeb; padding-left: 0.493rem;}
+.MGcontent .modeBox{width:100%;height:auto; margin-top:0.314rem; padding-bottom:0.314rem; padding-left:0.315rem; overflow: hidden;}
+.MGcontent .modeBox div{float:left;}
+.MGcontent .imgBox{width:2.74rem; height:2.037rem; margin-right:0.38rem;}
+.MGcontent .conBox{width:2.389rem; height:1.713rem; margin-top:0.129rem;}
+.MGcontent .btn{ display:block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;  border-radius:0.037rem; text-align: center; margin-top: 0.326rem;}
+.MGcontent .delBox span{ display:block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;border-radius:0.037rem; text-align: center; margin-top: 0.98rem;  margin-left:0.64rem;}
+.MGcontent .time{width: 100%; height:auto; margin-top:0.2rem; line-height: 1.037rem; overflow: hidden;}
+.MGcontent .timeL{ float:left; width: 60%; height:1.037rem; line-height: 1.037rem; padding-left:0.315rem ; color:#6c6c6c;}
+.MGcontent .timeL img{ width:0.34rem; height: 0.34rem; padding-right:0.215rem;}
+.MGcontent .timeR{ width:30%; float: right; margin-right:0.5rem; text-align: right;}
+.MGcontent .timeR span{ font-size:0.488rem; color:#ff7d23;}
+.MGcontent .timeR span.btnW{display:inline-block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;  border-radius:0.037rem; text-align: center; margin-left:0.488rem; }
+.MGcontent .conBox2{width: 6.5rem; }
+.MGcontent .conBox2 .phone{width: auto;}
+.MGcontent .conBox2 .btnBox{width: auto; margin-top:0.326rem;}
+.MGcontent .conBox2 span{display:inline-block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;  border-radius:0.037rem; text-align: center;}
+.MGcontent .conBox2 .WP{font-size:0.295rem;}
+.MGcontent .conBox2 .WSF{ display:inline-block; width:2rem; height:0.537rem; line-height:0.537rem; border-radius: 0.2514rem;  background: #eee url("../images/cellphone.png") no-repeat 0.24rem center; background-size:0.24rem 0.277rem; padding-left:0.2rem;}
+.MGcontent .timeR .btnS3{border:1px solid #58ab22;  color:#58ab22;}
+.MGcontent .timeR .btnS4{ border:1px solid #6c6c6c;  color:#6c6c6c; margin-right:0;}
+.MGcontent .timeR .btnW{display:inline-block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;  border-radius:0.037rem; text-align: center; margin-left:0.488rem; }
+.MGcontent .again{width: 100%; height:auto; overflow: hidden; text-align: center; padding:0.2rem 0;}
+.MGcontent .again span{display:inline-block; width:2.2rem; height:0.8333rem; line-height:0.8333rem;  border-radius:0.037rem; text-align: center;border:1px solid #58ab22;  color:#58ab22;}
+.MGcontent .again span.again1{ margin-right:0.788rem;}
+.swiper-wrapper{ width: 100%; font-size: 0;}
+.navBox{width:100%; height:auto; overflow: hidden; background: #a3be92; padding:0.3rem 0;}
+.swiper-slide{ display:inline-block; width:2.125rem; height:0.9375rem; line-height: 0.9375rem; overflow: hidden; font-size:0.45rem; margin:0.1rem 0.5585rem; text-align: center; border: 1px solid #fff; border-radius: 2px; color:#fff;}
+.swiper-wrapper .active{border: 1px solid #5cb821; color:#5cb821; background: #f4ffed;}
+.phone{font-size: 0.45rem;}

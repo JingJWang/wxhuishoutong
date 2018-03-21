@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>回收通确认订单</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/flourMallNew.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/personalMessage.css"/>
+		<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/shop/js/flourMallNew.js"></script>		
+	</head>
+	<body>
+		<!--  grayBg start      -->
+		<div class="grayBg"></div>
+		<!--  grayBg end      -->
+		<!--  green start      -->
+		<div class="green addnext">
+			<div class="back">
+				<p>确认订单</p>
+				<a href="javascript:history.back();">返回</a>
+			</div>
+		</div>
+
+		<div class="newAddCon noOrderAddress" style="width:auto;">
+			<div class="name clearfix">
+				<p class="fl">手机号码<span></span></p>
+				<div class="fr text">
+					<input type="text" value="" class="input noInput" placeholder="输入联系您的手机号" onblur="checkPhone()"/>
+					<div id="addNum"></div>						
+				</div>
+			</div>
+		</div>
+		<!--  goodsInfo end      -->
+		<!-- --- subOrder start --- -->
+		<div class="subOrder">
+			<a onclick="getfloworder()">提交订单</a>
+		</div>
+		<form action="/index.php/shop/integral/getOrder" method="post" id="theform">
+			<input type="hidden" name="id" id="goodsid" value="">
+			<input type="hidden" name="prid" id="prid" value="">
+			<input type="hidden" name="limit" id="limit" value="">
+			<input type="hidden" name="mobile" id="mobile" value="">
+		</form>
+		<!-- --- subOrder end --- -->
+        <script src="../../static/home/js/request_common.js"></script>
+        <script src="../../static/shop/js/request_shop.js?v=1000"></script>
+        <script src="../../static/shop/ajax/request_flow.js?v=1000"></script>
+        <script type="text/javascript"> 
+		    var id=getUrlParam('id');
+		    $('.yes').attr('href', '../../view/shop/addAddress.html?id='+id);
+		    getflowinfo(id);
+		    function callpay(){
+			if (typeof WeixinJSBridge == "undefined"){
+			    if( document.addEventListener ){
+			        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+			    }else if (document.attachEvent){
+			        document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+			        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+			    }
+			}else{
+			    jsApiCall();
+			}
+		}		
+        </script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+</body>
+</html>

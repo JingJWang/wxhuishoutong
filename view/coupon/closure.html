@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/closure.css"/>
+</head>
+<body>
+<div class="context">
+    <img id="print" src="/static/coupon/images/bg_01.png"/>
+    <div class="content">
+        <div class="reveal">
+            <img src="/static/coupon/images/bg2.png"/>
+            <div class="dimension">
+                <div class="hd" align="center">
+                    <div class="photo">
+                        <img src="/static/coupon/images/head.png"/>
+                    </div>
+                </div>
+                <div class="prompt" align="center">
+                    <div class="circle">
+                        <div class="name">亲爱的回收通用户</div>
+                        <div class="name">活动已结束了</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end"></div>
+        <div class="cue">活动结束了</div>
+        <div class="handle" align="center">
+            <a class="betray" href="http://wx.recytl.com/index.php/nonstandard/submitorder/ViewBrand?id=5">去卖手机</a>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="/static/coupon/js/jquery-1.11.1.min.js"></script>
+<script>
+    var width = parseInt(document.body.clientWidth);
+    if(width <= 366){
+        $("img#print").attr('src' , '/static/coupon/images/bg_01a.png');
+    }
+</script>
+</body>
+</html>

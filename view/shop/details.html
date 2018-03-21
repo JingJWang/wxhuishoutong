@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>回收通交易详情</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/flourMallNew.css?v=1001"/>
+		<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+	<div style="width:100%;height:100%;position:absolute;">
+		<!--  green start      -->
+		<div class="green">
+			<div class="back">
+				<p>交易详情</p>
+				<a href="/view/shop/record.html">返回</a>
+			</div>
+		</div>
+		<!--  green end      -->
+		<!--  goodsInfo start    -->
+		<div class="goods">
+			<div class="goodsInfo">
+				<div class="con">
+					<dl class="clearfix">
+						<dt class="fl"><img class="imgs" src="" width="120px" height="90px"/></dt>
+						<dd class="fl">
+							<h3 class="title"></h3>
+							<div class="price"><span class="money"></span><span class="flour"></span></div>
+						</dd>
+					</dl>
+				</div>
+				<div class="number clearfix">
+					<h3 class="tit fl">数量</h3>
+					<p class="conP fr num"></p>
+				</div>
+				<div class="number sum clearfix">
+					<h3 class="tit fl">商品合计</h3>
+					<p class="conP fr">
+						<span class="orange amoney"></span>
+						<span class="orange aflour"></span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--  goodsInfo end      -->
+		<!--  status start  虚拟物品  -->
+		<div class="status">
+			<div class="time clearfix">
+				<h3 class="tit fl">下单时间</h3>
+				<p class="conP fr time">
+					<span class="gray"></span>&nbsp;
+					<!-- <span class="gray">12:14:36</span> -->
+				</p>
+			</div>
+			<div class="state clearfix">
+				<h3 class="tit fl">状态</h3>
+				<p class="conP fr gray astatus"></p>
+			</div>
+			<!--注意：让div.expressInfo显示的同时，要让div.changeCode隐藏-->
+		</div>
+		<!--  status end    -->
+		<!--  changeCode start    -->
+		<!--注意：让div.changeCode显示的同时，要让div.expressInfo隐藏-->
+		<!--  changeCode end    -->
+		<a href='javascript:;' class='print'><img src='../../static/shop/images/gug1.png' /></a>
+		<div style="width:100%;height:50px;"></div>
+		<!-- --- backMall start --- -->
+		<div class="backMall">
+			<a href="/view/shop/list.html">返回通花商城</a>
+		</div>
+		<!-- --- backMall end --- -->
+	</div>
+
+	<div class="shadow" style="display:none;"></div>
+	<div class="ceng" style="display:none;">
+		<div class="share"></div>
+		<div class="follow">
+			<div class="theme">
+				<div class="welfare">
+					<div class="close">
+						<a class="close-btn" href="javascript: close();">×</a>
+					</div>
+					<div class="name">
+						<span>购买成功</span>
+					</div>
+					<div class="guide">关注回收通高价买/卖数码、奢侈品</div>
+					<div class="some">了解更多实物、视频、攻略福利</div>
+				</div>
+			</div>
+			<div class="include">
+				<div class="triangle"></div>
+			</div>
+			<div class="box">
+				<div class="code">
+					<img src="../../static/shop/images/codeg.png" />
+				</div>
+				<div class="explain">长按二维码，关注回收通</div>
+				<div class="search">或微信搜索"huishoutong",关注我们</div>
+			</div>
+		</div>
+	</div>
+	<!--会员购买成功-->
+	<div class="huiyBox"></div>
+
+<script type="text/javascript" src="../../static/home/js/request_common.js"></script>
+		<script type="text/javascript" src="../../static/shop/js/flourMallNew.js?v=1000"></script>
+<script type="text/javascript" src="../../static/shop/js/request_shop.js?v=1001"></script>
+<script type="text/javascript">
+getRecord();
+board();
+</script>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	</body>
+</html>

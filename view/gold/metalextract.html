@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>提货</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet" href="../../static/gold/css/pickGoods.css" />		
+	</head>
+	<body>
+		<header>
+			<a href="../../index.php/nonstandard/system/welcome" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>首页</p>
+			</a>
+			<h1>提货</h1>
+			<a href="../../view/gold/record.html" class="pGRecord">提货记录</a>
+		</header>
+		<p class="tradingHour">提货仅支持最高纯度，低纯度贵金属将按售价折合</p>
+		
+		<div class="pGoods">
+			<div class="pickGoods">
+				<h1>黄金</h1>
+				<div class="asNum">
+					<div>
+					<button class="subtract firstS" onclick="metalStyle.reckonExtract(this,-1)"></button>
+					<input type="text" class="num firstN" id="goldData"  name="gold" value="0" onfocus="this.value=''" onchange="metalStyle.reckonExtract(this,0)" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+					<button class="add firstA" onclick="metalStyle.reckonExtract(this,1)"></button>
+					</div>
+					<p class="asNum_p firstP"></p>
+				</div>
+			</div>
+			<span class="inventory">库存可提货 ： 黄金<s class="inventory_num s1" id="gold"></s>g</span>
+		</div>
+		<div class="pGoods">
+			<div class="pickGoods">
+				<h1>铂金</h1>
+				<div class="asNum">
+					<div>
+					<button class="subtract secondS" onclick="metalStyle.reckonExtract(this,-1)"></button>
+					<input type="text" class="num secondN" id="platinumData" value="0"  name="platinum" onfocus="this.value=''" onchange="metalStyle.reckonExtract(this,0)"  onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+					<button class="add secondA" onclick="metalStyle.reckonExtract(this,1,'platinum')"></button>
+					</div>
+					<p class="asNum_p secondP"></p>
+				</div>
+			</div>
+			<span class="inventory">库存可提货 ： 铂金<s class="inventory_num s2" id="platinum"></s>g</span>
+		</div>
+		<div class="pGoods">
+			<div class="pickGoods">
+				<h1>白银</h1>
+				<div class="asNum">
+					<div>
+					<button class="subtract secondS" onclick="metalStyle.reckonExtract(this,-1)"></button>
+					<input type="text" class="num secondN" id="silverData" value="0" name="silver" onfocus="this.value=''" onchange="metalStyle.reckonExtract(this,0)" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+					<button class="add secondA" onclick="metalStyle.reckonExtract(this,1,'silver')"></button>
+					</div>
+					<p class="asNum_p secondP"></p>
+				</div>
+			</div>
+			<span class="inventory">库存可提货 ： 白银<s class="inventory_num s2" id="silver"></s>g</span>
+		</div>
+		<div class="shopAddress">
+			<h1>选择收货地址</h1>
+			<a href="../../view/shop/selectAddress.html?sign=stock">
+				<div class="nameAddress"></div>
+			</a>
+			<p class="prompt">提示：收货人信息与绑定信息一致</p>
+		</div>		
+		<div class="submit_j">
+		<!-- ../../view/gold/pickGoodsSuccess.html -->
+			<a class="subbtn" href="javascript:;" onclick="metalOrdre.submitStock();">提 交</a>
+		</div>
+		<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+		<script type="text/javascript" src="../../static/gold/js/rem.js"></script>
+		<script type="text/javascript">
+			metalOrdre.metalstockinfo();
+			var id=getUrlParam('addres');
+			if(id == null){
+				id=0;
+			}
+			metalOrdre.metalstockaddres(id);
+		</script>		
+	</body>
+</html>

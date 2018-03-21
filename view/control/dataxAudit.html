@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/dataAudit.css"/>
+
+</head>
+<body>
+    <div class="navRuler">
+        <div id="digitalCon" class="menu-content">
+            <div class="casket">
+                <div class="title">数据审核</div>
+
+                <div class="search">
+                    <div class="query">
+                        <input type="text" placeholder="输入手机号搜索" class="seats"/>
+                        <div class="seek" onclick="getinfo()"></div>
+                    </div>
+                    <!-- <div class="type">
+                        <span>状态</span>
+                        <div class="classify">
+                            <div class="digitalorder"></div>
+                            <div class="option" onclick="droplist();"></div>
+                            <div class="drop-box">
+                                <div class="tips-out-border">
+                                    <div class="tips-out-bg"></div>
+                                    <div class="tips-out"></div>
+                                </div>
+                                <div class="details active" onclick="chosen(this)";>未审核</div>
+                                <div class="details" onclick="chosen(this)";>审核通过</div>
+                                <div class="details" onclick="chosen(this)";>审核未通过</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="while">
+                        <!-- <a href="javascript:;" onclick="timegetinfo(1)">今天</a>
+                        <a href="javascript:;" onclick="timegetinfo(2)">昨天</a> -->
+                        <input id="start" class="date laydate-icon"/>
+                        <input id="end" class="date laydate-icon"/>
+                        <!-- <input class="sure" type="button" onclick="timegetinfo()" value="确认"/> -->
+                    </div>
+                </div>
+
+                <div class="raise">
+                    <div class="property">
+                        <div class="details">
+                            <div class="numa">
+                                <span class="all">全选</span>
+                            </div>
+                            <div class="such">手机号码</div>
+                            <div class="condition">订单时间</div>
+                            <div class="telephone">状态</div>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="contents"></div>
+                       
+                        <div class="double">
+                            <input type="button" class="press-btn through" value="全部通过"/>
+                            <!-- <input type="button" class="press-btn failed" value="全部未通过"/> -->
+                            <input type="button" class="press-btn keep" onclick="getcheck();" value="提交保存"/>
+                            <input type="button" class="press-btn" value="导出exl"/>
+                            <div class="page">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_auditx.js"></script>
+<script src="../../static/c/js/dataAudit.js"></script>
+<script src="../../static/c/js/publicJS.js"></script>
+<!-- <script src="../../static/c/js/laydate.js"></script> -->
+<script type="text/javascript">
+    load(8);
+
+    //日期控件
+    // var start = {
+    //     elem: '#start',
+    //     format: 'YYYY-MM-DD',
+    //     max: '2099-06-16', //最大日期
+    //     istime: false,
+    //     istoday: false,
+    //     choose: function(datas){
+    //         end.min = datas; //开始日选好后，重置结束日的最小日期
+    //         end.start = datas ;//将结束日的初始值设定为开始日
+    //     }
+    // };
+    // var end = {
+    //     elem: '#end',
+    //     format: 'YYYY-MM-DD',
+    //     max: '2099-06-16',
+    //     istime: false,
+    //     istoday: false,
+    //     choose: function(datas){
+    //         start.max = datas; //结束日选好后，重置开始日的最大日期
+    //     }
+    // };
+    // laydate(start);
+    // laydate(end);
+</script>
+</body>
+</html>

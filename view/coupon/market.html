@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/market.css"/>
+</head>
+<body>
+<div class="title">增值卡券<a class="back" href="javascript:history.back(-1);">返回</a>
+</div>
+<div class="full-top"></div>
+<div class="tips"></div>
+<div class="listing">
+</div>
+<script type="text/javascript" src="/static/coupon/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/coupon/js/market.js"></script>
+<script type="text/javascript" src="/static/coupon/ajax/request_couponuser.js"></script>
+<script type="text/javascript" src="/static/article/ajax/request_common.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var fun = getcouponuserinfo; //引用abc函数
+    fun();
+  });
+</script>
+</body>
+</html>

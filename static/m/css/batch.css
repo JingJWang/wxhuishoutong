@@ -1,0 +1,188 @@
+body{
+    background-color:#F5F5F5;
+    color:#575757;
+}
+input{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+}
+.title{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align:center;
+    font-size:18px;
+    color:#ffffff;
+    background-color:#57A921;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+.title .back{
+    width:48px;
+    height:45px;
+    line-height: 45px;
+    font-size:18px;
+    color:#ffffff;
+    background-image:url(../images/back.png);
+    background-size:9px 17px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    padding-left: 8px;
+    position:absolute;
+    top:0px;
+    left:15px;
+}
+.full-top{
+    width:100%;
+    height:45px;
+}
+.content{
+    padding:0px 15px;
+    height:auto;
+}
+.content .comprise{
+    width:100%;
+    height:auto;
+}
+.content .comprise .amount{
+    padding:0px 15px;
+    height:48px;
+    background-color:#ffffff;
+    border-radius: 5px;
+    border:1px solid #EAEAEA;
+    margin:15px 0px 10px 0px;
+}
+.content .comprise .amount .words{
+    height:48px;
+    line-height: 48px;
+    font-size:16px;
+}
+.content .comprise .amount .sum{
+    margin:0px 26px 0px 64px;
+    height:48px;
+}
+.content .comprise .amount .sum .number{
+    width:100%;
+    height:48px;
+    line-height: 48px;
+    font-size:16px;
+    color:#666666;
+    text-align:right;
+}
+.content .comprise .remark{
+    padding:14px 15px 0px 15px;
+    height:84px;
+    background-color:#ffffff;
+    border-radius: 5px;
+    border:1px solid #EAEAEA;
+}
+.content .comprise .remark .words{
+    height:16px;
+    line-height: 18px;
+    font-size:16px;
+    margin:0px 0px 68px 0px;
+}
+.content .comprise .remark .desc{
+    margin:0px 0px 0px 52px;
+    height:84px;
+}
+.content .comprise .remark .desc .note{
+    width:100%;
+    height:84px;
+    line-height: 20px;
+    color:#666666;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+}
+.content .comprise .mode{
+    padding:0px 15px;
+    height:50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin:10px 0px 5px 0px;
+}
+.content .comprise .mode .cue{
+    height:50px;
+    line-height: 50px;
+    font-size:16px;
+}
+.content .comprise .mode .way{
+    height:50px;
+    line-height: 50px;
+    font-size:14px;
+    background-image:url(../images/bank.png);
+    background-size:20px 20px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    padding-left:30px;
+}
+.content .comprise .information{
+    padding:0px 10px;
+    height:auto;
+    background-color:#ffffff;
+    border-radius: 5px;
+}
+.content .comprise .information .covers{
+    padding:0px 0px 0px 5px;
+    height:47px;
+    border-bottom: 1px solid #dddddd;
+    display:block;
+}
+.content .comprise .information .covers:nth-of-type(3){
+    border-bottom: 0px;
+}
+.content .comprise .information .covers .motif{
+    width:70px;
+    height:47px;
+    line-height: 47px;
+}
+.content .comprise .information .covers .case{
+    margin-left:70px;
+    height:47px;
+}
+.content .comprise .information .covers .case .entry{
+    width:100%;
+    height:47px;
+    line-height: 47px;
+    color:#666666;
+}
+.content .comprise .illustrate{
+    width:100%;
+    height:auto;
+    margin:10px 0px 0px 0px;
+}
+.content .comprise .illustrate .words{
+    width:30px;
+    height:20px;
+    line-height: 22px;
+}
+.content .comprise .illustrate .side{
+    margin-left:30px;
+    height:auto;
+}
+.content .comprise .illustrate .side p{
+    width:100%;
+    line-height: 22px;
+    color:#666666;
+    font-size:12px;
+}
+.fastener{
+    width:100%;
+    height:50px;
+    margin:28px 0px 20px 0px;
+}
+.fastener .submit{
+    margin:0px 20px;
+    height:50px;
+    line-height: 50px;
+    text-align:center;
+    font-size:16px;
+    color:#ffffff;
+    background-color:#5AAC25;
+    border-radius: 5px;
+    display:block;
+}

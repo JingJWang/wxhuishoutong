@@ -1,0 +1,109 @@
+body{
+    background-color: #ffffff;!important;
+}
+.satnav{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #58AB22;
+    color:#ffffff;
+    font-size: 18px;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+.satnav .back{
+    width:48px;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color:#ffffff;
+    display:block;
+    background-image: url(../images/back1.png);
+    background-size: 9px 17px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:15px;
+    padding-left:7px;
+}
+.full-top{
+    width:100%;
+    height:45px;
+}
+.content{
+    width:100%;
+    height:auto;
+    background-color: #F9F9F9;
+    padding-bottom: 5px;
+}
+.dimension{
+    padding:20px 15px 0px 15px;
+    height:auto;
+    background-color: #ffffff;
+}
+.dimension .brief{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    font-size: 14px;
+    padding-bottom: 15px;
+    color:#888888;
+}
+.dimension .brief .name{
+    color:#575757;
+}
+.dimension .brief .price{
+    color:#f85e26;
+    font-size: 16px;
+}
+.defray{
+    padding:20px 20px 0px 20px;
+    height:auto;
+    background-color: #ffffff;
+    margin-top: 5px;
+}
+.defray .tips{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#575757;
+    text-align: center;
+    position:relative;
+    padding-bottom: 30px;
+}
+.defray .tips .line-left{
+    width:37%;
+    height:1px;
+    background-color: #cccccc;
+    position:absolute;
+    left:0px;
+    top:0px;
+    margin:9.5px 0px;
+}
+.defray .tips .line-right{
+    width:37%;
+    height:1px;
+    background-color: #cccccc;
+    position:absolute;
+    right:0px;
+    top:0px;
+    margin:9.5px 0px;
+}
+.defray .code{
+    width:100%;
+    height:250px;
+}
+.defray .code .print{
+    width:248px;
+    height:248px;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+}
+.defray .code .print img{
+    width:100%;
+    height:100%;
+}

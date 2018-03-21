@@ -1,0 +1,46 @@
+/*.guiding{
+    font-size: 16px;
+    text-align: center;
+  }
+  .appBox a.btnAn{
+    display: block;
+    width: 6rem;
+    height: 1.64rem;
+    line-height: 1.64rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #fff;
+    border-radius: 0.1rem;
+    padding-left: 10%;
+    margin: 0.2rem auto;
+  }
+  .btnAn{
+    background: #6994d4 url("../../../static/home/images/androiddown.png") no-repeat 0.8rem 0.35rem;
+    background-size: 0.8125rem 0.9375rem;
+  }
+  .BPbox{
+    border-bottom: 1px solid #d5d5d5;
+    border-top: 1px solid #d5d5d5;
+    padding-bottom: 10px;
+  }*/
+.btnBox{text-align: center; margin-bottom: 10px;}
+.btn,.btnBack{font-size:16px; color:#fff;  width:40%; height:40px; line-height: 40px; background: #58ab22;  border-radius: 4px; display: inline-block;  text-align: center;}
+.btnBox a:link,.btnBox a:visited,.btnBox a:active{color:#fff;}
+.shadow{width:100%; height:100%; position:fixed; left:0; top:0; background: rgba(0,0,0,0.7); display: none;}
+.sharefx{width:228px;height:131px; font-size: 0;}
+.sharefx img{width:228px;height:121px;  display: block; position:absolute; right:30px; top:10px;}
+.treefx{margin-top:84px; width:100%; text-align: center;}
+.treefx img{width:203px;height:121px;  display: block; margin:0 auto;}
+.hstfx{}
+.hstfx img{ width:59px;height:28px;  display: block; position:absolute; right:30px; bottom:18px;}
+.shadow_two{display: none;}
+.shadow_two{width:100%; height:100%; position:fixed; left:0; top:0; background: rgba(0,0,0,0.7); display: none;}
+.BPbox{position: absolute;top:100px;}
+.BPbox .btn{ background: #fff; padding:0.926rem 0;margin: 0;}
+.bg_c{margin: 5px 28px;}
+.register_text{font-size: 16px;padding: 6px 0 20px 0;text-align: center;}
+/*2016-01-09 改*/
+.instruction_content{border-bottom:1px solid #ccc; padding:20px 0;}
+.fgongxian{margin-top:30px;}
+.fjiang{background: #fff; border:1px solid #58ab22; color:#58ab22; font-size: 16px;}
+.fjiang:link,.fjiang:visited,.fjiang:active{ color:#58ab22;}

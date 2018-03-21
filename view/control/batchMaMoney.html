@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>品牌管理</title>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/bathMoney.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="navRuler">
+            <div id="digitalCon" class="menu-content">
+            	<!--手机型号-->
+            	<a href="javascript:history.go(-1);" class="goback">返回</a>
+            	<!--tab切换-->
+            	<ul class="tab">
+            		<li class="tabLi clickLi" onclick="changeForm(this);">按品牌修改</li>
+            		<li class="tabLi" onclick="changeForm(this);">价格筛选</li>
+            	</ul>
+            		<form>
+            			<div class="tabdiv">
+							<div class="model">
+								<span class="pname_j">请选择手机品牌</span>
+								<input type="button" value="全选" class="choses_btn" id="selectAll">  
+								<input type="button" value="取消选择" class="choses_btn" id="unSelect"> 
+								<div id="model_j" class="model_j">
+								<!--加载手机品牌-->
+								</div>
+							</div>
+
+							<!--<div class="bili way" style="display: none;">
+								<input type="number" class="posi_inp" placeholder="输入调整价格百分比" oninput="saveInpVal(this);">
+								<b class="posi_last">%</b><b style="color:red;float:left">提示:输入值最小为1</b>-->
+
+							<div class="model" style="display: none;">
+								<span class="pname_j">请选择金额范围</span>
+								<div class="modSelect">
+									<input type="text" readonly="readonly" value="50~500" class="nowoption" onclick="rangepir(this);"/><b class="triangle-down"></b>
+									<ul class="priRange" style="display: none;"> 
+										<li onclick="saverang(this);">50~500</li> 
+										<li onclick="saverang(this);">501~1500</li> 
+										<li onclick="saverang(this);">1501~2500</li> 
+										<li onclick="saverang(this);">2501~3501</li> 
+										<li onclick="saverang(this);">3501以上</li> 
+									</ul> 
+								</div>
+							</div>
+						</div>
+						<!--调整方式-->
+						<div class="model">
+							<span class="pname_j">请选择调价方式:</span>
+							<div class="typs">
+								<input type='text' readonly="readonly" class="typeInp" data="1" value="加价" onclick="oper(this);">
+								<input type='text' readonly="readonly" class="typeInp" data="2"  value="减价" onclick="oper(this);">
+							</div>
+							
+							<lable class="lablerad"><input type="radio" name="money" class="radio_j" value="" data-radio="1" onclick="showJ(this);dataRadio(this);"><span>按金额调整价格</span></lable>
+							<lable class="lablerad"><input type="radio" name="money" class="radio_j" value="" data-radio="2" onclick="showB(this);dataRadio(this);"><span>按百分比调整价格</span></lable>
+							<input type="hidden" class="hideRadio" value="" name="" data=""/>
+							<div class="posiInp">
+								<div class="jine way" style="display: none;">
+									<input type="number" class="posi_inp" placeholder="输入调整金额" oninput="saveInpVal(this);">
+									<b class="posi_last">元</b>
+								</div>
+								<div class="bili way" style="display: none;">
+									<input type="number" class="posi_inp" placeholder="输入调整价格百分比" oninput="saveInpVal(this);">
+									<b class="posi_last">%</b><b style="color:red;float:left">提示:输入值最小为1</b>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!--按钮-->
+					<div class="btn_j">
+						<b class="save_j btn_com" onclick="showShadow(this)" data="0">保存</b>
+					</div>
+            	</div>
+				<!--二次确认修改     品牌    -->
+				<div class="posi_j_one posi_j" style="display: none;">
+					<p class="posi_p">要修改的手机品牌为：</p>
+					<p class="posi_p showCheckModel"></p><!--放入手机品牌-->
+					<p class="posi_p">价格调整：<b class="final_typeInp"></b>:<i class="final_font"></i></p><!--后面添加所选的价格或者百分比-->
+					<div class="final">
+						<span class="sure_pos btn_final" onclick="savepi();hidebtn();">确认</span>
+						<span class="cancel_pos btn_final" onclick="hidebtn();">取消</span>
+					</div>
+				</div>
+				<!--二次确认修改     范围    -->
+				<div class="posi_j_two posi_j"  style="display: none;">
+					<p class="posi_p">要修改手机区间范围为：</p>
+					<p class="posi_p showQujian"></p><!--放入手机区间-->
+					<p class="posi_p">价格调整：<b class="final_typeInp"></b>:<i class="final_font"></i></p><!--后面添加所选的价格或者百分比-->
+					<div class="final">
+						<span class="sure_pos btn_final" onclick="saveRangpi();hidebtn();">确认</span>
+						<span class="cancel_pos btn_final" onclick="hidebtn();">取消</span>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow" style="display: none;"></div>
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_manageprice.js"></script>
+<script type="text/javascript" src="../../static/c/js/batchMoney.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+<script type="text/javascript">
+    load(29);
+    loadmodel();		//加载手机品牌
+</script>
+</body>
+</html>

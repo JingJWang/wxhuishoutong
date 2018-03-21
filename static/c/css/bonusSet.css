@@ -1,0 +1,1083 @@
+.box{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+input{
+	outline: none;
+}
+.contet{
+    height:auto;
+    padding:0px 28px;
+}
+.contet .bottled{
+    width:100%;
+    height:65px;
+    line-height: 65px;
+    font-size: 16px;
+    color:#959595;
+}
+.contet .setting{
+    width:100%;
+    height:auto;
+}
+.nav-tabs#productType>li>a{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-right: 0px;
+}
+.nav-tabs#productType>li.active>a{
+    border-bottom-color: transparent;
+}
+.no-bl{
+    border-left: none !important;
+}
+.no-bl .include{
+    width: auto;
+    height: 20px;
+    padding:0px 14px;
+    cursor:pointer;
+}
+.no-bl .include .licensed{
+    width: auto;
+    height: 18px;
+
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    float: left;
+    margin-top: 1px;
+}
+.no-bl.active .include .licensed{
+    border-left: 3px solid red;
+}
+.contet .embody{
+    width:100%;
+    height:auto;
+}
+.contet .embody .mere{
+    width:100%;
+    height:102px;
+    padding:40px 0px 22px 0px;
+}
+.contet .embody .mere .query{
+    width:238px;
+    height:40px;
+    float:left;
+}
+.contet .embody .mere .query .seats{
+    width:203px;
+    height:40px;
+    line-height:40px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color:#BDBDBD;
+    border:1px solid #E0E0E0;
+    float:left;
+    padding-left:12px;
+}
+.contet .embody .mere .query .seek{
+    width:35px;
+    height:40px;
+    float:left;
+    background: url(../images/spiritPic.png) no-repeat 7px -126px;
+    right: 0px;
+    top: 0px;
+    border:1px solid #E0E0E0;
+}
+.contet .embody .mere .append{
+    width:auto;
+    height:40px;
+    margin-left:38px;
+    float:left;
+    line-height:40px;
+    background-image: url(../images/sign.png);
+    background-size: 21px 20px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    font-size: 14px;
+    padding-left: 30px;
+    cursor:default;
+}
+.contet .embody .manage{
+    width:100%;
+    height:38px;
+    background-color:#EEEEEE;
+    padding:10px 6px;
+    color:#333333;
+    font-size: 14px;
+    cursor:default;
+    margin-bottom: 16px;
+}
+.contet .embody .manage .choose{
+    width:11%;
+    height:18px;
+    line-height:18px;
+    border-left:2px solid #DDDDDD;
+    padding-left: 8px;
+    float:left;
+}
+.contet .embody .manage div{
+	height:18px;
+    line-height: 18px;
+    border-left:2px solid #DDDDDD;
+    float:left;
+    padding-left: 12px;
+}
+.contet .embody .manage div{
+	width: 20%;
+}
+.contet .embody .breed{
+    width:100%;
+    height:60px;
+    margin-bottom: 16px;
+    border:1px solid #EBEBEB;
+    box-shadow: 2px 2px 2px 2px #E5E6E5;
+    padding:12px 16px;
+}
+.contet .embody .breed .icon{
+    width:10%;
+    height:36px;
+    float:left;
+}
+.contet .embody .breed .icon .graph{
+    width:18px;
+    height:18px;
+    margin:9px 0px;
+    background-image: url(../images/check.png);
+}
+.contet .embody .breed .icon .graph.active{
+    background-image: url(../images/pitch.png);
+}
+.contet .embody .breed .number{
+    width:20%;
+    margin-left:10px;
+    height:36px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .embody .breed .item{
+    width:17%;
+    height:36px;
+    line-height:36px;
+    color:#666666;
+    float:left;
+}
+.contet .embody .breed .nowValue{
+    width:17%;
+    height:36px;
+    line-height:36px;
+    color:#666666;
+    float:left;
+}
+.contet .embody .breed .item .caddy{
+    width:90%;
+    height:34px;
+    border-radius:3px;
+}
+.contet .embody .breed .item .caddy.active{
+    border:1px solid #DDDDDD;
+}
+.contet .embody .breed .item .caddy .chart{
+    width:66px;
+    height:34px;
+    float:right;
+    display:none;
+}
+.contet .embody .breed .item .caddy .chart .keep{
+    width:19px;
+    height:19px;
+    margin:7.5px 14px 7.5px 0px;
+    background-image: url(../images/hold.png);
+    float:left;
+}
+.contet .embody .breed .item .caddy .chart .remove{
+    width:19px;
+    height:19px;
+    margin:7.5px 14px 7.5px 0px;
+    background-image: url(../images/away.png);
+    float:left;
+}
+.contet .embody .breed .item .caddy .bong{
+    height:34px;
+    margin-right:66px;
+}
+.contet .embody .breed .item .caddy .bong .field{
+    width:100%;
+    height:32px;
+    line-height:32px;
+    padding-left:10px;
+    border:0px;
+    margin:0px;
+    display:block;
+    float:left;
+    outline:none;
+}
+.contet .embody .breed .while{
+    width:21%;
+    height:36px;
+    margin-left:30px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .embody .breed .operate{
+    width:18%;
+    height:36px;
+    padding-left:10px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .embody .breed .operate .alter{
+    width:30px;
+    height:18px;
+    line-height: 18px;
+    border:0px;
+    outline:none;
+    background-color: #ffffff;
+    color:#91BEFF;
+}
+.contet .embody .breed .operate .delet{
+    width:30px;
+    height:18px;
+    line-height: 18px;
+    border:0px;
+    outline:none;
+    background-color: #ffffff;
+    color:#FF7160;
+    margin-left: 10px;
+}
+.contet .embody .tab{
+    width:100%;
+    height:30px;
+    margin-top: 22px;
+}
+.contet .embody .tab .delbtn{
+    width:98px;
+    height:28px;
+    border:1px solid #DDDDDD;
+    line-height: 28px;
+    color:#FF7160;
+    text-align: center;
+    background-color: #ffffff;
+    float:left;
+    outline:none;
+}
+.contet .embody .tab .page{
+    width:auto;
+    height:25px;
+    padding:1.5px 0px;
+    line-height:25px;
+    float:right;
+    margin-right: 30px;
+}
+.contet .embody .tab .page .fewpage{
+    width:auto;
+    height:25px;
+    display:block;
+    line-height: 25px;
+    text-align: center;
+    padding:0px 10px;
+    float:left;
+    margin-right: 10px;
+}
+.contet .embody .tab .page .fewpage.dig{
+    background-color: #569DFF;
+    color:#ffffff;
+}
+.comprise{
+    width:100%;
+    height:auto;
+    display:none;
+}
+.contet .comprise .mere{
+    width:100%;
+    height:102px;
+    padding:40px 0px 22px 0px;
+}
+.contet .comprise .mere .front{
+    width:204px;
+    height:40px;
+    line-height: 40px;
+    float:left;
+    margin-right: 34px;
+}
+.contet .comprise .mere .front .phoneg{
+    width:68px;
+    height:40px;
+    padding-right: 12px;
+    color:#959595;
+    cursor:default;
+    float:left;
+}
+.contet .comprise .mere .query .phoneg{
+    width:68px;
+    height:40px;
+    line-height:40px;
+    padding-right: 12px;
+    color:#959595;
+    cursor:default;
+    float:left;
+}
+.contet .comprise .mere .front .pulldown{
+    width:236px;
+    height:40px;
+    line-height: 40px;
+    padding-left: 10px;
+    float:left;
+    border:1px solid #E0E0E0;
+}
+.contet .comprise .mere .query{
+    width:350px;
+    height:40px;
+    float:left;
+}
+ .seats{
+    width:100px;
+    height:40px;
+    line-height:40px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color:#BDBDBD;
+    border:1px solid #E0E0E0;
+    padding-left:12px;
+}
+.contet .comprise .mere .query .seek{
+    width:35px;
+    height:40px;
+    float:left;
+    background: url(../images/spiritPic.png) no-repeat 7px -126px;
+    right: 0px;
+    top: 0px;
+    border:1px solid #E0E0E0;
+}
+.contet .comprise .mere .append{
+    width:auto;
+    height:40px;
+    margin-left:38px;
+    float:left;
+    line-height:40px;
+    background-image: url(../images/sign.png);
+    background-size: 21px 20px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    font-size: 14px;
+    padding-left: 30px;
+    cursor:default;
+}
+.contet .comprise .manage{
+    width:100%;
+    height:38px;
+    background-color:#EEEEEE;
+    padding:10px 6px;
+    color:#333333;
+    font-size: 14px;
+    cursor:default;
+    margin-bottom: 16px;
+}
+.contet .comprise .manage div{
+    height:18px;
+    line-height:18px;
+    border-left:2px solid #DDDDDD;
+    padding-left: 8px;
+    float:left;
+}
+.contet .comprise .manage div{
+    width:25%;
+}
+
+.contet .comprise .breed{
+    width:100%;
+    height:60px;
+    margin-bottom: 16px;
+    border:1px solid #EBEBEB;
+    box-shadow: 2px 2px 2px 2px #E5E6E5;
+    padding:12px 16px;
+}
+.contet .comprise .breed .icon{
+    width:11%;
+    height:36px;
+    float:left;
+}
+.contet .comprise .breed .icon .graph{
+    width:18px;
+    height:18px;
+    margin:9px 0px;
+    background-image: url(../images/check.png);
+}
+.contet .comprise .breed .icon .graph.active{
+    background-image: url(../images/pitch.png);
+}
+.contet .comprise .breed .number,.item,.nowValue,.operate{
+    width:25%;
+    height:36px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .comprise .breed .item .caddy .chart .keep{
+    width:19px;
+    height:19px;
+    margin:7.5px 14px 7.5px 0px;
+    background-image: url(../images/hold.png);
+    float:left;
+}
+.contet .comprise .breed .item .caddy .chart .remove{
+    width:19px;
+    height:19px;
+    margin:7.5px 14px 7.5px 0px;
+    background-image: url(../images/away.png);
+    float:left;
+}
+.contet .comprise .breed .item .caddy .bong{
+    height:34px;
+    margin-right:66px;
+}
+.contet .comprise .breed .item .caddy .bong .field{
+    width:100%;
+    height:32px;
+    line-height:32px;
+    padding-left:10px;
+    border:0px;
+    margin:0px;
+    display:block;
+    float:left;
+    outline:none;
+}
+.contet .comprise .breed .while{
+    width:15%;
+    height:36px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .comprise .breed .addJ{
+    width:18%;
+    height:36px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}.contet .comprise .breed .addZhi{
+    width:13%;
+    height:36px;
+    line-height: 36px;
+    color:#666666;
+    float:left;
+}
+.contet .comprise .breed .operate .alter{
+    width:30px;
+    height:18px;
+    line-height: 18px;
+    border:0px;
+    outline:none;
+    background-color: #ffffff;
+    color:#91BEFF;
+}
+.contet .comprise .breed .operate .delet{
+    width:30px;
+    height:18px;
+    line-height: 18px;
+    border:0px;
+    outline:none;
+    background-color: #ffffff;
+    color:#FF7160;
+    margin-left: 10px;
+}
+.contet .comprise .tab{
+    width:100%;
+    height:30px;
+    margin-top: 22px;
+}
+.contet .comprise .tab .delbtn{
+    width:98px;
+    height:28px;
+    border:1px solid #DDDDDD;
+    line-height: 28px;
+    color:#FF7160;
+    text-align: center;
+    background-color: #ffffff;
+    float:left;
+    outline:none;
+}
+.contet .comprise .tab .page{
+    width:auto;
+    height:25px;
+    padding:1.5px 0px;
+    line-height:25px;
+    float:right;
+    margin-right: 30px;
+}
+.contet .comprise .tab .page .fewpage{
+    width:auto;
+    height:25px;
+    display:block;
+    line-height: 25px;
+    text-align: center;
+    padding:0px 10px;
+    float:left;
+    margin-right: 10px;
+}
+.contet .comprise .tab .page .fewpage.dig{
+    background-color: #569DFF;
+    color:#ffffff;
+}
+
+.shadow{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:999;
+    background-color: #EBECEC;
+    opacity: 0.5;
+    display:none;
+}
+.eject{
+    width:562px;
+    position:absolute;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-radius:8px;
+    left:50%;
+    margin-left: -281px;
+    padding-bottom:20px;
+    top:200px;
+    display:none;
+}
+.addeject{
+    width:562px;
+    position:absolute;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-radius:8px;
+    left:50%;
+    margin-left: -281px;
+    padding-bottom:20px;
+    top:200px;
+    display:none;
+}
+.changject{
+    width:562px;
+    position:absolute;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-radius:8px;
+    left:50%;
+    margin-left: -281px;
+    padding-bottom:20px;
+    top:200px;
+    display:none;
+}
+.eject .floor{
+    width:100%;
+    height:35px;
+}
+.eject .floor .close-btn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 36px;
+    border: 0px;
+    background-color: #ffffff;
+    outline: none;
+    color: #DCDCDC;
+    float: right;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+.eject .title{
+    width:100%;
+    height:24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    color:#666666;
+    margin-bottom: 34px;
+}
+.eject .covers{
+    padding-left:80px
+}
+.eject .covers .botted{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin-bottom: 22px;
+}
+.eject .covers .botted span{
+	width: 150px;
+    padding-right:14px;
+    font-size: 14px;
+    color:#959595;
+}
+.selShop{
+	float: left;
+	width: 320px;
+	height: 40px;
+	border: solid 1px #88b9fd;
+	position: relative;
+}
+.selShop .firOpA{
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding-left: 15px;
+}
+.selShop .selUl{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 39px;
+	float: left;
+	margin-left: -1px;
+	background: #ffffff;
+	border-left: solid 1px #88b9fd;
+	border-right: solid 1px #88b9fd;
+	border-bottom: solid 1px #88b9fd;
+	padding-left: 15px;
+	overflow: auto;
+}
+.selShop .selUl li{
+	width: 304px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #5E5E5E;
+	margin-left: -1px;
+	cursor: pointer;
+	
+}
+.triangle-down {
+	position: absolute;
+	top: 16px;
+	right: 0;
+    width: 0;
+    height: 0;
+    margin-right: 10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 9px solid #88b9fd;
+}
+/*回收奖金设置---添加*/
+.orderdiv {
+    float: left;
+    width: 100%;  
+    height: atuo;
+    position: relative;
+}
+.ordera{
+	display: block;
+	line-height: 30px;
+	text-indent: 20px;
+}
+.sanjiao{
+	margin-top: -3px;
+	border-top: 9px solid #b6b7b8;
+}
+.orderul{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 34px;
+	margin-left: -1px;
+	border-left: solid 1px #dddddd;
+	border-right: solid 1px #dddddd;
+	border-bottom: solid 1px #dddddd;
+	overflow: auto;
+	background: #ffffff;
+}
+.orderul li{
+	width: 100%;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #5E5E5E;
+	margin-left: -1px;
+	cursor: pointer;
+	text-indent: 15px;
+}
+.pull{
+    width:297px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    padding-left:18px;
+    color:#8A8A8A;
+}
+.eject .covers .model{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin-bottom: 15px;
+}
+.eject .covers .model span{
+    padding-right:14px;
+    font-size: 14px;
+    color:#959595;
+    float: left;
+}
+.eject .covers .model .version{
+    width:297px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    padding-left:18px;
+    color:#8A8A8A;
+    background-color: #ffffff;
+}
+.eject .covers .modelJ{
+    width:100%;
+    height:95px;
+    line-height:40px;
+}
+.modelJ>span{
+    padding-right:14px;
+    font-size: 14px;
+    color:#959595;
+    float: left;
+}
+.modelJ .radioJ{
+    width:298px;
+    height:38px;
+    padding-left: 18px;
+    float: left;
+}
+.modelJ .modelM{
+	width: 315px;
+	height: 35px;
+	border: solid 1px #dddddd;
+	float: left;
+	margin-left: 19px;
+}
+.eject .covers .modelJ .modelM .modelMqu{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.eject .covers .modelJ .modelM .modelMqu .modelMquInp{
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	outline: none;
+	text-align: center;
+}
+.eject .covers .modelJ .modelM .modelMqu .ordeript{
+	width: 120px;
+	height: 33px;
+	line-height: 33px;
+	float: left;
+	outline: none;
+	text-align: center;
+}
+.eject .covers .modelJ .modelM .modelMqu .modelMquInp:first-of-type{
+	margin-left: 15px;
+}
+.eject .covers .modelJ .modelM .modelMqu .modelMquInput{
+	width: 150px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	outline: none;
+	text-align: center;
+}
+.eject .covers .modelJ .modelMqu b{
+	width: 45px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	text-align: center;
+	font-weight:normal;
+}
+.eject .covers .modelJ .modelM .modelMqub .gubiNum{
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	outline: none;
+	text-align: right;
+	padding-right: 35px;
+}
+.eject .covers .modelJ .modelM .modelMqub .gubiNum{
+	width: 250px;
+	height: 33px;
+	line-height: 33px;
+	float: left;
+	outline: none;
+	text-align: right;
+	padding-right: 35px;
+}
+.eject .sure{
+    width:300px;
+    height:40px;
+    border:0px;
+    border-radius: 5px;
+    background-color: #93C0FF;
+    color:#ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 131px;
+    outline:none;
+}
+.gain{
+    width:562px;
+    position:absolute;
+    left:50%;
+    padding-bottom: 20px;
+    margin-left:-281px;
+    top:280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    z-index:1000;
+    display:none;
+}
+.addGain{
+    width:640px;
+    margin-left:-335px;
+}
+.amend{
+    width:562px;
+    position:absolute;
+    left:50%;
+    padding-bottom: 20px;
+    margin-left:-281px;
+    top:280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    z-index:1000;
+    display:none;
+}
+.gain .rise{
+    width:100%;
+    height:34px;
+}
+.gain .clbtn{
+    width:28px;
+    height:22px;
+    line-height: 22px;
+    background-color: #ffffff;
+    border:0px;
+    outline:none;
+    font-size: 36px;
+    color:#DBDBDB;
+    float:right;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.gain .motif{
+    width:100%;
+    height:26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+    color:#666666;
+    margin-bottom: 46px;
+}
+.gain .addition{
+    height:40px;
+    padding-left: 78px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.changadtion{
+	float: left;
+	padding-right: 40px;
+}
+.gain .addition .firspan{
+	display: block;
+	width: 130px;
+    padding-right:14px;
+    font-size: 14px;
+    color:#959595;
+    float: left;
+}
+.entry{
+    width:298px;
+    height:38px;
+    border:1px solid #DDDDDD;
+    background-color: #ffffff;
+    padding-left: 18px;
+    float: left;
+}
+/*王静*/
+.gain .additionJ{
+	width: 100%;
+    height:80px;
+    padding-left: 78px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.gain .additionJ .additionName{
+	display: block;
+	width: 130px;
+    padding-right:14px;
+    font-size: 14px;
+    color:#959595;
+    float: left;
+}
+.gain .additionJ .radioJ{
+    width:298px;
+    height:38px;
+    padding-left: 18px;
+    float: left;
+}
+.radioNumBox{
+	width: 200px;
+	height:40px;
+	border: solid 1px #DDDDDD;
+	overflow: hidden;
+}
+.gain .radioNumBox .radioNum{
+	height: 40px;
+	padding:0 10px;
+	float: left;
+}
+.gain  .radioNum .radioNumM{
+	width: 150px;
+	height: 36px;
+	float: left;
+	outline: none;
+}
+.radioNumM{
+	text-align:center;
+}
+.gain .additionJ .radioNum span{
+	margin-left:10px;
+}
+.gain .tier{
+    width:100%;
+    height:40px;
+    margin-top: 20px;
+}
+.gain .confirm{
+    width:300px;
+    height:40px;
+    line-height: 40px;
+    border:0px;
+    outline:none;
+    background-color: #93C0FF;
+    text-align: center;
+    color:#ffffff;
+    border-radius: 3px;
+}
+.jBtn{
+	width: 100px;
+	height: 40px;
+	background: #7db3ff;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+}
+.modelMqu .daosjSelect{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	background: rgba(0,0,0,0);
+	z-index: 111;
+	text-indent: 10px;
+}
+.daosj{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	z-index: -1;
+}
+.modelInp{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 22px;
+}
+.modelInp span{
+  font-size: 14px;
+  color: #959595;
+  float: left;
+}
+.modelInp .modelMqu{
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  margin-left:34px;
+} 
+.modelInp .modelMqu .modelMquInp{
+  width: 60px;
+  height: 35px;
+  border: solid 1px #ddd;
+  float: left;
+  margin-top: 5px;
+  text-align: center
+}
+.modelInp .modelMqu b{
+	width: 45px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	  margin-top: 5px;
+	text-align: center;
+	font-weight:normal;
+}
+.modelInp .modelMqu .modelNumber{
+  width: 260px;
+  padding-left: 10px;
+  height: 35px;
+  border: solid 1px #ddd;
+  float: left;
+  margin-top: 5px;
+}
+/*删除二次确认*/
+.delBox{
+    width:400px;
+    position:absolute;
+    left:50%;
+    padding: 20px 0 30px 0;
+    margin-left:-200px;
+    top:280px;
+    border-radius: 8px;
+    z-index:1000;
+    background: #ffffff;
+    display: none;
+}
+.delBox .delBoxP{
+	width: 100%;
+	text-align: center;
+	float: left;
+	color: #333333;
+	line-height: 50px;
+	font-size: 16px;
+}
+.delBox .delBtn{
+	padding-top: 20px;
+	width: 100%;
+	float: left;
+}
+.delBox .delBtn a{
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: solid 1px #29A5DB;
+	background: #ffffff;
+	color: #29A5DB;
+	font-size: 16px;
+	float: left;
+	margin: 0  0 0 50px;
+	border-radius: 6px;
+}
+.delBox .delBtn a:last-of-type{
+	float: right;
+	margin: 0 50px 0 0;
+}
+.delBox .delBtn a:hover{
+	background: #29A5DB;
+	color: #ffffff;
+}

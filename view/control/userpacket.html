@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title></title>	
+		<!-- Bootstrap -->
+		<link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/userMag.css"/>
+		<script src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_packet.js"></script>
+	</head>
+	<body>
+		<!-- con start -->	
+		<div class="navRuler">
+			<!-- dataCon start -->
+			<div class="userCon" id="contentBox">
+				<!-- <div class="userConTop"> -->
+					<div class="search fr clearfix" style="float:left">
+						<div class="searchIn fl">
+							<input type="text" name="" id="smobile" value="" placeholder="请输入交易成功用户的手机号码" />
+						</div>
+						<select name="" id="type" style="float:left;margin:8px 0px 0px 4px;">
+						    <option selected="selected" value="">请选择分组</option>
+    						<option value="2">注册</option>
+    						<option value="3">任务，转盘，报过单</option>
+    						<option value="4">分享过</option>
+    						<option value="5">通话商城购过物</option>
+    						<option value="6">成功回收过</option>
+						</select>
+						<span class="userAdd fl" onclick="moveuser()">点击查看并分组</span>
+					</div>
+				<!-- </div> -->
+			</div>
+			<!-- dataCon start -->
+		</div>
+		<!-- con end -->
+	</body>
+</html>

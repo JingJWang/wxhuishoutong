@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>数码订单列表</title>
+    <!-- Bootstrap -->
+    <link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/c/css/digitalrecovery.css"/>
+</head>
+<body>
+<div style="width:100%;height:100%;position:absolute;">
+    <div class="navRuler">
+        <div id="digitalCon" class="menu-content">
+            <div class="box">
+                <div class="order">
+                    <div class="digital">数码回收订单</div>
+                    <div class="search">
+                        <input type="text" id="keyword" placeholder="输入商品名称查询" class="content"/>
+                        <a href="javascript:;" class="searchbt" onclick="orderList(1);"></a>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="front">订单状态 :</div>
+                    <div class="trance" id="status">
+                        <span class="pattern" data-status='all' onclick="statusBj(this),orderList(1);">全部</span>
+                        <span data-status='-2' onclick="statusBj(this),orderList(1);">待提交</span>
+                        <span data-status='2'  onclick="statusBj(this),orderList(1);">预支付</span>
+                        <span data-status='1'  onclick="statusBj(this),orderList(1);">报价中</span>
+                        <span data-status='3'  onclick="statusBj(this),orderList(1);">待交易</span>
+                        <span data-status='10' onclick="statusBj(this),orderList(1);">已成交</span>
+                        <span data-status='4'  onclick="statusBj(this),orderList(1);">报价结束</span>
+                        <span data-status='-1' onclick="statusBj(this),orderList(1);">已取消</span>
+                    </div>
+                </div>
+                <div class="report">
+                    <div class="submit">提交时间 :</div>
+                    <div class="date" id="time">
+                        <span class="pattern" data-time="all">全部</span>
+                        <span data-time="today">今天</span>
+                        <span data-time="yesterday">昨天</span>
+                        <span data-time="week">本周</span>
+                        <span data-time="month">本月</span>
+                    </div>
+                    <input type="text" id="start" class="default laydate-icon"/>
+                    <input type="text" id="end" class="default1 laydate-icon"/>
+                    <input type="button" value="开始查询" class="query"/>
+                </div>
+                <div class="property">
+                    <div class="details">
+                        <div class="numa">订单编号</div>
+                        <div class="such">订单名称</div>
+                        <div class="condition">订单状态</div>
+                        <div class="telephone">联系电话</div>
+                        <div class="address">地址信息</div>
+                        <div class="ordertime">提交时间</div>
+                        <div class="handle">操作</div>
+                    </div>
+                </div>
+
+                <div class="parameter" >
+                	<div id="orderList"></div>
+                    <div class="page" id="typepage"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full"></div>
+<div class="detail">
+    <div class="title">
+        <input type="button" value="×" class="title-btn" onclick="shut();"/>
+        <div class="place">订单详情</div>
+        <div class="cv">
+            <div class="basic">基本信息</div>
+            <div class="info" >
+                <div class="attribute">订单编号:</div>
+                <div class="classify" id="order_number"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">订单名称:</div>
+                <div class="classify" id="order_name"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">订单状态:</div>
+                <div class="classify" id="order_status"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">成交价格:</div>
+                <div class="classify" id="order_price"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">提交时间:</div>
+                <div class="classify" id="order_jointime"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">用户地址:</div>
+                <div class="classify" id="order_address"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">联系电话:</div>
+                <div class="classify" id="order_mobile"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">绑定电话:</div>
+                <div class="classify" id="order_phone"></div>
+            </div>
+        </div>
+        <div class="cv">
+            <div class="basic">报价信息</div>
+            <div  id="offerinfo"></div>
+        </div>
+        <div class="cv">
+            <div class="basic">产品信息</div>
+            <div id="attrinfo"></div>
+        </div>
+    </div>
+</div>
+<div class="frame">
+    <div class="premise">
+        <div class="frame-btn">
+            <input class="shutbtn" type="button" value="×" onclick="forgo();"/>
+        </div>
+        <div class="core">取消订单</div>
+    </div>
+    <div class="whether">
+        <div class="determine">确定要取消当前订单?</div>
+        <div class="informative">
+            <input type="button" value="确定" class="confirm" onclick="del();"/>
+            <input type="button" value="取消" class="abollish" onclick="forgo();"/>
+        </div>
+    </div>
+</div>
+<div class="shade"></div>
+<div class="defray">
+    <div class="title">
+        支付订单
+        <a class="close-btn" href="javascript:;" onclick="defray.cacel();">×</a>
+    </div>
+    <div class="dimension">
+        <div class="comprise">
+            <div class="asses">
+                <div class="words">订单金额</div>
+                <div class="price"></div>
+            </div>
+            <div class="usable">
+                <div class="hint">可选增值劵</div>
+                <div class="list">                   
+                </div>
+            </div>
+        </div>
+
+        <div class="bulk">
+            <div class="hint">支付金额</div>
+            <div class="amount"></div>
+        </div>
+
+        <div class="handle" align="center">
+            <div class="option">
+                <a class="affirm" href="javascript:;">确认支付</a>
+                <a class="cancle" href="javascript:;" onclick="defray.cacel();">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shadow"></div>
+<div class="reason">
+    <div class="title">
+        取消订单
+        <a class="close-btn" href="javascript:;" onclick="orderCall.close();">×</a>
+    </div>
+    <div class="substance">
+        <div class="cue">确定要取消当前订单吗？</div>
+        <div class="words" >取消原因</div>
+        <textarea class="entry" id="callinfo"></textarea>
+        <div class="desc">备注：批零回收订单取消时输入取消原因</div>
+        <div class="error"></div>
+    </div>
+    <div class="handles">
+        <a class="sure-btn" href="javascript:;" onclick="orderCall.submit();">确认</a>
+        <a class="abolish-btn" href="javascript:;" onclick="orderCall.close();">取消</a>
+    </div>
+</div>
+
+<div class="frames">
+    <div class="title">
+        报价
+        <a class="close-btn" href="javascript:;" onclick="Quote.close();">×</a>
+    </div>
+    <div class="content">
+        <div class="amount">
+            <span>回收数量</span>
+            <span id="amount"></span>
+        </div>
+        <div class="note fl">
+            <div class="words fl">备注</div>
+            <div class="desc">
+                <p id="oather"></p>
+            </div>
+        </div>
+        <div class="reveal fl">
+            <div class="words">输入报价金额</div>
+            <div class="cost">
+                <div class="unit fl">￥</div>
+                <div class="entry">
+                    <input class="money" id="quote"  type="text" placeholder="0.00"/>
+                </div>
+            </div>
+            <div class="cue">备注：输入批量回收订单总价</div>
+            <div class="error"></div>
+        </div>
+    </div>
+    <div class="handle">
+        <a class="affirm fl" href="javascript:;" onclick="Quote.batch();">确认</a>
+        <a class="abolish" href="javascript:;" onclick="Quote.close();">取消</a>
+    </div>
+</div>
+<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+<script type="text/javascript" src="../../static/c/js/laydate.js"></script>
+<script type="text/javascript" src="../../static/c/js/digitalrecovery.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+<script type="text/javascript" src="../../static/c/ajax/request_digitaorder.js"></script>
+<script type="text/javascript">
+    load(7);
+    //日期控件
+    var start = {
+        elem: '#start',
+        format: 'YYYY年MM月DD日',
+        max: '2099-06-16', //最大日期
+        istime: false,
+        istoday: false,
+        choose: function(datas){
+            end.min = datas; //开始日选好后，重置结束日的最小日期
+            end.start = datas //将结束日的初始值设定为开始日
+        }
+    };
+    var end = {
+        elem: '#end',
+        format: 'YYYY年MM月DD日',
+        max: '2099-06-16',
+        istime: false,
+        istoday: false,
+        choose: function(datas){
+            start.max = datas; //结束日选好后，重置开始日的最大日期
+        }
+    };
+    laydate(start);
+    laydate(end);
+</script>
+
+</body>
+</html>
+

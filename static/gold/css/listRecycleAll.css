@@ -1,0 +1,225 @@
+body {
+  background: #f5f5f5;
+}
+.recycle {
+  width: 16rem;
+  height: 4.125rem;
+  margin-top: 1.3rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: #FFFFFF;
+  float: left;
+}
+.recycle a {
+  display: block;
+  width: 33.33%;
+  height: 1.5rem;
+  padding-top: 2.65rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  float: left;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #606060;
+}
+.recycle a:nth-child(1) {
+  background: url(../img/recycle1.png) center no-repeat;
+  background-size: 1.175rem 1.175rem;
+}
+.recycle a:nth-child(2) {
+  background: url(../img/recycle2.png) center no-repeat;
+  background-size: 1.175rem 1.175rem;
+}
+.recycle a:nth-child(3) {
+  background: url(../img/recycle3.png) center no-repeat;
+  background-size: 1.175rem 1.175rem;
+}
+.accomplishList {
+  width: 16rem;
+  float: left;
+}
+.accomplishList h1 {
+  width: 16rem;
+  height: 1.325rem;
+  font-size: 0.55rem;
+  line-height: 1.325rem;
+  color: #4b4b4b;
+  text-indent: 0.65rem;
+  float: left;
+}
+.accomplishList .list {
+  position: relative;
+  width: 16rem;
+  float: left;
+  padding-top: 0.75rem;
+  padding-right: 0;
+  padding-bottom: 0.75rem;
+  padding-left: 0;
+  border-bottom: solid 1px #e7e7e7;
+  background: #ffffff;
+}
+.list_left {
+  width: 9rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0.625rem;
+  float: left;
+}
+.list_left p {
+  width: 8rem;
+  float: left;
+}
+.list_left .goldNum {
+  display: block;
+  font-size: 0.65rem;
+  line-height: 0.75rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.425rem;
+  margin-left: 0;
+  background: url(../img/content.jpg) left center no-repeat;
+  background-size: 0.85rem 0.65rem;
+  color: #636363;
+  text-indent: 1rem;
+}
+.list_left .goldPhone {
+  display: block;
+  font-size: 0.65rem;
+  line-height: 0.9rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.425rem;
+  margin-left: 0;
+  background: url(../img/listPhone.png) left center no-repeat;
+  background-size: 0.575rem 0.9rem;
+  color: #636363;
+  text-indent: 1rem;
+  float: left;
+}
+.list_left .goldMoney {
+  display: block;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #636363;
+  text-indent: 1rem;
+  margin-bottom: 0.575rem;
+  float: left;
+}
+.list_left .listTime {
+  background: url(../img/timer.jpg) left center no-repeat;
+  background-size: 0.65rem 0.65rem;
+  font-size: 0.55rem;
+  line-height: 0.75rem;
+  color: #9c9c9c;
+  text-indent: 0.85rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0.75rem;
+  float: left;
+}
+.list_right {
+  float: right;
+  margin-top: 0;
+  margin-right: 0.65rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 5rem;
+  height: 1rem;
+  text-align: right;
+  color: #f6572a;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.list_a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3.45rem;
+  height: 1.25rem;
+  background: #98bf24;
+  color: #ffffff;
+  font-size: 0.55rem;
+  line-height: 1.25rem;
+  margin-top: 0;
+  margin-right: 0.65rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0;
+  font-size: 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+.list_a:link {
+  color: #ffffff;
+}
+.list_a:hover {
+  color: #ffffff;
+}
+.list_a:visited {
+  color: #ffffff;
+}
+.list_a:active {
+  color: #ffffff;
+}
+.list_c {
+  position: relative;
+  width: 16rem;
+  height: 4rem;
+  float: left;
+  padding-top: 0.75rem;
+  padding-right: 0;
+  padding-bottom: 0.75rem;
+  padding-left: 0;
+  border-bottom: solid 1px #e7e7e7;
+  background: #ffffff;
+}
+.list_left .pingjia {
+  background: url(../img/list_pingjia.png) left center no-repeat;
+  background-size: 0.65rem 0.65rem;
+  font-size: 0.45rem;
+  line-height: 0.75rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.25rem;
+  margin-left: 0.75rem;
+  color: #9c9c9c;
+  text-indent: 0.85rem;
+}
+.indent {
+  float: left;
+  width: 100%;
+  margin-top: 1.9rem;
+  background: #FFFFFF;
+  margin-bottom: 0.25rem;
+}
+.indent a {
+  float: left;
+  width: 25%;
+  height: 1.7rem;
+  font-size: 0.55rem;
+  line-height: 1.7rem;
+  text-align: center;
+}
+.indent_hover {
+  border-bottom: 0.05rem solid #329700;
+  color: #329700;
+}
+.indents {
+  float: left;
+  width: 100%;
+}
+.AllList {
+  width: 16rem;
+  margin-top: 0.5rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+.goldNum font {
+  font-size: 0.6rem;
+  line-height: 0.75rem;
+}
+/*# sourceMappingURL=listRecycleAll.css.map */

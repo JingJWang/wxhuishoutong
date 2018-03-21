@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title>预购订单</title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+		<script type="text/javascript" src="../../maijinadmin/kindeditor/kindeditor-all-min.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_preshop.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	</head>
+	<body>
+		<div class="navRuler">
+		    <div style="margin: 20px 0 0 250px;" class="lists">
+				<div style="margin:0px 0px 10px 0px">
+					<span>第</span><input class="pages" type="text" style="border:1px solid;width:30px"><span>页</span>
+					<select class="types" name="" id="" style="margin:0px 0px 0px 20px;">
+						<option value="1">未通过电话</option>
+						<option value="2">已通过电话</option>
+					</select>
+					<input class="goto" style="margin:0px 0px 0px 20px" type="button" onclick="selectypes()" value="go">
+				</div>
+		    	<table border="1" style="text-align:center;" class="articlelist">
+		    		
+		    	</table>
+		    	<div class="pageNumber">
+					<ul class="pagination">
+					    
+					</ul>
+				</div>
+		    </div>
+		</div>
+
+	</body>
+</html>

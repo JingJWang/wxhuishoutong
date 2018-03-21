@@ -1,0 +1,351 @@
+*{
+	padding:0px; 
+	margin:0px;
+}
+html,body{
+    margin:0px;
+    padding:0px;
+    font-family:  Microsoft YaHei;
+    width:100%;
+    height:100%;
+}
+img{
+	max-width: 100%;
+    height: auto !important;
+}
+.container{
+    width:100%;
+    /*height:100%;*/
+    cursor:default;
+    //内容不能被复制
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: auto;
+}
+.shadow{
+    width:100%;
+    height:100%;
+    background-color: #222;
+    position:fixed;
+    z-index: 2;
+    opacity: 0.8;
+    top:0px;
+}
+.ceng{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: 3;
+    top:0px;
+
+}
+.share{
+    width:230px;
+    height:121px;
+    background-image: url(../images/sharefx.png);
+    background-size: 230px 121px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:right;
+}
+
+.follow{
+    width:281px;
+    height:360px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    z-index: 2;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -210px;
+    margin-left: -140.5px;
+    overflow:hidden;
+}
+.follow .theme{
+    width:100%;
+    height:141px;
+    background-color: #58AB23;
+}
+.follow .theme .welfare{
+    height:82px;
+    padding:10px 15px 10px 25px;
+}
+.follow .theme .welfare .close{
+    width:100%;
+    height:20px;
+    color:#ffffff;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: right;
+}
+.follow .theme .welfare .close .close-btn{
+    width:auto;
+    height:auto;
+    float:right;
+    outline:none;
+    color: #ffffff;
+    text-decoration: none;
+    display:block;
+}
+.follow .theme .welfare .title{
+    width:100%;
+    height:22px;
+    line-height: 22px;
+    text-align: center;
+    color:#ffffff;
+    font-size: 16px;
+}
+.follow .theme .welfare .title span{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.follow .theme .welfare .guide{
+    width:100%;
+    height:auto;
+    font-size: 14px;
+    color:#ffffff;
+    margin-top: 14px;
+}
+.follow .theme .welfare .some{
+    width:100%;
+    height:auto;
+    color:#ffffff;
+    font-size: 14px;
+    margin-top: 6px;
+}
+.follow .include {
+    width: 100%;
+    height: 10px;
+}
+ .follow .include .triangle{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #58AB23;
+    position:absolute;
+    left:50%;
+    margin-left:-5px;
+}
+.follow .box{
+    height:190px;
+    margin:10px 15px 10px 25px;
+}
+.follow .box .code{
+    width:130px;
+    height:130px;
+    background-size:130px 130px;
+    padding:0px 55px;
+}
+.follow .box .code img{
+    width:100%;
+    height:100%;
+}
+.follow .box .explain{
+    width:100%;
+    height:auto;
+    text-align: center;
+    color:#929292;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.follow .box .search{
+    width:100%;
+    height:auto;
+    text-align: center;
+    color:#929292;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.container .full{
+    width:100%;
+    height:62px;
+}
+.container .information{
+    width:100%;
+    height:60px;
+    border-top: 1px solid #F1F1F1;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    background-color: #ffffff;
+}
+.container .information .btn{
+    margin:10px 15px;
+    height:40px;
+    background-color: #58AB23;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.container .information .btn span{
+    background-image: url(../images/register.png);
+    background-size: 12px 17px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 15px;
+    color:#ffffff;
+    padding-left: 20px;
+}
+.tips{
+    width:280px;
+    position:fixed;
+    z-index:1000;
+    top:50%;
+    left:50%;
+    margin-top: -215px;
+    margin-left: -140px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow:hidden;
+    padding-bottom: 15px;
+}
+.tips .theme{
+    width:100%;
+    height:110px;
+    background-color: #58AB23;
+}
+.tips .theme .welfare{
+    height:82px;
+    padding:10px 15px 10px 25px;
+}
+.tips .theme .welfare .close{
+    width:100%;
+    height:20px;
+    color:#ffffff;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: right;
+}
+.tips .theme .welfare .close .close-btn{
+    width:auto;
+    height:auto;
+    float:right;
+    outline:none;
+    color: #ffffff;
+    text-decoration: none;
+    display:block;
+}
+.tips .theme .welfare .title{
+    width:100%;
+    height:22px;
+    line-height: 22px;
+    text-align: center;
+    color:#ffffff;
+    font-size: 16px;
+}
+.tips .theme .welfare .title span{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tips .theme .welfare .guide{
+    width:100%;
+    height:auto;
+    font-size: 14px;
+    color:#ffffff;
+    margin-top: 14px;
+    text-align: center;
+}
+.tips .include {
+    width: 100%;
+    height: 10px;
+}
+.tips .include .triangle{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #58AB23;
+    position:absolute;
+    left:50%;
+    margin-left:-5px;
+}
+.tips .info{
+    padding:0px 20px;
+    margin-top:10px;
+}
+.tips .info .interger{
+    width:100%;
+    height:36px;
+    border:1px solid #E0E0E0;
+    background-color: #F1F1F1;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+.tips .info .interger .pane{
+    width:120px;
+    height:36px;
+    background-color: #F1F1F1;
+    font-size: 12px;
+    color:#B6B6B6;
+    padding-left:15px;
+    border:0;
+    border:none;
+    outline:none;
+    padding: 0 0 0 15px;
+}
+.tips .info .interger .code{
+    width:35px;
+    height:12px;
+    font-size: 12px;
+    color:#F47F53;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.tips .info .interger .logo{
+    width:45px;
+    height:36px;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-size: 18px 12px;
+    background-position: center;
+    float:right;
+}
+.tips .info .interger .logo.active{
+    background-image: url(../images/ico.png);
+}
+.tips .atonce{
+    margin:0px 20px;
+    height:40px;
+    line-height: 40px;
+    display:block;
+    font-size: 15px;
+    text-align: center;
+    color:#ffffff;
+    background-color: #58AB23;
+    border-radius: 3px;
+}
+.enter {
+    height: 36px;
+    line-height: 36px;
+    background-color: #F1F1F1;
+    border: none;
+    outline: none;
+    padding: 0 0 0 15px;
+    font-size: 12px;
+    color: #B6B6B6;
+}
+.chart {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 320px){
+    .ceng .share{
+        width:115px;
+        height:60px;
+        background-size: 115px 60px;
+    }
+}

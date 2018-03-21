@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title>奖金审核</title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bonusAudit.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+	</head>
+	<body>
+	<div class="shadow"></div>
+	<div class="shadowDiv">
+		<input class="clbtn" type="button" value="×" onclick="eyebrow();">
+		<p class="shadowP">您确定要批量结算吗?</p>
+		<div class="btnuj">
+			<a href="javascript:;" class="shadowSure shadowa" onclick="eyebrow(),bonusAuditUpdate();">确定</a>
+			<a href="javascript:;" class="shadowNo shadowa" onclick="eyebrow();">取消</a>
+		</div>
+	</div>
+		<!-- con start -->	
+		<div class="navRuler">
+				<div id="luxuryCon">
+					<!-- orderSearch  start-->
+					<div class="orderSearch clearfix">
+						<h3 class="title fl">查询</h3>
+						<div class="searchInput fl">
+							<input type="text" name="" id="inputnum" value="" placeholder="输入邀请者编号" />
+							<span class="butn" onclick="getorder(0,0);"></span>
+						</div>
+						<div class="downSelect fl">
+							<a href="javascript:;" class="selected">未结算</a>
+							<ul class="myUl">
+								<li class="current"><a href="javascript:;" onclick="getorder(2,0)">未结算</a></li>
+								<li><a href="javascript:;" onclick="getorder(1,0)">已结算</a></li>
+								<li class=""><a href="javascript:;" onclick="getorder(0,0)">全部</a></li>
+							</ul>
+							<span class="butn"></span>
+						</div>
+						<a class="jBtn" onclick="openShadow()" style="cursor:pointer;">批量结算</a>
+					</div>
+					<!-- orderSearch  end-->
+					<!-- 订单列表页  start-->
+					<div class="luxuryBox">
+						<div class="luxuryList conHeight">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+	                                <li><!-- <span onclick="checkall();">全选</span>/
+	                                <span onclick="checkInverse();">取消</span> -->订单编号</li>
+									<li>物品编号</li>
+									<li>物品名称</li>
+									<li>用户编号</li>
+									<li>注册时间</li>
+									<li>奖金来源</li>
+									<li>邀请者编号</li>
+									<li>结算金额</li>
+									<li>结算状态</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo">
+							</div>
+						</div>
+						<div class="pageNumber">
+							<ul class="pagination">
+							</ul>
+						</div>
+					</div>
+					<!-- 订单列表页  end-->
+					<!-- 订单修改  start-->
+					<div class="luxuryBoxRevise" style="display: none;">
+						<div class="reviseTitle clearfix">
+							<h3 class="addClassH3 fl">奖金审核</h3>
+							<div class="btns fl clearfix"></div>
+						</div>
+						<div class="luxuryList">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<li>订单编号</li>
+									<li>物品名称</li>
+									<li>所获奖金</li>
+									<li>购买人编号</li>
+									<li>编辑</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo blueBorder">
+								<ul class="clearfix">
+									<li class="li" id='goodid'></li>
+									<li class="li" id='goodname'></li>
+									<li class="li" id='bonus'></li>
+									<li class="li" id='userid'></li>
+									<li class="li">
+										<div class="downSelectRevise fl">
+											<a href="javascript:;" class="selectedRevise UlstRevise"></a>
+											<ul class="myUlRevise Ulstatus">
+												<li><a href="javascript:;" tid=1>已结算</a></li>
+								                <li><a href="javascript:;" tid=2>未结算</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>							
+						</div>
+					</div>
+					<!-- 订单修改  end-->
+				</div>
+			<!-- luxuryCon start -->
+		</div>
+		<!-- con end -->
+	</body>
+	<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/c/js/bonusAudit.js"></script>
+	<script type="text/javascript" src="../../static/c/js/bonusPage.js"></script>
+	<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	<script type="text/javascript" src="../../static/c/ajax/request_bonusAudit.js"></script>
+	<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+</html>

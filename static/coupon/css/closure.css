@@ -1,0 +1,117 @@
+body{
+    background-color:#ffffff;
+}
+.context{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.context img{
+    width:100%;
+    height:100%;
+}
+.context .content{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:75%;
+}
+.context .reveal{
+    width:100%;
+    height:120px;
+}
+.context .reveal img{
+    width:100%;
+    height:100%;
+}
+.context .reveal .dimension{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.context .reveal .dimension .hd{
+    width:100%;
+    height:58px;
+    position:relative;
+    margin-top:-20px;
+}
+.context .reveal .dimension .hd .photo{
+    width:58px;
+    height:58px;
+}
+.context .reveal .dimension .hd .photo img{
+    width:100%;
+    height:100%;
+}
+.context .reveal .dimension .prompt{
+    width:100%;
+    height:57px;
+    margin-top:4px;
+}
+.context .reveal .dimension .prompt .circle{
+    width:200px;
+    height:57px;
+    padding:0px 20px;
+    background-image: url(../images/rec.png);
+    background-size:240px 57px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.context .reveal .dimension .prompt .circle .name{
+    width:100%;
+    height:12px;
+    line-height: 12px;
+    text-align:center;
+    color:#35332E;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float:left;
+}
+.context .reveal .dimension .prompt .circle .name:nth-of-type(1){
+    margin:17px 0px 7px 0px;
+}
+.context .end{
+    width:100%;
+    height:93px;
+    background-image:url(../images/end.png);
+    background-size:141px 93px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    margin:21px 0px 13px 0px;
+}
+.context .cue{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    font-size:16px;
+    text-align:center;
+    color:#969696;
+}
+.context .handle{
+    width:100%;
+    height:46px;
+    margin:30px 0px 0px 0px;
+}
+.context .handle .betray{
+    width:240px;
+    height:46px;
+    line-height: 46px;
+    text-align:center;
+    font-size:16px;
+    color:#35332E;
+    background-image: url(../images/btn.png);
+    background-size:240px 46px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    display:block;
+    z-index:1;
+}
+@media screen and (max-width: 366px) {
+    .context .content {
+        top:64%;
+    }
+}

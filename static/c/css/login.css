@@ -1,0 +1,45 @@
+/*鑳屾櫙*/
+#box{ position: fixed; z-index: -10; width: 100%; height: 100%; background: url(../images/bg.jpg) no-repeat center center; background-size:cover;}
+/*=== header ===*/
+.header{ width: 100%; height: 40px; background: #fff;}
+.headerCon{ padding: 0 105px;}
+.WeChat{  color: #666; margin: 0 60px 0 0; position: relative;}
+.WeChat i{ display: none; width: 146px; height: 173px; position: absolute; left: 80px; top: 40px; z-index: 100;}
+.WeChat span{ cursor: pointer; background: url(../images/loginspirite.png) no-repeat 95px 9px; padding: 0 25px 0 0;}
+.WeChat,.hotPhoneno{ font-size: 14px; height: 40px; line-height: 40px;}
+.WeChat span,.hotPhoneno,.hotPhoneno span{ color: #888;}
+/*=== logo ====*/
+.logo{ position: relative; left: 0px; top: 0px; height: 60px; padding: 20px 0 0 45px; background: linear-gradient(90deg,rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.02) 50%,rgba(255,255,255,0) 100%);}
+.logo h1{ display: block; padding: 0 19px 0 0; border-right: 2px solid #fff;}
+.logo h1 a{ display: block; width: 82px; height: 44px; background: url(../images/loginspirite.png) no-repeat 0px -10px;}
+.logo p{ color: #fff; font-size: 18px; height: 44px; line-height: 44px; margin: 0 0 0 23px;}
+/*=== loginBox ===*/
+.loginBox{ position: fixed; right: 32%; top: 25%; margin:0px -210px 0 0; width: 370px; height: auto; padding: 30px 25px 40px; background: #fff; border-radius: 5px; box-shadow: 0px 0px 40px #b5b4b4; }
+.loginBox h3{ font-weight: normal; font-size: 18px; color: #505050; margin: 0 0 38px 0;}
+.loginBox input{ font-size: 16px; width: 100%; height: 50px; padding: 0 0 0 54px; box-sizing: border-box; border: 1px solid #dfdfdf; border-radius: 4px;}
+/*input鐐瑰嚮鐘舵�*/
+.loginBox .inputClick{ border: 1px solid #86b8ff;}
+/*杈撻敊input鎻愰啋鐘舵�*/
+.loginBox .username{ background: url(../images/loginspirite.png) no-repeat 10px -55px;}
+.loginBox .password{ background: url(../images/loginspirite.png) no-repeat 10px -96px;}
+.usernameIn{ padding: 0 0 8px 0;}
+.passwordIn{ margin: 20px 0 8px 0;}
+.loginBox input::-webkit-input-placeholder{ color: #999;}
+.loginBox input:-webkit-input-placeholder{ color: #999;}
+.loginBox input::-ms-input-placeholder{ color: #999;}
+.loginBox input:-ms-input-placeholder{ color: #999;}
+.loginBox input::-moz-placeholder{ color: #999;}
+.loginBox input:-moz-placeholder{ color: #999;}
+.loginBox .remember{ height: 15px; line-height: 15px; font-size: 14px; color: #505050; margin: 32px 0 0 0;}
+.loginBox .remember i{ display: inline-block; width: 13px; height: 13px; border: 1px solid #999; margin: 0 5px 0 3px; cursor: pointer;}
+.loginBox .remember .right{ width: 15px; height: 15px; border: none; background: url(../images/loginspirite.png) no-repeat 0px -169px;}
+.loginNow{ display: block; width: 100%; height: 50px; line-height: 50px; background: #7db3ff; color: #fff; font-size: 16px; text-align: center; border-radius: 5px; margin: 44px 0 0 0; transition: all .3s;}
+.loginNow:hover{ background: #5f9df3;}
+/*鎻愮ず妗�/
+.usernameTip,.passwordTip{ display: none; font-size: 12px; color: #f4453c; padding: 0px 0 0 20px; background: url(../images/loginspirite.png) no-repeat 0px -150px;}
+
+
+
+
+/*=== footer ===*/
+.footer{ position: fixed; bottom: 0px; left: 0px; width: 100%; height: 40px; line-height: 40px; text-align: center; color: #888; font-size: 16px; background: #efefef;}

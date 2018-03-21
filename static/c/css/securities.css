@@ -1,0 +1,300 @@
+.box{
+    padding:25px 30px 0px 30px;
+    height:auto;
+}
+.box .stockList{
+    width:100%;
+    height:auto;
+}
+.box .stockList .title{
+    width:100%;
+    height:25px;
+    font-size:16px;
+    color:#666666;
+}
+.box .stockList .title .words{
+    height:25px;
+    line-height: 25px;
+    float:left;
+}
+.box .stockList .title .default{
+    width:auto;
+    height:25px;
+    float:right;
+    margin-right:26px;
+}
+.box .stockList .title .default .fastener{
+    height:25px;
+    line-height: 25px;
+    background-image:url(../images/add.png);
+    background-size:25px 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:33px;
+    color:#666666;
+    float:left;
+    display:block;
+}
+.box .stockList .title .default .fastener#compile{
+    background-image:url(../images/edit.png);
+    margin-left:35px;
+}
+.box .stockList .tabulation{
+    width:100%;
+    height:auto;
+}
+.box .stockList .tabulation .headline{
+    width:100%;
+    height:40px;
+    text-align: left;
+    font-size:14px;
+    color:#666666;
+    background-color:#f1f1f1;
+    margin:20px 0px 18px 0px;
+}
+.box .stockList .tabulation .headline .form{
+    height:14px;
+    line-height: 14px;
+    margin:13px 0px;
+}
+.box .stockList .tabulation .headline .worth{
+    padding-left: 1.7%;
+    width:10%;
+}
+.box .stockList .tabulation .headline .limit{
+    padding-left: 6px;
+    width:14%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .headline .term{
+    padding-left: 6px;
+    width:12.5%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .headline .stime{
+    padding-left: 6px;
+    width:13.5%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .headline .etime{
+    padding-left: 6px;
+    width:13.5%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .headline .range{
+    padding-left: 6px;
+    width:11%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .headline .remark{
+    padding-left: 6px;
+    width:12%;
+    border-left:1px solid #EBEBEB;
+}
+.box .stockList .tabulation .listing{
+    margin-right:13%;
+    width:87%;
+    height:auto;
+}
+.box .stockList .tabulation .listing .dimension{
+    width:100%;
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+    border:1px solid #E0E0E0;
+    box-shadow:0px 2px 5px #dddddd;
+    margin-top:10px;
+}
+.box .stockList .tabulation .listing .dimension .worth{
+    padding-left: 1.7%;
+    width:12%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .limit{
+    width:16.5%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .term{
+    width:14%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .stime{
+    width:15.5%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .etime{
+    width:15.5%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .range{
+    width:13%;
+    height:36px;
+}
+.box .stockList .tabulation .listing .dimension .remark{
+    width:8%;
+    height:36px;
+}
+.box .useRule{
+    width:100%;
+    height:auto;
+    float:left;
+    display:none;
+}
+.box .panels{
+    width:100%;
+    height:25px;
+    margin-bottom: 22px;
+}
+.box .panels .motif{
+    height:25px;
+    line-height:25px;
+    font-size:16px;
+    background-image:url(../images/right.png);
+    background-size: 6px 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 12px;
+    display:block;
+    float:left;
+    margin-right:6px;
+}
+.box .panels .word{
+    height:25px;
+    line-height: 28px;
+    float:left;
+}
+.box .theme{
+    padding-left: 8px;
+    height:16px;
+}
+.box .theme .text{
+    height:16px;
+    line-height: 16px;
+    border-left:3px solid #FF7160;
+    padding-left: 8px;
+    float:left;
+}
+.box .useRule .substance{
+    padding:35px 0px 0px 40px;
+    height:auto;
+}
+.box .useRule .substance .covers{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.box .useRule .substance .rule{
+    width:84px;
+    height:45px;
+    line-height: 45px;
+    color:#333333;
+    float:left;
+}
+.box .useRule .substance .handle{
+    width:360px;
+    height:auto;
+    float:left;
+}
+.box .useRule .substance .handle .compile{
+    padding:20px 20px 0px 20px;
+    width:358px;
+    height:198px;
+    line-height:26px;
+    border:1px solid #DDDDDD;
+    outline:none;
+}
+.box .useRule .substance .handle .conserve{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    color:#ffffff;
+    background-color:#93C0FF;
+    border-radius: 2px;
+    display:block;
+    margin-top:60px;
+    box-shadow:0px 2px 5px #dddddd;
+}
+.box .interpolate{
+    width:100%;
+    height:auto;
+    float:left;
+    display:none;
+}
+.box .interpolate .elements{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-top:35px;
+}
+.box .interpolate .elements .information{
+    width:485px;
+    height:auto;
+    float:left;
+}
+.box .interpolate .elements .information .layer{
+    width:100%;
+    height:40px;
+    margin-top:20px;
+    position:relative;
+}
+.box .interpolate .elements .information .layer.under{
+    margin-top:40px;
+}
+.box .interpolate .elements .information .layer .cue{
+    width:125px;
+    height:40px;
+    line-height: 40px;
+    padding-right:10px;
+    color:#333333;
+    float:left;
+    text-align:right;
+}
+.box .interpolate .elements .information .layer .entry{
+    width:360px;
+    height:40px;
+    line-height: 40px;
+    font-size:12px;
+    color:#666666;
+    border:1px solid #DDDDDD;
+    border-radius: 2px;
+    padding:0px 0px 0px 10px;
+    margin:0px;
+    outline:none;
+    float:left;
+}
+.box .interpolate .elements .information .layer .chosen{
+    width:50px;
+    height:40px;
+    line-height:40px;
+    font-size:12px;
+    color:#FFA26A;
+    position:absolute;
+    top:0px;
+    right:15px;
+}
+.box .interpolate .elements .information .layer .operate{
+    width:360px;
+    height:40px;
+    float:left;
+}
+.box .interpolate .elements .information .layer .operate .hold{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    font-size:14px;
+    color:#ffffff;
+    background-color: #93C0FF;
+    box-shadow:0px 2px 5px #dddddd;
+    display:block;
+    float:left;
+    border-radius: 2px;
+}
+.box .layer .laydate-icon{
+    background-image:url(../images/date.png);
+    background-position: right 74px center;
+}
+#laydate_hms{
+    display:block;!important;
+}

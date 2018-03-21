@@ -1,0 +1,329 @@
+body {
+  background: #f5f5f5;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 1.9rem;
+  background: #58ab22;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  margin-bottom: 3rem;
+}
+header .FirstA {
+  display: block;
+  position: absolute;
+  top: 0.575rem;
+  left: 0.625rem;
+  height: 0.75rem;
+}
+header .FirstA img {
+  width: 0.425rem;
+  height: 0.75rem;
+  float: left;
+}
+header .FirstA > p {
+  float: left;
+  text-indent: 0.2rem;
+  line-height: 0.75rem;
+  font-size: 0.6rem;
+}
+header h1 {
+  width: 100%;
+  height: 1.9rem;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  line-height: 1.9rem;
+  font-size: 0.69rem;
+  font-weight: normal;
+}
+header .lastA {
+  display: block;
+  position: absolute;
+  top: 0.575rem;
+  right: 0.85rem;
+  font-size: 0.6rem;
+}
+header a:hover {
+  color: #ffffff;
+}
+header a:link {
+  color: #ffffff;
+}
+header a:visited {
+  color: #ffffff;
+}
+header a:active {
+  color: #ffffff;
+}
+.metal:first-of-type {
+  margin-top: 2rem;
+}
+.metal {
+  width: 16rem;
+  background: #ffffff;
+  float: left;
+  margin-bottom: 0.25rem;
+}
+.metal:last-of-type{
+  margin-bottom: 2.5rem;
+}
+.metal_div {
+  float: left;
+  width: 100%;
+  border-bottom: solid 1px #ebebeb;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+.metal_div .metal_h1 {
+  padding-left: 0.675rem;
+  height: 1rem;
+  float: left;
+  color: #272727;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.metal_div .metal_a {
+  display: block;
+  float: right;
+  margin-right: 0.66rem;
+  color: #868686;
+  font-size: 0.55rem;
+  line-height: 1rem;
+  background: url(../img/zouzhiImg.png) right center no-repeat;
+  background-size: 0.9rem 0.9rem;
+  padding-right: 1.1rem;
+}
+.metal_a:link {
+  color: #868686;
+}
+.metal_a:hover {
+  color: #868686;
+}
+.metal_a:active {
+  color: #868686;
+}
+.metal_a:visited {
+  color: #868686;
+}
+.classMetal {
+  width: 16rem;
+  float: left;
+  padding-top: 0.35rem;
+}
+.classMetal .classMetDiv {
+  float: left;
+  height: 1.6rem;
+  width: 22.5%;
+}
+.classMetal .classMetDiv:nth-child(1) {
+  margin-left: 9%;
+}
+.classMetal .classMetDiv .claMetP {
+  display: block;
+  width: 100%;
+  height: 0.75rem;
+  color: #949494;
+  font-size: 0.55rem;
+  line-height: 0.75rem;
+  float: left;
+}
+.classMetal .classMetDiv .claMetPb {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  color: #f74d13;
+  font-size: 0.58rem;
+  line-height: 1rem;
+  float: left;
+}
+.classMetal .classMetDiv .claMetPc {
+  display: block;
+  height: 1rem;
+  color: #494949;
+  font-size: 0.58rem;
+  line-height: 1.1rem;
+  float: left;
+}
+.classMetal .classMetDiv .claMetPcRed {
+  display: block;
+  height: 1rem;
+  color: red;
+  font-size: 0.58rem;
+  line-height: 1.1rem;
+  float: left;
+}
+.classMetal .classMetDiv .claMetPcGreen {
+  display: block;
+  height: 1rem;
+  color: green;
+  font-size: 0.58rem;
+  line-height: 1.1rem;
+  float: left;
+}
+.classMetal .classMetDiv .claMetPcBlack {
+  display: block;
+  height: 1rem;
+  color: #101010;
+  font-size: 0.58rem;
+  line-height: 1.1rem;
+  float: left;
+}
+.orangeJ {
+  display: block;
+  width: 0.6rem;
+  height: 1rem;
+  color: red;
+  float: left;
+  font-size: 1rem;
+  line-height: 0.9rem;
+  text-align: center;
+}
+.greenJ {
+  display: block;
+  width: 0.6rem;
+  height: 1.1rem;
+  float: left;
+  font-size: 0.85rem;
+  color: #02ad02;
+  line-height: 1.1rem;
+  text-align: center;
+}
+.buySal {
+  width: 16rem;
+  float: left;
+  padding-top: 0.45rem;
+  padding-bottom: 0.475rem;
+}
+.buySP {
+  float: left;
+  width: 11.125rem;
+  display: block;
+  padding-left: 0.625rem;
+}
+.buySP span:nth-child(1) {
+	width: 100%;
+  float: left;
+  color: #939393;
+  font-size: 0.55rem;
+  line-height: 0.65rem;
+}
+.buySP .buySPan {
+	width: 100%;
+  float: left;
+  color: #2b2b2b;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.buysaleBtn {
+  display: block;
+  width: 3.5rem;
+  height: 1.25rem;
+  border: solid 1px #8aba00;
+  background: #98c21d;
+  border-radius: 15px;
+  float: left;
+  color: #ffffff;
+  font-size: 0.55rem;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: 0.375rem;
+  letter-spacing: 1px;
+}
+.buysaleBtn:link {
+  color: #ffffff;
+}
+.buysaleBtn:hover {
+  color: #ffffff;
+}
+.buysaleBtn:active {
+  color: #ffffff;
+}
+.buysaleBtn:visited {
+  color: #ffffff;
+}
+.zsImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  z-index: 111;
+  background: #f5f5f5;
+  padding-bottom: 2.5rem;
+  padding-top: 2.25rem;
+}
+.zsImg .zs_h1 {
+  width: 100%;
+  height: 1.75rem;
+  float: left;
+  color: #313131;
+  font-size: 0.65rem;
+  line-height: 1.75rem;
+  border-bottom: solid 1px #e4e4e4;
+  text-indent: 0.7rem;
+  background: #ffffff;
+}
+.zsImg .zshour {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #ffffff;
+  width: 16rem;
+  margin-bottom: 0.25rem;
+  float: left;
+}
+.zshour img {
+  display: block;
+  border: none;
+  width: 16rem;
+  background-size: 100% 100%;
+}
+.closeJ {
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-top: 2.5rem;
+  right: 0;
+  width: 2.5rem;
+  height: 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #676767;
+  font-weight: lighter;
+}
+footer {
+  width: 100%;
+  height: 2.125rem;
+  position: fixed;
+  bottom: 0;
+  background: #ffffff;
+  box-shadow: #e6e6e6;
+  z-index: 222;
+}
+footer a {
+  display: block;
+  width: 100%;
+  height: 2.125rem;
+  color: #60ad31;
+  font-size: 0.75rem;
+  box-shadow: 0px -2px 2px #e6e6e6;
+  background: none;
+  text-align: center;
+  line-height: 2.125rem;
+}
+footer a:link {
+  color: #60ad31;
+}
+footer a:hover {
+  color: #60ad31;
+}
+footer a:visited {
+  color: #60ad31;
+}
+footer a:active {
+  color: #60ad31;
+}
+/*# sourceMappingURL=metaldeal.css.map */

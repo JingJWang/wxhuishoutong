@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>商城</title>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../static/gold/css/public.css" />
+	<link rel="stylesheet" href="../../static/gold/css/goldshop.css" />
+	</head>
+	<body>
+		 <div class="back">
+			<a href="javascript:;" onclick="javascript:history.back(-1);">返回</a>
+		</div>
+		<div class="shopImg"></div>
+	    <div class="buy">
+	    	<div class="goods">
+	    		<h1 class="goods_h1">24K黄金</h1>
+	    		<span class="buyGoods_span"></span>
+	    	</div>
+	    	<div class="buyManner">
+		    	<form id="orderinfo">
+		    		<!--<div class="manner">
+		    			<p class="buyManner_p">购买形式</p>
+		    			  <ul class="mannerStyle">
+		    				<li class="button_hover" onclick="shopStyle.choiceModel(this,'1');">添加到库存</li>
+		    				<li onclick="shopStyle.choiceModel(this,'2');">我要现货</li>
+		    			</ul>
+		    			<div class="mannerCont">
+		    				<span class="cont_kc">添加到库存刻在我的贵金属中查看或交易</span>
+		    				<span class="cont_money">您需要自付邮费</span>
+		    			</div>
+		    		</div>-->
+		    		<input type="hidden" name="type" id="typeData" value="1">
+		    			<input type="hidden" name="id" id="goodsId" value="">
+		    		<div class="buyNumber">
+		    			<p class="buyNumber_p">购买数量</p>
+		    			<span class="buyNumber_span">
+		    				<s class="subtract" onclick="shopStyle.reckonWeight(-1);"></s>	    				
+		    				<input type="text" id="weight" name="weight" class="num" onchange="shopStyle.checkWeight(this);"  value="0">	    				
+							<s class="add" onclick="shopStyle.reckonWeight(1);"></s>
+		    			</span>
+		    			<p class="asNum_p"></p>	
+		    		</div>
+		    	</form>
+	    		<div class="advBuy fl">
+	    			<span id="total"></span>
+	    			<a href="javascript:;" onclick="metalShop.submitOrder();">立刻购买</a>
+	    		</div>
+	    	</div>
+	    </div>
+	    <a href="../../view/shop/list.html" class="commercial">
+	        <div class="jump">
+	            <div class="arrowhead"></div>
+	            <div class="point">去通花商城查看其他优惠商品</div>
+	        </div>
+	    </a>
+    	<div class="shopNews">
+    		
+    	</div>
+    	<div class="nullDiv"></div>
+    	<footer>
+    		<a href="javascript:;" onclick="metalShop.submitOrder();" class="footerA">立刻购买</a>
+    	</footer>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/shop/ajax/request_metal.js"></script>
+	<script>
+		
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		}
+		metalShop.goodsInfo();
+	</script>
+</html>

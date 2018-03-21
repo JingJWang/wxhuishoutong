@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>回收通</title>
+<link rel="stylesheet" type="text/css" href="../../static/shop/css/style-02.css"/>
+<script type="text/javascript" charset='utf-8' src="../../static/shop/js/jquery.js"></script>
+<script type="text/javascript" charset='utf-8' src="../../static/shop/js/public.js"></script>
+<script charset="utf-8" type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+<script src="../../static/shop/js/newShopBuy.js"></script>
+    <script type="text/javascript">
+        var AappId = '';
+        var Atimestamp = '';
+        var AnonceStr = '';
+        var Asignature = '';
+        /* window.shareData = {
+            "timgUrl": "",
+            "timeLineLink": "",
+            "tTitle": "",
+            "tContent": ""
+        }; */
+        function sharetext(id){
+            wx.config({
+                debug: false,
+                appId: AappId,
+                timestamp: Atimestamp,
+                nonceStr: AnonceStr,
+                signature: Asignature,
+                jsApiList: [ // 所有要调用的 API 都要加到这个列表中       
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage'   
+                ]
+            });
+            wx.ready(function () {
+            //监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+                wx.onMenuShareTimeline({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    trigger: function (res) {     
+                     //点击分享是查询粉丝的分享记录，一周内只能领取一次       
+                    },
+                    success: function (res) {
+                        addsharenum(id);
+                        alert('分享成功');
+                          //分享成功后提示粉丝
+                          // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function (res) {
+                    },
+                    fail: function (res) {
+                      alert(JSON.stringify(res));
+                    }
+                });
+                wx.onMenuShareAppMessage({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    success: function () {
+                        addsharenum(id);
+                        alert('分享成功');
+                        // 用户确认分享后执行的回调函数
+                      //分享成功后提示粉丝
+                        // alert('成功分享到朋友');
+                        // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function () { 
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+            });
+            wx.error(function(res){
+            //config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新    签名。
+            });
+        }
+
+
+
+    </script>
+</head>
+<body>
+<div style="width:100%;height:100%;position:absolute;">
+    <div class="ban"></div>
+    <div class="under">
+        <div class="unInfo">
+            <p><b>下单提示</b></p>
+            <p id="money"></p>
+        </div>
+        <div class="unBut"></div>
+    </div>
+    <!--部分修改
+    <div class="buy">
+    	<div class="goods">
+    		<h1>24K黄金</h1>
+    		<span>
+    			<p>下单提示</p>
+    			<p>¥283.23/克</p>
+    		</span>
+    	</div>
+    	<div class="buyManner">
+    		<div class="manner">
+    			<p>购买形式</p>
+    			<ul class="mannerStyle">
+    				<li class="button_hover">添加到库存</li>
+    				<li>我要现货</li>
+    			</ul>
+    			<div class="mannerCont">
+    				<span>添加到库存刻在我的贵金属中查看或交易</span>
+    				<span>您需要自付邮费</span>
+    			</div>
+    		</div>
+    		<div class="buyNumber">
+    			<p>购买数量</p>
+    			<span>
+    				<s class="subtract">-</s>
+					<input type="text" class="num" value="1">
+					<s class="add">+</s>
+    			</span>
+    			<p class="asNum_p">0.001kg</p>	
+    		</div>
+    		<div class="advBuy fl">
+    			<span>合计： ¥3000.00</span>
+    			<a href="../../view/gold/paySpotgoods.html">立刻购买</a>
+    		</div>
+    		
+    	</div>
+    </div>
+    -->
+    <a href="../../view/shop/list.html" class="commercial">
+        <div class="jump">
+            <div class="arrowhead"></div>
+            <div class="point">去通花商城查看其他优惠商品</div>
+        </div>
+    </a>
+    <div class="conn">
+    </div>
+    <div class="footBut"><button style="margin:0 auto;" id="but-05">立即购买</button></div>
+</div>
+
+<div class="shadow" style="display:none;width:100%;height:100%;position:fixed;background-color: #333;opacity: 0.5;"></div>
+<div class="tips" style="display:none;height:400px;">
+    <div class="theme">
+        <div class="welfare">
+            <div class="close">
+                <a class="close-btn" href="javascript: close();">×</a>
+            </div>
+            <div class="title">
+                <span>注册回收通</span>
+            </div>
+            <div class="guide">领取300通花和现金奖励</div>
+        </div>
+    </div>
+    <div class="include">
+        <div class="triangle"></div>
+    </div>
+    <div class="info" style="height:200px">
+        <div class="interger">
+            <input type="text" id="imgcode" placeholder="请输入图形验证码" class="pane"/>
+            <span class="fr" style="margin:10.5px 0px;"><img src="/codeimg/code_char.php" style="padding-top:5px;" width="80px" onclick="this.src='/codeimg/code_char.php?name=2&amp;d='+Math.random();" alt=""></span>
+        </div>
+        <div class="interger">
+            <input type="text" id="mobile" placeholder="请输入手机号码" class="pane"/>
+            <input class="code" style="float:right;margin:8px 0px 8px 0px;padding:0px;width:4.4rem;height:20px;border:0px;background-color:#fff;font-family: 'Microsoft YaHei';" value="获取验证码" onclick="Getcode(this);">
+        </div>
+        <div class="interger">
+            <input type="text" id="code" placeholder="请输入验证码" class="pane"/>
+        </div>
+        <div class="interger">
+            <input type="password" id="password" placeholder="请设置六位以上密码" class="pane don"/>
+            <div class="logo" ontouchstart="mima();"></div>
+        </div>
+    </div>
+    <div style="margin:0px 0px 5px 20px;"><a href="http://wx.recytl.com/index.php/nonstandard/system/Login" style="color:#0072ff;">立即登录</a></div>
+    <a class="atonce" onclick="arCheckcode(this);">立即注册</a>
+</div>
+<!--遮罩层-->
+<div class="blighted" style="display:none"></div>
+<!--弹框内容-->
+<div class="commodity" style="display:none">
+    <div class="title">
+        确认订单
+        <a class="close-btn" href="javascript:;">×</a>
+    </div>
+    <div class="details">
+        <div class="picture">
+            <img src=""/>
+        </div>
+        <div class="brief"></div>
+    </div>
+    <div class="amount">
+
+    </div>
+    <div class="submit">
+        <a class="refer" href="javascript:;">提交订单</a>
+    </div>
+</div>
+<!--猪肉-->
+	<div class="musicBox" style="display: none;">
+		<div class="music">
+			<p class="fontp">单价：<font color="orangered" id="meatP"></font>元</p>
+			<div class="numP">
+				<p class="num">请选择要购买的数量：</p>
+				<div class="inp">
+					<p class="low numsize" onclick="addmeat(this,-1)"></p>
+					<input type="text" class="number" id="meatinp" value="1" oninput="inpFunM()" onfocus="cInpVal(this);" onblur="inpVal(this,1);" maxlength="2">
+					<p class="add numsize" onclick="addmeat(this,1)"></p>
+				</div>
+				<p class="endNum">2.5kg</p>
+			</div>
+			<div class="allM">
+				<p>合计：</p>
+				<p class="payMoney" id="allmoney"></p>
+				<p>元</p>
+			</div>
+			<div class="btnBox">
+				<a href="javascript:;" class="sure btn zhurou">确定</a>
+				<a href="javascript:;" class="cancel btn"  onclick="closeShadow();">取消</a>
+			</div>
+		</div>
+	</div>
+<form action="/index.php/shop/integral/getOrder" method="post" id="theform">
+<input type="hidden" name="id" id="goodsid" value="">
+<input type="hidden" name="prid" id="prid" value="">
+<input type="hidden" name="limit" id="limit" value="">
+</form>
+<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../static/home/js/request_common.js"></script>
+<script type="text/javascript" src="../../static/shop/js/request_shop.js"></script>
+<script type="text/javascript" src="../../static/home/js/ajax_mobile.js"></script>
+<script type="text/javascript"> 
+		var id=getUrlParam('id');
+		$('.zhurou').attr('onclick','zhurouNum('+id+')');
+		Getinfo(id);  		
+		function callpay(){
+			if (typeof WeixinJSBridge == "undefined"){
+			    if( document.addEventListener ){
+			        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+			    }else if (document.attachEvent){
+			        document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+			        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+			    }
+			}else{
+			    jsApiCall();
+			}
+		}
+        //关闭注册弹框
+        function close(){
+            $(".shadow").css("display","none");
+            $(".tips").css("display","none");
+        }
+        //更改密码状态
+        function mima(){
+            if($(".pane.don").val() == ""){
+
+            }else{
+                if($(".pane.don").attr("type") == "password"){
+                    $(".logo").addClass("active");
+                    $(".pane.don").attr("type","text");
+                }else{
+                    $(".logo").removeClass("active");
+                    $(".pane.don").attr("type","password");
+                }
+            }
+        }
+        //显示确认订单弹框
+        /*
+        $(".blighted , .commodity").show()
+         */
+        //确认订单里德关闭按钮
+        $(".commodity .close-btn").click(function(){
+            $(".blighted , .commodity").hide();
+        });
+        $(".commodity .refer").click(function(){
+            $(".blighted , .commodity").hide();
+            //省略提交订单步骤
+        })
+	</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

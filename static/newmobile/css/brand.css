@@ -1,0 +1,564 @@
+body {
+  background: #fff;
+}
+header {
+  width: 16rem;
+  height: 2.625rem;
+  background: #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.header_h1 {
+  width: 100%;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  text-align: center;
+  color: #111a27;
+  font-size: 0.7rem;
+}
+.header_a {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.675rem;
+  border-radius: 50%;
+}
+.back {
+  left: 0.875rem;
+  background-image: url(../img/back.png);
+  background-size: 100% 100%;
+}
+.home {
+  left: 2.75rem;
+  background-image: url(../img/home.png);
+  background-size: 100% 100%;
+}
+.brand {
+  float: left;
+  padding-top: 4.125rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 2.1rem;
+}
+.brand_logo {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    float: left;
+    margin-top: 0;
+    margin-right: 1.9rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 1px 2px 8px #dad7d7;
+}
+.brand_logo:nth-child(3n) {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+}
+.logo{
+	    display: block;
+    float: left;
+    width: 2.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+.name {
+  width: 100%;
+  line-height: 0.5rem;
+  font-size: 0.5rem;
+  float: left;
+  text-align: center;
+  color: #2b2b2b;
+}
+/*手机型号页面*/
+.titlea {
+  float: left;
+  width: 100%;
+  text-indent: 0.875rem;
+  height: 2.25rem;
+  color: #464646;
+  line-height: 2.25rem;
+  font-size: 0.55rem;
+  position: fixed;
+  left: 0;
+  top: 2.625rem;
+  background: #fff;
+  z-index: 9;
+}
+.fujin_p{
+	color: #6e6e6e;
+}
+.phone {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 1.175rem;
+  margin-top: 4.875rem;
+}
+.moblie {
+	width: 4.325rem;
+  margin-bottom: 0.625rem;
+  float: left;
+  margin-right: 0.45rem;
+  -moz-box-shadow: 1px 2px 4px #d3d3d3;	/* 老的 Firefox */
+  box-shadow: 1px 2px 4px #d3d3d3;
+  overflow: hidden;
+  position: relative;
+}
+.mobile_img {
+  margin-top: 0.3rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.375rem;
+  width: 3.575rem;
+  height: 3.575rem;
+}
+.mob_name {
+  width: 100%;
+  height: 1.45rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #6b6b6b;
+  word-wrap:break-word;
+}
+.particulars {
+  height: 100%;
+  width: 80%;
+  padding-top: 4.875rem;
+  margin-left: 10%;
+}
+.particulars::-webkit-scrollbar{
+	width: 5px;
+	height: 20px;
+}
+.nullD{
+	width: 100%;
+	height: 3.7rem;
+	float: left;
+}
+.choose {
+  width: 100%;
+}
+.p_name {
+    width: 100%;
+    text-align: center;
+    line-height: 1.35rem;
+    height: 1.35rem;
+    float: left;
+    color: #303030;
+    font-size: 0.65rem;
+    font-weight: bold;
+    margin-bottom: 0.55rem;
+}
+.noMarBot{
+	margin-bottom: 0
+}
+.noMarBot b{
+	font-weight: normal;
+	font-size: 0.5rem;
+	margin-left: 0.2rem;
+}
+.p_name_last{
+    width: 100%;
+    text-align: center;
+    line-height: 1.35rem;
+    height: 1.35rem;
+    float: left;
+    color: #ff7d02;
+    margin-bottom: 0.55rem;
+	font-size: 0.5rem;
+}
+.cont_a {
+  width: 100%;
+  text-align: center;
+  line-height: 1.425rem;
+  height: 1.425rem;
+  float: left;
+  color: #5e5e5e;
+  margin-bottom: 0.55rem;
+  font-size: 0.5rem;
+  color: #666;
+  border: solid 1px #dddddd;
+  border-radius: 20px;
+}
+.last_cont_a{
+	width: 45%;
+  line-height: 1.2rem;
+  height: 1.2rem;
+}
+.last_cont_a:nth-child(even){
+	margin-left: 8%;
+}
+.active {
+  border: solid 1px #f38b4c;
+  color: #f38b4c!important;
+}
+.choose_active {
+  border: solid 1px #f38b4c;
+  color: #f38b4c!important;
+}
+.cont_a:last-of-type {
+  margin-bottom: 1.125rem;
+}
+.fix_last{
+	width: 100%;
+	background: #fff;
+	height: 0;
+  position: fixed;
+	left: 0;
+	bottom: 0; 
+}
+.next {
+  display: block;
+  float: left;
+  width: 80%;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #fff!important;
+  border-radius: 20px;
+  margin: 1rem 0 1rem 10%;
+  background: #f38b4c;
+}
+.money {
+    float: left;
+    width: 12.25rem;
+    margin-top: 4.875rem;
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+    margin-left: 1.875rem;
+    position: relative;
+    z-index: -1;
+}
+.money_h1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fe6f21;
+    margin-top: 3rem;
+}
+.smallB {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
+.offerName {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  margin-left: -1.125rem;
+  width: 2.25rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  color: #fe6f21;
+  font-size: 0.5rem;
+  border-bottom: solid 1px #fe6f21;
+  text-align: center;
+}
+.status {
+	float: left;
+  width: 100%;
+  text-align: center;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  font-size: 0.6rem;
+  color: #3f3f3f;
+  margin-bottom: 0.5rem;
+}
+.status_all {
+    float: left;
+    width: 12rem;
+    padding-top: 0;
+    padding-bottom: 1.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.stat_p {
+	width: 46%;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.5rem;
+  border: solid 1px #f0f0f0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  color: #454545;
+}
+.stat_p:nth-child(odd){
+  float: left;
+}
+.stat_p:nth-child(even){
+  float: right;
+}
+.last_btns{
+	float: left;
+	padding-bottom: 1.75rem;
+}
+.q_btn {
+  width: 11.875rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  border-radius: 27px;
+  display: block;
+  float: left;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-left: 2.075rem;
+}
+.now {
+  background: #fe6f21;
+  color: #fff;
+  margin-bottom: 0.875rem;
+}
+.again {
+  background: #fff;
+  color: #fc5703;
+  border: solid 1px #fc5703;
+}
+.now:active {
+  color: #fff;
+}
+.now:link {
+  color: #fff;
+}
+.now:hover {
+  color: #fff;
+}
+.now:visited {
+  color: #fff;
+}
+.again:active {
+  color: #fc5703;
+}
+.again:link {
+  color: #fc5703;
+}
+.again:hover {
+  color: #fc5703;
+}
+.again:visited {
+  color: #fc5703;
+}
+.price {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4.25rem;
+}
+.fontName {
+  width: 2.175rem;
+  text-align: center;
+  height: 1rem;
+  border-bottom: solid 1px #6d6d6d;
+  color: #6d6d6d;
+  font-size: 0.5rem;
+}
+.price_h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fe6f21;
+    margin-top: 1rem;
+}
+.pric_img {
+    width: 10.75rem;
+    height: 10.75rem;
+    background: url(../img/final_img.png);
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.cont_p_money {
+  width: 16rem;
+  height: 1.825rem;
+  line-height: 1.825rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.last_p {
+  width: 16rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  color: #636363;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.box {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: url(../img/bg_img.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.index_logo {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 1.025rem;
+  right: 1.175rem;
+  display: block;
+  background: url(../img/logo1.png);
+  background-size: 100% 100%;
+}
+.font_img {
+  width: 12.425rem;
+  height: 2.15rem;
+  display: block;
+  background-image: url(../img/fontImg.png);
+  background-size: 12.425rem 2.15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5.5rem;
+  margin-bottom: 1.25rem;
+}
+.font_p {
+  width: 100%;
+  height: 0.825rem;
+  line-height: 0.825rem;
+  font-size: 0.825rem;
+  color: #fff;
+  text-align: center;
+}
+.go {
+  width: 9.25rem;
+  height: 2.375rem;
+  background: #fff;
+  display: block;
+  background-image: url(../img/Indexgo.png);
+  background-repeat: no-repeat;
+  background-size: 1.075rem 0.8rem;
+  background-position: 7.875rem center;
+  color: #e85f02;
+  line-height: 2.375rem;
+  font-size: 0.825rem;
+  padding-left: 4.25rem;
+  border-radius: 32px;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+.go:hover {
+  color: #e85f02;
+}
+.go:visited {
+  color: #e85f02;
+}
+.go:active {
+  color: #e85f02;
+}
+.go:link {
+  color: #e85f02;
+}
+.phone_skip {
+  width: 2.125rem;
+  height: 0.875rem;
+  padding-top: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.45rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.phone_skip:nth-child(1) {
+  background-image: url(../img/iphone.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1.1rem;
+  background-position: center 0.3rem;
+  margin-right: 1.25rem;
+}
+.phone_skip:nth-child(2) {
+  background-image: url(../img/sumsung.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1.1rem;
+  background-position: center 0.3rem;
+  margin-right: 1.25rem;
+}
+.phone_skip:nth-child(3) {
+  background-image: url(../img/mi.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;
+  background-position: center 0.3rem;
+  margin-right: 1.25rem;
+}
+.phone_skip:nth-child(4) {
+  background-image: url(../img/huawei.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;
+  background-position: center 0.3rem;
+}
+.phone_skip:hover {
+  color: #787071;
+}
+.phone_skip:link {
+  color: #787071;
+}
+.phone_skip:visited {
+  color: #787071;
+}
+.phone_skip:active {
+  color: #787071;
+}
+.ewm {
+  width: 5.375rem;
+  height: 5.8rem;
+  display: block;
+}
+.ewm_img{
+	display: block;
+	width: 5.375rem;
+	height: 5.375rem;
+  background-image: url(../img/ewm_img.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+.ewm_last{
+	display: block;
+	width: 5.375rem;
+	height: 0.425rem;
+  background-image: url(../img/ewm_foot.png);
+  background-size: 100% 100%;
+  float: left;
+}
+.index_last {
+  margin-top: 0.5rem;
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+}
+.bign_mob{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 3rem;
+	width: 3rem;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.5rem;
+	text-align: right;
+}

@@ -1,0 +1,16 @@
+
+/*头部*/
+.SayBoxBody{background:#fff; width:100%; height:100%;}
+.SayBox{width:100%; height:auto; border-bottom: 1px solid #ccc;}
+.renSay{ padding:0.2rem 0; height:auto;  margin-left:0.46rem;border-bottom: 1px solid #ccc;}
+.renSay:nth-last-of-type(1){border-bottom: none;}
+.sayImg{width:1rem; height:1rem; overflow: hidden; font-size:0;}
+.txtBox{width:7.6rem; padding-left:0.4rem;}
+.sayNT{font-size:0.3rem; color:#959595; padding-bottom:0.1rem;}
+.sayTxt{line-height:0.5rem;font-size:0.3rem;}
+
+.tab{display: none;}
+.tabnav{font-size: 0; border-bottom:1px solid #ccc; width:100%; text-align: center}
+.tabnav span{width: 35%; text-align: center; display: block; height:1rem; line-height: 1rem; font-size:0.4rem; float:left; border-bottom: 1px solid #fff; margin-left:10%;}
+.tabnav span.fxActive{ border-bottom: 1px solid #58ab22; color:#58ab22;}
+.tabShou{display: block;}

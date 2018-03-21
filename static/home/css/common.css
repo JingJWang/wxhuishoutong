@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+<!--common-->
+body, div,img, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote��th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption, cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul,li {list-style:none;}
+a{ text-decoration:none;}
+th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:' '}
+abbr,acronym{border:0;}
+img{max-width: 100%; max-height:100%;}
+button,input,select,option,textarea{margin:0px; padding: 0px; border: none;outline: none; background: none;}
+body{ font-family: "Microsoft Yahei", Arial, Tahoma, "hiragino sans gb", Helvetica; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+<!--loading-->
+#turn_gif{width:100%; height:100%;  background:#fff; display: table; position:fixed; left:0; top:0; z-index: 10;}
+#turn_gif span{display: table-cell; vertical-align: middle; text-align: center;font-size: 0; }

@@ -1,0 +1,205 @@
+body{
+    width:100%;
+    height:100%;
+    background-image:url(../images/newUserbg.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color:#F4B12C;
+}
+.content .dimension{
+    width:100%;
+    height:auto;
+    margin-top: 145%;
+}
+.content .dimension .introduce{
+    padding:0px 37px;
+    height:45px;
+    margin-bottom:20px;
+}
+.content .dimension .introduce .phone{
+    width:100%;
+    height:45px;
+    line-height:45px;
+    font-size:14px;
+    text-align: center;
+    background-color: #FDF6E8;
+    color:#666666;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    outline:none;
+    border-radius: 50px;
+    font-family: 'Microsoft Yahei';
+}
+.content .dimension .draw{
+    margin:0px 37px;
+    height:50px;
+    line-height: 50px;
+    text-align:center;
+    font-size:14px;
+    color:#ffffff;
+    background-image:url(../images/newBtn.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:block;
+}
+.content .dimension .copyright{
+    width:100%;
+    color:#7B3E0D;
+    text-align:center;
+    margin:45px 0px 30px 0px;
+}
+.shade{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color:#121212;
+    opacity: 0.3;
+    z-index:999;
+    display:none;
+}
+.frame{
+    width:280px;
+    height:225px;
+    background-color:#FABE34;
+    border-radius: 15px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top:-112.5px;
+    margin-left:-140px;
+    z-index:1000;
+    display:none;
+}
+.frame.code{
+    height:265px;
+    margin-top:-132.5px;
+}
+.frame .title{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    text-align:center;
+    font-size:18px;
+    color:#7B3E0D;
+    position:relative;
+    margin:22px 0px 35px 0px;
+}
+.frame.code .title{
+    margin:22px 0px 30px 0px;
+}
+.frame .title .close-btn{
+    width:24px;
+    height:24px;
+    background-image: url(../images/close.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:absolute;
+    top:-5px;
+    right:10px;
+}
+.frame .covers{
+    padding:0px 20px;
+    height:auto;
+}
+.frame .covers .embody{
+    width:100%;
+    height:44px;
+    margin-top:18px;
+    position:relative;
+}
+.frame .covers .embody#verify{
+    display:none;
+}
+.frame.code .embody#verify{
+    display:block;
+}
+.frame .covers .entry{
+    width:220px;
+    height:44px;
+    line-height: 44px;
+    font-size:14px;
+    color:#666666;
+    background-color: #FBFBFB;
+    border-radius: 22px;
+    margin:0px;
+    padding:0px 0px 0px 20px;
+    border:0px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+}
+.frame .covers .gain{
+    width:78px;
+    height:30px;
+    line-height: 30px;
+    font-size:10px;
+    text-align: center;
+    color:#F6B127;
+    border:1px solid #F6B128;
+    border-radius: 15px;
+    margin:7px 0px;
+    position:absolute;
+    top:0px;
+    right:5px;
+    outline:none;
+    font-family: 'Microsoft Yahei';
+    background-color:transparent;
+}
+.frame .covers .gain.active{
+    border:1px solid #DDDDDD;
+    color:#B9ACA1;
+}
+.frame .covers .code{
+    width:70px;
+    height:28px;
+    margin:8px 0px;
+    border-radius: 4px;
+    overflow:hidden;
+    position:absolute;
+    top:0px;
+    right:15px;
+}
+.frame .covers .code img{
+    width:100%;
+    height:100%;
+}
+.frame .affirm{
+    width:100%;
+    height:48px;
+    line-height: 48px;
+    text-align:center;
+    font-size:14px;
+    color:#ffffff;
+    background-image:url(../images/bt.png);
+    background-size:100% 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:block;
+    margin-top:24px;
+}
+.frame.code .affirm{
+    margin-top:18px;
+}
+
+::-webkit-input-placeholder {
+    color: #B9ACA1;
+}
+:-moz-placeholder {
+    color: #B9ACA1;
+}
+::-moz-placeholder {
+    color: #B9ACA1;
+}
+:-ms-input-placeholder {
+    color: #B9ACA1;
+}
+
+@media screen and (max-width: 320px) {
+    .content .dimension .copyright {
+        margin:45px 0px 30px 0px;
+    }
+}

@@ -1,0 +1,75 @@
+.blighted{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: #333;
+    opacity: 0.4;
+    z-index:999;
+}
+.framed{
+    margin:0px 8% 0px 8%;
+    width:84%;
+    height:auto;
+    position:fixed;
+    top:50%;
+    z-index:1000;
+}
+.framed .graphic{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.framed .graphic img{
+    width:100%;
+    height:100%;
+}
+.framed .gown{
+    width:100%;
+    height:38px;
+}
+.framed .gown .line{
+    width:1px;
+    height:38px;
+    background-color: #FCF0C0;
+}
+.framed .shut{
+    width:100%;
+    height:30px;
+}
+.framed .shut .close-btn{
+    width:30px;
+    height:30px;
+    background-image: url(../img/close1.png);
+    background-size: 30px 30px;
+    display:block;
+}
+
+
+.container{
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+.container .explain{
+    width:100%;
+    height:auto;
+}
+.container .explain img{
+    width:100%;
+    height:100%;
+}
+.part{
+    width:100%;
+    height:16px;
+    padding-bottom: 20px;
+    background-color: #85D4D1;
+}
+.part .partake{
+    width:auto;
+    height:15px;
+    line-height: 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #2a41eb;
+    color:#2a41eb;
+    text-decoration: none;
+}

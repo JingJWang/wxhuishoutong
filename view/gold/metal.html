@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>贵金属回收</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet" href="../../static/gold/css/indexGold.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleFoot.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../../index.php/nonstandard/system/welcome" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>首页</p>
+			</a>
+			<h1>贵金属回收</h1>
+			<a href="javascript:;" class="LastA">
+				<img src="../../static/gold/img/header-img2.png" />
+				<p>帮助</p>
+			</a>
+		</header>
+		<p class="tradingHour">交易时间为周一早 7:00 到周六早4:00</p>
+		<article>
+		<form name="myFrom" action="#" id="request" method="post">	
+			<p class="con_p">回收品类（）</p>
+			<ul class="recycleSort">
+			</ul>
+				<div id="property_list" class="property_list">
+				</div>
+			<div class="bigSort">
+				<h2>克数</h2>
+				<div class="asNum">
+					<div>
+					<span class="subtract" onclick="metalStyle.reckonWeight(-1)"></span>
+					<input type="text" maxlength="12" name="weight" class="num" value="0" oninput="metalStyle.checkWeight(this);" id="weight" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+					<span class="add" onclick="metalStyle.reckonWeight(1);"></span>
+					</div>
+					<p class="asNum_p"></p>
+				</div>
+			</div>
+			<div class="usertel">
+				<h2>联系方式</h2>
+				<div class="tel">
+					<input type="text" name='tel' placeholder="在此请输入您的手机号" class="teltext">
+				</div>
+			</div>
+			<div class="bigSort fangshi">
+				<h2>交易方式</h2>
+				<ul>
+					<li class="hover_li" onclick="metalStyle.choiceModel(this,1);">
+						添加到库存
+					</li>
+					<li onclick="metalStyle.choiceModel(this,2);">
+						我要现金
+					</li>
+					<input type="hidden" id="typeData" name="type" value="1"/>
+				</ul>
+			</div>
+			<div class="last_font">
+				库存仅支持最高纯度例如:黄金24K,铂金PT990，如果您的纯度不够则按价格折合算克数
+			</div>
+		</article>
+		</form>
+		<footer>
+			<div class="way">
+				<!--<div class="wayMoney"  style="display: none;">回收数量：<font>库存+12.8g</font></div>-->
+				<div class="wayMoney">回收总价：¥<font><span id="pri"></span></font></div>
+			</div>
+			<a href="#" onclicK="metalOrdre.submitData();" class="nextTo">下一步</a>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/gold/js/rem.js"></script>	
+	<script type="text/javascript">
+		metalOrdre.getType();
+	</script>
+</html>

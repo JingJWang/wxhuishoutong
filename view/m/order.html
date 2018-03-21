@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>回收通我的物品</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/m_cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/myGoods.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/m/css/footer.css"/>
+		<script type="text/javascript" src="../../static/m/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/m/js/myGoods.js"></script>
+	</head>
+	<body>
+		<!--  green start      -->
+		<div class="green">
+			<div class="back">
+				<p>我的物品</p>
+				<a href="JavaScript:;" onclick="javascript:history.go(-1);">返回</a>
+			</div>
+		</div>
+		<!--  green end      -->
+		<!--  adv start      -->
+		<div class="adv">
+			<i class="closeBtn" onclick="closeAdv(this)"></i>
+			<a href="/view/shop/list.html"><img src="../../static/m/images/guanggao1.png" width="100%" height="50px"/></a>	
+		</div>
+		<!--  adv end      -->
+		<!--  goodsNav start      -->
+		<div class="goodsNav clearfix">
+			<a href="javascript:;" class="current" id="n" onclick="GetOrder('n');">进行中订单</a>
+			<a href="javascript:;" id="y"  onclick="GetOrder('y');">已完成订单</a>
+			<span></span>
+		</div>
+		<!--  goodsNav end      -->			
+		<!--  已完成订单goodsCon start      -->
+		<div class="goodsCon" >
+			<!-- bidPrice start  -->
+			
+			<!-- bidPrice end  -->
+			<!-- bidPrice start  -->
+			
+			<!-- bidPrice end  -->
+		</div>
+		<!--  已完成订单goodsCon end      -->
+		<div class="bottomNav">
+			<div class="select">
+				<a href="/index.php/nonstandard/system/welcome" class="select01">交易</a>
+    			<a href="/index.php/task/usercenter/taskcenter">福利</a>
+    			<a href="/view/shop/list.html">商城</a>
+    			<a href="/index.php/nonstandard/center/ViewCenter">我的</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/home/js/request_common.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_order.js"></script>
+	<script type="text/javascript" src="../../static/m/js/baidudata.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {		   
+		   var s=getUrlParam('status');
+		   if(s == 'n'){
+			   GetOrder('n');
+		   }
+		   if(s == 'y'){	
+			   $("#n").removeClass('current');		
+			   $("#y").addClass('current');		  
+			   GetOrder('y');
+		   }
+		   if(s != 'n' && s != 'y'){
+			   GetOrder('n');
+		   }		     
+    });
+	</script>
+</html>

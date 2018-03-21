@@ -1,0 +1,377 @@
+html,body{
+    margin:0px;
+    padding:0px;
+    font-family: Microsoft YaHei;
+    background-color: #F1F1F1;
+}
+a{
+    text-decoration:none
+}
+.navigation{
+    width:100%;
+    height:44px;
+    background-color: #58AB22;
+    position: fixed;
+}
+.navigation .homepage{
+    width:90px;
+    height:44px;
+    line-height: 44px;
+    float:left;
+}
+.navigation .homepage span{
+    background-image: url(../images/gamelist/more.png);
+    background-repeat: no-repeat;
+    background-size: 9px 17px;
+    font-size: 16px;
+    color:#ffffff;
+    padding-left:15px;
+    margin-left: 16px;
+    background-position: left center;
+}
+.navigation .help{
+    width:90px;
+    height:44px;
+    line-height: 44px;
+    text-align: right;
+    float:right;
+}
+.navigation .help span{
+    background-image: url(../images/gamelist/ong.png);
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    font-size: 12px;
+    color:#ffffff;
+    padding: 2px 0px 2px 25px;
+    margin-right: 16px;
+    background-position: left center;
+}
+.navigation .theme{
+    height:44px;
+    margin:0px 90px 0px 90px;
+    color:#ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px;
+}
+.full-head{
+    width: 100%;
+    height: 44px;
+}
+.box{
+    width:100%;
+    height:134px;
+    border-bottom: 1px solid #E3E3E3;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+}
+.box .container{
+    width:100%;
+    height:95px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.box .container .lcon{
+    width:90px;
+    height:95px;
+    float:left;
+}
+.box .container .lcon .game-icon{
+    width:60px;
+    height:60px;
+    background-size: 60px 60px;
+    margin:17.5px 16px;
+}
+.box .container .lcon .game-icon img{
+    width:100%;
+    height:100%;
+    float:left;
+}
+.box .container .playing{
+    width:85px;
+    height:95px;
+    float:right;
+}
+.box .container .playing .playing-game{
+    width:62px;
+    height:60px;
+
+    padding:17.5px 0px 17.5px 8px;
+}
+.box .container .playing .playing-game .munch{
+    width:100%;
+    height:25px;
+    line-height: 25px;
+    color:#BDBDBD;
+    font-size: 10px;
+    text-align: center;
+}
+.box .container .playing .playing-game .play-btn{
+    width:100%;
+    height:28px;
+    border-radius:6px;
+    background-color: #58AB22;
+    text-align: center;
+    line-height: 28px;
+    color:#ffffff;
+    font-size: 12px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.box .container .playing .playing-game .play-btn:active{
+    background-color:  #22AB22;
+}
+.box .container .explain{
+    height:95px;
+    margin:0px 85px 0px 90px;
+
+}
+.box .container .explain .information{
+    height:60px;
+    padding:17.5px 0px 17.5px 0px;
+}
+.box .container .explain .information .title{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.box .container .explain .information .title .game-name{
+    font-size: 16px;
+    color:#333333;
+    font-family: Microsoft YaHei;
+}
+.box .container .explain .information .title .gamerule{
+    font-size: 12px;
+    color:#FC7E40;
+    padding-left: 8px;
+}
+.box .container .explain .information .rulecontent{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    color:#888888;
+    font-size: 12px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.box .container .explain .information .gameplayer{
+    width:100%;
+    height:14px;
+    overflow:hidden;
+}
+.box .container .explain .information .gameplayer .player{
+    width:auto;
+    height:14px;
+    border-right:1px solid #9C9C9C;
+    line-height: 14px;
+    font-size:10px;
+    color:#9C9C9C;
+    float:left;
+    padding-right:6px;
+}
+.box .container .explain .information .gameplayer .player .number{
+    color:#68B13D;
+}
+.box .container .explain .information .gameplayer .record{
+    width:auto;
+    height:14px;
+    float:left;
+    color:#9C9C9C;
+    font-size:10px;
+    padding-left: 6px;
+    line-height: 14px;
+}
+.box .container .explain .information .gameplayer .record .score{
+    color:#68B13D;
+}
+.box .news{
+    width:100%;
+    height:26px;
+    padding:6px 0px;
+}
+.box .news .news_ng{
+    width:50%;
+    height:100%;
+    float:left;
+
+}
+.box .news .news_ng .best{
+    width:auto;
+    height:14px;
+    padding:6px 16px;
+    line-height: 14px;
+    border-right:1px solid #DDDDDD;
+}
+.box .news .news_ng .best .fraction{
+    border-left:2px solid #F6721A;
+    padding-left:5px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.box .news .news_ng .best .fraction span{
+    font-size: 12px;
+    color:#838383;
+}
+.box .news .news_nf{
+    width:50%;
+    height:100%;
+    float:right;
+}
+.box .news .news_nf .reward{
+    width:auto;
+    height:14px;
+    padding:6px 16px;
+    line-height: 14px;
+}
+.box .news .news_nf .reward .tips{
+    border-left:2px solid #F6721A;
+    padding-left:5px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.box .news .news_nf .reward .tips span{
+    font-size: 12px;
+    color:#838383;
+}
+
+.container{
+    width:100%;
+    height:95px;
+    border-bottom: 1px solid #F1F1F1;
+    background-color: #ffffff;
+}
+.container .lcon{
+    width:90px;
+    height:95px;
+    float:left;
+}
+.container .lcon .game-icon{
+    width:60px;
+    height:60px;
+    background-size: 60px 60px;
+    margin:17.5px 16px;
+}
+.container .lcon .game-icon img{
+    width:100%;
+    height:100%;
+    float:left;
+}
+.container .playing{
+    width:85px;
+    height:95px;
+    float:right;
+}
+.container .playing .playing-game{
+    width:62px;
+    height:60px;
+
+    padding:17.5px 0px 17.5px 8px;
+}
+.container .playing .playing-game .munch{
+    width:100%;
+    height:25px;
+    line-height: 25px;
+    color:#BDBDBD;
+    font-size: 10px;
+    text-align: center;
+}
+.container .playing .playing-game .play-btn{
+    width:100%;
+    height:28px;
+    border-radius:6px;
+    background-color: #58AB22;
+    text-align: center;
+    line-height: 28px;
+    color:#ffffff;
+    font-size: 12px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container .playing .playing-game .play-btn:active{
+    background-color:  #22AB22;
+}
+.container .explain{
+    height:95px;
+    margin:0px 85px 0px 90px;
+
+}
+.container .explain .information{
+    height:60px;
+    padding:17.5px 0px 17.5px 0px;
+}
+.container .explain .information .title{
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.container .explain .information .title .game-name{
+    font-size: 16px;
+    color:#333333;
+    font-family: Microsoft YaHei;
+}
+.container .explain .information .title .gamerule{
+    font-size: 12px;
+    color:#FC7E40;
+    padding-left: 8px;
+}
+.container .explain .information .rulecontent{
+    width:100%;
+    height:26px;
+    line-height: 26px;
+    color:#888888;
+    font-size: 12px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.container .explain .information .gameplayer{
+    width:100%;
+    height:14px;
+    overflow:hidden;
+}
+.container .explain .information .gameplayer.luck{
+    height:20px;
+    margin-top: 10px;
+}
+.container .explain .information .gameplayer.luck .record{
+    font-size: 12px;
+}
+.container .explain .information .gameplayer .player{
+    width:auto;
+    height:14px;
+    border-right:1px solid #9C9C9C;
+    line-height: 14px;
+    font-size:10px;
+    color:#9C9C9C;
+    float:left;
+    padding-right:6px;
+}
+.container .explain .information .gameplayer .player .number{
+    color:#68B13D;
+}
+.container .explain .information .gameplayer .record{
+    width:auto;
+    height:14px;
+    float:left;
+    color:#9C9C9C;
+    font-size:10px;
+    padding-left: 6px;
+    line-height: 14px;
+}
+.container .explain .information .gameplayer .record .score{
+    color:#68B13D;
+}

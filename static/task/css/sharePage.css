@@ -1,0 +1,211 @@
+body,html{
+    margin:0px;
+    padding:0px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    width:100%;
+    height:100%;
+    background-image:url(/static/task/images/shareimg/bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #982ED7;
+}
+.advert{
+    width:100%;
+    height:350px;
+    background-image: url(/static/task/images/shareimg/sell.png);
+    background-size: 100% 350px;
+    background-position: center center;
+    display:block;
+    margin-bottom: 22px;
+}
+
+.welfare{
+    padding:0px 29px 0px 30px;
+    height:auto;
+    float:left;
+    margin-bottom: 30px;
+    display:none;
+}
+.welfare .spatial{
+    width:100%;
+    height:auto;
+}
+.welfare .spatial .deliver{
+    width:28%;
+    height:auto;
+    float:left;
+    margin-right: 8%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.welfare .spatial .deliver img{
+    width:100%;
+    height:100%;
+}
+.welfare .spatial .deliver.right{
+    margin-right: 0px;
+}
+.drawing{
+    width:100%;
+    height:30px;
+    margin-bottom:32px;
+    float:left;
+    display:none;
+}
+.drawing .draw-btn{
+    width:125px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #F5CA37;
+    font-size: 15px;
+    color:#7D0F1A;
+    display:block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing:2px;
+    box-shadow: 0px 3px 2px #BB3040;
+}
+.reveal{
+    padding:0px 29px 40px 30px;
+    height:auto;
+    float:left;
+}
+.reveal .topical{
+    width:100%;
+    height:auto;
+}
+.reveal .topical.more{
+    margin-top: 35px;
+    float:left;
+}
+.reveal .topical .skyline{
+    width:100%;
+    height:20px;
+}
+.reveal .topical .skyline .epitome{
+    width:82px;
+    height:16px;
+    float:left;
+    margin-bottom: 4px;
+}
+.reveal .topical .skyline .epitome img{
+    width:100%;
+    height:100%;
+}
+.reveal .topical .skyline .switch{
+    width:75px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #FFE53A;
+    float:right;
+    display:block;
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px #7521A6;
+}
+.reveal .topical .skyline .switch span{
+    line-height: 20px;
+    background-image: url(/static/task/images/shareimg/more.png);
+    background-size: 6px 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display:inline-block;
+    font-size: 11px;
+    color:#5706B3;
+    font-weight: bold;
+    padding-right: 11px;
+}
+.reveal .topical .benefit{
+    width:100%;
+    height:auto;
+    margin-top: 15px;
+    float:left
+}
+.reveal .topical .benefit .classify{
+    width:31.3%;
+    height:auto;
+    margin-right: 3%;
+    float:left;
+}
+.reveal .topical .benefit .classify.right{
+    margin-right: 0px;
+}
+.reveal .topical .benefit .classify img{
+    width:100%;
+    height:100%;
+}
+.reveal .topical .covers{
+    width:100%;
+    height:auto;
+    margin:16px 0px 34px 0px;
+    float:left;
+}
+.reveal .topical .covers .classify{
+    width:31.3%;
+    height:auto;
+    background-size: 100%;
+    background-position: center center;
+    margin-right: 3%;
+    float:left;
+}
+.reveal .topical .covers .classify.right{
+    margin-right: 0px;
+}
+.reveal .topical .covers .classify img{
+   width:100%;
+    height:100%
+}
+.reveal .services{
+    width:100%;
+    height:auto;
+    position:relative;
+    float:left;
+}
+.reveal .services img{
+    width:100%;
+    height:100%;
+}
+.reveal .services .boon{
+    width:52px;
+    height:49px;
+    background-image: url(/static/task/images/shareimg/bon.png);
+    background-size: 52px 49px;
+    position:absolute;
+    right:5px;
+    bottom:8px;
+    display:none;
+}
+.reveal .remark{
+    width:100%;
+    height:auto;
+    float:left;
+    margin: 6px 0px 20px 0px;
+    font-size: 10px;
+    color:#FFE2E2;
+}
+.reveal .remark .tips{
+    width:24px;
+    height:24px;
+    line-height: 24px;
+    float:left;
+}
+.reveal .remark .forth{
+    margin-left: 24px;
+    height:auto;
+}
+.reveal .words{
+    line-height: 24px;
+    margin:0px;
+    padding:0px;
+}
+
+
+@media screen and (max-width: 360px) {
+    .reveal .services .boon {width: 40px;height: 37px;background-size: 40px 37px;}
+}
+
+

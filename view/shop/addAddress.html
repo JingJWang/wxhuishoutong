@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>回收通添加地址</title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/flourMallNew.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/shop/css/personalMessage.css"/>
+		<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/shop/js/flourMallNew.js"></script>
+		<script type="text/javascript" src="../../static/shop/js/personalMsg.js"></script>
+        <script src="../../static/home/js/request_common.js"></script>	
+		<script type="text/javascript" src="../../static/shop/js/request_shop.js?v=1000"></script>
+	</head>
+	<body>
+
+	<div class="addare">
+		<!--  green start      -->
+		<div class="green">
+			<div class="back">
+				<p>添加地址</p>
+				<a href="javascript:history.go(-1)">返回</a>
+			</div>
+		</div>
+		<!--  green end      -->
+		<!--  newAdd start   -->	
+		<div class="newAdd">
+			<h2 class="tit">新增地址&nbsp;<span class="must">( 以下都为必填项)</span></h2>
+			<div class="newAddCon">
+				<div class="name clearfix">
+					<p class="fl">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</p>
+					<div class="fr text">
+						<input type="text" value="" class="input nameInput" placeholder="输入您的姓名" onblur="checkNameInput()"/>
+						<div id="addName"></div>
+					</div>
+				</div>
+				<div class="name clearfix">
+					<p class="fl">手机号码<span></span></p>
+					<div class="fr text">
+						<input type="text" value="" class="input noInput" placeholder="输入联系您的手机号" onblur="checkPhone()"/>
+						<div id="addNum"></div>						
+					</div>
+				</div>
+				<div class="name clearfix">
+					<p class="fl">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</p>
+					<div class="fr text">
+						<p class="input posiInput" style="height:17px;line-height:17px;font-family:'宋体';color:#575757;" placeholder="地区" onblur="checkPosiInput()" onclick="opned()"></p>
+						<div id="addPosi"></div>
+					</div>
+				</div>
+				<div class="name clearfix">
+					<p class="fl">详细地址</p>
+					<div class="fr text">
+						<input type="text" value="" class="input jieInput" placeholder="街道 - 门牌号" onblur="checkJieInput()"/>
+						<div id="addJie"></div>
+					</div>
+				</div>
+				<div class="name clearfix isDefault">
+					<p class="fl">设为默认地址</p>
+					<form action="" method="" class="fr">
+     	               <input type="checkbox" id="checkbox-10-1" /><label id="moren" for="checkbox-10-1" myAttr="0" onclick="defaultAddress(this)"></label>
+					</form>
+				</div>
+				<div class="isAdd">
+					<a class="greenBtn" onclick="putaddrinfo()">确认添加</a>
+				</div>
+			</div>
+		</div>
+		<!--  newAdd end      -->
+		<!-- --- copy start --- -->
+		<div class="copy">
+			<p>© 2014  回收通 版权所有，并保留所有权利</p>
+		</div>
+	</div>
+		<!-- --- copy end --- -->
+
+	<div class="area" style="display:none;background: #f1f2f3;">
+		<!--  green start      -->
+		<!--  green end      -->
+		<div class="loan_jm1">
+			<div class="green">
+				<div class="back">
+					<p>选择地区</p>
+					<a onclick="closed()">返回</a>
+					<span onclick="backBtn()">确定</span>
+				</div>
+			</div>
+			<div class="curPosition">
+				<span>当前位置</span>
+			</div>
+			<div class="loan_jm_l1 clearfix">
+				<span class="loan_jm_spa1 fl">工作所在城市:</span>
+				<span class="wbk_srn select_show select_gr fl TextOverflow" id="gr_zone_ids" id="130100"></span>
+			</div>
+			<p class="textP">当前定位城市不准确时，请在下方列表中选择</p>			
+			<div class="letter">
+				<span>全部地区</span>
+				<ul class="clearfix">
+					<li><a href="javascript:;">A</a></li>
+					<li><a href="javascript:;">B</a></li>
+					<li><a href="javascript:;">C</a></li>
+					<li><a href="javascript:;">D</a></li>
+					<li><a href="javascript:;">E</a></li>
+					<li><a href="javascript:;">F</a></li>
+					<li><a href="javascript:;">G</a></li>
+					<li><a href="javascript:;">H</a></li>
+					<li><a href="javascript:;">J</a></li>
+					<li><a href="javascript:;">K</a></li>
+					<li><a href="javascript:;">L</a></li>
+					<li><a href="javascript:;">M</a></li>
+					<li><a href="javascript:;">N</a></li>
+					<li><a href="javascript:;">P</a></li>
+					<li><a href="javascript:;">Q</a></li>
+					<li><a href="javascript:;">R</a></li>
+					<li><a href="javascript:;">S</a></li>
+					<li><a href="javascript:;">T</a></li>
+					<li><a href="javascript:;">W</a></li>
+					<li><a href="javascript:;">X</a></li>
+					<li><a href="javascript:;">Y</a></li>
+					<li><a href="javascript:;">Z</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container" style="z-index: 9999; ">
+			<div class="city">
+			</div>
+		</div>
+		<!-- --- copy start --- -->
+		<div class="copy">
+			<p>© 2014  回收通 版权所有，并保留所有权利</p>
+		</div>		
+	</div>
+		<!-- --- copy end --- -->
+    <script type="text/javascript"> 
+		var id=getUrlParam('id');
+     </script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+	</body>
+</html>

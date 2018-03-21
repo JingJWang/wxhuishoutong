@@ -1,0 +1,298 @@
+.model{
+	width: 90%;
+	padding: 0 5% 30px 5%;
+	float: left;
+	position: relative;
+}
+.pname_j{
+	width: 100%;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	float: left;
+	margin: 10px 0 0 0;
+}
+.choses{
+	float:left;
+	width: 100%;
+}
+.choses_btn {
+    overflow: hidden;
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #7db3ff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+.model_j{
+	float: left;
+	width: 98%;
+	padding-left: 2%;
+}
+.lableInp{
+    display: inline-block;
+	width: 128px;
+	height: 25px;
+	float: left;
+	margin-bottom: 10px;
+}
+.lablerad{
+	width: 190px;
+	height: 25px;
+	float: left;
+	margin-top: 10px;
+	
+}
+.brand_inp,.radio_j{
+	width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 3px 5px 0 0;
+}
+.lableInp,.lablerad span{
+    height: 25px;
+	line-height: 25px;
+    float: left;
+    display: block;
+    font-size: 16px;
+}
+.posiInp{
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+}
+.way{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 42px;
+}
+.posi_inp{
+	width: 100%;
+	height: 40px;
+	border: solid 1px #ccc;
+	padding-left: 10px;
+}
+.posi_last{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 20px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.goback{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	width: 90%;
+    margin: 20px 5% 10px 5%;
+    font-size: 16px;
+    background-image: url(../images/back_j.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    text-indent: 22px;
+    color: #0875fb;
+}
+.btn_j{
+	width: 70%;
+	margin: 50px 5% 0 5%;
+	float: left;
+}
+.btn_com{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	float: right;
+	border-radius: 10px;
+}
+.save_j{
+	background: #7db3ff;
+	margin-right: 40px;
+}
+/*.cancel_j{
+	background: #c6c7c9;
+}*/
+.shadow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+.posi_j{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -130px;
+	width: 500px;
+	height: 260px;
+	background: #fff;
+	border-radius: 10px;
+	z-index: 999;
+}
+.posi_p{
+	width: 100%;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+	font-size: 16px;
+}
+.posi_p:nth-child(1){
+	margin-top: 50px;
+}
+.final{
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+.btn_final{
+	width: 130px;
+	height: 42px;
+	line-height: 40px;
+	display: block;
+	color: #444;
+	background: #fff;
+	border: solid 1px #676767;
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+	float: left;
+	border-radius: 10px;
+}
+.sure_pos{
+	margin:0 30px 0 110px;
+}
+.btn_final:hover{
+	color: #fff;
+	background: #7db3ff;
+	border: solid 1px #7db3ff;
+}
+.showCheckModel{
+	color: red;
+}
+.final_font{
+	text-decoration: none;
+	color: red;
+}
+.typs{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    margin-left: 200px;	
+}
+.typeInp{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    border: solid 1px #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+	outline: none;
+}
+.typeInp:first-of-type{
+	margin-right:15px;	
+}
+.hover_inp{
+	color: #fff;
+	background: #7db3ff;
+	border: solid 1px #7db3ff;	
+	outline: none;
+}
+.tab{
+	width: 90%;
+	float: left;
+    margin: 20px 5% 10px 5%;	
+}
+.tabLi{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	color: #4f4f4f;
+	float: left;
+    border: solid 2px #c2c2c2;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clickLi{
+	border: solid 2px #7db3ff;
+    color: #7db3ff;
+}
+.modSelect{
+	float: left;
+	position: relative;
+}
+.nowoption{
+	position: relative;
+	display: block;
+	width: 210px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	color: #333;
+	padding-left: 20px;
+	border: solid 1px #7db3ff;
+}
+.priRange{
+	width: 230px;
+	border: solid 1px #ccc;
+}
+.priRange li{
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 10px;
+	border-bottom: solid 1px #ccc;
+	padding-left: 10px;
+}
+.priRange li:last-of-type{
+	border-bottom: none;
+}
+.marBott{
+	margin-bottom: 200px;
+}
+.triangle-down {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 13px solid #7db3ff;
+}
+form{
+	width: 100%;
+	float: left;
+}

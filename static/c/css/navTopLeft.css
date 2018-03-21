@@ -1,0 +1,47 @@
+/*=== nav ===*/
+.navTop{ height: 56px; line-height: 56px; padding: 0 60px; background: #7db3ff;}
+.navCon{ width: 100%; height: auto;}
+.navCon .getOut{ color: #fff;}
+.navCon .getOut:hover{ color: #fff;}
+.navCon h1{ display: block;}
+.navCon h1 a{ display: block; width: 82px; height: 56px; background: url(../images/logo.png) no-repeat center center;}
+/*mySelect*/
+.mySelect a { text-decoration:none; color: #fff; font-size: 14px; display:block; height: 56px; line-height: 56px; }
+.mySelect { width: auto; position:relative;   background: url(../images/usernamePic.png) no-repeat left center; padding: 0 20px 0 47px;}
+.mySelect .selected { display: block; width: 100%;}
+.msUl { border:1px solid #ccc; border-top: none; display: none; position:absolute; top: 56px; left: 0px; background: #7db3ff; }
+.msUl a { width: 120px; height: 24px; line-height: 24px; text-align: center; }
+.msUl a:hover { background: pink; }
+.getOut{ width: auto; height: 56px; line-height: 56px; padding: 0 0 0 47px; display: block; background: url(../images/getoutPic.png) no-repeat left center; color: #fff; font-size: 14px; margin: 0 0 0 20px;}
+/*leftNav*/
+.whiteBg{ background: #fff;}
+.leftNav{ position: fixed; left: 0px; top: 56px; z-index: 50; width: 200px; height: auto;bottom: 0px; background: #ebebeb; border-right: 1px solid #e0e0e0;overflow: auto;}
+.leftNav .navTitle{ width: 100%; margin: 0px 0 14px 0; padding: 35px 0 0 0;}
+.leftNav .navTitle span{ display: inline-block; width: 24px; height: 24px; margin: 0 10px 0 46px; background: url(../images/spiritPic.png) 0px 0px;}
+.leftNav .navTitle .divJs span.product{background-image: url(../images/merch.png);background-repeat: no-repeat;background-position: center;}
+.leftNav .navTitle span.coupt{background-image: url(../images/order.png);background-repeat: no-repeat;background-position: center;}
+.systemData .navTitle span{ background-position: 0px -34px;}
+.userMag .navTitle span{ background-position: 0px -416px;}
+.leftNav .navTitle h3{ display: block; color: #333; height: 24px; line-height: 24px; text-align: center; font-size: 18PX; font-weight: normal; background-position: -54px -416px;}
+.productManage,.systemData,.luxuryManage,.userMag,.systemMag{ padding: 0 0 9px 0;}
+.productManage ul li,.systemData ul li,.luxuryManage ul li,.userMag ul li,.systemMag ul li,.preferential ul li,.generalize ul li,.repair ul li{ height: 40px; line-height: 40px; padding: 0 0 0 21px;}
+.productManage ul .borderLeft,.systemData ul .borderLeft,.luxuryManage ul .borderLeft,.userMag ul .borderLeft,.systemMag ul .borderLeft,.preferential ul .borderLeft,.generalize ul .borderLeft,.repair ul .borderLeft{ border-left: 4px solid #ff7160; padding: 0 0 0 17px;}
+.productManage ul li:hover,.systemData ul li:hover,.luxuryManage ul li:hover,.userMag ul li:hover,.systemMag ul li:hover,.preferential ul li:hover,.generalize ul li:hover,.repair ul li:hover{ border-left: 4px solid #ff7160; padding: 0 0 0 17px;}
+.productManage ul li a,.systemData ul li a,.luxuryManage ul li a,.userMag ul li a,.systemMag ul li a,.preferential ul li a,.generalize ul li a,.repair ul li a{ font-size: 16px; color: #666; display: block; width: 100%; height: 40px; line-height: 40px; text-align: center;}
+/*contentBox*/
+#contentBox{ margin-left: 200px; height: 500px; /*border-bottom: 1px solid #ccc;*/}
+/*=== pageNumber ===*/
+.pageNumber{ width:450px; margin: 20px auto 0;}
+.pageNumber .pagination li{ background: #fff; float: left; height: 30px; margin: 0 20px 0 0;}
+.pageNumber .pagination li a{display: block; font-size: 14px; color: #7db3ff; height: 30px; background: #fff;}
+
+@media only screen and (max-width: 1366px) {
+	#contentBox,#luxuryCon{ margin: 0 0 0 150px;}
+	.leftNav{ width: 150px;}
+	.leftNav .navTitle h3{ font-size: 18px;}
+	.leftNav .navTitle span{ margin-left: 10px;}
+	.productManage ul .borderLeft,.systemData ul .borderLeft,.luxuryManage ul .borderLeft,.userMag ul .borderLeft,.preferential ul .borderLeft,.generalize ul .borderLeft,.repair ul .borderLeft{ padding: 0 0 0 0;}
+	.productManage ul li:hover,.systemData ul li:hover,.luxuryManage ul li:hover,.userMag ul li:hover,.preferential ul li:hover,.generalize ul li:hover,.repair ul li:hover{ padding: 0 0 0 0px;}
+	.productManage ul li,.systemData ul li,.luxuryManage ul li,.userMag ul li,.preferential ul li a,.generalize ul li a,.repair ul li a{ padding: 0 0 0 0; border-left: 4px solid rgba(255,255,255,0);}
+
+}

@@ -1,0 +1,10 @@
+/*noDataTop----------------------*/
+.soTop{ padding-bottom: 15px;}
+.soTop p{ font-size: 14px; color: #575757;}
+/*noDataCon--------------------*/
+.soCon{ padding: 93px 15px 0 15px;}
+.soCon .txt{ width: 100%;}
+.soCon .txt p{ line-height: 20px; margin: 0 0 3px 0;}
+.soCon .txt span{ color: #888;}
+.soCon .soBg .left{ width: 276px; height: 138px; background: url(../img/noDataBg.png) no-repeat; background-size: 276px 138px; position: absolute; left: 50%; top:230px; margin: 0 0 0 -138px;}
+.soCon .soBg .left p{ font-size: 13px; line-height: 22px; display: block; width: 150px; height: auto; position: absolute; right: 3px; top: 10px;}

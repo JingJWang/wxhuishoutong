@@ -1,0 +1,376 @@
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height: @h/2/20;
+}
+.font(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.pad(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top: @pt/2/20;
+    padding-right: @pr/2/20;
+    padding-bottom: @pb/2/20;
+    padding-left: @pl/2/20; 
+}
+.mar(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top: @mt/2/20;
+    margin-right: @mr/2/20;
+    margin-bottom: @mb/2/20;
+    margin-left: @ml/2/20; 
+}
+.h(@g:0px){
+    height:@g/2/20;
+}
+body{
+    background: #f1f2f3;
+    position: relative;
+    overflow: hidden;
+}
+.particulars{
+    .rem(640rem,112rem);
+    .pad(95rem,0,17rem,0);
+    .mar(0,0,16rem,0);
+    background: #ffffff;
+    border-bottom: solid 1px #e6e7e9;
+}
+.particulars img{
+    .rem(135rem,110rem);
+    float: left;
+    .mar(0,0,0,25rem);
+}
+.particulars span{
+    display: block;
+    float: left;
+    .rem(410rem,65rem);
+    .pad(0,0,0,27rem);
+    
+}
+.particulars span p{
+    float: left;
+    .font(20rem,65rem);
+    .mar(0,0,0,20rem);
+    color: #3e3e3e;
+}
+.particulars div{
+    float: left;
+    .rem(410rem,28rem);
+    .pad(0,0,0,27rem);
+}
+.particulars div p{
+    float: left;
+    .font(21rem,28rem);
+    .mar(0,0,0,20rem);
+    color: #4d4d4d;
+}
+.particulars div p:first-of-type{
+    color: #f74000;
+}
+.defaultAddress{
+    display: block;
+    .rem(640rem,83rem);
+    .pad(23rem,0,32rem,0);
+    .mar(0,0,16rem,0);
+    background: #ffffff;
+    border-bottom: solid 1px #e6e7e9;
+    border-top: solid 1px #e6e7e9;
+}
+.defaultAddName{
+    .rem(535rem,83rem);
+    .pad(0,0,0,26rem);
+}
+.defaultAddName span{
+    .rem(100%,54rem);
+    .font(26rem,54rem);
+    color: #292929;
+}
+.defaultAddName div b{
+    display: block;
+    .rem(70rem,28rem);
+    .font(12rem,28rem);
+    .mar(0,10rem,0,0);
+    background: #f85e25;
+    color: #ffffff;
+    border-radius: 3px;
+    float: left;
+    font-weight: normal;
+    text-align: center;
+}
+.defaultAddName div p{
+    .font(19rem,28rem);
+    color: #4f4f4f;
+    float: left;
+}
+.defaultAddress .right_logo{
+    .rem(70rem,83rem);
+    float: right;
+    background: url(../img/wj_right.png) center no-repeat;
+    background-size: 0.475rem 0.75rem;
+    
+}
+.payment{
+    .rem(640rem,350rem);
+    .mar(0,0,16rem,0);
+}
+.payment ul{
+    width: 100%;
+}
+.payment ul li{
+    width: 16rem;
+    height: 2.15rem;
+    float: left;
+    font-size: 0.6rem;
+    background-image: url(../img/label_b.png);
+    background-size: 16rem 2.15rem;
+    border-bottom: solid 1px #f7f7f7;
+    margin-bottom: 1px;
+}   
+.payment ul li img{
+    margin: 0.75rem 0.625rem 0 0.625rem;
+    width: 0.875rem;
+    height: 0.9rem;
+    float: left;
+}
+.payment ul .myLi{
+    background-image: url(../img/label_a.png);
+}
+.payment ul li p{
+    height: 2.15rem;
+    line-height: 2.15rem;
+    color: #545454;
+    float: left;
+}
+
+.payment ul li b{
+    line-height: 2.15rem;
+    color: #a1a1a1;
+    float: left;
+    font-weight: normal;
+    margin-left: 0.3rem;
+    font-size: 0.45rem;
+}
+//余额不够支付
+.payment span{
+    display: block;
+    width: 16rem;
+    height: 2.15rem;
+    float: left;
+    font-size: 0.6rem;
+    background: #ffffff;
+    border-bottom: solid 1px #f7f7f7;
+    margin-bottom: 1px;
+} 
+.payment span img{
+    margin: 0.6rem 0.625rem 0 0.625rem;
+    width: 0.875rem;
+    height: 0.9rem;
+    float: left;
+}
+.payment span p{
+    height: 2.15rem;
+    line-height: 2.15rem;
+    color: #545454;
+    float: left;
+}
+.payment span b{
+    line-height: 2.15rem;
+    color: #a1a1a1;
+    float: left;
+    font-weight: normal;
+    margin-left: 0.3rem;
+    font-size: 0.45rem;
+}
+.remarks{
+    .pad(15rem,25rem,25rem,25rem);
+    .mar(0,0,130rem,0);
+    background: #ffffff;
+    border-bottom: solid 1px #e6e7e9;
+    border-top: solid 1px #e6e7e9;
+}
+.remarks p{
+    color: #666666;
+   .font(24rem,50rem);
+}
+.remarks textarea{
+    .rem(580rem,56rem);
+    resize: none;
+    border: none;
+    .font(20rem,25rem);
+    color: #676767;
+    outline: none;
+}
+footer{
+    width: 16rem;
+    .pad(17rem,0rem,17rem,0rem);
+    background: #FFFFFF;
+    border-top: solid 1px #e6e7e9;
+    position: fixed;
+    bottom: 0;
+}
+footer button{
+    .rem(570rem,67rem);
+    .mar(0,0,0,35rem);
+    background: #489E12;
+    color: #ffffff;
+    .font(25rem,67rem);
+    border-radius: 5px;
+}
+//输入支付密码
+.payPassword_box{
+    width: 16rem;
+    height: 100%;
+    background: rgba(108,108,108,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.payPassword_box .payPassword{
+    .rem(479rem,373rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -373rem/40/2;
+    margin-left: -479rem/40/2;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.payPassword_box .payPassword_h1{
+    .rem(479rem,70rem);
+    border-bottom: solid 1px #ebebeb;
+    .font(27rem,70rem);
+    text-align: center;
+    font-weight: normal;
+    color: #4e4e4e;
+}
+.payPassword_box .payPassword_p{
+    .rem(479rem,85rem);
+    .font(19rem,85rem);
+    color: #9C9C9C;
+    text-indent: 0.7rem;
+}
+.payPassword .payPwd{
+    .rem(447rem,76rem);
+    background: url(../img/payPwd_bj.png);
+    background-size: 100% 100%;
+    .mar(0,0,0,16rem);
+    text-indent: 1.6em;
+    letter-spacing: 1.63rem;
+    overflow: hidden;
+}
+.payPassword a{
+    height: 44rem/40;
+    .font(18rem,44rem);
+    color: #3a4bcb;
+    text-align: right;
+    .mar(0,0,0,300rem);  
+}
+.payPassword .payBtn{
+    width: 100%;
+    height: 85rem/40;
+    border-top: solid 1px #ebebeb;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.payPassword .payBtn button{
+    width: 50%;
+    float: left;
+    height: 85rem/40;
+    color: #848484;
+    font-size: 25rem/40;
+    background: #ffffff;
+}
+.payBtn button:last-of-type{
+    color: #4fa51a;
+    border-left: solid 1px #ebebeb;
+}
+//设置支付密码
+    //设置密码  1
+.payPassword_box .Set{
+    .rem(479rem,373rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -373rem/40/2;
+    margin-left: -479rem/40/2;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.close{
+    background:url(../img/payClose.png) right center no-repeat;
+    background-size: 0.575rem 0.575rem;
+    background-position-x: 10.7rem;
+}
+.Set .setPhone{
+    display: block;
+    .rem(450rem,92rem);
+    .mar(0,0,0,26rem);
+    background: url(../img/Payphone.png) left center no-repeat;
+    background-size: 0.725rem 1.05rem;
+    color: #585858;
+    .font(20rem,92rem);
+    text-indent: 1rem;
+}
+.Set .setPhone s{
+    text-decoration: none;
+}
+.Set .setNumber{
+    display: block;
+    .rem(399rem,52rem);
+    border: solid 1px #ececec;
+    border-radius: 3px;
+    .mar(0,0,0,26rem);
+    .pad(11rem,0,10rem,25rem);
+}
+.setNumber input{
+    .rem(240rem,52rem);
+    float: left;
+    color: #8b8b8b;
+    .font(20rem,52rem);
+}
+.setNumber p{
+    display: block;
+    .rem(155rem,52rem);
+    float: right;
+    text-align: center;
+    color: #f75a26;
+    .font(18rem,52rem);
+    border-left: solid 1px #e5e5e5;
+}
+.payNext{
+    display: block;
+    width: 100%;
+    height: 85rem/40;
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px #ececec;
+    .font(22rem,85rem);
+    text-align: center;
+    color: #5ead2b;
+    letter-spacing: 0.1rem;
+}
+.payNext:link{color: #5ead2b;}
+.payNext:hover{color: #5ead2b;}
+.payNext:visited{color: #5ead2b;}
+.payNext:active{color: #5ead2b;}
+//设置密码  2
+.Set .sixPassword{
+    display: block;
+    .rem(450rem,92rem);
+    .mar(0,0,0,26rem);
+    color: #585858;
+    .font(20rem,92rem);
+}
+.payPassWd{
+    display: block;
+    .rem(447rem,76rem);
+    .mar(10rem,0,0,18rem);
+    background: url(../img/payPwd_bj.png) center no-repeat;
+    background-size: 11.175rem 1.9rem;
+}
+
+
+
+
+

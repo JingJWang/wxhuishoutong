@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>贵金属回收</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet" href="../../static/gold/css/indexGold.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleFoot.css" />
+		<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+		<script src="../../static/gold/js/indexGold.js"></script>
+		<script>
+			window.onload=window.onresize=function(){
+				document.documentElement.style.fontSize=window.innerWidth/16+'px';
+			};
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="../../index.php/nonstandard/system/welcome" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>首页</p>
+			</a>
+			<h1>贵金属回收</h1>
+			<a href="javascript:;" class="LastA">
+				<img src="../../static/gold/img/header-img2.png" />
+				<p>帮助</p>
+			</a>
+		</header>
+		<p class="tradingHour">交易时间为周一早 7:00 到周六早4:00</p>
+		<article>
+			<p class="con_p">回收品类（今日24K 黄金出售价格：281/克）</p>
+			<ul class="recycleSort">
+				<li class="recycleSortLi">黄金</li>
+				<li>铂金</li>
+				<li>钯金</li>
+				<li>白银</li>
+			</ul>
+			<form name="myFrom" action="#" id="request" method="post">	
+				<!---所有可选的-->
+				<div id="property_list" class="property_list">
+				<!--纯度、分类、克数、   交易方式-->
+					<dl>
+						<!--纯度-->
+						<dd>
+							<div class="property_title  pinggu_title_one">
+								<span class="fl">纯度</span>
+								<p class="conTxt fl TextOverflow"></p>
+								<a class="xiugai_btn fr" href="javascript:;" style="display: none;">修改</a>																					
+							</div>
+							<ul class="pinggu_other pinggu_outhera">
+								<li class="purity_span hover_span">24K<br/><p>（含金量99.99%）</p></li>
+								<li class="purity_span">24K<br/><p>（含金量99%）</p></li>
+								<li>22K</li>
+								<li>18K</li>
+								<li>18K</li>
+								<div class="clear">&nbsp;</div>
+							</ul>
+						</dd>
+						<!--交易分类-->
+						<dd>
+							<div class="property_title  pinggu_title_two">
+								<span class="fl">分类</span>
+								<p class="conTxt fl TextOverflow"></p>
+								<a class="xiugai_btn fr" href="javascript:;" style="display: none;">修改</a>																					
+							</div>
+							<ul class="pinggu_other pinggu_outherb">
+								<li class="hover_span">投资金条</li>
+								<li>投资金币</li>
+								<li>投资金锭</li>
+								<li>黄金饰品</li>
+								<li>黄金摆件</li>
+								<div class="clear">&nbsp;</div>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</form>
+			<!--克数 -->
+			<div class="bigSort">
+				<h2>克数</h2>
+				<div class="asNum">
+					<div>
+					<button class="subtract"></button>
+					<input type="text" class="num" value="8">
+					<button class="add"></button>
+					</div>
+					<p class="asNum_p">0.008kg</p>
+				</div>
+			</div>
+			<!--交易方式 -->
+			<div class="bigSort fangshi">
+				<h2>交易方式</h2>
+				<ul>
+					<li class="hover_li">
+						添加到库存
+					</li>
+					<li>
+						我要现金
+					</li>
+				</ul>
+				<div class="last_font">
+					库存仅支持99.99%(24K)黄金，如果您的黄金纯度不够则按价格折合算克数
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="way">
+				<!--<div class="wayMoney"  style="display: none;">回收数量：<font>库存+12.8g</font></div>-->
+				<div class="wayMoney">回收总价：¥<font>2248.00</font></div>
+			</div>
+			<a href="subSuccess.html" class="nextTo">下一步</a>
+		</footer>
+	</body>
+</html>

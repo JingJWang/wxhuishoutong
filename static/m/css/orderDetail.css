@@ -1,0 +1,369 @@
+body{ padding: 40px 0 0px 0;}
+/*=== gray ===*/
+.odGray{ display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.3); position: fixed; left: 0px; top: 0px; z-index: 100;}
+.towBid{ width: 280px; height: 150px; background: #fff; border-radius: 10px; position: absolute; left: 50%; top: 40%; margin: -75px 0 0 -140px; }
+.towBid p{ height: 100px; line-height: 100px; text-align: center; color: #777; font-size: 14px;}
+.towBid a{ font-size: 15px; display: block; height: 49px; line-height: 49px; border-top: 1px solid #dfdfdf; text-align: center; color: #f75e25;}
+/*=== green ===*/
+.green{ width: 100%; background: #67b535; position: fixed; z-index: 99; left: 0px; top: 0px;}
+.green .back{ width: 100%; height: 40px; position: relative;}
+.green .back a,.backa{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 33px; background: url(../images/arrBack.png) no-repeat 15px center; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; left: 0px; top: 50%; z-index: 100; margin: -20px 0 0 0;}
+.backselect .search-btn{width:20px;height:40px;background-image: url(../images/search.png);background-repeat: no-repeat;background-size:20px 18px;background-position: center center;display:block;position:absolute;right:15px;top:0px;}
+.green .back p{ width: 100%; height: 40px; line-height: 40px; font-size: 16px; color: #fff; text-align: center;}
+/*--------------------------------------- orderDetail css --------------------------------------------*/
+/*--- phoneDetail ---*/
+.phoneDetail{ padding: 15px 15px 8px 15px; background: #fff; position: relative;}
+.orderState{ position: absolute; right: 15px; top: 15px; color: #f85e26; font-size: 14px; font-style: normal;}
+.phoneDetail .code{ color: #888; font-size: 12px;}
+.phoneDetail .phoneBrand{ height: 20px; line-height: 20px; font-size: 14px; padding: 10px 0 10px 21px; background: url(../images/phonePics.png) no-repeat left center; background-size: 13px 20px; border-bottom: 1px solid #ddd;}
+.phoneDetail .bot{ margin: 8px 0 0 0; color: #888; font-size: 12px;}
+.phoneDetail .bot .posi,.tradeInfo .basic .posi{ background: url(../images/positionPic.png) no-repeat left center; background-size: 11px 14px; padding: 0 0 0 18px; }
+/*--- bidInfo ---*/
+.bidInfo h3,.proInfo h3,.tradeBid h3{ height: 14px; line-height: 14px; display: block; margin: 14px 15px 10px; font-size: 14px; padding: 0 0 0 5px; font-weight: normal; border-left: 2px solid #f85e26; }
+.bidList ul li,.prePay,.changeBid{ height: 40px; line-height: 40px; background: #fff; box-shadow: 0 1px 2px #e5e5e5; margin: 0 0 5px 0;}
+.bidList ul li .busiman,.bidList ul li .money,.prePay p{ color: #888; font-size: 14px;}
+.bidList ul li .name,.bidList ul li .number,.prePay p span{ color: #575757; font-size: 15px; margin: 0 0 0 8px;}
+.bidList ul li a{ display: block; padding: 0 15px;}
+/*--- tradeBid ---*/
+.tradeInfo .basic{ padding: 15px 0px 0 0px; background: #fff; box-shadow: 0 1px 2px #e5e5e5;position:relative;}
+.tradeInfo .basic .rule{width:78px;height:22px;line-height: 22px;text-align:center;font-size:12px;color:#575757;border-radius: 3px;border:1px solid #dddddd;box-shadow:0px 2px 5px #f1f1f1;display:block;position:absolute;top:10px;right:15px;}
+.tradeInfo .basic .rule span{height:22px;line-height: 22px;background-image:url(../images/rul.png);background-size:10px 12px;background-repeat: no-repeat;background-position:left center;padding-left:14px;}
+.tradeInfo .basic .name{ font-size: 14px; padding: 0 15px;}
+.tradeInfo .basic .name span{ font-size: 12px; color: #f3621f; margin: 0 0 0 8px;}
+.tradeInfo .basic .posi{ padding: 10px 15px 10px 33px; border-bottom: 1px solid #edecec; background-position: 15px 11px;}
+.tradeInfo .basic .number{ height: 40px; line-height: 40px; position: relative;}
+.tradeInfo .basic .number .line{ width: 1px; height: 36px; background: #e6e5e5; position: absolute; left: 50%; top: 2px;}
+.tradeInfo .basic .phoneNo,.tradeInfo .basic .weiChat{ display: inline-block; width: 50%; text-align: center;}
+.tradeInfo .basic .phoneNo i{ margin: 0 7px 0 0; display: inline-block; width: 14px; height: 16px; background: url(../images/phoneNo.png) no-repeat; vertical-align: middle; background-size: 14px 14px;}
+.tradeInfo .basic .weiChat i{ margin: 0 7px 0 0; display: inline-block; width: 14px; height: 16px; background: url(../images/weixin.png) no-repeat; vertical-align: middle; background-size: 14px 13px;}
+.prePay,.changeBid{ padding: 0 15px; margin: 5px 0 0 0;}
+.changeBid .fl{ font-size: 14px;}
+.changeBid .fl span{ color: #f3621f; font-size: 15px;}
+.changeBid .state{ color: #888; font-size: 14px;}
+.seize{padding:0px 5px;height:25px;background-color: #ffffff;border-bottom: 1px solid #EFEFEE;}
+.seize .hints{padding-left:10px;height:25px;line-height: 25px;font-size:10px;color:#F3621F;border-top:1px solid #DDDDDD;}
+/*--- proInfo ---*/
+.proInfo .porList{ background: #fff; padding: 0 15px;}
+.proInfo .porList ul li{ padding: 13px 0; color: #888; font-size: 14px; border-bottom: 1px solid #eeeeed;}
+.proInfo .porList ul span{ display: inline-block;}
+.proInfo .porList ul .other .fl{ width: 22%;}
+.proInfo .porList ul .other .othercon{ width: 78%;}
+/*--------------------------------------- bidDetail css --------------------------------------------*/
+.tip,.prompt{ padding: 0 15px; height: 30px; line-height: 30px; color: #e56d25; background: #fdf4a7;}
+.tip p{ background: url(../images/tipPic.png) no-repeat left center; background-size: 14px 14px; padding: 0 0 0 18px;}
+.prompt p{ background: url(../images/prompt.png) no-repeat left center; background-size: 14px 14px; padding: 0 0 0 18px;}
+.estimate{ background: #fff;}
+.tip02{ height: 30px; line-height: 30px;}
+.tip02 p{ background: none; padding-left: 0;}
+.estimate .top{ padding: 15px 15px 10px;}
+.estimate .line{ display: block; width: 100%; height: 1px; border-top: 1px dashed #ddd; position: relative;}
+.estimate .line i{ background: #fff; width: 64px; text-align: center; font-size: 12px; font-style: normal; position: absolute; left: 50%; top: 50%; margin: -10px 0 0 -24px;}
+.estimate .money{ font-size: 15px; text-align: center; margin: 17px 0 10px 0;}
+.estimate .money.recover{margin:40px 0px 10px 0;}
+.estimate .money .amount{position:relative;}
+.estimate .money .amount .cue{width:100px;height:24px;line-height: 20px;text-align:center;font-size:10px;color:#F3621F;background-image:url(../images/bg_01.png);background-size:100px 24px;background-repeat: no-repeat;background-position: center center;position:absolute;left:-28px;bottom:24px;display:none;}
+.estimate .money.recover .amount .cue{display:block;}
+.estimate .money span{ font-size: 18px; color: #f3621f; margin: 0 3px 0 14px;}
+.estimate .posi{ text-align: center; color: #888; font-size: 12px; height: 20px; line-height: 20px;}
+.estimate .posi i{ display: inline-block; width: 14px; height: 14px; background: url(../images/positionPic.png) no-repeat left center; background-size: 12px 14px; margin: 0 3px 0 10px;}
+.service{ height: 35px; line-height: 35px; padding-left: 15px; background: #fff; border-top: 1px dashed #ddd;}
+.service { font-size: 14px; color: #888;}
+.service .con{ display: inline-block; color: #575757; margin: 0 0 0 10px;}
+/*--- busiInfo ---*/
+.message{width:100%;height:auto;background-color:#ffffff;margin:7px 0px 0px 0px;}
+.message .headline{padding:14px 15px 8px 15px;height:16px;background-color:#ffffff;border-bottom:1px dashed #dddddd;display:block;}
+.message .headline .serial{height:16px;line-height: 16px;color:#888888;}
+.message .headline .serial .num{color:#575757;padding-left:6px;}
+.message .headline .model{height:16px;line-height:16px;background-image:url(../images/phones.png);background-size:11px 16px;background-repeat:no-repeat;background-position:left center;padding-left:17px;color:#666666;}
+.message .substance{padding:12px 15px 10px 15px;height:auto;background-color:#ffffff;display:block;}
+.message .substance .reveal{width:100%;height:74px;padding-top:10px;background-color:#F8F8F8;border-radius: 3px;position:relative;}
+.message .substance .reveal .rule{width:78px;height:22px;line-height: 22px;text-align:center;font-size:12px;color:#575757;border-radius: 3px;border:1px solid #dddddd;box-shadow:0px 2px 5px #f1f1f1;display:block;position:absolute;top:10px;right:10px;}
+.message .substance .reveal .rule span{height:22px;line-height: 22px;background-image:url(../images/rul.png);background-size:10px 12px;background-repeat: no-repeat;background-position:left center;padding-left:14px;}
+.message .substance .reveal .price{width:100%;height:74px;padding-left:10px;}
+.message .substance .reveal .price .cue{width:100%;height:14px;line-height: 14px;color:#575757;padding-bottom:14px;}
+.message .substance .reveal .price .prix{width:100%;height:45px;}
+.message .substance .reveal .price .prix .rate{height:45px;line-height: 45px;font-size:24px;color:#F3621F;}
+.message .substance .reveal .price .prix .rate span{font-size:16px;color:#575757;}
+.message .substance .reveal .price .region{height:45px;}
+.message .substance .reveal .price .region .sign{height:45px;line-height: 45px;font-size:20px;color:#575757;margin:0px 8px;}
+.message .substance .reveal .price .region .usable{width:100px;height:45px;background-image: url(../images/cou.png);background-size:100px 45px;background-repeat: no-repeat;background-position: center center;}
+.message .substance .reveal .price .region .usable.large{background-image: url(../images/cous.png);}
+.message .substance .rest{width:100%;height:18px;padding-top:8px;}
+.message .substance .rest .range{height:18px;line-height: 18px;color:#888888;background-image: url(../images/dis.png);background-size:12px 14px;background-repeat: no-repeat;background-position: left center;padding-left:16px;}
+.message .substance .rest .serve{height:16px;}
+.message .substance .rest .serve span{height:16px;line-height:16px;padding:0px 5px;color:#575757;border:1px solid #dddddd;border-radius: 3px;margin-left:8px;display:inline-block;float:left;}
+.busiInfo{ padding: 0 15px; margin: 0 0 30px 0;}
+.busiInfo h3{ font-weight: normal; font-size: 14px; text-align: center; margin: 15px 0 7px 0;}
+.busiInfo .busiMan,.sucRecord,.eval{ background: #fff; border-radius: 3px; padding: 15px 15px 0; box-shadow: 0 1px 1px #e5e5e5;}
+.busiInfo .busiMan .top .nameBlack{ font-size: 16px; }
+.busiInfo .busiMan .top .noOrange{ color: #f3621f; font-size: 12px;}
+.busiInfo .busiMan .top .score{ font-size: 15px; color: #888;width:100%;height:20px;line-height:20px;padding-left:15px;}
+.busiInfo .busiMan .top .score.below{margin-top: 8px;}
+.busiInfo .busiMan .top .score span{ font-size: 14px; color: #f3621f;}
+.busiInfo .busiMan .bot{ margin: 18px 0 0px 0; padding: 0 0 10px 0; position: relative;}
+.busiInfo .busiMan .bot li{ float: left; width: 33.33%; text-align: center;}
+.busiInfo .busiMan .bot li p{ color: #888; display: block; height: 20px;}
+.busiInfo .busiMan .bot .one,.busiInfo .busiMan .bot .two{ background: #ddd; display: block; width: 1px; height: 20px; position: absolute;}
+.busiInfo .busiMan .bot .one{ left: 33.333%; top: 10px;}
+.busiInfo .busiMan .bot .two{ left: 66.666%; top: 10px;}
+.shade{width:100%;height:100%;position:fixed;top:0px;left:0px;background-color:#191919;opacity: 0.4;z-index:999;display:none;}
+.regulation{width:280px;height:300px;border-radius: 15px 15px 10px 10px;position:fixed;top:50%;left:50%;margin:-150px 0px 0px -140px;z-index:1000;overflow:hidden;display:none;}
+.regulation .title{width:100%;height:50px;line-height: 50px;text-align:center;font-size:18px;color:#ffffff;background-image:url(../images/bg.png);background-size:100% 50px;background-repeat: no-repeat;background-position:center center;border-radius: 15px 15px 0px 0px;}
+.regulation .title .closeBtn{width:28px;height:20px;line-height:16px;font-size:32px;color:#ffffff;position:absolute;top:14px;right:16px;}
+.regulation .content{padding:18px 20px 0px 20px;height:232px;background-color:#ffffff;float:left;}
+.regulation .content .written{width:100%;height:158px;overflow:auto;}
+.regulation .content .written::-webkit-scrollbar {width: 0;height: 0;}
+.regulation .content .written p{line-height: 22px;font-size:14px;color:#575757;margin-top:7px;}
+.regulation .content .aware{width:100%;height:40px;float:left;margin:20px 0px 15px 0px;}
+.regulation .content .aware .realize{width:150px;height:40px;line-height: 40px;text-align:center;font-size:16px;color:#ffffff;background-color:#58AB23;border-radius: 20px;display:block;}
+/*--- sucRecord ---*/
+.sucRecord,.eval{ margin: 1px 0 0 0;}
+.sucRecord h4,.eval h4{ font-weight: normal; font-size: 14px; text-align: center;}
+.sucRecord ul,.eval ul{ padding: 5px 0;}
+.sucRecord ul li{ font-size: 12px; height: 24px; line-height: 24px;}
+.sucRecord ul li .price,.eval .price{ color: #888;}
+.eval .price{ margin: 5px 0 5px 0px;}
+.eval .price p{ display: block;}
+.eval .brand{ width: 100%;}
+.eval ul li{ margin: 8px 0 0 0;}
+/*--- botBtn ---*/
+.botBtn{ padding:0px 20px; height: 50px;margin:40px 0px 0px 0px;display:block;}
+.botBtn a{ width: 100%; height: 50px; line-height: 50px;font-size: 16px; text-align: center; display: block;border-radius: 5px; }
+.botBtn .reSelect{ color: #56a820; background: #fff;}
+.botBtn .startTra{ color: #fff; background: #56a820;}
+.shadow{width:100%;height:100%;position:fixed;top:0px;left:0px;background-color:#222222;opacity: 0.4;z-index:9999;display:none;}
+.frame{width:300px;height:270px;background-color:#ffffff;border-radius: 10px;position:fixed;top:50%;left:50%;margin:-135px 0px 0px -150px;z-index:10000;display:none;}
+.frame .title{width:100%;height:44px;line-height: 44px;text-align:center;font-size:18px;color:#ffffff;background-color:#58AB23;border-radius: 10px 10px 0px 0px;position:relative;}
+.frame .title .close-btn{width:20px;height:44px;line-height: 40px;text-align:center;font-size:32px;color:#ffffff;position:absolute;top:0px;right:15px;}
+.frame .messages{padding:0px 10px;height:181px;border-bottom: 1px solid #dddddd;}
+.frame .messages .comprise{padding:10px 0px 0px 0px;width:100%;height:34px;display:block;border-bottom: 1px solid #dddddd;position:relative;}
+.frame .messages .comprise:nth-of-type(4){border-bottom: 0px;}
+.frame .messages .comprise .import{padding:0px 0px 0px 10px;width:270px;height:34px;line-height: 34px;font-size:14px;color:#575757;margin:0px;border:0px;font-family: 'Microsoft Yahei';outline:none;background-color:transparent;}
+.frame .messages .comprise .right{width:8px;height:44px;background-image: url(../images/arrRight.png);background-size:8px 16px;background-repeat: no-repeat;background-position: center center;position:absolute;top:0px;right:0px;}
+.frame .add-btn{width:100%;height:44px;line-height: 44px;text-align:center;font-size:16px;color:#58AB22;display:block;}
+input#city1::-webkit-input-placeholder { /* WebKit browsers */
+	color: #575757;
+}
+input#city1:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #575757;
+}
+input#city1::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #575757;
+}
+input#city1:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #575757;
+}
+/*--- cancelTrasic ---*/
+.cancelTrasic{ padding: 0px 15px 5px;}
+.cancelTrasic a{ font-size: 15px; display: block; height: 40px; line-height: 40px; border-radius: 5px; text-align: center; color: #58ab23; background: #fff; border: 1px solid #ddd; margin: 20px 0 0 0;}
+/*--------------------------------------- bidList css --------------------------------------------*/
+.bidListgrag{ display: none; width: 100%; height: 100%; position: fixed;top: 0; left: 0; background: rgba(0,0,0,0.2);}
+/*�����˵�*/
+.mySelect a { text-decoration:none; font-size: 13px;}
+.mySelect { position:relative; }
+.mySelect .selected,.mySelect .bmselected { text-align: right; display: block; width: 70px; padding: 0 23px 0 0; height: 36px; line-height: 36px; background: url(../images/downArrsmall.png) no-repeat 91% 50%; background-size: 10px 5px; margin: 0 auto;}
+.msUl { width: 300%; background: #fff; border-top: none; display: none; position:absolute; top: 37px; left: 0px; }
+.style .msUl{ left: -100%;}
+.msUl li a { display:block; font-size: 14px; height: 45px; line-height: 45px; margin: 0 15px; border-bottom: 1px solid #ddd;}
+.mySelect .msUl li:nth-of-type(4) a{ border-bottom: none;}
+.mySelect .current a { background: url(../images/selectedyes.png) no-repeat right center; background-size: 15px 15px; }
+/*--- bidListTop ---*/
+/*topBorder*/
+.topBorder{ border-top: 1px solid #dad9d9;}
+.topBorder ul{ width: 100%; padding: 0 15px; box-sizing: border-box;}
+.topBorder ul li{ float: left; width: 23%; text-align: center; margin:5px 2.5% 0 0; box-sizing: border-box; border-radius: 3px; height: 24px; line-height: 24px; background: #e8e8e8;}
+.topBorder ul .selected{ color: #53a61f; border: 1px solid #53a61f; line-height: 22px; background: #fff;}
+@media only screen and (max-width: 350px) {
+	.topBorder ul li{ margin:5px 2% 0 0;}
+	.topBorder ul li:nth-of-type(1),.topBorder ul li:nth-of-type(2),.topBorder ul li:nth-of-type(3){ width: 22%;}
+	.topBorder ul li:nth-of-type(4){ width: 28%;}
+}
+.topBorder ul li:nth-of-type(4){ margin-right: 0; background: #fff; box-sizing: border-box;}
+.bidListTop .confirm p{ background: #e8e8e8; width: 100%;  line-height: 24px;  margin: 0 auto; box-sizing: border-box; border-radius: 3px;}
+.topBorder .confirm .current{background: #fff; display: block; padding: 0 0 0 8px; text-align: center; line-height: 22px; background: url(../images/confirmPic02.png) no-repeat 3px center; color: #53a61f; border: 1px solid #53a61f; background-size: 8px 5px; margin: 0 auto;}
+/*sort*/
+.bidListTop{ height: 36px; background: #fff; box-shadow: 0 1px 1px #ccc; position: relative;}
+.bidListTop .leftLine,.bidListTop .rightLine,.bidListTop .centerLine{ display: block; width: 1px; height: 20px; background: #ddd; position: absolute;}
+.bidListTop .leftLine{ left: 25%; top: 9px;}
+.bidListTop .centerLine{ left: 50%; top: 9px;}
+.bidListTop .rightLine{ left: 75%; top: 9px;}
+.sort ul li{ float: left; width: 25%; height: 36px; line-height: 36px; text-align: center;}
+.sort ul .sorted{ color: #58ab23;}/*--- bidList ---*/
+.bidLine{ display: block; background: #fff; padding: 10px 15px 10px; margin: 5px 0 0 0;}
+.bidLine .top .code{ border-left: 2px solid #f3621f; padding: 0 0 0 4px;}
+.bidLine .top .posi{ background: url(../images/positionPic.png) no-repeat; background-size: 12px 14px; padding: 0 0 0 16px;}
+.bidLine .price{ margin: 15px 0 0px 0; padding: 0 0 14px 0; border-bottom: 1px solid #ddd;}
+.bidLine .price ul li{ float: left; height: 20px; line-height: 20px; color: #fff; font-size: 10px; padding: 0 3px; background: #f3621f; border-radius: 3px; margin: 0 0 0 5px;}
+.bidLine .price .number{ color: #f3621f; font-size: 15px;}
+.bidLine .bot{ padding: 12px 0 0 0;}
+.bidLine .bot p{ color: #666; font-size: 13px;}
+.bidLine .bot .score{ margin: 10px 0 0 0;}
+
+/*--- ��λ ---*/
+.tip02{ width: 100%; position: fixed; top: 40px; left: 0px; z-index: 99;}
+.sort{ width: 100%; position: fixed; top: 70px; left: 0px; z-index: 99;}
+.topBorder{ width: 100%; position: fixed; top: 106px; left: 0px; z-index: 99;}
+/*star show*/
+.bidLine .bot .starPic{width: 90px; height: 15px; display: block; background-position: left center; margin: 0 0 0 5px;}
+.bidLine .bot .starPic1{ background: url(../images/stare1.png) no-repeat; background-size: 24px 14px; }
+.bidLine .bot .starPic2{ background: url(../images/stare2.png) no-repeat; background-size: 24px 14px;}
+.bidLine .bot .starPic3{ background: url(../images/stare3.png) no-repeat; background-size: 39px 14px;}
+.bidLine .bot .starPic4{ background: url(../images/stare4.png) no-repeat; background-size: 39px 14px;}
+.bidLine .bot .starPic5{ background: url(../images/stare5.png) no-repeat; background-size: 57px 14px;}
+.bidLine .bot .starPic6{ background: url(../images/stare6.png) no-repeat; background-size: 57px 14px;}
+.bidLine .bot .starPic7{ background: url(../images/stare7.png) no-repeat; background-size: 75px 14px;}
+.bidLine .bot .starPic8{ background: url(../images/stare8.png) no-repeat; background-size: 75px 14px;}
+.bidLine .bot .starPic9{ background: url(../images/stare9.png) no-repeat; background-size: 93px 14px;}
+.bidLine .bot .starPic10{ background: url(../images/stare10.png) no-repeat; background-size: 93px 14px;}
+/*=== bidNone ===*/
+.bidNone .planeBg{ width: 250px; margin: 20px auto 0; background: url(../images/plane.png) no-repeat center top; background-size: 180px 120px; font-size: 14px; text-align: center; padding: 135px 0 0 0;}
+.bidNone .tip01{ box-sizing: border-box; padding: 15px; width: 94%; height: auto; margin: 18px auto; border-radius: 5px; border: 1px solid #ddd; background: #fff;}
+.bidNone .tip01 p{ line-height: 20px; color: #888;}
+.bidNone .tip01 p span{ color: #f3621f;}
+.bidNone .tip01 p:nth-of-type(1){ margin: 0 0 10px 0;}
+.bidNone .tipYellow{ color: #f3621f; width: 94%; margin: 0 auto 30px; line-height: 16px; text-align: center;}
+.bidNone .refresh{ display: block; width: 80px; background: url(../images/refresh.png) no-repeat 46px center; background-size: 16px 16px; height: 40px; line-height: 40px; color: #acacac; font-size: 14px; border-radius: 4px; margin: 0 auto; border: 1px solid #acacac; padding: 0 0 0 70px;}
+/*--------------------------------------- orderEvaluate css --------------------------------------------*/
+.evaluScore{ padding: 0px 15px; background: #fff; margin: 5px 0 0 0;}
+/*������ʽ*/
+.block{ padding-top:8px; line-height:21px;}
+.block .star_score{ float:left;}
+.star_list{height:21px;margin:50px; line-height:21px;}
+.block p{ color:#f3621f; font-size:14px;}
+.star_score { background:url(../images/stark2.png);  background-size: 48px 21px; height:21px;  position:relative; left: 50%; top: 0px; margin: 15px 0 15px -120px; }
+.star_score a{ height:21px; display:block; text-indent:-999em; position:absolute;left:0;}
+.star_score a:hover{ background:url(../images/stars2.png);left:0; background-size: 48px 21px;}
+.star_score a.clibg{ background:url(../images/stars2.png);left:0; background-size: 48px 21px;}
+#startone .text i{ font-size: 14px; font-style: normal; display: block; background: url(../images/starTitle.png) no-repeat left center; background-size: 17px 16px; padding: 0 0 0 22px;}
+#startone { border-bottom: 1px solid #ddd;}
+
+.evaluScore .label{ padding: 15px 0;}
+.evaluScore .label ul li{ color: #888; display: block; float: left; padding: 4px 8px; border-radius: 3px; border: 1px solid #ddd; margin: 0 10px 10px 0;}
+.evaluScore .label ul .selected{ color: #f3621f; border: 1px solid #f3621f;}
+/*--- opinion ---*/
+.opinion{ padding: 10px 15px; background: #fff; margin: 5px 0 0 0;}
+.opinion .title{ background: url(../images/opinion.png) no-repeat left center; background-size: 15px 15px; padding: 0 0 0px 20px;}
+.opinion textarea{ color: #575757; display: block; width: 100%; padding: 10px 0; border: none;}
+/*--- submitBtn ---*/
+.btn{ padding: 0 15px; margin: 30px 0 0 0;}
+.submitBtn{ display: block; height: 40px; line-height: 40px; text-align: center; font-size: 15px; width: 100%; background: #58ab23; border-radius: 4px; color: #fff; }
+/*--------------------------------------- cancelTransa css --------------------------------------------*/
+.reason h3{ font-weight: normal; font-size: 14px; padding: 0 0 0 15px; height: 36px; line-height: 36px;}
+.reason ul{ box-shadow: 0 1px 1px #ddd; padding: 0 15px; background: #fff;}
+.reason ul li{ font-size: 14px; height: 45px; line-height: 45px; border-bottom: 1px solid #ddd; background: url(../images/blankCircle.png) no-repeat right center; background-size: 21px 21px;}
+.reason ul .selReason{ background-image: url(../images/blankCircle02.png); background-size: 21px 21px;}
+.reason ul li:nth-of-type(4) { border-bottom: 0;}
+.writeIn .title{ font-size: 14px; width: 89%; padding: 0 17px 0 20px; color: #888; background: url(../images/writeIn.png) no-repeat left top; background-size: 15px 15px;}
+/*--------------------------------------- submitOrder css --------------------------------------------*/
+.phoneBran{ height: auto; background: #fff; box-shadow: 0px 1px 1px #ddd; padding: 0 0 0 15px;}
+.phoneBran .phone,.phoneBran .brand{ height: 45px; line-height: 45px;}
+.phoneBran .phone{ border-bottom: 1px solid #ddd;}
+.phoneBran .title{ font-size: 14px; color: #888;}
+.phoneBran .con{ font-size: 16px; margin: 0 0 0 15px;}
+/*=== address ===*/
+.addSite{padding:0px 18px 0px 15px;height:50px;background-color:#ffffff;margin:10px 0px 0px 0px;border-bottom:1px solid #DFDFDF;display:block;}
+.addSite .icon{height:50px;line-height: 50px;background-image:url(../images/sites.png);background-size:16px 16px;background-repeat: no-repeat;background-position:left center;padding-left:21px;font-size:16px;color:#575757;}
+.addSite .add{height:50px;line-height: 50px;font-size:14px;color:#888888;background-image:url(../images/nextBtn.png);background-size:7px 14px;background-repeat: no-repeat;background-position:right center;padding-right:12px;}
+.indication{padding:0px 15px 0px 15px;height:85px;background-color:#ffffff;border-bottom:1px solid #DFDFDF;display:block;margin:10px 0px 0px 0px;}
+.indication .icon{height:85px;line-height: 85px;background-image:url(../images/sites.png);background-size:16px 16px;background-repeat: no-repeat;background-position:left center;padding-left:21px;font-size:16px;color:#575757;}
+.indication .right{width:7px;height:85px;line-height: 85px;background-image:url(../images/nextBtn.png);background-size:7px 14px;background-repeat: no-repeat;background-position:center center;float:right;}
+.indication .detail{margin:0px 22px 0px 70px;padding-top:15px;height:70px;font-size:14px;color:#575757;}
+.indication .detail .datum{width:100%;height:14px;line-height: 14px;}
+.indication .detail .datum .tel{padding-left:10px;}
+.indication .detail .region{width:100%;height:14px;line-height: 14px;margin:10px 0px 8px 0px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.indication .detail .expli{width:100%;height:14px;line-height: 14px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.address .title{ display: block; font-weight: normal; color: #888; padding: 15px 0 15px; margin: 0 0 0 15px; font-size: 14px;}
+.address .title span{ padding: 0 0 0 10px; border-left: 4px solid #f3672b; height: 14px; line-height: 14px; display: block;}
+.addressIn{box-shadow: 0px 1px 1px #ddd; width: 100%; height: 45px; background: #fff; box-sizing: border-box;}
+.addressIn #city{font:14px "΢���ź�","Arial Narrow",Helvetica; color: #666; width: 100%; height: 45px; line-height: 45px; text-indent: 15px; color: #333; border: none; background: #fff url(../images/nextBtn.png) no-repeat 97% center; background-size: 7px 14px;}
+.addrDetail{ height: 46px; width: 100%; box-shadow: 0px 1px 1px #ddd; background: #fff; margin: 5px 0 0 0;}
+.addrDetail p{ font-size: 14px; width: 70px; padding: 0 0 0 15px; height: 30px; line-height: 30px; border-right: 1px solid #ddd; margin: 10px 0 0 0;}
+.addrDetail input{ display: block; width: 220px; font-size: 14px; padding: 15px 0; text-indent: 15px;}
+#address::-webkit-input-placeholder{  font:14px "΢���ź�","Arial Narrow",Helvetica;}
+/*=== mobileNew ===*/
+.mobileNew{font-size: 16px;line-height:45px;height:45px;background: #fff;box-shadow: 0px 1px 1px #ddd;padding: 0 0 0 15px;margin: 10px 0px 0px 0px;}
+.mobileNew .cont{width: 220px; height: 30px; color:#676767;}
+/*==ifGetOut==*/
+.grayBg{ display: none; width: 100%; height: 100%; position: fixed; z-index: 60; background: rgba(0,0,0,0.2);}
+.ifGetOut{ display: none; width: 280px; height: 150px; background: #fff; border-radius: 10px; position: fixed; z-index: 100; left: 50%; top: 50%; margin: -75px 0 0 -140px;}
+.ifGetOut p{ height: 99px; line-height: 99px; font-size: 15px; color: #888; text-align: center; border-bottom: 1px solid #dddddd;}
+.ifGetOut .btns .yes,.ifGetOut .btns .no{ width: 49.6%; height: 50px; line-height: 50px; text-align: center; display: block; font-size: 15px; color: #888;}
+.ifGetOut .btns .yes{ border-left: 1px solid #ddd; color: #f75e25;}
+/*== address ==*/
+#PoPy{ background: #fff;}
+._citys { width: 100%; display: inline-block; border: 2px solid #eee; padding: 0px 0 5px; position: relative; background: #fff; }
+._citys span { color: #67b535; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #67b535; cursor: pointer; }
+._citys0 { width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #67b535; padding: 0; margin: 0; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 21%; text-align: center; cursor: pointer;  margin: 0 0 0 15px;}
+.citySel { background-color: #67b535; color: #fff !important; }
+._citys1 { height: 200px; overflow-y: auto; width: 96%; display: inline-block; padding: 10px 2% 0; }
+._citys1 a { width: 24%; margin: 0 0 0 1%; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; /*margin-left: 6px;*/ margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 13px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #56b4f8; }
+.AreaS { background-color: #67b535 !important; color: #fff !important; }
+/*--------------------------------------- phonePadSelect css --------------------------------------------*/
+/*== green ==*/
+.backselect{ height: 40px; line-height: 40px;}
+.backselect .mySelect .gray{ width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -10; background: rgba(0,0,0,0.2); display: none;}
+.backselect .mySelect .bmselected{ color: #fff; height: 40px; line-height: 40px; font-size: 16px; background: url(../images/slideDown.png) no-repeat right center; background-size: 13px 7px;}
+.backselect .mySelect .msUl .current{ background: url(../images/selectedyes.png) no-repeat right center; background-size: 15px 15px;}
+.backselect .mySelect .msUl a{ margin: 0;}
+.backselect .mySelect .msUl { width: 100%; padding: 0 15px; box-sizing: border-box;}
+.mySelect .current a{ background: none;}
+/*== box ==*/
+.box{ width: 100%; height: auto; overflow: hidden; box-sizing: border-box;}
+.box .title{ font-size: 16px; width: 100%; height: 45px; line-height: 45px; border-bottom: 1px solid #ddd; position: fixed; left: 0px; top: 123px;}
+.box .titleLeft{ box-sizing: border-box; width: 25%; padding: 0 0 0 15px; background: #eeeeee; border-right: 1px solid #ddd;}
+.box .titleRight{ box-sizing: border-box; width: 75%; padding: 0 0 0 15px; background: #fff;}
+.box .con{ padding: 128px 0 0 0;}
+.conLeft{ width: 25%; overflow-y: auto; position: fixed; left: 0px; top: 169px;  }
+.conLeft::-webkit-scrollbar{width:0;height:0}
+.conLeft ul li{ width:100%; height: auto; line-height: 45px; background: #eee; border-bottom: 1px solid #ddd; box-sizing: border-box; border-right: 1px solid #ddd; padding: 15px 0 15px 8px; }
+.conLeft ul li span{ font-size: 14px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: inline-block; padding: 0 0 0 5px; border-left: 2px solid #eee; height: 14px; line-height: 14px; display: block;}
+.conLeft ul .current{ background: #fff;}
+.conLeft ul .current span{ font-size: 14px; padding: 0 0 0 5px; border-left: 2px solid #e46a37; color: #e46a37;}
+.conRight{ width: 75%; overflow-y: auto; position: fixed; right: 0px; top: 169px; }
+.conRight::-webkit-scrollbar{width:0;height:0}
+.conRight ul li{ width:100%; height: 45px; line-height: 45px; background: #eee; border-bottom: 1px solid #ddd; box-sizing: border-box; border-right: 1px solid #ddd;  background: #fff; font-size: 14px; }
+.conRight ul li a{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; height: 100%; padding: 0 0 0 15px;}
+.conRight ul li a span{ display: inline-block;width: 20px; vertical-align: middle; margin: 0 10px 0 0 ; height: 16px; border-radius: 3px; background: #eee; color: #fff; font-size: 10px; text-align: center; line-height: 16px;}
+.conRight ul li:nth-of-type(1) span,.conRight ul li:nth-of-type(2) span,.conRight ul li:nth-of-type(3) span{ background: #f66b2b;}
+/*--------------------------------------- searchBox css --------------------------------------------*/
+
+.searchBox{ width: 100%; box-sizing: border-box; padding: 10px 15px; background: #fff; position: fixed; top: 70px; left: 0px; box-shadow: 0px 1px 1px #e5e5e5;z-index:1;}
+.searchBox .search{ box-sizing: border-box; width: 100%; height: 32px; border: 1px solid #ccc; border-radius: 4px; position: relative;}
+.searchBox .search p{ width: 9%; height: 30px; line-height: 30px; padding: 0 10px 0 8px; background: url(../images/arrDown.png) no-repeat right center; background-size: 6px 4px;}
+.searchBox .search .searchInput{ width: 65%;  padding: 7px 0; text-indent: 6%; border-style:none; outline: none;}
+.searchBox .search a{ display: block; width: 14%; height: 30px; background: url(../images/iconsearch.png) no-repeat center center; background-size: 20px 17px; border-left: 1px solid #ccc;}
+.searchBox .downSlide{ display: none; width: 100px; height: 81px; background: url(../images/slideDownsearch.png) no-repeat; background-size: 100px 86px; position: absolute; left: 15px; top: 42px; z-index: 10; padding: 5px 0 0 0;}
+.searchBox .downSlide ul li{ padding: 0 0 0 15px; height: 40px; line-height: 40px; color: #fff; font-size: 14px;}
+.searchBox .downSlide ul li:nth-of-type(1){ border-bottom: 1px solid #fff;}
+/*== result ==*/
+.result{ padding: 52px 15px 0;}
+.result ul li{ height: 44px; line-height: 44px; border-bottom: 1px solid #ddd; padding: 0 0 0 15px; font-size: 14px;}
+.noresult{ width: 100%; height: auto; margin-top: 40%; }
+.noresult .pic{ display: block; width: 100%; height: 151px; background: url(../images/noresultPic.png) no-repeat center top; background-size: 151px 151px;}
+.noresult p{ width: 100%; text-align: center; font-size: 14px; color: #888; margin: 20px 0 0 0;}
+@media only screen and (max-width: 320px) {
+	.proInfo .porList ul .other .fl{ width: 26%;}
+	.proInfo .porList ul .other .othercon{ width: 74%;}
+	.bidNone .tip02{ font-size: 10px;}
+
+}
+
+.afficle{width:100%;height:30px;line-height: 30px;background-color: #FDF4A7;position:fixed;top:40px;}
+.afficle .contet{width:auto;margin-left:15px;padding-left:15px;background-image: url(../images/aut.png);background-repeat: no-repeat;background-size: 10px 12px;font-size: 12px;color:#F87A2E;background-position: left center;float:left;}
+
+.tier{width:100%;height:62px;}
+.tier .tier-left{width:50%;height:42px;float:left;}
+.tier .tier-left .definit{width:100%;height:22px;line-height:22px;float:left;}
+.tier .tier-left .authen{width:100%;height:20px;line-height:20px;float:left;}
+.tier .tier-float{width:50%;height:46px;float:right;}
+.keynote{padding:12px 15px 16px 15px;height:auto;}
+.keynote .quality{width:100%;height:26px;margin:0px 10px 12px 0px;line-height: 26px;}
+.keynote .dot{padding:4px 10px;font-size: 12px;color:#F3621F;border:1px solid #f18553;border-radius: 30px;}
+.caption{height:auto;padding:12px 15px 6px 15px;border-top:1px dashed #ddd;}
+.caption p.first{font-size: 12px;color:#888888;margin-bottom:12px;}
+.caption p{margin-bottom: 9px;font-size: 11px;color:#888888;}
+/*安全声明----手机维修调用-添加效果*/
+.anquan{color: #fff;position: absolute;top: 0;right: 0;height: 40px;line-height: 40px;font-size: 15px;padding-right: 20px;}

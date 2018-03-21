@@ -1,0 +1,45 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:14px "微软雅黑","Arial Narrow",Helvetica;  color: #666;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:focus{text-decoration:none;}
+textarea { resize:none; } 
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+input,textarea{ border: none;}
+textarea { resize:none; }
+p{ text-align:justify; text-justify:distribute;}
+/*== 清除浮动 ==*/
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-table; }
+*html .clearfix { height: 1%; }
+.clearfix { display: block; }
+*+html .clearfix { min-height: 1%; }
+/*== 浮动处理 ==*/
+ .fl{ float: left;}
+ .fr{ float: right;}
+/*== 单行文本溢出处理 ==*/
+.TextOverflow{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

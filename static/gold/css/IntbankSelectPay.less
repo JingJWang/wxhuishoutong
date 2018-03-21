@@ -1,0 +1,90 @@
+//初始化封装less
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height: @h/2/20;
+}
+.font(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.pad(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top: @pt/2/20;
+    padding-right: @pr/2/20;
+    padding-bottom: @pb/2/20;
+    padding-left: @pl/2/20; 
+}
+.mar(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top: @mt/2/20;
+    margin-right: @mr/2/20;
+    margin-bottom: @mb/2/20;
+    margin-left: @ml/2/20; 
+}
+body{
+    background: #f5f5f5;
+}
+.selectPay{
+    .mar(86rem,0,0,0);
+    background: #FFFFFF;
+}
+.selectPay li{
+    .rem(640rem,100rem);
+    margin-bottom: 1px;
+    float: left;
+    border-top: solid 1px #e5e5e5;
+    background: url(../img/label_b.png) center;
+    background-size: 16rem 2.125rem;
+}
+.selectPay li:last-of-type{
+    background: url(../img/label_a.png) center;
+    background-size: 16rem 2.125rem; 
+}
+.selectPay li img{
+    .rem(63rem,63rem);
+    float: left;
+    .mar(19rem,16rem,0,25rem);
+}
+.selectPay li p{
+    .rem(400rem,50rem);
+    .font(22rem,50rem);
+    .pad(10rem,0,0,0);
+    float: left;
+    color: #4c4c4c;
+}
+.selectPay li span{
+    .rem(400rem,20rem);
+    .font(14rem,20rem);
+    float: left;
+    color: #4c4c4c;
+}
+.addBank{
+    .rem(640rem,90rem);
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    background: #ffffff;
+    .pad(10rem,0,0,0);
+    
+}
+.addBank p{
+    .font(23rem,90rem);
+    .mar(0,0,0,25rem);
+    background: url(../img/addBank.png) left center no-repeat;
+    background-size: 0.775rem 0.8rem;
+    color: #555555;
+    text-indent: 1rem;
+}
+//网银支付--未绑定银行卡
+.NoBind{
+    .rem(640rem,90rem);
+    border-bottom: solid 1px #e5e5e5;
+    background: #ffffff;
+    .pad(10rem,0,0,0);
+    .mar(80rem,0,0,0);
+}
+.NoBind p{
+    .font(23rem,90rem);
+    .mar(0,0,0,25rem);
+    background: url(../img/addBank.png) left center no-repeat;
+    background-size: 0.775rem 0.8rem;
+    color: #555555;
+    text-indent: 1rem;
+}

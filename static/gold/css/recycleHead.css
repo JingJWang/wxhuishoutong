@@ -1,0 +1,62 @@
+header{
+	width: 100%;
+	height:  1.9rem;
+	background: #58ab22;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+header a{
+	color: #ffffff;
+}
+header a:visited{
+	color: #ffffff;
+}
+header a:link{
+	color: #ffffff;
+}
+header .FirstA{
+	display: block;
+	position: absolute;
+	top: 0.575rem;
+	left: 0.625rem;
+	height: 0.75rem;
+}
+header .FirstA img{
+	width: 0.425rem;
+	height: 0.75rem;
+	float: left;
+}
+header .FirstA>p{
+	float: left;
+	text-indent: 0.2rem;
+	line-height: 0.75rem;
+	font-size: 0.6rem;
+}
+header h1{
+	width: 100%;
+	height: 1.9rem;
+	text-align: center;
+	letter-spacing: 0.03rem;
+	line-height: 1.9rem;
+	font-size: 0.67rem;
+	font-weight: normal;
+}
+
+header .LastA{
+	position: absolute;
+	top: 0.575rem;
+	right: 0.625rem;
+}
+header .LastA img{
+	width: 0.7rem;
+	height: 0.7rem;
+	float: left;
+}
+header .LastA>p{
+	float: left;
+	text-indent: 0.2rem;
+	line-height: 0.75rem;
+	font-size: 0.6rem;
+}

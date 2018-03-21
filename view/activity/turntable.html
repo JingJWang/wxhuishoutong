@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title>抽奖大转盘</title>
+		<link href="../../static/activity/css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../../static/activity/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../static/activity/js/awardRotate.js"></script>
+		<script type="text/javascript" src="../../static/activity/js/ajax_common.js"></script>
+		<script type="text/javascript" src="../../static/activity/js/turnrotate.js?v=23212"></script>
+		<script type="text/javascript" src="../../static/activity/js/js.js"></script>
+	</head>
+	<body>
+		<!-- 代码 开始 -->
+		<div class="imgBox">
+			<a style="display: block;" href="/view/shop/list.html?type=15&code=0017OPNu1cd2690I9GOu1uQSNu17OPN1&state="><img src="../../../static/task/task_two/img/guangao.jpg" style=" display: block; width: 100%;"/></a>
+		</div>
+		<div class="bg">
+			<div class="gray"></div>
+			<div class="alertBtn">
+				<p class="text"></p>
+				<span class="img"><img src="../../static/activity/images/img01.png"/></span>
+				<div class="explain">
+					<p class="ptext"></p>
+					<div class="textarea">
+						<span id="code"></span>
+					</div>
+				</div>
+				<span class="close"></span>
+			</div>
+			<div class="banner">
+				<div class="turnplate" style="background-image:url(../../static/activity/images/turnplate-bg.png);background-size:99.5% 99%;">
+					<canvas class="item" id="wheelcanvas" width="620px" height="620px"></canvas>
+					<img class="pointer" onclick="pointerate();" src="" />
+				</div>
+			</div>
+			<div class="illustrate">
+				<div class="list01">
+					<h3>活动介绍</h3>
+					<div class="con">
+						<ul>
+							<!-- <li class="">1.活动日期：3月26日至4月26日</li> -->
+							<li class="">1.抽奖规则：每次抽奖需要扣除30个通花，扣除的通花不退还，每天参与抽奖次数不限且当日第一次抽奖免费</li>
+							<li class="noborder">2.派奖日期：通花奖励即时到账，话费奖励3个工作日内发放</li>
+						</ul>
+						<span class="bottomPic"></span>
+					</div>
+				</div>
+				<div class="list01">
+					<h3>奖项设置</h3>
+					<div class="con">
+						<ul>
+							<li>一等奖：3元话费</li>
+							<li>二等奖：1元话费</li>
+							<li class="noborder">通花奖：通花奖品为5、10、50、100、200通花</li>
+						</ul>
+						<span class="bottomPic"></span>
+					</div>
+				</div>
+				<div class="list01">
+					<h3>操作流程</h3>
+					<div class="con">
+						<p class="conP">1.关注回收通公众号：huishoutong后，点击【福利领取】的子菜单【福利站】进入福利系统。<br>
+						2.在福利系统选择并进入通花商城后，点击【幸运大转盘】参与抽奖</p>
+						
+						<span class="bottomPic"></span>
+					</div>
+				</div>
+				<div class="list01">
+					<h3>活动期间中奖名单</h3>
+					<div class="con">
+						<div class="content">
+							<p class="words">一等奖</p>
+							<div class="embody" style="border-bottom: 1px dashed #e9e4cd;">
+								<span>131*****004</span>
+								<span>136*****584</span>
+							</div>
+							<p class="words">二等奖</p>
+							<div style="width:100%;height:auto;border-bottom: 1px dashed #e9e4cd;">
+								<p class="embody">
+									<span>181*****256 </span>
+									<span>159*****547</span>
+									<span>158*****223</span>
+									<span>158*****392</span>
+									<span>134*****574</span>
+								</p>
+							</div>
+							<p class="words">三等奖</p>
+							<div style="width:100%;height:auto;border-bottom: 1px dashed #e9e4cd;">
+								<p class="embody">
+									<span>188*****524</span>
+									<span>131*****252</span>
+									<span>135*****105</span>
+									<span>185*****416</span>
+									<span>139*****553</span>
+									<span>139*****854</span>
+									<span>135*****447</span>
+									<span>133*****245</span>
+									<span>178*****008</span>
+									<span>182*****668</span>
+								</p>
+							</div>
+							<p class="words">四等奖</p>
+							<div class="embody" style="border-bottom: 1px dashed #e9e4cd;">
+								<p class="embody">
+									<span>130*****864</span>
+									<span>136*****671</span>
+									<span>158*****952</span>
+									<span>183*****492</span>
+									<span>156*****227</span>
+									<span>156*****020</span>
+									<span>136*****219</span>
+									<span>151*****043</span>
+									<span>151*****185</span>
+									<span>188*****260</span>
+									<span>158*****936</span>
+									<span>182*****372</span>
+									<span>183*****884</span>
+									<span>152*****157</span>
+									<span>139*****926</span>
+									<span>137*****727</span>
+									<span>155*****876</span>
+									<span>188*****372 </span>
+									<span>133*****834</span>
+									<span>130*****194</span>
+								</p>
+							</div>
+						</div>
+
+						<span class="bottomPic"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 代码 结束 -->
+	</body>
+	<script type="text/javascript">
+		getarticle();
+		//向html中添加img标签
+		var imgNo = turnplate.awards.length;
+		for(var b = 1; b<=imgNo; b++){
+			var myTag = $('<img src="'+turnplate.awards[b-1]+'" id="img0'+ b +'" style="display: none;" />');
+			$('.imgBox').append(myTag);
+		}
+	</script>
+
+</html>

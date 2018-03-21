@@ -1,0 +1,41 @@
+/**************************** personalMessage 主页样式 ******************************/
+/*==green==*/
+.green{ background: #67b535;}
+.green .back{ width: 100%; height: 40px; position: relative;}
+.green .back a{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 33px; background: url(../img/arrBack.png) no-repeat 15px center; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; left: 0px; top: 50%; margin: -20px 0 0 0;} 
+ .green .back input{display: block; text-align: right; width: 70px; height: 40px; line-height: 40px;
+ font-size: 15px; position: absolute; right: 0px; top: 50%; padding: 0 15px 0 0; margin: -20px 0 0 0; border: none; background: #67b535; color: #fff;}
+.green .back p{ width: 100%; height: 40px; line-height: 40px; font-size: 16px; color: #fff; text-align: center;}
+/*==basicInfor==*/
+.basicTitle{ font-size: 16px; height: 50px; line-height: 50px;}
+.basicCon{ font-size: 14px; color: #888; height: 50px; line-height: 50px; margin: 0 15px 0 0;}
+.basicInfor .basicCon{ max-width: 210px;}
+.aBlock{ display: block;}
+.aBlockphone{ display: block; height: 50px; line-height: 50px; border-bottom: 1px solid #ddd;}
+.basicInfor{ background: #fff; padding: 0 0 0 15px; margin: 18px 0 0 0;}
+.basicInfor .headPic,.userName,.position{ border-bottom: 1px solid #ddd;}
+.basicInfor .headPic .basicTitle{ height: 64px; line-height: 64px; }
+.basicInfor .headPic p{ display: inline-block; margin: 10px 15px 0 0;}
+.basicInfor .headPic p img{ display: inline-block; border-radius: 50%;}
+/*==account==*/
+.accountTitle{ padding: 0 0 0 15px;}
+.accountTitle h3{ width: 100%; height: 40px; line-height: 40px; font-size: 15px; color: #888; display: block; font-weight: normal;}
+.accountCon{ padding: 0 0 0px 15px; background: #fff;}
+.accountCon .basicCon,.accountCon .basicTitle{ height: 50px; line-height: 50px;}
+.accountCon .tip{ color: #888; font-weight: normal; display: block; padding: 0 0 10px 0; border-bottom: 1px solid #ddd;}
+.accountCon .basicCon{ color: #f75e25; font-size: 15px;}
+/*==getOut==*/
+.getOut{ padding: 0 0 0 15px; background: #fff;}
+.getOut .btn{ width: 100%; font-size: 15px; height: 45px; line-height: 45px; display: block;}
+/*==ifGetOut==*/
+.grayBg{ display: none; width: 100%; height: 100%; position: fixed; z-index: 60; background: rgba(0,0,0,0.2);}
+.ifGetOut{ display: none; width: 280px; height: 150px; background: #fff; border-radius: 10px; position: fixed; z-index: 100; left: 50%; top: 50%; margin: -75px 0 0 -140px;}
+.ifGetOut p{ height: 99px; line-height: 99px; font-size: 15px; color: #888; text-align: center; border-bottom: 1px solid #dddddd;}
+.ifGetOut .btn .yes,.ifGetOut .btn .no{ width: 49.6%; height: 50px; line-height: 50px; text-align: center; display: block; font-size: 15px; color: #888;}
+.ifGetOut .btn .yes{ border-left: 1px solid #ddd; color: #f75e25;}
+
+
+
+
+

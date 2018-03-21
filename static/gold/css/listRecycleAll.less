@@ -1,0 +1,206 @@
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height: @h/2/20;
+}
+.font(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.pad(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top: @pt/2/20;
+    padding-right: @pr/2/20;
+    padding-bottom: @pb/2/20;
+    padding-left: @pl/2/20; 
+}
+.mar(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top: @mt/2/20;
+    margin-right: @mr/2/20;
+    margin-bottom: @mb/2/20;
+    margin-left: @ml/2/20; 
+}
+body{
+    background: #f5f5f5;
+}
+.recycle{
+    .rem(640rem,165rem);
+    .mar(52rem,0,0,0);
+    background: #FFFFFF;
+    float: left;
+    a{
+        display: block;
+       width: 33.33%; 
+       height: 60rem/40;
+       .pad(106rem,0,0,0);
+       float: left;
+       .font(20rem,60rem);
+       text-align: center;
+       color: #606060;
+    }
+    a:nth-child(1){
+        background: url(../img/recycle1.png) center no-repeat;
+        background-size: 1.175rem 1.175rem;
+    }
+    a:nth-child(2){
+        background: url(../img/recycle2.png) center no-repeat;
+        background-size: 1.175rem 1.175rem;
+    }
+    a:nth-child(3){
+        background: url(../img/recycle3.png) center no-repeat;
+        background-size: 1.175rem 1.175rem;
+    }
+}
+.accomplishList{
+    width: 16rem;
+    float: left;
+    h1{
+        .rem(640rem,53rem);
+        .font(22rem,53rem);
+        color: #4b4b4b;
+        text-indent: 0.65rem;
+        float: left;
+    }
+}
+//黄金
+.accomplishList .list{
+    position: relative;
+	.rem(640rem,110rem);
+    //width: 16rem;
+    float: left;
+    .pad(30rem,0,30rem,0);
+    border-bottom: solid 1px #e7e7e7;
+    background: #ffffff;
+}
+.list_left{
+    width: 9.5rem;
+    .pad(0,0,0,25rem);
+    float: left;
+}
+.list_left p{
+    width: 8rem;
+    float: left;
+}
+//黄金
+.list_left .goldNum{
+    display: block;
+    .font(26rem,30rem);
+    .mar(0,0,17rem,0);
+    background: url(../img/content.jpg) left center no-repeat;
+    background-size: 0.85rem 0.65rem;
+    color: #636363;
+    text-indent: 1rem;
+}
+//手机
+.list_left .goldPhone{
+    display: block;
+    .font(26rem,30rem);
+    .mar(0,0,17rem,0);
+    background: url(../img/listPhone.png) left center no-repeat;
+    background-size: 0.575rem 0.9rem;
+    color: #636363;
+    text-indent: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list_left .goldMoney{
+     display: block;
+    .font(20rem,20rem);
+    color: #636363;
+    text-indent: 1rem;
+    margin-bottom: 23rem/40;
+}
+.list_left .listTime{
+    background: url(../img/timer.jpg) left center no-repeat;
+    background-size: 0.65rem 0.65rem;
+    .font(18rem,30rem);
+    color: #9c9c9c;
+    text-indent: 0.85rem;
+    .mar(0,0,0,30rem);
+}
+.list_right{
+    float: right;
+    .mar(0,26rem,0,0);
+	width:3.45rem;
+	height:1rem;
+    text-align: right;
+    color: #f6572a;
+    .font(24rem,40rem);
+}
+.list_a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 26rem/40;
+    .rem(138rem,50rem);
+    background: #98bf24;
+    color: #ffffff;
+    .font(22rem,50rem);
+    .mar(0,26rem,30rem,0);
+    font-size: 0.5rem;
+    border-radius: 3px;
+    text-align: center;
+}
+.list_a:link{color: #ffffff;}
+.list_a:hover{color: #ffffff;}
+.list_a:visited{color: #ffffff;}
+.list_a:active{color: #ffffff;}
+.list_c{
+    position: relative;
+    .rem(640rem,160rem);
+    float: left;
+    .pad(30rem,0,30rem,0);
+    border-bottom: solid 1px #e7e7e7;
+    background: #ffffff;
+}
+.list_left .pingjia{
+    background: url(../img/list_pingjia.png) left center no-repeat;
+    background-size: 0.65rem 0.65rem;
+    .font(18rem,30rem);
+    .mar(0,0,10rem,30rem);
+    color: #9c9c9c;
+    text-indent: 0.85rem;
+}
+//含有tab切换的回收订单页面
+.indent{
+    float:left;
+    width:100%;
+    margin-top:1.9rem;
+    background: #FFFFFF;
+    margin-bottom: 0.25rem;
+}
+.indent a{
+    float:left;
+    width:25%;
+    height:1.7rem;
+    font-size: 0.55rem;
+    line-height: 1.7rem;
+    text-align: center;
+}
+.indent_hover{
+    border-bottom:0.05rem solid #329700;
+    color:#329700;
+}
+.indents{
+    float:left;
+    width:100%;
+}
+.AllList{
+    width: 16rem;
+    margin-top: 0.5rem;
+    background: #ffffff;
+    overflow: hidden;
+}
+.goldNum font{
+    .font(24rem,30rem);
+}
+
+.nonesj{
+	background: url(../img/no.png) center center no-repeat ;
+	background-size:6rem 6rem;
+	width:16rem;
+	height:9rem;
+	font-size: 0.6rem;
+	color:#444;
+	text-align:center;
+	line-height:16rem;
+}

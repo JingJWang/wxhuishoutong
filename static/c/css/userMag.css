@@ -1,0 +1,52 @@
+/*=== grayBg ===*/
+.grayBg{ display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.1); position: fixed; z-index: 20;}
+/*addAlert*/
+.addAlert,.deleteAlert,.reviseAlert{display: none; width: 560px; height: auto; padding: 0 68px 22px; position: fixed; left: 50%; top: 50%; z-index: 21; margin: -260px 0 0 -280px; background: #fff; border-radius: 10px;}
+.addAlert i,.deleteAlert i,.reviseAlert i{ display: block; width: 20px; height: 20px; position: absolute; right: 15px; top: 15px; background: url(../images/spiritPic.png) no-repeat 0px -377px; cursor: pointer;}
+.addAlert h3,.deleteAlert h3,.reviseAlert h3{ display: block; color: #666; font-size: 18px; text-align: center; height: 80px; line-height: 80px;}
+.addcon .roleSelect,.revisecon .roleSelect{ background: none; width: 330px; height: 44px; border: 1px solid #e0e0e0; border-radius: 3px;}
+.roleSelect a{ text-decoration:none; font-size: 14px; display:block; height: 44px; line-height: 44px; padding: 0 0 0 30px; color: #666; }
+.roleSelect { width: auto; position:relative;}
+.roleSelect .selected { display: block; width: 100%;}
+.roleUl { border:1px solid #e0e0e0; display: none; width: 330px; padding: 10px 0; background: #fff; border-radius: 3px; position:absolute; top: 44px; left: -1px;}
+.roleUl a { width: 330px; padding: 0 0 0 30px; height: 44px; line-height: 44px; color: #666; }
+.roleUl a:hover { background: #e5e5e5; }
+.roleSelect .downArr{ display: block; cursor: pointer; width: 48px; height: 42px; border-radius: 3px; background: #e0e0e0 url(../images/spiritPic.png) no-repeat -95px -369px; position: absolute; top: 0px; right: 0px; z-index: 10;}
+.addcon .formTitle,.revisecon .formTitle{ width: 65px; text-align: right; height: 44px; line-height: 44px; display: block; color: #999; font-size: 16px;}
+.addcon .formInput,.revisecon .formInput{ text-indent: 30px; width: 330px; border: 1px solid #e0e0e0; height: 44px; line-height: 44px; border-radius: 4px;}
+.addcon form ul li,.revisecon form ul li{ margin: 15px 0 0 0;}
+.isadd,.noadd{ display: inline-block; width: 120px; height: 40px; background: #93c0ff; color: #fff;}
+.isadd{ margin: 0 0 0 95px;}
+.noadd{ margin: 0 0 0 30px; border: 1px solid #93c0ff; color: #93c0ff; background: none;}
+/*deleteAlert*/
+.deleteAlert p{ color: #575757; width: 100%; text-align: center;}
+.deleteAlert .btns .isadd{ margin: 58px 0 8px 80px;}
+/*提示框*/
+#noInput,#nameP,#emailTip,#passwordTip,#roleTip,#namePR,#passwordTipR,#roleTipR{ display: none; font-size: 12px; color: #f4453c; background: url(../images/loginspirite.png) no-repeat 0px -150px; margin: 10px 0 10px 95px; padding: 0 0 0 20px;}
+/*userCon*/
+.userCon{ padding: 0 68px 0 30px;}
+#userScroll{ overflow-y: auto; padding: 10px 0;}
+/*dataConTop*/
+.userConTop{ height: 60px;}
+.userConTop .title{ height: 70px; line-height: 70px; font-size: 18px; color: #888;}
+.search{ margin: 20px 0 0 0;}
+.searchIn{ position: relative;}
+.searchIn input{ width: 300px; height: 40px; line-height: 40px; display: inline-block; border: 1px solid #e0e0e0; border-radius: 30px; text-indent: 20px;padding: 0 60px 0 0;}
+.searchIn .btn{ width: 56px; height: 40px; display: block; position: absolute; right: 0px; top: 0px; cursor: pointer; border-radius: 0 30px 30px 0; background: url(../images/spiritPic.png) no-repeat -165px -122px; border-left: 1px solid #e0e0e0;}
+.search .userAdd{ display: block; font-size: 14px; color: #666; height: 40px; line-height: 40px; background: url(../images/spiritPic.png) no-repeat -175px -42px; padding: 0 0 0 37px; margin: 0 0 0 30px; cursor: pointer;}
+/*lineTitle*/
+.lineTitle{ width: 100%; height: 40px; line-height: 40px; background: #f1f1f1; margin: 30px 0 15px 0;}
+.lineTitle ul li{ float: left; width: 12%; height: 14px; line-height: 14px; padding: 0 0 0 1%; margin: 13px 0 0 1%; border-right: 2px solid #ebebeb; color: #888;}
+.lineCon ul li{ float: left; width: 12%; height: 14px; line-height: 14px; padding: 0 0 0 1%; margin: 0px 0 0 1%; border-right: 2px solid #ebebeb; color: #888;}
+.lineTitle ul li:nth-of-type(1),.lineCon ul li:nth-of-type(1){ width: 8%;}
+.lineTitle ul li:nth-of-type(2),.lineCon ul li:nth-of-type(2){ width: 8%;}
+.lineTitle ul li:nth-of-type(3),.lineCon ul li:nth-of-type(3){ width: 10%;}
+.lineTitle ul li:nth-of-type(4),.lineCon ul li:nth-of-type(4){ width: 19%;}
+.lineTitle ul li:nth-of-type(5),.lineCon ul li:nth-of-type(5){ width: 19%;}
+.lineTitle ul li:nth-of-type(6),.lineCon ul li:nth-of-type(6){ width: 8%;}
+/*lineCon*/
+.lineCon{ width: 100%;}
+.lineCon ul{ width: 99%; height: 40px; line-height: 40px; box-shadow: 0px 0px 10px #e5e5e5; margin: 0 0 10px 2px;}
+.lineCon ul li{ height: 40px; line-height: 40px; border-right: 0px; color: #666;}
+.uesrBot .lineCon .revise { margin: 0 15px 0 0; color: #ffa499;}
+.uesrBot .lineCon .delete { color: #9cabc2;}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/brandInquery.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/searchStores.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/checkOrder.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/noData.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/mall/css/searchOrder.css"/>
+		<script type="text/javascript" src="../../static/mall/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/mall/js/brandIquery.js"></script>
+	</head>
+	<body>
+		<!-- --- top start --- -->
+		<div class="topText">
+			<p>搜索订单状态</p>
+			<div class="input clearfix">
+				<input type="text" id="orderWord" value="" placeholder="" class="inputCon fl" />
+				<input type="button"  onclick="orderSearch();" value=""  class="inputBtn fl" />
+			</div>
+			<!-- <p>提示：您要在两个工作日内才可以查询到订单相关信息哦</p> -->
+		</div>
+		<!-- --- top end --- -->
+		<!-- --- orderCon start --- -->
+		<div class="orderCon soCon">
+			<div class="txt">
+					<p>在上方搜索框内输入您的订单编号查询订单状态</p>
+					<span>(您要寄售的商品2个工作日之后就可以查到订单的相关信息咯；如果您采用的快递方式寄售，我们会在收到货后2个工作日内以短信方式发送给您订单号。)</span>
+				<div class="soBg">
+					<div class="left">
+						<p>查询订单需要使用的订单编号是您签订寄卖合同里注明的订单号，也是您物品卡扣上的编号。</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="title">
+				<p>订单状态信息</p>
+			</div>
+			<div class="orderAdd">
+				<p><span>订单编号:</span>SP1367663401</p>
+				<p><span>商品名称:</span>LV包2013款</p>
+				<p><span>商品状态:</span>已到公司</p>
+			</div> -->
+		</div>
+		<!-- <div class="noDataCon"> -->
+			<!-- <div class="noDataBg">
+				
+			</div>
+			<p>暂时无此订单消息</p> -->
+		<!-- </div> -->
+		<!-- --- orderCon end --- -->
+		<!-- --- copy start --- -->
+		<div class="copy" style="bottom:105px;background:#F0F1F2;">
+			<p><a href="http://www.sf-express.com/mobile/cn/sc/dynamic_functions/waybill/waybill_query_by_billno.html" style="text-decoration:underline;color:#046BEF;">顺丰快递查询</a></p>
+		</div>
+		<div class="copy" style="bottom:75px;background:#F0F1F2;">
+			<p><a href="http://www.ems.com.cn/mailtracking/you_jian_cha_xun.html" style="text-decoration:underline;color:#046BEF;">EMS查询</a></p>
+		</div>
+		<div class="copy" style="bottom:40px;background:#F0F1F2;">
+			<p>如果您是通过门店寄售，物品退回时将退回到该门店</p>
+		</div>
+		<div class="copy">
+			<p>客服电话：400-641-5080</p>
+		</div>
+		<!-- --- copy end --- -->
+
+		<script src="/static/mall/js/ajax_common.js"></script>
+		<script src="/static/mall/js/ajax_query.js"></script>
+		
+	</body>
+</html>

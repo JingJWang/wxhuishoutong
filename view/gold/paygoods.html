@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>确认订单</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet/less" href="../../static/gold/css/paySpotgoods.less">
+	</head>
+	<body>
+		<header>
+			<a href="javascript:;" onClick="javascript :history.back(-1);" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>返回</p>
+			</a>
+			<h1>确认订单</h1>
+		</header>
+		<div class="particulars">
+			<!-- <img src="../../static/gold/img/paySpotgoods.png">
+			<span>
+				<p>黄金</p>
+				<p>24K</p>
+				<p>99.99%</p>
+			</span>
+			<div>
+				<p>¥2200</p>
+				<p>现货+8g</p>
+			</div> -->
+		</div>
+		<form id="paydata">
+		<a href="../../view/shop/selectAddress.html" class="defaultAddress">
+			<div class="defaultAddName fl">
+				<!-- <span>田小田	13263808756</span>
+				<div>
+					<b>默认</b>
+					<p>北京市朝阳区千鹤家园1号楼904</p>
+				</div> -->
+			</div>
+			<div class="right_logo">
+			</div>
+		</a>
+		<div class="payment">
+			<ul id=paytmethod>
+				
+				<input type="hidden" name="paytype" id="paytype" value="4"/>
+			</ul>
+		</div>
+		<div class="remarks">
+			<p>备注</p>
+			<textarea name="make" placeholder="不超过30个字" maxlength="30"></textarea>
+		</div>
+		</form>
+		<footer>
+			<button class="affirmPay" onclick="">确认支付</button>
+		</footer>
+		<!--输入支付密码-->
+		<div class="payPassword_box passwordSet" style="display: none;">
+			<div class="payPassword">
+				<h1 class="payPassword_h1">输入6位支付密码</h1>
+				<p class="payPassword_h1">当前账户余额：¥3200.00</p>
+				<input type="password" class="payPwd" maxlength="6">
+				<a href="javascript:;">忘记支付密码？</a>
+				<div class="payBtn">
+					<button class="cancelPay">取消</button>
+					<button class="confirmPay">确认</button>
+				</div>
+			</div>
+		</div>
+		<!--设置支付密码-->
+		<div class="payPassword_box passwordNotSet" style="display: none;">
+			<!--设置支付密码--验证码-->
+			<div class="Set">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<span class="setPhone">已绑定手机号：<s>15201055373</s></span>
+				<span class="setNumber">
+					<input type="text" placeholder="输入手机验证码">
+					<p>获取验证码</p>
+				</span>
+				<a href="#" class="payNext">下一步</a>
+			</div>
+			<!--设置支付密码--设密码-->
+			<div class="Set" style="display: none;">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<p class="sixPassword">请输入6位数密码</p>
+				<input type="password" class="payPassWd">
+				<a href="#" class="payNext">下一步</a>
+			</div>
+			<!--设置支付密码--再次输入密码-->
+			<div class="Set" style="display: none;">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<p class="sixPassword">请您再次输入支付密码</p>
+				<input type="password" class="payPassWd">
+				<a href="#" class="payNext">完成</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/gold/js/less.min.js"></script>
+		<!-- <script type="text/javascript" src="../../static/gold/js/paySpotgoods.js"></script> -->
+		<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+		<script type="text/javascript" src="../../static/shop/ajax/request_metal.js?v=2017042001"></script>	
+		<script type="text/javascript">
+			window.onload=window.onresize=function(){
+				document.documentElement.style.fontSize=window.innerWidth/16+'px';
+			}
+			var id=getUrlParam('id') 
+			metalShop.recordInfo(id);
+			metalShop.userinfo(id);
+		</script>
+		</body>	
+</html>

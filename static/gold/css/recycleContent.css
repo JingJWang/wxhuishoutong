@@ -1,0 +1,186 @@
+.tradingHour{
+	width: 100%;
+	height: 1.35rem;
+	text-indent: 0.65rem;
+	background: #fdf4a7;
+	color: #e46620;
+	line-height: 1.35rem;
+	font-size: 0.5rem;
+	margin-top: 1.9rem;
+}
+.allContent{
+	width: 16rem;
+	overflow: hidden;
+}
+.con_p{
+	height: 0.65rem;
+	line-height: 0.65rem;
+	padding: 0.65rem 0 0.95rem 0.65rem;
+	font-size: 0.5rem;
+	color: #6a6a6a;
+}
+/*贵金属切换*/
+.allContent .recycleSort{
+	height: 2.575rem;
+	padding: 0 1.7rem 0.875rem 1.7rem;
+}
+.allContent .recycleSort li{
+	float: left;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	border: solid 1px #dfdfdf;
+	color: #595959;
+	line-height: 2.5rem;
+	text-align: center;
+	font-size: 0.6rem;
+	margin-left: 2.25rem;
+}
+.allContent ul li:first-of-type{
+	margin-left: 0;
+}
+.allContent ul .recycleSortLi{
+	border: solid 1px #f36624;
+	color: #f36624;
+}
+.bigSort h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.6rem;
+}
+.bigClassify h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.65rem;
+}
+.purity{
+	float: left;
+	padding: 0 0 0.65rem 0.85rem;
+}
+.purity span{
+	display: block;
+	width: 6.75rem;
+	height: 1.6rem;
+	float: left;
+	border-radius: 5px;
+	margin: 0.65rem 0.65rem 0 0;
+	border: solid 1px #e0e0e0;
+	text-align: center;
+	line-height: 1.6rem;
+	font-size: 0.5rem;
+	color: #696969;
+}
+.purity .hover_span{
+	border: solid 1px #f36624;
+	color: #f36624;
+}
+.purity .purity_span{
+	line-height: 0.9rem;
+}
+.purity .purity_span p{
+	line-height: 0.6rem;
+	font-size: 0.45rem;
+}
+.asNum{
+	float: left;
+	padding: 0.5rem 0 0.5rem 0.9rem;
+	color:#818181;
+	position: relative;
+}
+.asNum div{
+	width: 8.575rem;
+	height: 1.725rem;
+	float: left;
+	background-image: url(../img/asNum.png);
+	background-size: 100% 100%;;
+}
+.asNum p{
+	padding-left: 0.9rem;
+	line-height: 1.65rem;
+	font-size: 0.65rem;
+	height: 1.65rem;
+	float: left;
+}
+.asNum button{
+	width: 1.78rem;
+	height: 1.725rem;
+	background: rgba(255,255,255,0);
+	float: left;
+}
+.asNum .num{
+	width: 5rem;
+	height: 1.625rem;
+	float: left;
+	font-size: 0.55rem;
+	text-align: center;
+	border: none;
+	background: rgba(255,255,255,0);
+}
+.dealManner{
+	width: 100%;
+	float: left;
+}
+.last_font{
+	height: 1.25rem;
+	padding: 0.425rem 1.15rem 3.275rem 1rem;
+	line-height: 0.825rem;
+	font-size: 0.45rem;
+	color: #838383;
+	float: left;
+	background-color: #f5f5f5;
+}
+/*交易方式*/
+.SortExchange h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.6rem;
+}
+.SortExchange ul{
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
+.SortExchange ul li{
+	width: 16rem;
+	height: 2.15rem;
+	float: left;
+	background-image: url(../img/label_b.png);
+	background-size: 16rem 2.15rem;
+	border-bottom: solid 1px #f7f7f7;
+	text-indent: 0.65rem;
+	line-height: 2.15rem;
+	font-size: 0.6rem;
+	color: #5c5c5c;
+}
+.SortExchange ul li.hover_li{
+	background-image: url(../img/label_a.png);
+}
+/*纯度*/
+/*.chundu{
+	width: 4.375rem;
+	height: 3.875rem;
+}
+.chundu a{
+	background: url(../img/chundu.png) left center no-repeat;
+	background-size: 0.575rem 0.575rem;
+	color: #379cfa;
+}*/

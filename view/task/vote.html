@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="../../static/vote/css/ballot.css?v=1003"/>
+    <link rel="stylesheet" type="text/css" href="/static/task/task_two/css/style-02.css?v=1001" />
+</head>
+<body>
+    <div class="gain">
+        <span>投票</span>
+        <a href="javascript:history.back();" class="revert">返回</a>
+    </div>
+    <!-- rwdSuccess start-->
+    <div class="rwdSuccess" style="position:fixed;">
+        <i class="close" onclick="rwdSucClose()"></i>
+        <div class="topcon">
+            <h3></h3>
+            <p class="reawards"></p>
+            <!-- <a href="javascript:;">去通花商城换购礼品</a>
+            <span>今天还可以领8个红包，继续努力吧！</span> -->
+        </div>
+        <div class="botcon">
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+    <!-- rwdSuccess end-->
+    <div class="full-head"></div>
+
+    <div class="hint">请您填写以下问题</div>
+    <p class="motif">感谢您对回收通的关注和支持。这份问卷就是希望能够再进一步了解您的需求后，给您提供更优质的服务。敬请您填写以下问题，您的回答对我们很有价值。您的资料我们会给予保密，敬请放心。</p>
+    <div class="lets">
+        <div class="lump">
+            <div class="palette">年龄</div>
+            <select class="chose old">
+                <option value=0>请选择 </option>
+                <option value=1>16岁以下 </option>
+                <option value=2>16-20岁</option>
+                <option value=3>20-25岁</option>
+                <option value=4>25-30岁</option>
+                <option value=5>30-35岁</option>
+                <option value=6>35岁以上</option>
+
+            </select>
+        </div>
+
+        <div class="lump">
+            <div class="gender">性别</div>
+            <div class="sexist">
+                <div class="case">
+                    <div class="women" data=1>男</div>
+                </div>
+                <div class="case">
+                    <div class="women" data=2>女</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lump">
+            <div class="palette">职业</div>
+            <select class="chose pale">
+                <option value=0>请选择</option>
+                <option value=1>教师 </option>
+                <option value=2>医生</option>
+                <option value=3>律师</option>
+                <option value=4>服务业人员</option>
+                <option value=5>自由职业者</option>
+                <option value=6>工人</option>
+                <option value=7> 公司职员 </option>
+                <option value=8> 商人/雇主</option>
+                <option value=9> 小商贩/个体户</option>
+                <option value=10>事业单位/公务员/政府工作人员</option>
+                <option value=11>学生</option>
+                <option value=12>家庭主妇</option>
+                <option value=13>农民/牧民/渔夫</option>
+                <option value=14>无业/失业</option>
+                <option value=15>其他</option>
+            </select>
+        </div>
+
+        <div class="lump"  >
+            <div class="palette">所在地区</div>
+            <input id="city" utocomplete="off" class="chose" readonly="readonly" value="请选择"/>
+        </div>
+
+    </div>
+    <div class="involved">
+        <div class="words"></div>
+    </div>
+    <p class="prompt">从以下5件商品中选择你最想购买的进行投票，小通将会综合投票结果以超低价将其更新到通花商城</p>
+    <div class="lists" style="width:100%;height:auto;">
+
+    </div>
+    <p class="crits">您还可以在这里写上你认为好的商品</p>
+    <div class="entng">
+        <input class="feed" placeholder="例如：usb电扇   不超过15个字"/>
+    </div>
+    <div class="item">
+    </div>
+    <p class="notes">注：参与投票即送30通花，所有都填送50通花</p>
+    <p class="sulted">您的意见对我们非常重要，我们会朝着您希望的方向前进，感谢您的参与！</p>
+<script type="text/javascript" src="../../static/vote/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../static/m/js/citySet.js"></script>
+    <script type="text/javascript" src="../../static/m/js/cityJson.js"></script>
+    <script type="text/javascript" src="../../static/m/js/Popt.js"></script>
+<script type="text/javascript" src="../../static/vote/js/ballot.js?v=1001"></script>
+<script src="/static/task/js/ajax_common.js"></script>
+<script src="/static/vote/ajax/request_vote.js?v=1001"></script>
+<script type="text/javascript">
+    var id=getUrlParam('id');
+    gervotes(id);
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+
+    $("#city").click(function (e) {
+        SelCity(this,e);
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

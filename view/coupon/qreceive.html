@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/cssReset.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/coupon/css/receive.css"/>
+    <script charset="utf-8" type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript">
+        var AappId = '';
+        var Atimestamp = '';
+        var AnonceStr = '';
+        var Asignature = '';
+        window.shareData = {
+            "timgUrl": "",
+            "timeLineLink": "",
+            "tTitle": "",
+            "tContent": ""
+        };
+        function sharetext(){
+            wx.config({
+                debug: false,
+                appId: AappId,
+                timestamp: Atimestamp,
+                nonceStr: AnonceStr,
+                signature: Asignature,
+                jsApiList: [ // 所有要调用的 API 都要加到这个列表中       
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage'   
+                ]
+            });
+            wx.ready(function () {
+            //监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+                wx.onMenuShareTimeline({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    trigger: function (res) {     
+                     //点击分享是查询粉丝的分享记录，一周内只能领取一次       
+                    },
+                    success: function (res) {
+                        alert('分享成功');
+                          //分享成功后提示粉丝
+                          // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function (res) {
+                    },
+                    fail: function (res) {
+                      alert(JSON.stringify(res));
+                    }
+                });
+                wx.onMenuShareAppMessage({
+                    title: window.shareData.tTitle,
+                    desc: window.shareData.tContent,
+                    link: window.shareData.timeLineLink,
+                    imgUrl:window.shareData.timgUrl,
+                    success: function () {
+                        alert('分享成功');
+                        // 用户确认分享后执行的回调函数
+                      //分享成功后提示粉丝
+                        // alert('成功分享到朋友');
+                        // WeixinJSBridge.call('closeWindow');
+                    },
+                    cancel: function () { 
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+            });
+            wx.error(function(res){
+            //config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新    签名。
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="content" style="display:none">
+    <div class="dimension">
+        <div class="introduce">
+            <input class="phone" type="text" placeholder="输入手机号领取回收增值劵"/>
+        </div>
+        <a class="draw" href="javascript:;" onclick="checkphone();">马上去领取</a>
+        <div class="copyright">© 2014-2017 回收通 版权所有，并保留所有权利</div>
+    </div>
+</div>
+
+<div class="shade"></div>
+<div class="frame">
+    <div class="title">
+        手机号码验证
+        <a class="close-btn" href="javascript:;"></a>
+    </div>
+    <div class="covers">
+        <div class="embody">
+            <input class="entry" type="text" id='phonecode' placeholder="输入手机验证码"/>
+            <input class="gain" type="button" value="获取验证码" onclick="sendcode()"/>
+        </div>
+
+        <div class="embody" id="verify">
+            <input class="entry" type="text" placeholder="输入右图验证码"/>
+            <a class="code" href="javascript:;">
+                <img src="/codeimg/code_char.php" onclick="this.src='/codeimg/code_char.php?name=2&d='+Math.random();"/>
+            </a>
+        </div>
+
+        <a class="affirm" href="javascript:;" onclick="checkphone();">确认</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="/static/coupon/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/coupon/js/receive.js"></script>
+<script type="text/javascript" src="/static/article/ajax/request_common.js"></script>
+<script type="text/javascript" src="/static/coupon/ajax/request_coupon.js"></script>
+<script type="text/javascript">
+    var code=getUrlParam('code');
+    var from = getUrlParam('from');
+    getphone(code);
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a337a5249adb71bc3f563821242e0c34";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

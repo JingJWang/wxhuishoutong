@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title></title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/repair/css/repairMage.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+	</head>
+	<body>
+		<div class="shadow"></div>
+		<div class="navRuler">
+				<div id="luxuryCon">
+					<div class="orderSearch clearfix">
+						<h3 class="title fl">查询</h3>
+						<div class="newSearch fl">
+							<form id="search" style="float:left">
+							<input type="text" name="id" id='id' placeholder="单号" class="jInput" onfocus="this.value=''" />
+							<input type="text" name="phone" id="phone" value="" placeholder="请输入手机号码" class="jInput" onfocus="this.value=''" />
+							<input type="text" name="start" id="start" class="default laydate-icon" onfocus="this.value=''"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                		    <input type="text" name="end" id="end" class="default laydate-icon" onfocus="this.value=''"/>
+							<div class="statuSelect">
+								<b class="triangle-down"></b>
+								<select name="status">
+									<option value='1'>已下单</option>
+									<option value='2'>已发货</option>
+									<option value='3'>维修中</option>
+									<option value='4'>已完成</option>
+									<option value='0'>已取消</option>
+								</select>
+							</div>
+								<span class="butn"></span>
+							</form>
+							<a class="jBtn" onclick="getorder(1,0)" style="cursor:pointer">查询</a>&nbsp;&nbsp;
+						</div>
+					</div>
+					<div class="luxuryBox">
+						<div class="luxuryList conHeight">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<li style="width:50px">编号</li>
+									<li>手机型号</li>
+									<li style="width:100px">手机号码</li>
+									<li style="width:100px">联系人</li>
+									<li style="width:15%">联系地址</li>
+									<li style="width:20%">维修内容</li>
+									<li style="width:100px">维修价格</li>
+									<li style="width:100px">下单时间</li>
+									<li style="width:50px">状态</li>
+									<li>操作</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo">
+							</div>
+						</div>
+						<div class="pageNumber">
+							<ul class="pagination">
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+<!-- 查看详细 -->
+<div class="full"></div>
+<div class="detail">
+    <div class="title">
+        <input type="button" value="×" class="title-btn" onclick="shut();"/>
+        <div class="place">订单详情</div>
+        <div class="cv">
+            <div class="info" >
+                <div class="attribute">订单编号:</div>
+                <div class="classify" id="ids"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">手机型号:</div>
+                <div class="classify" id="goodsname"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">手机号码:</div>
+                <div class="classify" id="phones"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">联系人:</div>
+                <div class="classify" id="name"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">联系地址:</div>
+                <div class="classify" id="adr"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">维修价格:</div>
+                <div class="classify" id="money"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">优惠价格:</div>
+                <div class="classify" id="discount"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">保证金:</div>
+                <div class="classify" id="bonus"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">下单时间:</div>
+                <div class="classify" id="jointime"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">修改时间:</div>
+                <div class="classify" id="updatetime"></div>
+            </div>
+             <div class="info" >
+                <div class="attribute">快递公司:</div>
+                <div class="classify" id="express"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">快递单号:</div>
+                <div class="classify" id="num"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">支付状态:</div>
+                <div class="classify" id="paystatus"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">订单状态:</div>
+                <div class="classify" id="status"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">维修内容:</div>
+                <div class="classify" id="con"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">其他异常:</div>
+                <div class="classify" id="other"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">备注:</div>
+                <div class="classify" id="comment"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 修改记录 -->
+<div class="fulls"></div>
+<div class="edti">
+    <div class="title">
+        <input type="button" value="×" class="title-btn" onclick="shut();"/>
+        <div class="place">订单修改</div>
+        <form id="editor" >
+        <div class="cv">
+            <div class="info" >
+                <div class="attribute">手机型号:</div>
+                <div class="classify" id="egoodsname"></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">手机号码:</div>
+                <div class="classify">
+                	<input type="text" readonly="true" name="ephones" id="ephones"/>
+                	<input type="hidden" id="wxid" name="wxid" />
+                	<input type="hidden" name="paysta" id="paysta" />
+                </div>
+            </div>
+            <div class="info" >
+                <div class="attribute">联系人:</div>
+                <div class="classify"><input type="text" readonly="true" name="ename" id="ename"/></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">联系地址:</div>
+                <div class="classify"><input type="text" readonly="true" name="eadr" id="eadr"/></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">维修价格:</div>
+                <div class="classify"><input type="text" size='7' style="border: solid 1px #ccc; padding-left: 8px;height:30px;" name="emoney" id="emoney"/>元</div>
+            </div>
+            <div class="info" >
+                <div class="attribute">优惠价格:</div>
+                <div class="classify"><input type="text" size='5' readonly="true" name="ediscount" id="ediscount"/>元</div>
+            </div>
+            <div class="info" >
+                <div class="attribute">保证金:</div>
+                <div class="classify"><input type="text" size='7' readonly="true" name="ebonus" id="ebonus"/>元</div>
+            </div>
+             <div class="info" >
+                <div class="attribute">快递公司:</div>
+                <div class="classify"><input type="text" name="eexpress" id="eexpress"  style="border: solid 1px #ccc; padding-left: 8px;"/></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">快递单号:</div>
+                <div class="classify"><input type="text" name="enum" id="enum"  style="border: solid 1px #ccc; padding-left: 8px;" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/></div>
+            </div>
+            <div class="info" >
+                <div class="attribute">其他异常:</div>
+                <div class="classify"><textarea id="others" name="others" style="margin-top:4px;border: solid 1px #ccc; padding-left: 8px;"></textarea></div>
+            </div>
+            <div class="otherinfo">
+                <div class="attribute">维修内容:</div>
+                <div class="classify">
+                	<div id="rcon" name="rcon" >
+                		<p class="titleP">用户已选：</p>
+                		<div class="yetcheck" id="yetcheck">
+                		</div>
+                	</div>
+                	<div id="econ" name="econ" >
+                		<P class="titleP" >所有选项：</P>
+                		<div class="allcheck" id="allcheck">
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <div class="info" >
+                <div class="attribute">订单状态:</div>
+                <div class="classify" id="estatus"></div>
+            </div>
+            <div class="beizhu" >
+                <div class="attribute">备注:</div>
+                <div class="classify"><textarea  id="ecomment" name="ecomment" class="textbeiz"></textarea></div>
+            </div>
+            <div class="btns jingbtn">
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+	</body>
+	<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+	<script type="text/javascript" src="../../static/c/js/bonusIncrease.js"></script>
+	<script type="text/javascript" src="../../static/c/js/laydate.js"></script>
+	<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	<script type="text/javascript" src="../../static/repair/ajax/request_Mage.js?v=20171106"></script>
+	<script type="text/javascript">
+    //日期控件
+    var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        max: '2099-06-16', //最大日期
+        istime: false,
+        istoday: false,
+        choose: function(datas){
+            end.min = datas; //开始日选好后，重置结束日的最小日期
+            end.start = datas //将结束日的初始值设定为开始日
+        }
+    };
+    var end = {
+        elem: '#end',
+        format: 'YYYY-MM-DD',
+        max: '2099-06-16',
+        istime: false,
+        istoday: false,
+        choose: function(datas){
+            start.max = datas; //结束日选好后，重置开始日的最大日期
+        }
+    };
+    laydate(start);
+    laydate(end);
+</script>
+</html>

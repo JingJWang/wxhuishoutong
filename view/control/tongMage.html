@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title></title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/luxuryManage.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>		
+		<script type="text/javascript" src="../../static/c/js/luxuryManage.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_tong.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	</head>
+	<body>
+		<!-- con start -->	
+		<div class="navRuler">
+			<!-- grayBg start -->
+			<div class="grayBg"></div>
+			<div class="deleteAlert">
+				<i onclick="deleteNo()"></i>
+				<span></span>
+				<p>确定删除该订单 ?</p>
+				<a href="javascript:;" onclick="deleteYes()">确定</a>
+			</div>
+			<!-- grayBg end -->
+			<!-- luxuryCon start -->
+				<div id="luxuryCon">
+					<!-- orderSearch  start-->
+					<div class="orderSearch clearfix">
+						<h3 class="title fl">订单查询</h3>
+						<div class="searchInput fl">
+							<input type="text" name="" id="inputnum" value="" placeholder="输入订单编号" />
+							<span class="butn" onclick="getheor();"></span>
+						</div>
+						<div class="downSelect fl">
+							<a href="javascript:;" class="selected">正在配送</a>
+							<ul class="myUl">
+								<li class="current"><a href="javascript:;" onclick="getorder(2,0)">正在配送</a></li>
+								<li><a href="javascript:;" onclick="getorder(1,0)">配送完成</a></li>
+								<li class=""><a href="javascript:;" onclick="getorder(-1,0)">已取消</a></li>
+							</ul>
+							<span class="butn"></span>
+						</div>
+						<!-- <div class="addOrder fl" onclick="openorder()">
+							<a href="javascript:;">添加订单</a>
+						</div> -->
+					</div>
+					<!-- orderSearch  end-->
+					<!-- 订单列表页  start-->
+					<div class="luxuryBox">
+						<h3>订单列表</h3>
+						<div class="luxuryList conHeight">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<li>物品名称（价格）</li>
+									<li>订单信息</li>
+									<li>用户姓名</li>
+									<li>用户地址</li>
+									<li>用户手机</li>
+									<li>订单编号</li>
+									<li>订单时间</li>
+									<li>编辑</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo">
+							</div>
+						</div>
+						<div class="pageNumber">
+							<ul class="pagination">
+							</ul>
+						</div>
+					</div>
+					<!-- 订单列表页  end-->
+					<!-- 订单添加  start-->
+					<div class="luxuryBoxAdd"style="display: none;">
+						<h3>订单添加</h3>
+						<div class="luxuryList">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<!-- <li class="li">用户名</li> -->
+									<li class="li">订单编号</li>
+									<li class="li">物品类型</li>
+									<li class="li">物品名称</li>
+									<li class="li">店铺名称</li>
+									<!-- <li class="li">订单状态</li> -->
+									<li class="li">编辑</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo blueBorder">
+								<ul class="clearfix">
+									<li class="li"><input type="text" name="" id="" value="" class="reviseInput"/></li>
+									<li class="goods li">
+										<div class="downSelectAdd fl">
+											<a href="javascript:;" class="selectedAdd UlRevise"></a>
+											<ul class="myUlAdd downScroll Ultype">
+											</ul>
+											<span class="butn"></span>
+										</div>
+									</li>
+									<li class="li">
+										<div class="downSelectAdd fl">
+											<a href="javascript:;" class="selectedAdd UlwRevise"></a>
+											<ul class="myUlAdd downScroll Ulwup">
+											</ul>
+											<span class="butn"></span>
+										</div>
+									</li>
+									<li class="li">
+										<div class="downSelectAdd fl">
+											<a href="javascript:;" class="selectedAdd UlsRevise"></a>
+											<ul class="myUlAdd downScroll Ulshop">
+											</ul>
+											<span class="butn"></span>
+										</div>
+									</li>
+									<li class="infoIs clearfix li">
+										<a href="javascript:;" class="addYes fl" onclick="addorder();"></a>
+										<a href="javascript:;" class="addNo fr" onclick="cance();"></a>
+									</li>
+								</ul>
+							</div>							
+						</div>
+					</div>
+					<!-- 订单添加  end-->
+					<!-- 订单修改  start-->
+					<div class="luxuryBoxRevise"style="display: none;">
+						<div class="reviseTitle clearfix">
+							<h3 class="fl">订单修改</h3>
+							<div class="btns fl clearfix">
+								<!-- <a href="javascript:;" class="save fl">保存</a>
+								<a href="javascript:;" class="noSave fl">取消</a> -->
+							</div>
+						</div>
+						<div class="luxuryList">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<li>订单编号</li>
+									<li>订单时间</li>
+									<li>快递公司名称</li>
+									<li>快递编号</li>
+									<li>订单状态</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo blueBorder">
+								<ul class="clearfix">
+									<li class="li" id='tid'></li>
+									<li class="li" id='jtime'></li>
+									<li class="li"><input type="text" name="" id="company" value=""  class="reviseInput"/></li>
+									<li class="li"><input type="text" name="" id="number" value=""  class="reviseInput"/></li>
+									<li class="li">
+										<div class="downSelectRevise fl">
+											<a href="javascript:;" class="selectedRevise UlstRevise"></a>
+											<ul class="myUlRevise Ulstatus">
+												<li><a href="javascript:;" tid=1>配送完成</a></li>
+								                <li><a href="javascript:;" tid=2>正在配送</a></li>
+								                <li><a href="javascript:;" tid=-1>取消</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>							
+						</div>
+					</div>
+					<!-- 订单修改  end-->
+				</div>
+			<!-- luxuryCon start -->
+		</div>
+		<!-- con end -->
+	</body>
+</html>

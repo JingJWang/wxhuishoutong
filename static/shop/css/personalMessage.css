@@ -1,0 +1,137 @@
+/**************************** personalMessage 主页样式 ******************************/
+/*==green==*/
+.green{ background: #67b535;}
+.green .back{ width: 100%; height: 40px; position: relative;}
+.green .back a{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 18px; background: url(../images/arrBack.png) no-repeat left center; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; left: 15px; top: 50%; margin: -20px 0 0 0;} 
+ .green .back span{display: block; text-align: right; width: 70px; height: 40px; line-height: 40px;
+ font-size: 15px; position: absolute; right: 15px; top: 50%; margin: -20px 0 0 0; border: none; background: #67b535; color: #fff;}
+.green .back p{ width: 100%; height: 40px; line-height: 40px; font-size: 16px; color: #fff; text-align: center;}
+/*==basicInfor==*/
+.basicTitle{ font-size: 16px; height: 50px; line-height: 50px;}
+.basicCon{ font-size: 14px; color: #888; height: 50px; line-height: 50px; margin: 0 15px 0 0;}
+.basicInfor .basicCon{ max-width: 210px;}
+.aBlock{ display: block;}
+.aBlockphone{ display: block; height: 50px; line-height: 50px; border-bottom: 1px solid #ddd;}
+.basicInfor{ background: #fff; padding: 0 0 0 15px; margin: 18px 0 0 0;}
+.basicInfor .headPic,.userName,.position{ border-bottom: 1px solid #ddd;}
+.basicInfor .headPic .basicTitle{ height: 64px; line-height: 64px; }
+.basicInfor .headPic p{ display: inline-block; margin: 10px 15px 0 0;}
+.basicInfor .headPic p img{ display: inline-block; border-radius: 50%;}
+/*==account==*/
+.accountTitle{ padding: 0 0 0 15px;}
+.accountTitle h3{ width: 100%; height: 40px; line-height: 40px; font-size: 15px; color: #888; display: block; font-weight: normal;}
+.accountCon{ padding: 0 0 0px 15px; background: #fff;}
+.accountCon .basicCon,.accountCon .basicTitle{ height: 50px; line-height: 50px;}
+.accountCon .tip{ color: #888; font-weight: normal; display: block; padding: 0 0 10px 0; border-bottom: 1px solid #ddd;}
+.accountCon .basicCon{ color: #f75e25; font-size: 15px;}
+/*==getOut==*/
+.getOut{ padding: 0 0 0 15px; background: #fff;}
+.getOut .btn{ width: 100%; font-size: 15px; height: 45px; line-height: 45px; display: block;}
+/*==ifGetOut==*/
+.grayBg{ display: none; width: 100%; height: 100%; position: fixed; z-index: 60; background: rgba(0,0,0,0.2);}
+.ifGetOut{ display: none; width: 280px; height: 150px; background: #fff; border-radius: 10px; position: fixed; z-index: 100; left: 50%; top: 50%; margin: -75px 0 0 -140px;}
+.ifGetOut p{ height: 99px; line-height: 99px; font-size: 15px; color: #888; text-align: center; border-bottom: 1px solid #dddddd;}
+.ifGetOut .btn .yes,.ifGetOut .btn .no{ width: 49.6%; height: 50px; line-height: 50px; text-align: center; display: block; font-size: 15px; color: #888;}
+.ifGetOut .btn .yes{ border-left: 1px solid #ddd; color: #f75e25;}
+/**************************** changeUsername  页面样式 ******************************/
+/*==nameInput==*/
+.nameInput{ padding: 0 14px;}
+.nameInput form{ width: 100%; margin: 33px 0 0 0;}
+.nameInput .enter{ width: 100%; font-size: 15px; padding: 12px 0; border: none; border-bottom: 1px solid #ddd;}
+.nameInput input::-webkit-input-placeholder{color:#acacac;}
+.nameInput input:focus::-webkit-input-placeholder{color:#acacac;}
+.nameInput .tip{ color: #888; padding: 13px 0 0 0;}
+.nameInput .greenBtn{ margin: 30px 0 0 0;}
+#usernameP{ color: #f75e25; padding: 5px 0 0 0;}
+/**************************** addAddress  页面样式 ******************************/
+/*==position==*/
+.place .tit,.newAdd .tit{ display: block; height: 42px; line-height: 42px; font-weight: normal; font-size: 14px; color: #888; padding: 0 0 0 15px; border: none;}
+.place .placeCon{ padding: 0 0 0 15px; background: #fff; height: 65px;}
+.place .placeCon p{ padding: 16px 0 0 0; font-size: 14px;}
+.place .placeCon span{ height: 30px; line-height: 30px; font-size: 14px;}
+/*==isAdd==*/
+.isAdd{ padding: 25px 0px 18px 9px;}
+#addName,#addNum,#addPosi,#addJie{ display: none; font-size: 12px; color: #f75e25; padding: 2px 0 0 0;}
+/**************************** changePhoneNo  页面样式 ******************************/
+/*************step01*************/
+.step01Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep01.png) no-repeat center center; background-size: 260px 59px;  }
+@media screen and (min-width:321px) and (max-width:375px)
+{
+	.step01Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep01.png) no-repeat center center; background-size: 294px 68px;}
+}
+.step01 .password{ padding: 0 15px; margin: 15px 0 0 0;}
+.password form{ width: 78%;}
+.password input{ width: 99%; padding: 0 0 0 1%; border: none; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+.password input::-webkit-input-placeholder{color:#acacac;}
+.password input:focus::-webkit-input-placeholder{color:#acacac;}
+.step01 .password p{ font-size: 15px; width: 21%; height: 40px; line-height: 40px;}
+.step01 .tip{ color: #888; padding: 0 0 0 15px; margin: 10px 0 0 0;}
+.step01 .btn{ padding: 0 15px; margin: 30px 0 0 0;}
+#passwordTip{ padding: 5px 0 0 90px; color: #f75e25;}
+/***********step02*************/
+.step02Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep02.png) no-repeat center center; background-size: 260px 59px;  }
+@media screen and (min-width:321px) and (max-width:375px)
+{
+	.step02Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep02.png) no-repeat center center; background-size: 294px 68px;}
+}
+.step02 .phoneNo input{ font-size: 15px; border-bottom: 1px solid #ddd;}
+#noTip,#noCode{ padding: 5px 0 0 78px; color: #f75e25;}
+/*==entry==*/
+.entry input{ border: none;}
+.entry .money{ height: 36px; line-height: 36px; padding:0 15px;}
+.entry .money input::-webkit-input-placeholder{color:#575757;}
+.entry .money input:focus::-webkit-input-placeholder{color:#575757}
+.entry .note input::-webkit-input-placeholder{color:#acacac;}
+.entry .note input:focus::-webkit-input-placeholder{color:#acacac}
+.entry .money .mSpan{ width: 21%; font-size: 15px; text-align: justify;}
+.entry .mInput{ display: inline-block; width: 79%; border-bottom:1px solid #ddd;}
+.entry .mInput input{ width: 66%; padding: 0 0 0 2%; display: inline-block; height: 36px; line-height: 36px; font-size: 14px;}
+.entry .mInput span{ width: 30%; display: inline-block; text-align: center; height: 36px; line-height: 36px;}
+.entry .mInput a{ color: #4253cf;}
+/*==note==*/
+.entry .note{ margin: 16px 0 0 0;}
+.entry .note .mInput span input{ font-size: 12px; display: block; width: 70px; height: 30px; line-height: 30px; color: #fff; background: #acacac; border-radius: 5px;}
+/*************step03*************/
+.step03Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep03.png) no-repeat center center; background-size: 260px 59px;  }
+@media screen and (min-width:321px) and (max-width:375px)
+{
+	.step03Pic{ width: 100%; height: 100px; background:#f1f1f1 url(../img/phoneNoStep03.png) no-repeat center center; background-size: 294px 68px;}
+}
+.changeSucc{ display: block; width: 100%; height:165px; background: url(../img/changeSuccess.png) no-repeat center bottom; background-size: 202px 120px;}
+/**************************** selectCity  页面样式 ******************************/
+.loan_jm1{width:100%;margin:0 auto; position: fixed; left: 0px; top: 0px; z-index: 100; background: #f1f2f3;}
+.loan_jm_spa1{width:30%; margin: 0 0 0 15px; height:35px; line-height:35px; font-size:15px; color:#575757; display:block;}
+.loan_jm_l1{ height:35px; background: #fff; padding: 5px 0 0 0;}
+.loan_jm1 .textP{ display: block; height: 24px; padding: 0 0 0 15px; color: #888; background: #FFF;}
+.wbk_srn{width:55%;height:35px; padding-left:3%;line-height:35px;color:#333;
+font-size:15px;}
+.wbk_srn b{width:30px;height:35px;border:1px solid #ccc;background:#FFF;float:left;padding-left:3%;line-height:35px;color:#ADADAD;
+font-size:1.1em; background-size:45%;background-position:center;background:url(../img/xl.png) right 5px no-repeat;}
+.loan_jm1 .curPosition,.letter span{ display: block; color: #888; font-size: 14px; padding: 0 0 0 15px; height: 42px; line-height: 42px; background: #f1f2f3;}
+/*城市弹层*/
+.container{width:100%; top:56px;left:0; z-index:9999; padding: 220px 0 40px 0;}
+.letter ul li{ float: left; margin: 0px 5px 5px 0px;}
+.letter ul{list-style-type:none; padding: 0 15px 0 10px;}
+.letter ul li a{text-decoration:none; display: block; font-size: 13px; padding: 0 5px;}
+.city{overflow:hidden; padding:13px 0 13px 0px;}
+.citylist{width:100%;overflow:hidden; margin: 0 0 12px 0; background: #fff;}
+.citylist .cityletter{color:#575757;font-size:15px;display:inline-block;padding-top:15px; padding: 0 0 0px 15px; width:100%; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+.citylist p{color:#575757; font-size: 14px; width: 24.65%; height:45px;line-height:45px;cursor:pointer; float: left; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+@media only screen and (min-width: 321px){
+		.city-list p{ width: 24.71%;}
+		.loan_jm_spa1{ width: 30%;}
+}
+@media only screen and (min-width: 414px){
+		.city-list p{ width: 24.73%;}
+		.loan_jm_spa1{ width: 24%;}		
+}
+.UISelect{margin-top:5px}
+
+
+
+
+
+
+
+

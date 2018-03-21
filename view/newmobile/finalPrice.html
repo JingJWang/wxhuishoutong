@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/newmobile/css/brand.css" />
+	</head>
+	<body>
+		<header>
+			<a href="javascript:history.go(-1);" class="back header_a"></a>
+			<a href="m_index.html" class="home header_a"></a>
+		</header>
+		<div class="price">
+			<p class="fontName">评估价格</p>
+			<h1 class="price_h1"></h1>
+			<span class="pric_img"></span>
+			<p class="cont_p_money">去找工作人员领钱</p>
+			<p class="last_p">请找到工作人员协助您完成本次交易</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/home/js/ajax_common.js"></script>
+	<script type="text/javascript" src="../../static/newmobile/ajax/request_newmobilequote.js"></script>
+	<script>
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		};
+		$(document).bind("contextmenu",function(e){
+	        return false;
+	    });
+		repalc();
+	</script>
+</html>

@@ -1,0 +1,341 @@
+body{
+    background-color: #F0F0F0;!important;
+}
+.title{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size:18px;
+    color:#ffffff;
+    background-color:#58AA23;
+    position:relative;
+}
+.title .back{
+    width:9px;
+    height:45px;
+    background-image: url(../images/back1.png);
+    background-size: 9px 17px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:absolute;
+    top:0px;
+    left:15px;
+}
+.advert{
+    width:100%;
+    height:auto;
+}
+.advert img{
+    width:100%;
+    height:100%;
+}
+.mostly{
+    padding:15px 15px;
+    height:65px;
+    background-color: #ffffff;
+    margin-bottom: 9px;
+}
+.mostly .deal{
+    padding:0px 0px 10px 8px;
+    height:16px;
+    font-size: 14px;
+    color:#9E9E9E;
+}
+.mostly .deal .sum{
+    color:#eb7710;
+}
+.mostly .handle{
+    width:100%;
+    height:40px;
+}
+.mostly .handle .bought{
+    width:44%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color:#ffffff;
+    background-color: #F4760E;
+    border-radius: 5px;
+}
+.mostly .handle .bought.phone{
+    background-color: #54A61F;
+}
+.reveal{
+    width:100%;
+    height:auto;
+}
+.reveal img{
+    width:100%;
+    height:100%;
+    margin-top:10px;
+}
+.detail{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color: #ffffff;
+}
+.detail .name{
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    color:#5AAC24;
+}
+.detail .shopList{
+    padding: 0px 15px;
+    height:auto;
+}
+.detail .shopList .dimension{
+    width:99.9%;
+    height:auto;
+    float:left;
+    margin-bottom: 6px;
+}
+.detail .shopList .dimension .phones{
+    width:49.6%;
+    height:auto;
+    float:left;
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.detail .shopList .dimension .phones .shopDetail{
+    width:99.6%;
+    height:155px;
+    border-left:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    float:left;
+}
+.detail .shopList .dimension .luxury{
+    width:49.6%;
+    height:auto;
+    float:left;
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.detail .shopList .dimension .luxury .shopDetail{
+    width:99.6%;
+    height:155px;
+    border-bottom:1px solid #dddddd;
+    float:left;
+}
+.shopDetail .contain{
+    padding:0px 15px;
+    height:155px;
+}
+.shopDetail .contain .trade-name{
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    padding:12px 0px 4px 0px;
+    font-size:14px;
+    color:#292828;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.shopDetail .contain .trade-name .desc{
+    color:#F4760F;
+}
+.shopDetail .contain .print{
+    width:100%;
+    height:92px;
+    padding-bottom: 2px;
+}
+.shopDetail .contain .print .pic{
+    width:115px;
+    height:92px;
+}
+.shopDetail .contain .print .pic img{
+    width:100%;
+    height:100%;
+}
+.shopDetail .contain .rates{
+    width:100%;
+    height:14px;
+}
+.shopDetail .contain .rates .price{
+    height:14px;
+    line-height: 14px;
+    color:#252525;
+    font-size: 0px;
+    position:relative;
+}
+.shopDetail .contain .rates .price.fr{
+    text-align: right;
+}
+.shopDetail .contain .rates .price span{
+    font-size:12px;
+}
+.shopDetail .contain .rates .price.fr span{
+    font-size:13px;
+    color:#F4760F;
+}
+.shopDetail .contain .rates .price .line{
+    width:72px;
+    height:1px;
+    background-color: #DB6607;
+    text-align: left;
+    position:absolute;
+    margin:6.5px 0px;
+    top:0px;
+    left:0px;
+}
+.depict{
+    width:100%;
+    height:auto;
+    float:left;
+    background-color:#ffffff;
+}
+.brief{
+    padding:6px 15px 0px 15px;
+    line-height: 17px;
+    font-size: 13px;
+    color:#666666;
+    letter-spacing: 1px;
+}
+.further{
+    width:100%;
+    padding:20px 0px 15px 0px;
+    height:36px;
+    background-color: #ffffff;
+}
+.further .more-btn{
+    width:150px;
+    height:36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 15px;
+    color:#ffffff;
+    background-color: #54A61F;
+    border-radius: 5px;
+    display:inline-block;
+}
+.footer{
+    width:100%;
+    height:100px;
+    padding:30px 0px 20px 0px;
+}
+.footer .covers{
+    width:270px;
+    height:100px;
+}
+.footer .covers .profiles{
+    width:100%;
+    height:70px;
+}
+.footer .covers .profiles .code{
+    width:70px;
+    height:70px;
+    margin:0px 20px 0px 18px;
+}
+.footer .covers .profiles .code img{
+    width:100%;
+    height:100%;
+}
+.footer .covers .profiles .anenst{
+    margin-left: 108px;
+    height:70px;
+}
+.footer .covers .profiles .anenst .palette{
+    width:100%;
+    height:16px;
+    padding:13px 0px 10px 0px;
+}
+.footer .covers .profiles .anenst .palette .site{
+    height:16px;
+    line-height: 16px;
+    font-size: 14px;
+    color:#8A8A8A;
+}
+.footer .covers .profiles .anenst .palette .site.phone{
+    margin-right:18px;
+}
+.footer .covers .profiles .anenst .number{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    font-size:13px;
+    color:#8A8A8A;
+    text-align: left;
+}
+.footer .covers .firm{
+    width:100%;
+    height:20px;
+    margin-top:10px;
+}
+.footer .covers .firm .names{
+    height:20px;
+    line-height: 20px;
+    font-size:14px;
+    color:#8A8A8A;
+    margin-right:18px;
+}
+.footer .covers .firm .route{
+    width:110px;
+    height:20px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 13px;
+    color:#ffffff;
+    background-color: #54A61F;
+    border-radius: 5px;
+}
+.recover{
+    width:50px;
+    height:50px;
+    background-image: url(../images/recover.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:fixed;
+    right:15px;
+    bottom:200px;
+}
+.recover[data-index="1"]{
+    background-image: url(../images/buy.png);
+}
+.full-bottom{
+    width:100%;
+    height:60px;
+    float:left;
+    display:none;
+}
+.operate{
+    width:100%;
+    height:40px;
+    padding:10px 0px;
+    background-color: #ffffff;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    display:none;
+}
+.operate .master{
+    padding:0px 15px;
+    height:40px;
+}
+.operate .master .bought{
+    width:44%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color:#ffffff;
+    background-color: #F4760E;
+    border-radius: 5px;
+}
+.operate .master .bought.phone{
+    background-color: #54A61F;
+}
+
+
+@media screen and (max-width: 370px) {
+    .shopDetail .contain  {
+        padding:0px 2px;
+    }
+}

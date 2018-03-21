@@ -1,0 +1,343 @@
+.casket{
+    padding:0 28px;
+    height:auto;
+    float:left;
+}
+.casket .title{
+    width:100%;
+    height:75px;
+    line-height: 75px;
+    font-size: 16px;
+    color:#666666;
+    float:left;
+}
+.casket .search{
+    width: 100%;
+    height: 54px;
+    padding-bottom: 20px;
+    float:left;
+}
+.casket .search .query{
+    width:238px;
+    height:34px;
+    float:left;
+}
+.casket .search .query .seats{
+    width:203px;
+    height:34px;
+    line-height:34px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color:#BDBDBD;
+    border:1px solid #E0E0E0;
+    float:left;
+    padding-left:12px;
+    outline:none;
+}
+.casket .search .query .seek{
+    width:35px;
+    height:34px;
+    float:left;
+    background: url(../images/spiritPic.png) no-repeat 7px -129px;
+    right: 0;
+    top: 0;
+    border:1px solid #E0E0E0;
+    border-left:0;
+}
+.casket .search .type{
+    width:243px;
+    height:34px;
+    float:left;
+    margin-left:35px;
+}
+.casket .search .type span{
+    width:auto;
+    height:34px;
+    line-height:34px;
+    font-size:14px;
+}
+.casket .search .type .classify{
+    width:198px;
+    height:34px;
+    float:right;
+    cursor:default;
+    border:1px solid #E0E0E0;
+}
+.casket .search .type .classify .digitalorder{
+    width:162px;
+    height:33px;
+    border-right:1px solid #E0E0E0;
+    line-height: 34px;
+    padding-left:12px;
+    font-size:12px;
+    color:#7F7F7F;
+    float:left;
+}
+.casket .search .type .classify .option{
+    width:34px;
+    height:34px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:right;
+}
+.casket .search .type .classify .drop-box{
+    width:198px;
+    height:106px;
+    border:1px solid #E0E0E0;
+    margin-top: 36px;
+    position: relative;
+    display:none;
+    background-color: #ffffff;
+    z-index:998;
+}
+.casket .search .type .classify .drop-box .tips-out-border{
+    width: 0px;
+    height: 0px;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.casket .search .type .classify .drop-box .tips-out-border .tips-out-bg{
+    width: 0px;
+    position: absolute;
+    border-width: 8px 8px 8px 8px;
+    border-color: #EAEAEA;
+    border-color: transparent transparent #EAEAEA transparent;
+    border-style: dashed dashed solid dashed;
+    line-height: 0;
+    top: -16px;
+    left: 94px;
+}
+.casket .search .type .classify .drop-box .tips-out-border .tips-out{
+    width: 0;
+    position: absolute;
+    border-width: 6px 6px 6px 6px;
+    border-color: #ffffff;
+    border-color: transparent transparent #ffffff transparent;
+    border-style: dashed dashed solid dashed;
+    line-height: 0;
+    top: -12px;
+    left: 96px;
+}
+
+.casket .search .type .classify .drop-box .details{
+    width:100%;
+    height:35px;
+    line-height:35px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left:12px;
+    font-size: 12px;
+    padding-left:12px;
+    float:left;
+}
+.casket .search .type .classify .drop-box .details.active{
+    color:#91BEFF;
+}
+.casket .search  .while{
+    width:auto;
+    height:34px;
+    line-height: 34px;
+    float:right;
+}
+.casket .search  .while a{
+    font-size: 12px;
+    color:#888888;
+    padding-right: 22px;
+    float:left;
+    display:block;
+}
+.casket .search  .while .date{
+    width:170px;
+    height:34px;
+    line-height: 34px;
+    border:1px solid #7DB3FF;
+    color:#7DB3FF;
+    float:left;
+    border-radius: 3px;
+    padding-left: 8px;
+    margin-left: 15px;
+}
+.casket .search  .while .sure{
+    width:50px;
+    height:34px;
+    line-height: 34px;
+    border:0;
+    border-radius: 3px;
+    background-color: #7DB3FF;
+    color:#ffffff;
+    font-size: 12px;
+    float:left;
+    margin-left: 15px;
+}
+.casket .raise{
+    width:78%;
+    margin-right:22%;
+    height:auto;
+    float:left;
+}
+.casket .raise .property{
+    width:100%;
+    height:40px;
+    margin-bottom: 12px;
+    background-color: #F1F1F1;
+}
+.casket .raise .property .details{
+    height:100%;
+    padding:12px 8px;
+    color:#888888;
+    cursor:default;
+}
+.casket .raise .property .details .numa{
+    width:15%;
+    height:16px;
+    line-height: 16px;
+    border-left:2px solid #DDDDDD;
+    font-size: 14px;
+    padding-left:8px;
+    float:left;
+}
+.casket .raise .property .details .numa .all.active{
+    color:#7DB3FF;
+}
+.casket .raise .property .details .such{
+    width:20%;
+    height:16px;
+    line-height: 16px;
+    border-left:2px solid #DDDDDD;
+    font-size: 14px;
+    padding-left:8px;
+    float:left;
+}
+.casket .raise .property .details .condition{
+    width:24%;
+    height:16px;
+    line-height: 16px;
+    border-left:2px solid #DDDDDD;
+    font-size: 14px;
+    padding-left:8px;
+    float:left;
+}
+.casket .raise .property .details .telephone{
+    width:36%;
+    height:16px;
+    line-height: 16px;
+    border-left:2px solid #DDDDDD;
+    font-size: 14px;
+    padding-left:8px;
+    float:left;
+}
+.casket .raise .message{
+    width:100%;
+    height:auto;
+    float:left;
+}
+.casket .raise .message .group{
+    width:100%;
+    height:40px;
+    border:1px solid #ECECEC;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 15px #ECECEC;
+}
+.casket .raise .message .group .graph{
+    width:15%;
+    height:40px;
+    float:left;
+    padding-left:15px;
+}
+.casket .raise .message .group .graph .case{
+    width:18px;
+    height:18px;
+    background-image: url(../images/check.png);
+    margin:11px 0;
+}
+.casket .raise .message .group .graph .case.active{
+    background-image: url(../images/pitch.png);
+}
+.casket .raise .message .group .tel{
+    width:20%;
+    height:40px;
+    line-height: 40px;
+    padding-left: 13px;
+    font-size: 14px;
+    color:#666666;
+    float:left;
+}
+.casket .raise .message .group .times{
+    width:24%;
+    height:40px;
+    line-height: 40px;
+    padding-left: 13px;
+    font-size: 14px;
+    color:#666666;
+    float:left;
+}
+.casket .raise .message .group .state{
+    width:36%;
+    height:40px;
+    float:left;
+    cursor:default;
+}
+.casket .raise .message .group .state .passed{
+    height:40px;
+    line-height: 40px;
+    background-image: url(../images/pass.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 14px;
+    color:#666666;
+    padding-left:24px;
+    float:left;
+}
+.casket .raise .message .group .state .adopted.active , .casket .raise .message .group .state .refer.active{
+    background-image: url(../images/piv.png);
+}
+.casket .raise .message .group .state .line{
+    width:1px;
+    height:14px;
+   margin:13px 25px 13px 30px;
+    background-color: #DDDDDD;
+    float:left;
+}
+.casket .raise .message .double{
+    width:100%;
+    height:24px;
+    margin:36px 0 12px 0;
+}
+.casket .raise .message .double .press-btn{
+    width:80px;
+    height:24px;
+    line-height: 24px;
+    border:0;
+    border-radius: 5px;
+    background-color: #7DB3FF;
+    color:#ffffff;
+    margin-right: 30px;
+    font-size: 12px;
+    float:left;
+}
+.casket .raise .message .double .page{
+    width:auto;
+    height:18px;
+    padding:3px 0;
+    float:right;
+}
+.casket .raise .message .double .page .sum{
+    width:auto;
+    padding:0 6px;
+    height:18px;
+    line-height: 20px;
+    display:block;
+    font-size: 14px;
+    color:#666666;
+    float:left;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 10px;
+}
+.casket .raise .message .double .page .sum.active{
+    background-color: #569DFF;
+    color:#ffffff;
+}

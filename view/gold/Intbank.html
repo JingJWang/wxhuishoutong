@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>添加银行卡</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet/less" href="../../static/gold/css/Intbank.less">
+		<script src="../../static/gold/js/rem.js"></script>
+		<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+		<script src="../../static/gold/js/less.min.js"></script>
+		<script src="../../static/gold/js/Intbank.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="javascript:;" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>返回</p>
+			</a>
+			<h1>添加银行卡</h1>
+		</header>
+		<div class="Bank">
+			<span>
+				<p>银行卡账号</p>
+				<input type="text" placeholder="输入要绑定的银行卡账号">
+			</span>
+			<span>
+				<p>开户人姓名</p>
+				<input type="text" placeholder="输入开户人姓名">
+			</span>
+			<span>
+				<p>预留电话</p>
+				<input type="text" placeholder="输入银行预留电话">
+			</span>
+			<button class="bindBank">绑定</button>
+		</div>
+		<!--绑定验证弹框-->
+		<div class="bind_box" style="display: none;">
+			<div class="bind">
+				<h1>充值1000元</h1>
+				<p>输入的手机尾号0980将会收到验证码</p>
+				<span>
+					<input type="text" class="verificatCode" maxlength="6"/>
+					<p class="meterSecond">55秒后重发</p>
+				</span>
+				<div class="bindBtn">
+					<button class="cancelBind">取消</button>
+					<button class="confirmBind">确认</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

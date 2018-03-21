@@ -1,0 +1,140 @@
+/*=== luxuryCon ===*/
+#luxuryCon{ margin: 0 0 0 200px; padding: 0 20px;}
+#luxuryCon .orderSearch{ width: 100%; height: 100px;}
+.orderSearch h3{ display: inline-block; height: 100px; line-height: 100px; color: #888; font-size: 18px;}
+.searchInput{ width: 330px; height: 48px; line-height: 48px; position: relative; margin: 25px 2% 0 2%;}
+.searchInput input{ width: 330px; text-indent: 20px; padding: 0 60px 0 0; border: 1px solid #ccc;}
+.searchInput .butn{ cursor: pointer; width: 60px; height: 50px; display: inline-block; position: absolute; right: 0px; top: 0px; background:#7db3ff url(../images/spiritPic.png) no-repeat -86px -122px;}
+/*自定义下拉菜单*/
+.downSelect { margin: 25px 0 0 0; width: 250px; position:relative;  border:1px solid #ccc; position: relative;}
+.downSelect a { text-decoration:none; color: #666; display:block; width: 250px; height: 48px; line-height: 48px; }
+.downSelect .selected { padding: 0 0 0 10px; width: 250px;  }
+.myUl { border:1px solid #ccc; border-top: none; display: none; position:absolute; top: 48px; left: -2px; z-index: 100; background: #fff; }
+.myUl li{ border-bottom: 1px solid #ccc;}
+.myUl a { padding: 0 0 0 10px; width: 250px; }
+.myUl a:hover { background: #7db3ff; color: #fff; }
+.downSelect .current a { background: #7db3ff; color: #fff;}
+.downSelect .butn{ cursor: pointer; width: 60px; height: 50px; display: inline-block; position: absolute; right: -1px; top: -1px; z-index: 10; background:#7db3ff url(../images/spiritPic.png) no-repeat -86px -73px;}
+.addOrder{ width: 150px; height: 50px; margin: 25px 0 0 2%; border: 1px solid #ccc;}
+.addOrder a{ display: block; text-align: right; color: #666; width: 134px; height: 50px; line-height: 50px; padding: 0 16px 0 0; background: url(../images/spiritPic.png) no-repeat -83px 14px;}
+/*=== luxuryBox === luxuryTitle*/
+.luxuryBox,.luxuryBoxAdd{ width: 100%;}
+.luxuryBox h3,.luxuryBoxAdd h3,.luxuryBoxRevise h3{ display: inline-block; height: 50px; color: #888; font-size: 18px;}
+.luxuryTitle{ height: 58px; border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+.luxuryTitle ul li{width:10%; float: left; height: 58px; line-height: 58px; text-align: center; color: #333; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #ebebeb;}
+.reviseInput{ display: inline-block; width: 99.9%; text-align: center; height: 48px; line-height: 48px; }
+/* .luxuryTitle ul li:nth-of-type(2),.luxuryTitle ul li:nth-of-type(3),.luxuryTitle ul li:nth-of-type(4),.luxuryTitle ul li:nth-of-type(5),.luxuryInfo ul li:nth-of-type(2),.luxuryInfo ul li:nth-of-type(3),.luxuryInfo ul li:nth-of-type(4),.luxuryInfo ul li:nth-of-type(5){ width: 10.5%;}
+.luxuryBoxAdd .luxuryTitle ul .li:nth-of-type(2),.luxuryBoxAdd .luxuryTitle ul .li:nth-of-type(3),.luxuryTitle ul .li:nth-of-type(4),.luxuryBoxAdd .luxuryInfo ul .li:nth-of-type(2),.luxuryBoxAdd .luxuryInfo ul .li:nth-of-type(3),.luxuryBoxAdd .luxuryInfo ul .li:nth-of-type(4){ width: 15.83%;}
+ */.conHeight{overflow-y: auto;}
+/*luxuryInfo*/
+.luxuryInfo{ height: auto;} 
+.luxuryInfo ul{border-left: 1px solid #ccc;}
+.luxuryInfo ul li{width:10%; float: left; height: 50px; line-height: 50px; text-align: center; color: #666; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+.luxuryInfo ul .addClassInfo{ width: 12.5%;}
+.luxuryInfo .infoEdit a{ display: block; width: 30px; height: 44px;}
+.luxuryInfo .infoEdit .revise{ background: url(../images/spiritPic.png) no-repeat -100px -38px; margin: 0 0 0 35%;}
+.luxuryInfo .infoEdit .no{  background: url(../images/spiritPic.png) no-repeat -100px -237px; margin: 0 18% 0 0;}
+/*=== deleteAlert ===*/
+.grayBg{ display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; z-index: 20;}
+.deleteAlert{ display: none; width: 558px; height: 308px; background: #fff; position: fixed; left: 50%; top: 50%; margin: -150px 0 0 -280px; z-index: 21;}
+.deleteAlert i{ display: block; width: 30px; height: 30px; background: url(../images/spiritPic.png) no-repeat 0px -248px; position: absolute; right: 5px; top: 10px; cursor: pointer;}
+.deleteAlert span{ display: block; width: 60px; height: 60px; margin: 40px auto 30px; background: url(../images/spiritPic.png) no-repeat -84px -303px;}
+.deleteAlert p{ color: #666; font-size: 20px; width: 100%; text-align: center;}
+.deleteAlert a{ display: block; font-size: 20px; color: #fff; margin: 40px auto 0; width: 200px; height: 50px; line-height: 50px; text-align: center; background: #f44242;}
+/*=== pageNumber ===*/
+.pageNumber{ width:400px; margin: 20px auto 0;}
+.pageNumber .pagination li{ background: #fff; float: left; height: 30px; margin: 0 20px 0 0;} 
+.pageNumber .pagination li a{display: block; font-size: 14px; color: #7db3ff; height: 30px; background: #fff;} 
+/*自定义下拉菜单*/
+.downSelectAdd,.downSelectRevise{ position:relative; width: 100%;}
+.downSelectAdd a,.downSelectRevise a{ text-decoration:none; color: #666; display:block; width: 100%; height: 50px;}
+.downSelectAdd .selectedAdd,.downSelectRevise .selectedRevise{ background: url(../images/downlist.png) no-repeat 97% center;text-align:center }
+.myUlAdd,.myUlRevise { width: 100%; border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc; border-top: none; display: none; position:absolute; top: 50px; left: 0px; background: #fff; }
+.luxuryBoxAdd .luxuryInfo .myUlAdd li,.luxuryBoxRevise .luxuryInfo .myUlRevise li{!important float: none; border-bottom: 1px solid #ccc; width: 100%; height: 50px; border-right: none;}
+.myUlAdd a,.myUlRevise a { width: 100%; height: 50px; }
+.myUlAdd a:hover,.myUlRevise a:hover { background: #7db3ff; color: #fff; }
+.downSelectAdd .current a,.downSelectRevise .current a { background: #7db3ff; color: #fff;}
+/*======================================  订单修改  =========================================*/
+.reviseTitle .btns a{ display: block; width: 80px; height: 30px; line-height: 30px; text-align: center; color: #fff; margin: 0 0 0 30px; border-radius: 3px;}
+.reviseTitle .btns .save{ background: #7db3ff;}
+.reviseTitle .btns .noSave{ background: #f44242;}
+/*orderTime*/
+.orderTime{ margin: 50px  0 0 0;}
+.ordertimeTitle,.ordertimeInfo { width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+.ordertimeInfo { border-top: none;}
+.ordertimeTitle ul li,.ordertimeInfo ul li{ float: left; width: 25%; text-align: center; height: 58px; line-height: 58px; color: #333; background: #ebebeb; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+.ordertimeInfo ul li{ background: #fff;}
+.luxuryBoxRevise .luxuryTitle ul li{ width: 20%;}
+.luxuryBoxRevise .luxuryInfo ul li{ width: 20%;}
+.jBtn{margin-top:25px;margin-left:20px;width:100px;display:none;height: 49px;background: #7db3ff;float: left;text-align: center;line-height: 49px;color: #ffffff;}
+.luxuryBoxRevise{position: absolute; width: 80%; top: 0; left: 0; padding-top: 50px; margin-left: 210px; background: #ffffff; z-index: 111; margin-top: 70px; padding-left: 20px; padding-bottom: 30px;}
+.addClassH3{padding-top: 5px;}
+.reviseTitle{padding-bottom: 20px;}
+/*批量结算*/
+.shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: #EBECEC;
+    opacity: 0.6;
+    display: none;
+}
+.shadowDiv{
+	display: none;
+	width: 400px;
+	height:200px;
+	background: #ffffff;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-left:-200px;
+	margin-top:-100px;
+	border-radius:10px;
+	z-index: 999;
+}
+.clbtn{
+    width: 28px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #ffffff;
+    border: 0px;
+    outline: none;
+    font-size: 36px;
+    color: #DBDBDB;
+    float: right;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.shadowP{
+	width:100%;
+	line-height: 30px;
+	font-size:18px;
+	text-align: center;
+	padding-top:60px;
+}
+.btnuj{
+	padding: 30px 40px 0 40px;
+}
+.btnuj .shadowa{
+	display: block;
+	width: 140px;
+	height: 38px;
+	border-radius: 6px;
+	float: left;
+	text-align: center;
+	line-height:35px;
+	background:#93C0FF;
+	color:#ffffff;
+	border: solid 1px #ffffff;
+}
+.shadowa:hover{
+}
+.shadowSure{
+	margin-right:40px;
+}
+/*下拉菜单滚动滚动*/
+.downScroll{ height: 310px; overflow-y: auto;}
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+	#luxuryCon { margin: 0 0 0 150px;}
+}

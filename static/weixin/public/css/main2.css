@@ -1,0 +1,57 @@
+body{
+	margin:0;
+	padding:0;
+    background:#ff2e4b;
+}
+span,strong{
+	margin:0;
+	padding:0;
+	}
+img{
+	border:none; 
+	vertical-align:top;
+	}
+.parent{
+	width:100%;
+	}
+.parent .red-bags{
+	width:100%;
+	position:absolute;
+	z-index:-1;
+	left:0;
+	top:0;
+	}
+.onsent{
+	width:58%;
+	position:absolute;
+	top:38%;
+	left:21%;
+	}
+.onsent img{
+	display:block;
+	width:100%;
+	}
+.footer-me{
+	width:98%;
+	padding:0 1%;
+	position:absolute;
+	left:0;
+	top:82%;
+	height:74px;
+	}
+.footer-me img{
+	display:inline-block;
+	width:16%;
+	height:56px;
+	}
+.footer-me span{
+	display:inline-block;
+	width:80%;
+	margin-top:12px;
+	font-size:1rem;
+	color:#fff;
+	}
+.footer-me strong{
+	font-size:1.3125rem;
+	color:#FF0;
+	}

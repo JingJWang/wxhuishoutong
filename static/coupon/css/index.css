@@ -1,0 +1,238 @@
+body{
+    width:100%;
+    height:100%;
+    background-image:url(../images/oldUserbg.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color:#F4B12C;
+}
+/*增值劵0*/
+.hint{
+	margin-left: 0.95rem;
+	width: 14.1rem;
+	height: 4.5rem;
+    background: url(../images/zzq1.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 22.6rem;
+}
+.hint .hint_p{
+	width: 100%;
+	line-height: 15px;
+	font-size: 15px;
+	color: #fbd034;
+	text-align: center;
+}
+.hint_p:first-of-type{
+	padding: 22px 0 10px 0;
+}
+.hint .hint_p .sum{
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0 3px;
+	line-height: 22px;
+}
+.zzqDiv{
+	width: 100%;
+	float: left;
+}
+.zzq{
+	margin-left: 1.69rem;
+	width: 12.595rem;
+	height: 5.15rem;
+	background: url(../images/zzqbg.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+.zzq:last-of-type{
+	background: url(../images/zzqbg_last.png) no-repeat;
+	background-size: 100% 100%;
+	box-shadow:  0 1px 5px #888888;
+}
+.zzq .zzqP{
+	line-height: 16px;
+	font-size: 16px;
+	color: #fe2d15;
+	margin: 1.9rem 0 0 1.1rem;
+	float: left;
+}
+.zzq .zzqP b{
+	font-size: 24px;
+	margin: 0 2px;
+}
+.zzq .zzqp_p{
+	line-height: 14px;
+	font-size: 14px;
+	color: #fe2d15;
+	float: left;
+	margin: 2.1rem 0 0 0.5rem;
+}
+.zzq .zzq_p{
+	line-height: 35px;
+	width: 100%;
+	text-indent: 1.25rem;
+	float: left;
+	color: #9d3522;
+}
+.term{
+	width: 80%;
+	margin-left: 10%;
+	line-height: 65px;
+	color: #60100c;
+	float: left;
+}
+.submit{
+    display:block;
+	float: left;
+	width: 70%;
+	margin: 0 15% 20px 15%;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    font-size:14px;
+    color: #ffffff;
+    background: url(../images/newBtn.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.account{
+	float: left;
+    width:100%;
+    height:14px;
+    text-align:center;
+    font-size:13px;
+    color:#7B3E0D;
+}
+.account .switch{
+    height:14px;
+    line-height: 14px;
+    color:#fe3905;
+    padding-left:3px;
+    display:inline-block;
+}
+.account .switch span{
+    background-image:url(../images/arrow.png);
+    background-size:12px 8px;
+    background-repeat: no-repeat;
+    background-position:right center;
+    padding-right:14px;
+    color:#fe3905;
+}
+.total{
+    width:100%;
+    height:28px;
+    line-height: 38px;
+    text-align: center;
+    font-size:14px;
+    color:#7B3E0D;
+    margin-bottom:13px;
+}
+
+.voucherList{
+    padding:0px 25px;
+    height:auto;
+    position:relative;
+}
+.voucherList .left{
+    width:38%;
+    height:100px;
+    float:left;
+}
+.voucherList .right{
+    width:62%;
+    height:100px;
+    float:left;
+}
+.voucherList .item{
+    width:100%;
+    height:100px;
+    background-image:url(../images/cir1.png);
+    background-size:100% 100px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    margin-bottom:20px;
+    display:block;
+}
+.voucherList .item.active{
+    background-image:url(../images/cir2.png);
+}
+.voucherList .item .icon{
+    width:64px;
+    height:100px;
+    background-image: url(../images/logo1.png);
+    background-size:64px 64px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    float:left;
+    margin-left:15%;
+}
+.voucherList .item .reveal{
+    width:100%;
+    height:100px;
+    color:#FE4200;
+}
+.voucherList .item.active .reveal{
+    color:#D96C02;
+}
+.voucherList .item .reveal .indicate{
+    width:100%;
+    height:24px;
+    padding:23px 0px 14px 0px;
+}
+.voucherList .item .reveal .indicate .price{
+    height:24px;
+    line-height: 24px;
+    font-size:26px;
+    float:left;
+    margin-right:14px;
+}
+.voucherList .item .reveal .indicate .act{
+    height:24px;
+    line-height: 34px;
+    font-size:16px;
+    float:left;
+}
+.voucherList .item .reveal .cue{
+    width:100%;
+    height:12px;
+    line-height: 12px;
+    font-size:13px;
+}
+.title{
+	width: 84%;
+	margin:25px 8% 20px 8%;
+    height:18px;
+    background-image: url(../images/line.png);
+    background-size:100% 1px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    position:relative;
+    float: left;
+}
+.title .motif{
+    width:100%;
+    height:18px;
+    line-height: 18px;
+    text-align:center;
+    font-size:16px;
+    color:#7B3E0D;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.depict{
+    width: 80%;
+    padding: 0 10%;
+    line-height:24px;
+    font-size:14px;
+    color:#7B3E0D;
+    padding-bottom:5px;
+    float: left;
+    background: #ffd001;
+}
+.copyright{
+    width:100%;
+    color:#7B3E0D;
+    text-align:center;
+    padding:45px 0px 30px 0px;
+    float: left;
+    background: #ffd001;
+}

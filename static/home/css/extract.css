@@ -1,0 +1,20 @@
+html,body{width:100%; height:100%; background:  #efeff4;}
+.Tiheader{width:100%;text-align: center; height: 0.5rem;
+	padding: 10px 0 25px;
+	font-size:16px;
+	color: #fff;
+	background: #58ab22;
+}
+.headCenter{width:92%; margin:0 auto; }
+.headCenter img{width:9px; height:16px; }
+
+.tixianTxt{width:auto; height:40px; line-height: 40px; padding-left:12%; font-size: 14px; background:#fff391 url("../images/tixian.png") no-repeat 4% center; color:#f75b06; background-size:20px 18px; }
+.celTxt{width:auto; height:40px; line-height: 40px; padding-left:10%; font-size: 14px; color: #333; background: url("../images/tishi.png") no-repeat 4% center; }
+.efe{background: #efeff4; height:20px; }
+
+.phoneNum,.code{ height:60px; line-height: 60px; padding-left:4%;font-size: 16px; border-bottom: 1px solid #ccc; background: #fff;}
+.phoneNum input,.code input{font-size: 14px; padding-left:10px; width:40%;}
+.phoneNum span,.code span{display: inline-block; width:22%;}
+.newbtn{display: inline-block; width:30% !important; height:26px; line-height: 26px; background: #fff; border: 1px solid  #58ab22; border-radius:15px; color:#58ab22;  font-size: 14px; padding-left: 0 !important; }
+.btn{width: 100%; text-align: center; margin-top:20px;}
+.btn button{width: 90%;  height:40px; background:#58ab22; border-radius: 4px; color:#fff; font-size: 16px; }

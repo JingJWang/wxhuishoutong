@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>排行榜</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/welfare/css/ranking.css" />
+		<script src="../../static/welfare/js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="javascript:;" class="head_a" onClick="javascript :history.back(-1);">
+				<b class="left"></b>
+				<p>返回</p>
+			</a>
+			<h1>排行榜</h1>
+			<a href="javascript:;" class="head_help" onclick="myHover()">
+				<p>奖励规则</p>
+			</a>
+		</header>
+		<div class="myRanking">
+			<h1 class="ranking_h1">我的排名</h1>
+			<div class="rankingCont">
+				<img />
+				<div class="rankingContDiv">
+					<p>大叔乐一呵</p>
+					<p>上周收益  ¥232.2</p>
+					<p>未上榜 (上榜人数20人)</p>
+				</div>
+			</div>
+		</div>
+		<div class="userRanking">
+			<h1 class="ranking_h1">用户排行榜</h1>
+			<!--第一名-->
+			<div class="userRank">
+				<span class="userRank_span one_s"></span>
+				<img  />
+				<div>
+					<p class="Rank_userName">堇色安年</p>
+					<p class="Rank_userMoney">上周收益  ¥2322.00</p>
+				</div>
+				<a href="javascript:;" class="userRank_a one_a">获得奖励300元</a>
+			</div>
+			<!--第二名-->
+			<div class="userRank">
+				<span class="userRank_span two_s"></span>
+				<img  />
+				<div>
+					<p class="Rank_userName">放学爱好者</p>
+					<p class="Rank_userMoney">上周收益  ¥322.00</p>
+				</div>
+				<a href="javascript:;" class="userRank_a two_a">获得奖励200元</a>
+			</div>
+			<!--第三名-->
+			<div class="userRank">
+				<span class="userRank_span three_s"></span>
+				<img  />
+				<div>
+					<p class="Rank_userName">雨绵绵</p>
+					<p class="Rank_userMoney">上周收益  ¥200.00</p>
+				</div>
+				<a href="javascript:;" class="userRank_a three_a">获得奖励100元</a>
+			</div>
+		<!--第四名-->
+			<div class="userRank">
+				<span class="userRank_span_other">4</span>
+				<img  />
+				<div>
+					<p class="Rank_userName">堇色安年</p>
+					<p class="Rank_userMoney">上周收益  ¥88.00</p>
+				</div>
+			</div>
+		<!--第五名-->
+			<div class="userRank">
+				<span class="userRank_span_other">5</span>
+				<img  />
+				<div>
+					<p class="Rank_userName">堇色安年</p>
+					<p class="Rank_userMoney">上周收益  ¥13.00</p>
+				</div>
+			</div>
+		</div>
+		<!--奖励规则-->
+		<div class="rule_box" style="display: none;">
+			<div class="rule">
+				<h1>奖励规则</h1>
+				<p>排行榜为周一更新，以周收益排名排行榜仅显示前20名</p>
+				<p>每周一系统自动发放前三名奖励</p>
+				<p>奖励：</p>
+				<p class="jinE">第一名：300元</p>
+				<p class="jinE">第二名：200元</p>
+				<p class="jinE">第三名：100元</p>
+				<span class="iNow">我知道了</span>
+			</div>	
+		</div>
+	</body>
+	<script>
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		};
+		function myHover(){
+			$('.rule_box').css('display','block');
+			var ruleH = $(window).height();
+			$('.rule_box').height(ruleH);
+			$('.iNow').click(function(){
+				$('.rule_box').css('display','none');
+			});
+		};
+	</script>
+</html>

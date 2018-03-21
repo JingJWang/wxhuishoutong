@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>回收通-通花商城</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/goldshop.css" />
+	</head>
+	<body>
+		<div class="shopImg">
+			<img src="../../static/gold/img/paySpotgoods.png">
+		</div>
+	    <div class="buy">
+	    	<div class="goods">
+	    		<h1 class="goods_h1">24K黄金</h1>
+	    		<span class="buyGoods_span">
+	    			<p>下单提示</p>
+	    			<p>¥283.23/克</p>
+	    		</span>
+	    	</div>
+	    	<div class="buyManner">
+	    		<div class="manner">
+	    			<p class="buyManner_p">购买形式</p>
+	    			<ul class="mannerStyle">
+	    				<li class="button_hover">添加到库存</li>
+	    				<li>我要现货</li>
+	    			</ul>
+	    			<div class="mannerCont">
+	    				<span>添加到库存刻在我的贵金属中查看或交易</span>
+	    				<span>您需要自付邮费</span>
+	    			</div>
+	    		</div>
+	    		<div class="buyNumber">
+	    			<p class="buyNumber_p">购买数量</p>
+	    			<span class="buyNumber_span">
+	    				<s class="subtract">-</s>
+						<input type="text" class="num" value="1">
+						<s class="add">+</s>
+	    			</span>
+	    			<p class="asNum_p">0.001kg</p>	
+	    		</div>
+	    		<div class="advBuy fl">
+	    			<span>合计： ¥3000.00</span>
+	    			<a href="../../view/gold/paySpotgoods.html">立刻购买</a>
+	    		</div>
+	    	</div>
+	    </div>
+	    <a href="../../view/shop/list.html" class="commercial">
+	        <div class="jump">
+	            <div class="arrowhead"></div>
+	            <div class="point">去通花商城查看其他优惠商品</div>
+	        </div>
+	    </a>
+    	<div class="shopNews">
+    		<h1 class="shopNew">
+    			<span class="shopNew_span">黄金</span>
+    			<span class="shopNew_span">24K</span>
+    		</h1>
+    		<div class="shopPrice">
+    			<p class="shopPrice_p">当前价格：</p>
+    			<span class="price">283.23</span>
+    		</div>
+    		<div class="zhangfu">
+    			<span class="zhangf_span">
+    				<p class="zhangf_p">今开</p>
+    				<p class="zhangf_money">283.03</p>
+    			</span>
+    			<span class="zhangf_span">
+    				<p class="zhangf_p">昨收</p>
+    				<p class="zhangf_money">283.73</p>
+    			</span>
+    			<span class="zhangf_span">
+    				<p class="zhangf_p">当日涨跌幅</p>
+    				<p class="zhangf_money">+0.12%</p>
+    			</span>
+    			<span class="zhangf_span">
+    				<p class="zhangf_p">当年涨跌幅</p>
+    				<p class="zhangf_money">+27.72%</p>
+    			</span>
+    		</div>
+    	</div>
+    	<div class="nullDiv"></div>
+    	<footer>
+    		<a href="javascript:;">立刻购买</a>
+    	</footer>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/shop/ajax/request_metal.js"></script>
+	<script>
+		$(document).ready(function(){
+			alert('当前模块正在调试,期间发生的订单均不作为正式交易数据');
+		});
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		}
+	</script>
+</html>

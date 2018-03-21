@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/repair/css/repairForm.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../../../index.php/nonstandard/center/ViewCenter" class="FirstA">
+				<p class="back">返回</p>
+			</a>
+			<h1>订单详情</h1>
+		</header>
+		<div class="indent">
+			<a class="indent_hover" onclick='selectList(this,5);'>全部订单</a>
+			<a onclick='selectList(this,1);'>已下单</a>
+			<a onclick='selectList(this,2);'>已发货</a>
+			<a onclick='selectList(this,3);'>维修中</a>
+			<a onclick='selectList(this,4);'>已完成</a>
+		</div>
+		<div class="AllList">
+			<div class="accomplishList">
+			 	<!--<div class="list">
+					<div class="list_top">
+						<span class="list_logo">手机维修</span>
+						<span class="detilsp">已下单</span>
+					</div>
+					<div class="list_left">
+						<p class="left_name"></p>
+						<p class="left_time"></p>
+					</div>
+					<a href="" class="btnright">订单详情</a>
+				</div>-->
+		    </div>
+		</div>
+		
+	<script src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script src="../../static/home/js/ajax_common.js"></script>
+	<script src="../../static/repair/ajax/request_repair.js"></script>
+	<script type="text/javascript">
+    	window.onload=window.onresize=function(){
+    		document.documentElement.style.fontSize=window.innerWidth/16+'px';
+    	}
+    	selectList(this,5);
+	</script>
+	</body>
+</html>

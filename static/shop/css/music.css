@@ -1,0 +1,140 @@
+body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.musicBox{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	overflow: hidden;
+}
+.music{
+	position: fixed;
+	top: 50%;
+	width: 80%;
+	margin-top: -150px;
+	margin-left: 10%;
+	border-radius: 8px;
+	background: #fff;
+	padding: 20px 0;
+}
+.fontp{
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #363837;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+.numP{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+}
+.num{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	float: left;
+	margin-bottom: 10px;
+}
+.inp{
+	width: 180px;
+	height: 38px;
+	background: url(../../gold/img/asNum.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-left: 15px;
+	position: relative;
+}
+.numsize{
+	width: 38px;
+	height: 38px;
+	opacity: 0.2;
+	display: block;
+}
+.low{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.add{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.number{
+	width: 100%;
+	padding-top: 10px;
+	border: none;
+	outline: none;
+	background: none;
+	text-align: center;
+	font-size: 15px;
+	color: #363837;
+}
+.endNum{
+	float: right;
+	display: block;
+	padding-left: 15px;
+	line-height: 38px;
+	font-size: 15px;
+	color: orangered;
+}
+.btnBox{
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.btn{
+	display: block;
+	width: 40%;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 7px;
+	text-align: center;
+	font-size: 16px;
+}
+.sure:hover{color: #fff;}
+.sure:active{color: #fff;}
+.sure:link{color: #fff;}
+.sure:visited{color: #fff;}
+.sure{
+	float: left;
+	background: #f75e25;
+	color: #fff;
+}
+.cancel{
+	float: right;
+	background: #fff;
+	border: solid 1px #f75e25;
+	color: #f75e25;
+}
+.cancel:hover{color: #f75e25;}
+.cancel:active{color: #f75e25;}
+.cancel:link{color: #f75e25;}
+.cancel:visited{color: #f75e25;}
+.allM{
+	float: right;
+	padding-right: 30px;
+}
+.allM p{
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+.allM p:nth-child(1,3){
+	font-size: 16px;
+	color: #222222;
+}
+.allM p:nth-child(2){
+	font-size: 17px;
+	color: #f75e25;
+}

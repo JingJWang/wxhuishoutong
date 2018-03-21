@@ -1,0 +1,42 @@
+/*=== green ===*/
+body{ padding: 0 0 50px 0;}
+.green{ width: 100%; background: #67b535; position: fixed; left: 0px; top: 0px;}
+.green .back{ width: 100%; height: 40px; position: relative;}
+.green .back a{ display: block; width: 50px; height: 40px; line-height: 40px; padding: 0 0 0 33px; background: url(../images/arrBack.png) no-repeat 15px center; background-size: 9px 17px;
+ font-size: 15px; color: #fff; position: absolute; left: 0px; top: 50%; margin: -20px 0 0 0;} 
+ .green .back input{display: block; text-align: right; width: 70px; height: 40px; line-height: 40px;
+ font-size: 15px; position: absolute; right: 0px; padding: 0 15px 0 0; top: 50%; margin: -20px 0 0 0; border: none; background: #67b535; color: #fff;}
+.green .back p{ width: 100%; height: 40px; line-height: 40px; font-size: 16px; color: #fff; text-align: center;}
+/*=== adv ===*/
+.adv{ position: fixed; top: 80px; left: 0px;}
+.adv a{ display: block; width: 100%; height: 50px;}
+.adv .closeBtn{ position: absolute; right:0px; top: 0px; width: 21px; height: 21px; background: url(../images/closeBtn.png) no-repeat; background-size: 21px 21px;}
+/*=== nav ===*/
+.goodsNav{ width: 100%; height: 40px; background: #fff; position: fixed; top: 40px; left: 0px; box-shadow: 0px 1px 10px #e5e5e5; }
+.goodsNav a{ float: left; display: block; font-size: 15px; width: 50%; height: 38px; line-height: 38px; text-align: center;}
+.goodsNav .current{ color: #67b535; border-bottom: 2px solid #67b535;}
+.goodsNav span{ display: block; width: 1px; height: 30px; position: absolute; left: 50%; top: 5px; background: #f1f1f1;}
+/*=== goodsCon ===*/
+.goodsCon{ margin: 140px 0 0 0;}
+.lineTop{ height: auto; padding: 10px 15px 0;}
+.phoneName{ height: 20px; line-height: 20px; font-size: 15px; background: url(../images/phonePics.png) no-repeat left center; background-size: 13px 20px; padding: 0 0 0 24px;}
+.state{ display: block; color: #f85e25; font-size: 15px; }
+.butns{ margin: 15px 0 0 0; padding: 0 15px;}
+.butns a{ display: inline-block; width: 73px; height: 25px; line-height: 25px; text-align: center; border: 1px solid #ddd; font-size: 13px; border-radius: 4px; float: right; margin: 0 0 0 15px;}
+.timer{ width: 100%; margin: 12px 0 0 0; padding: 8px 0 0 0; border-top: 1px solid #ddd;}
+.timer p{ font-size: 12px; color: #888; text-align: right; padding: 0 15px 0 0;}
+.timer .phone{ padding: 0 15px 0 0;}
+/*=== waitSub ===*/ 
+.waitSub{ padding: 10px 0px; background: #fff; margin: 0px 0 10px 0;}
+.bidPrice{ padding: 0px 0px 8px; background: #fff; margin: 0px 0 10px 0;}
+/*=== bidPrice ===*/
+.lineBot{ margin: 18px 0 0 0; padding: 0 0 0 15px;}
+.lineBot p{ height: 27px; line-height: 27px; font-size: 15px;}
+.lineBot p span{ color: #f85e26;}
+.lineBot .butns{ margin-top: 0;}
+.times{ padding: 0 15px; margin-top:10px;}
+.times p{ height: 30px; line-height: 30px; color: #888;}
+/*=== recycler ===*/
+.recycler{ padding: 0 0 0 15px;}
+.recycler .name{ text-align: left; background: url(../images/huishoushang.png) no-repeat left center; background-size: 16px 16px; padding: 0 0 0 19px; margin: 0 5px 0 0;}
+.recycler p{ padding: 0;}

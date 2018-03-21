@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>贵金属交易</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet" href="../../static/gold/css/TRmetalDeal.css" />		
+	</head>
+	<body>
+		<header>
+			<a href="javascript:;" onClick="javascript :history.back(-1);" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>返回</p>
+			</a>
+			<h1>贵金属交易</h1>
+		</header>
+		<div class="metalDeal">
+			<ul id="dealtype"></ul>
+			<!--买入-->
+			<div class="buySale">
+				<div class="buy">
+					<span class="buy_money">
+						<!-- <p class="nowMoney">账户余额：¥<span>323232</span></p>
+						<p class="nowPrice">参考价格：¥<span>283.73</span>/克</p> -->
+					</span>
+					<div class="buy_qk">
+						<div class="buyInputAll">
+							<form id="orderinfo">
+							<div class="asNum">
+								<div>
+								<span class="subtract" onclick="metalStyle.reckonPrice(-1)"></span>
+								<input type="text" maxlength="9" name="weight" class="num" value="0" onfocus="this.value=''" onchange="metalStyle.checkPrice(this);" id="weight" onKeyPress="if((event.keyCode<48 || event.keyCode>57) && event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false">
+								<span class="add" onclick="metalStyle.reckonPrice(1);"></span>
+								</div>
+								<input type="hidden" name="id" id="id" value="">
+								<input type="hidden" name="type" value="1">
+								<p class="asNum_p"></p>
+							</div>
+							</form>
+							<p class="buy_qk_p">交易重量起点为1.00克，最小递增单位为1克</p>
+						</div>
+						<p class="buy_lastP">
+							
+						</p>
+					</div>
+					<a href="javascript:;" class="pBtn buyPaymentBtn" onclick="metalShop.submitOrder();">提交</a>
+				</div>	
+			</div>
+		</div>
+		<!--库存卖出提示-->
+		<div class="kucunDiv" style="display: none;">
+			<div class="kuCunCenter">
+				<div class="kcDiv">
+					<p>卖出黄金</p><span class="kuCNum">78878</span><p>，您将获得</p><span class="kuPrice">6876</span><p>元 。</p>
+					<p>是否卖出?</p>
+				</div>
+				<div class="kcBtn">
+					<a href="javascript:;" class="kcBtnSure" onclick="metalOrdre.metalSellout();">确认</a>
+					<a href="javascript:;" class="kcBtnCanle" onclick="metalStyle.kucunCancel();">取消</a>
+				</div>
+			</div>
+		</div>
+		<!--弹出的支付方式-->
+		<div class="aboutPayment" style="display: none;">
+			<div class="Payment_box">
+				<h1>选择支付方式<span class="paymentClose"></span></h1>
+				<ul>
+					<li id="IdaboutPayYe" class="aboutPayYe">
+						<img src="../../static/gold/img/recharge (4).png">
+						<p>余额支付</p>
+						<p>账户余额：¥32322.00</p>
+						<span class="aboutPaymentSpan"></span>
+					</li>
+					<li>
+						<img src="../../static/gold/img/recharge (1).png">
+						<p>微信支付</p>
+						<span></span>
+					</li>
+					<li>
+						<img src="../../static/gold/img/recharge (2).png">
+						<p>支付宝支付</p>
+						<span></span>
+					</li>
+					<li>
+						<img src="../../static/gold/img/recharge (3).png">
+						<p>网银支付</p>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--弹出的支付方式   输入支付密码-->
+		<div class="payPassword_box passwordSet" style="display: none;">
+			<div class="payPassword">
+				<h1 class="payPassword_h1">输入6位支付密码</h1>
+				<p class="payPassword_h1">当前账户余额：¥3200.00</p>
+				<input type="password" class="payPwd" maxlength="6">
+				<a class="forgetA" href="javascript:;">忘记支付密码？</a>
+				<div class="payBtn">
+					<button class="cancelPay">取消</button>
+					<button class="confirmPay">确认</button>
+				</div>
+			</div>
+		</div>
+		<!--设置支付密码-->
+		<div class="payPassword_box passwordNotSet" style="display: none;">
+			<!--设置支付密码--验证码-->
+			<div class="Set">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<span class="setPhone">已绑定手机号：<s>15201055373</s></span>
+				<span class="setNumber">
+					<input type="text" placeholder="输入手机验证码">
+					<p>获取验证码</p>
+				</span>
+				<a href="#" class="payNext">下一步</a>
+			</div>
+			<!--设置支付密码--设密码-->
+			<div class="Set" style="display: none;">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<p class="sixPassword">请输入6位数密码</p>
+				<input type="password" class="payPassWd">
+				<a href="#" class="payNext">下一步</a>
+			</div>
+			<!--设置支付密码--再次输入密码-->
+			<div class="Set" style="display: none;">
+				<h1 class="payPassword_h1 close">设置支付密码</h1>
+				<p class="sixPassword">请您再次输入支付密码</p>
+				<input type="password" class="payPassWd">
+				<a href="#" class="payNext">完成</a>
+			</div>
+		</div>		
+		<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+		<script type="text/javascript" src="../../static/gold/js/rem.js?v=2017042001"></script>
+		<script type="text/javascript" src="../../static/shop/ajax/request_metal.js"></script>		
+		<script type="text/javascript">
+			var id=getUrlParam('id');
+			$("#id").val(id);
+			$('#dealtype').html('<li class="myHover" onclick="metalStyle.choisDeal(this,'+id+',1);">买入</li>'+
+								'<li onclick="metalStyle.choisDeal(this,'+id+',-1);">卖出</li>');
+			metalOrdre.dealinfo(id,'1');
+		</script>
+	</body>
+</html>

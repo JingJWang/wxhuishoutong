@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title></title>	
+		<!-- Bootstrap -->
+		<link href="../../static/c/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/userMag.css"/>
+		<script src="../../static/c/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>		
+		<script type="text/javascript" src="../../static/c/js/laydate.js"></script>	
+		<script type="text/javascript" src="../../static/c/js/userMag.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+		<script type="text/javascript" src="../../static/c/ajax/request_admin.js"></script>
+	</head>
+	<body>
+		<!-- con start -->	
+		<div class="navRuler">
+			<!-- grayBg start -->
+			<div class="grayBg"></div>
+			<div class="deleteAlert">
+				<i onclick="getOutDelete()"></i>
+				<h3>删除用户</h3>
+				<p>确定要删除该用户并清空其在此平台的所有记录吗？</p>
+				<div class="btns">
+					<input type="button" name="" id="" value="确认删除" class="isadd" onclick="getOutDelete()"/>
+					<input type="button" name="" id="" value="取消" class="noadd" onclick="getDelete()" />
+				</div>
+			</div>
+			<div class="addAlert">
+				<i onclick="getOutAdd()"></i>
+				<h3>添加用户</h3>
+				<div class="addcon">
+					<div class="role">
+						<div class="clearfix">
+							<span class="formTitle fl">用户角色</span>
+							<div class="roleSelect fr">
+								<span class="downArr"></span>
+								<a href="javascript:;" class="roleselected">请选择角色</a>
+								<ul class="roleUl">
+									<li><a href="javascript:;" num='1'>系统管理员</a></li>
+									<li><a href="javascript:;" num='2'>业务人员</a></li>
+									<li><a href="javascript:;" num='3'>普通用户</a></li>
+									<li><a href="javascript:;" num='4'>财务管理人员</a></li>
+									<li><a href="javascript:;" num='5'>其他人员</a></li>
+								</ul>
+							</div>
+						</div>
+						<p id="roleTip"></p>
+					</div>
+					<form action="" method="post">
+						<ul>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">用户名</span>
+									<input type="text" value="" class="formInput noInput fr" placeholder="请输入手机号码" onblur="checkPhone()"/>
+								</div>
+								<p id="noInput"></p>
+							</li>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">姓名</span>
+									<input type="text" value="" class="formInput nameInput fr" placeholder="请输入用户真实姓名" onblur="checkName(this)"/>
+								</div>
+								<p id="nameP"></p>
+							</li>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">邮箱</span>
+									<input type="text" value="" class="formInput fr emailInput" placeholder="请输入常用邮箱" onblur="checkEmail()"/>
+								</div>
+								<p id="emailTip"></p>
+							</li>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">密码</span>
+									<input type="password" value="" class="formInput pwInput fr" placeholder="请输入6位以上的密码" onblur="checkpassword()"/>
+								</div>
+								<p id="passwordTip"></p>
+							</li>
+							<li>
+								<input type="button" name="" id="" value="立即添加" class="isadd" onclick="joinAdmin()"/>
+								<input type="button" name="" id="" value="放弃添加" class="noadd" onclick="getOutAdd()" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="reviseAlert">
+				<i onclick="getOutRevise()"></i>
+				<h3>修改用户信息</h3>
+				<div class="revisecon">
+					<div class="role">
+						<div class="clearfix">
+							<span class="formTitle fl">用户角色</span>
+							<div class="roleSelect fr">
+								<span class="downArr"></span>
+								<a href="javascript:;" class="roleselected">系统管理员</a>
+								<ul class="roleUl">
+									<li><a href="javascript:;" num='1'>系统管理员</a></li>
+									<li><a href="javascript:;" num='2'>业务人员</a></li>
+									<li><a href="javascript:;" num='3'>普通用户</a></li>
+									<li><a href="javascript:;" num='4'>财务管理人员</a></li>
+									<li><a href="javascript:;" num='5'>其他人员</a></li>
+								</ul>
+							</div>
+						</div>
+						<p id="roleTipR"></p>
+					</div>
+					<form action="" method="post">
+						<ul>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">姓名</span>
+									<input type="text" value="" class="formInput nameInput fr" placeholder="请输入用户真实姓名" onblur="checkNameR(this)"/>
+								</div>
+								<p id="namePR"></p>
+							</li>
+							<li class="">
+								<div class="clearfix">
+									<span class="formTitle fl">密码</span>
+									<input type="password" value="" class="formInput pwInput fr" placeholder="密码为空表示不修改,，请输入6位以上的密码" onblur=""/>
+								</div>
+								<p id="passwordTipR"></p>
+							</li>
+							<li id='buttons'>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<!-- grayBg end -->
+			
+			<!-- dataCon start -->
+			<div class="userCon" id="contentBox">
+				<div class="userConTop">
+					<p class="title fl">每日数据</p>
+					<div class="search fr clearfix">
+						<div class="searchIn fl">
+							<input type="text" name="" id="smobile" value="" placeholder="输入手机号码" />
+							<i class="btn" onclick = "selectmobile()"></i>
+						</div>
+						<span class="userAdd fl" onclick="getInAdd()">添加用户</span>
+					</div>
+				</div>
+				<div class="uesrBot">
+					<div class="lineTitle">
+						<ul class="clearfix">
+							<li>用户名</li>
+							<li>姓名</li>
+							<li>手机号</li>
+							<li>邮箱</li>
+							<li>登录记录</li>
+							<li>角色</li>
+							<li>编辑</li>
+						</ul>
+					</div>
+					<div class="lineCon" id="userScroll">
+					</div>
+					<div class="pageNumber">
+						<ul class="pagination">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- dataCon start -->
+		</div>
+		<!-- con end -->
+	</body>
+</html>

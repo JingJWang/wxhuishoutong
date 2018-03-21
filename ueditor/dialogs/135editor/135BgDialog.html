@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor图片背景对话框</title>
+    <script type="text/javascript" src="/js/ueditor/dialogs/internal.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="/js/ueditor/third-party/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	
+	<div id="bg-dialog-content" style="padding:20px;">
+		
+	</div>
+
+<script>
+	$(dialog.anchorEl).find('.135bg').each(function(i){
+		var img = $(this).css('backgroundImage'); 
+		if(img.indexOf('"')> 0 || img.indexOf("'") > 0){
+			img = substr(img,5,-2);
+		}
+		else{
+			img = substr(img,4,-1);
+		}
+		
+		var repeat = $(this).css('backgroundRepeat');
+		var size = $(this).css('backgroundSize');
+		
+		var height = this.style.height;
+		
+		var html = '<div>'
+		+'<img src="'+img+'" style="max-height:100px;max-width:100px;float:right;">'
+		+'<p style="margin-bottom:5px;">背景图地址：<input class="bgimg-'+i+'" style="width:320px;padding:4px;" type="text" value="'+img+'"></p>'	
+		+'<p style="margin-bottom:5px;">背景图重复：<select class="bgimg-repeat-'+i+'"><option value="repeat">重复</option><option value="no-repeat">不重复</option><option value="repeat-x">水平重复</option><option value="repeat-y">垂直重复</option></select></p>'	
+		+'<p style="margin-bottom:5px;">背景图尺寸：<select class="bgimg-size-'+i+'"><option value="auto auto">自动</option><option value="cover">等比缩放覆盖(可能部分超出范围不显示)</option><option value="contain">拉伸缩放自适应（可能水平或垂直出现重复）</option></select></p>'	
+		+'</div><p><br></p>'
+		+'<p style="margin-bottom:5px;">背景区域高度：<input class="bgheight-'+i+'" style="width:120px;padding:4px;" type="text" value="'+height+'">&nbsp; 如： 320px</p><p>设置高度后，区域内容超出时可滑动</p>'	
+		+'<hr style="clear:both;margin:15px 0;"/>';
+		
+		$('#bg-dialog-content').append(html);
+		//initial,inherit,unset,
+		 $('.bgimg-repeat-'+i).val(repeat);
+		 $('.bgimg-size-'+i).val(size);
+	});
+(function () {	
+	dialog.onok = function () {
+		$(dialog.anchorEl).find('.135bg').each(function(i){
+			$(this).css('backgroundImage','url("'+$('.bgimg-'+i).val()+'")');
+			$(this).css('backgroundRepeat',$('.bgimg-repeat-'+i).val());
+			$(this).css('backgroundSize',$('.bgimg-size-'+i).val());
+			if( $('.bgheight-'+i).val() ){
+				$(this).css('height',$('.bgheight-'+i).val());
+				$(this).css('overflow-y','auto');
+			}
+			else{
+				$(this).css('overflow-y','initial');
+				$(this).css('height','auto');
+			}
+		});
+	}	
+})();
+	
+	
+	
+	
+function substr(str, start, len) {
+	  //  discuss at: http://phpjs.org/functions/substr/
+	  //     version: 909.322
+	  // original by: Martijn Wieringa
+	  // bugfixed by: T.Wild
+	  // improved by: Onno Marsman
+	  // improved by: Brett Zamir (http://brett-zamir.me)
+	  //  revised by: Theriault
+	  //        note: Handles rare Unicode characters if 'unicode.semantics' ini (PHP6) is set to 'on'
+	  //   example 1: substr('abcdef', 0, -1);
+	  //   returns 1: 'abcde'
+	  //   example 2: substr(2, 0, -6);
+	  //   returns 2: false
+	  //   example 3: ini_set('unicode.semantics',  'on');
+	  //   example 3: substr('a\uD801\uDC00', 0, -1);
+	  //   returns 3: 'a'
+	  //   example 4: ini_set('unicode.semantics',  'on');
+	  //   example 4: substr('a\uD801\uDC00', 0, 2);
+	  //   returns 4: 'a\uD801\uDC00'
+	  //   example 5: ini_set('unicode.semantics',  'on');
+	  //   example 5: substr('a\uD801\uDC00', -1, 1);
+	  //   returns 5: '\uD801\uDC00'
+	  //   example 6: ini_set('unicode.semantics',  'on');
+	  //   example 6: substr('a\uD801\uDC00z\uD801\uDC00', -3, 2);
+	  //   returns 6: '\uD801\uDC00z'
+	  //   example 7: ini_set('unicode.semantics',  'on');
+	  //   example 7: substr('a\uD801\uDC00z\uD801\uDC00', -3, -1)
+	  //   returns 7: '\uD801\uDC00z'
+
+	  var i = 0,
+	    allBMP = true,
+	    es = 0,
+	    el = 0,
+	    se = 0,
+	    ret = '';
+	  str += '';
+	  var end = str.length;
+
+	  // BEGIN REDUNDANT
+	  this.php_js = this.php_js || {};
+	  this.php_js.ini = this.php_js.ini || {};
+	  // END REDUNDANT
+	  switch ((this.php_js.ini['unicode.semantics'] && this.php_js.ini['unicode.semantics'].local_value.toLowerCase())) {
+	    case 'on':
+	      // Full-blown Unicode including non-Basic-Multilingual-Plane characters
+	      // strlen()
+	      for (i = 0; i < str.length; i++) {
+	        if (/[\uD800-\uDBFF]/.test(str.charAt(i)) && /[\uDC00-\uDFFF]/.test(str.charAt(i + 1))) {
+	          allBMP = false;
+	          break;
+	        }
+	      }
+
+	      if (!allBMP) {
+	        if (start < 0) {
+	          for (i = end - 1, es = (start += end); i >= es; i--) {
+	            if (/[\uDC00-\uDFFF]/.test(str.charAt(i)) && /[\uD800-\uDBFF]/.test(str.charAt(i - 1))) {
+	              start--;
+	              es--;
+	            }
+	          }
+	        } else {
+	          var surrogatePairs = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
+	          while ((surrogatePairs.exec(str)) != null) {
+	            var li = surrogatePairs.lastIndex;
+	            if (li - 2 < start) {
+	              start++;
+	            } else {
+	              break;
+	            }
+	          }
+	        }
+
+	        if (start >= end || start < 0) {
+	          return false;
+	        }
+	        if (len < 0) {
+	          for (i = end - 1, el = (end += len); i >= el; i--) {
+	            if (/[\uDC00-\uDFFF]/.test(str.charAt(i)) && /[\uD800-\uDBFF]/.test(str.charAt(i - 1))) {
+	              end--;
+	              el--;
+	            }
+	          }
+	          if (start > end) {
+	            return false;
+	          }
+	          return str.slice(start, end);
+	        } else {
+	          se = start + len;
+	          for (i = start; i < se; i++) {
+	            ret += str.charAt(i);
+	            if (/[\uD800-\uDBFF]/.test(str.charAt(i)) && /[\uDC00-\uDFFF]/.test(str.charAt(i + 1))) {
+	              se++; // Go one further, since one of the "characters" is part of a surrogate pair
+	            }
+	          }
+	          return ret;
+	        }
+	        break;
+	      }
+	      // Fall-through
+	    case 'off':
+	      // assumes there are no non-BMP characters;
+	      //    if there may be such characters, then it is best to turn it on (critical in true XHTML/XML)
+	    default:
+	      if (start < 0) {
+	        start += end;
+	      }
+	      end = typeof len === 'undefined' ? end : (len < 0 ? len + end : len + start);
+	      // PHP returns false if start does not fall within the string.
+	      // PHP returns false if the calculated end comes before the calculated start.
+	      // PHP returns an empty string if start and end are the same.
+	      // Otherwise, PHP returns the portion of the string from start to end.
+	      return start >= str.length || start < 0 || start > end ? !1 : str.slice(start, end);
+	  }
+	  return undefined; // Please Netbeans
+	}
+</script>    
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>回收通-贵金属交易</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/gold/css/metaldeal.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../../index.php/nonstandard/system/welcome" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>首页</p>
+			</a>
+			<h1>贵金属交易</h1>
+			<a href="../../view/gold/dealrecord.html" class="lastA">
+				交易记录 
+			</a>
+		</header>
+		<!--黄金-->
+		<div class="metal">
+			<div class="metal_div">
+				<h1 class="metal_h1">黄金</h1>
+				<a href="javascript:;" class="metal_a" onclick="metalStyle.reckonGoldJ(this);">价格走势</a>
+			</div>
+			<div class="zsImg" style="display: none;">
+				<h1 class="zs_h1">黄金24小时走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/metals/gold/t24_au_cny_gram_450x275g.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<h1 class="zs_h1">黄金30天价格走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/past_charts/au0030ldb_cny.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<a href="javascript:;" class="closeJ"  onclick="metalStyle.reckonGoldJClose(this)">×</a>
+			</div>
+			<div class="classMetal">
+				<div class="classMetDiv">
+					<p class="claMetP">
+						库存
+					</p>
+					<p class="claMetPb" id="goldStock">
+						
+					</p>
+				</div>
+				<div class="classMetDiv">
+					<p class="claMetP">
+						购入均价
+					</p>
+					<p class="claMetPc" id="goldAverage">
+						
+					</p>
+				</div>
+				<div class="classMetDiv" id="goldRofit">
+					
+				</div>
+				<div class="classMetDiv" id="goldLoss">
+					
+				</div>
+			</div>
+			<div class="buySal">
+				<p class="buySP">
+					<span>今日价格  买入/卖出</span>
+					<span id="goldDeal" class="buySPan"></span>
+					<!-- <span>（8.2</span><b class="bsColor orangeJ"></b><span>）</span> -->
+				</p>
+				<a href="../../../view/gold/dealinfo.html?id=657" class="buysaleBtn">买/卖</a>
+			</div>
+		</div>
+		
+		<!--铂金-->
+		<div class="metal">
+			<div class="metal_div">
+				<h1 class="metal_h1">铂金</h1>
+				<a href="javascript:;" class="metal_a" onclick="metalStyle.reckonGoldJ(this);">价格走势</a>
+			</div>
+			<div class="zsImg" style="display: none;">
+				<h1 class="zs_h1">铂金24小时走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/metals/platinum/t24_pt_cny_gram_450x275g.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<h1 class="zs_h1">铂金30天价格走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/past_charts/pt0030ldb_cny.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<a href="javascript:;" class="closeJ"  onclick="metalStyle.reckonGoldJClose(this)">×</a>
+			</div>
+			<div class="classMetal">
+				<div class="classMetDiv">
+					<p class="claMetP">
+						库存
+					</p>
+					<p class="claMetPb" id="platinumStock">
+						
+					</p>
+				</div>
+				<div class="classMetDiv">
+					<p class="claMetP">
+						购入均价
+					</p>
+					<p class="claMetPc" id="platinumAverage">
+						
+					</p>
+				</div>
+				<div class="classMetDiv" id="platinumRofit">
+					
+				</div>
+				<div class="classMetDiv" id="platinumLoss">
+					
+				</div>
+			</div>
+			<div class="buySal">
+				<p class="buySP">
+					<span>今日价格  买入/卖出</span>
+					<span id="platinumDeal" class="buySPan"></span>
+					<!-- <span>（8.2</span><b class="bsColor greenJ"></b><span>）</span> -->
+				</p>
+				<a href="../../../view/gold/dealinfo.html?id=658" class="buysaleBtn">买/卖</a>
+			</div>
+		</div>
+		
+		<!--白银-->
+		<div class="metal">
+			<div class="metal_div">
+				<h1 class="metal_h1">白银</h1>
+				<a href="javascript:;" class="metal_a" onclick="metalStyle.reckonGoldJ(this);">价格走势</a>
+			</div>
+			<div class="zsImg" style="display: none;">
+				<h1 class="zs_h1">白银24小时走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/metals/silver/t24_ag_cny_gram_450x275g.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<h1 class="zs_h1">白银30天价格走势图</h1>
+				<a href="http://www.kitco.com/connecting.html" class="zshour">
+					<img src="http://www.kitco.cn/cn/past_charts/ag0030ldb_cny.gif" alt="最新走势图 - www.kitco.cn 提供">
+				</a>
+				<a href="javascript:;" class="closeJ"  onclick="metalStyle.reckonGoldJClose(this)">×</a>
+			</div>
+			<div class="classMetal">
+				<div class="classMetDiv">
+					<p class="claMetP">
+						库存
+					</p>
+					<p class="claMetPb" id="silverStock">
+						
+					</p>
+				</div>
+				<div class="classMetDiv">
+					<p class="claMetP">
+						购入均价
+					</p>
+					<p class="claMetPc" id="silverAverage">
+					</p>
+				</div>
+				<div class="classMetDiv" id="silverRofit">
+				</div>
+				<div class="classMetDiv" id="silverLoss">
+				</div>
+			</div>
+			<div class="buySal">
+				<p class="buySP">
+					<span>今日价格  买入/卖出</span>
+					<span id="silverDeal" class="buySPan"></span>
+					<!-- <span>（0.46</span><b class="bsColor greenJ"></b><span>）</span> -->
+				</p>
+				<a href="../../../view/gold/dealinfo.html?id=659" class="buysaleBtn">买/卖</a>
+			</div>
+		</div>		
+		<footer>
+			<a href="../../view/gold/metalextract.html">提货</a>
+		</footer>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/gold/js/rem.js?v=20170205"></script>
+	<script>
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		};
+		//rem
+		!function(win) {
+		    function resize() {
+		        var domWidth = domEle.getBoundingClientRect().width;
+		        if(domWidth / v > 540){
+		            domWidth = 540 * v;
+		        }
+		        win.rem = domWidth / 16;
+		        domEle.style.fontSize = win.rem + "px";
+		    }
+		    var v, initial_scale, timeCode, dom = win.document, domEle = dom.documentElement, viewport = dom.querySelector('meta[name="viewport"]'), flexible = dom.querySelector('meta[name="flexible"]');
+		    resize();
+		}(window);
+	</script>
+	<script type="text/javascript">		
+		metalOrdre.metalPriceList();
+		//metalOrdre.metalPri();
+	</script>
+</html>

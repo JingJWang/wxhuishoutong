@@ -1,0 +1,1 @@
+{"__type__":"cc.AnimationClip","_name":"gunrun","_objFlags":0,"_duration":0.2,"sample":10,"speed":1,"wrapMode":2,"curveData":{"comps":{"cc.Sprite":{"spriteFrame":[{"frame":0,"value":{"__uuid__":"d129a902-e6bb-423d-87e5-97e37da53393"}},{"frame":0.1,"value":{"__uuid__":"0ab2dcf8-0db1-42da-a897-fcf7ffefae62"}}]}}},"events":[]}

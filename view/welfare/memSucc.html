@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../static/welfare/css/member.css"/>
+	</head>
+	<body>
+		<!--领取成功/已经领取过-->
+		<div class="memSuccess">
+			<h1 class="oldNew"><b>/</b>回收通新老会员大礼包<b>/</b></h1>
+			<h2 class="oldNewb">新老会员免费领取一起赚钱</h2>
+			<!--领取-->
+			<div class="aleadyet">
+				
+			</div>
+			<!--领取过-->
+			<!--<div class="aleadyet">
+				<p class="aleadyetP">您已领取过体验会员</p>
+				<span class="yetSpan"></span>
+				<a class="alreadya">立马去赚钱</a>
+			</div>-->
+			<h1 class="get">会员系统说明</h1>
+			<p class="contentP">1.已经成为回收通会员，帮回收通邀请新用户、买东西都可获得现金</p>
+			<p class="contentP">2.奖金排行榜，奖金月总额前三名将获得系统额外奖励</p>
+			<p class="contentP">3.体验过期将不可提现，9.9元购买一年会员</p>
+		</div>	
+		<script>
+			window.onload=window.onresize=function(){
+				document.documentElement.style.fontSize=window.innerWidth/16+'px';
+			};
+		</script>
+		<script type="text/javascript" src="../../static/welfare/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../static/article/ajax/request_common.js"></script>
+		<script type="text/javascript" src="../../static/welfare/ajax/request_member.js"></script>
+		<script type="text/javascript">
+		    var status=getUrlParam('status');
+		    getphone(status);
+		</script>
+	</body>
+</html>

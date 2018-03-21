@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>订单提交成功</title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" type="text/css" />
+		<link rel="stylesheet" href="../../static/gold/css/recycleHead.css" />
+		<link rel="stylesheet" href="../../static/gold/css/subSuccess.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<a href="javascript:history.go(-1);" class="FirstA">
+				<img src="../../static/gold/img/header-img1.png" />
+				<p>返回</p>
+			</a>
+			<h1>订单详情</h1>
+		</header>
+		<div class="picture">
+			<img src="../../static/gold/img/symbol.jpg" />
+			<p>订单提交表单</p>
+		</div>
+		<div class="content">
+			
+		</div>
+		<div class="footer">
+			<a href="../../view/gold/listWaitPay.html" class="footer-left">查看订单</a>
+			<a href="../../../index.php/nonstandard/system/welcome">返回首页</a>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/gold/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/m/ajax/r_common.js"></script>
+	<script type="text/javascript" src="../../static/gold/js/rem.js"></script>	
+	<script type="text/javascript">
+		var id=getUrlParam('id');
+		metalOrdre.orderInfo(1,id);
+	</script>
+</html>

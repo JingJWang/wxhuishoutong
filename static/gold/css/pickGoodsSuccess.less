@@ -1,0 +1,53 @@
+.rem(@w:0px,@h:0px){
+    width: @w/2/20;
+    height: @h/2/20;
+}
+.font(@size:0px,@hg:0px){
+    font-size: @size/2/20;
+    line-height: @hg/2/20;
+}
+.pad(@pt:0px,@pr:0px,@pb:0px,@pl:0px){
+    padding-top: @pt/2/20;
+    padding-right: @pr/2/20;
+    padding-bottom: @pb/2/20;
+    padding-left: @pl/2/20; 
+}
+.mar(@mt:0px,@mr:0px,@mb:0px,@ml:0px){
+    margin-top: @mt/2/20;
+    margin-right: @mr/2/20;
+    margin-bottom: @mb/2/20;
+    margin-left: @ml/2/20; 
+}
+.pickUpFinish span{
+    display: block;
+    .rem(640rem,53rem);
+    margin-top: 144rem/40;
+    background: url(../img/pickUpFinish.png)center no-repeat;
+    background-size: 1.325rem 1.3rem;
+}
+.pickUpFinish  h1{
+    .rem(640rem,70rem);
+    text-align: center;
+    .font(26rem,70rem);
+    color: #484848;
+}
+.pickUpFinish p{
+    .rem(640rem,32rem);
+    text-align: center;
+    .font(18rem,32rem);
+    color: #979797;
+}
+.pickUpBtn{
+    display: block;
+    .rem(590rem,68rem);
+    background: #58ab22;
+    color: #ffffff;
+    .font(28rem,68rem);
+    border-radius: 8px;
+    .mar(80rem,0,0,25rem);
+    text-align: center;
+}
+.pickUpBtn:visited{color: #ffffff;}
+.pickUpBtn:active{color: #ffffff;}
+.pickUpBtn:link{color: #ffffff;}
+.pickUpBtn:hover{color: #ffffff;}

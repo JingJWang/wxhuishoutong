@@ -1,0 +1,43 @@
+body{ background:#fef9e7 url(../images/bodybg.png) no-repeat left top; background-size: 100% 100%;}
+/*== topPic ==*/
+.topPic{ width: 100%; height: auto;}
+/*== conBox ==*/
+.conBox{ padding: 23px 23px 0;}
+.conBox .conLeft{ width: 45%; padding: 13px 0 0 0;}
+.conBox .conLeft p{ width: 100%; text-align: center; color: #444; font-size: 14px;}
+.conBox .conLeft .red{ display: block; margin: 8px auto;}
+.conBox .conLeft .red img{ display: block; margin: 8px auto;}
+.conLeft .indexPic{ margin: 25px 0 0 0;}
+.conLeft .text{ margin: 30px 0 0 0;}
+.conLeft .text .title,.conRight .text .title{ color: #e3711a; font-size: 16px; text-align: center;}
+.conLeft .text .textCon,.conRight .text .textCon{ text-align: left; margin: 10px 0 0 0; font-size: 14px;}
+
+.conBox .conRight{ width: 45%;}
+.conRight .wechat .text{ margin: 0 0 40px 0;}
+.conRight .wechat p{ width: 100%; text-align: center; color: #e77927;}
+.conRight .wechat p img{ display: block; margin: 0 auto;}
+.conRight .indexPic{ margin: 30px 0 0 0;}
+/*== bot ==*/
+.bot{ width: 100%; height: 36px; line-height: 36px; color: #fff; font-size: 12px; background: #e77927; text-align: center; margin: 35px 0 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*== 6以下 ==*/
+@media only screen and (max-width: 360px) {
+	.conBox .conLeft p{ font-size: 12px;}
+}
+/*== 6-6plus ==*/
+@media only screen and (min-width: 388px) and (max-width: 415px) {
+	.conBox .conLeft p{ font-size: 15px;}
+	.conLeft .text .title,.conRight .text .title{ font-size: 18px;}
+	
+}

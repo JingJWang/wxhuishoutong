@@ -1,0 +1,287 @@
+span,
+p,
+s,
+b,
+img,
+a {
+  display: block;
+}
+body {
+  background: #f1f2f4;
+  position: relative;
+  overflow: hidden;
+}
+header {
+  width: 16rem;
+  height: 1.75rem;
+  position: absolute;
+  background: #57ab22;
+}
+.head_a {
+  position: absolute;
+  top: 0;
+  left: 0.625rem;
+}
+.head_a .left {
+  width: 0.425rem;
+  height: 0.725rem;
+  margin-top: 0.55rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: url(../img/header-left.png) center no-repeat;
+  background-size: 0.425rem 0.725rem;
+  float: left;
+}
+header p {
+  font-size: 0.65rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+  float: left;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  line-height: 1.75rem;
+}
+.head_help {
+  position: absolute;
+  top: 0;
+  right: 0.625rem;
+}
+.head_help .right {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-top: 0.55rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  background: url(../img/head_help.png) center no-repeat;
+  background-size: 0.75rem 0.75rem;
+  float: left;
+}
+.myRanking {
+  float: left;
+  padding-top: 1.75rem;
+}
+.ranking_h1 {
+  width: 16rem;
+  height: 1.25rem;
+  font-size: 0.6rem;
+  line-height: 1.25rem;
+  float: left;
+  text-indent: 0.65rem;
+  color: #515254;
+}
+.rankingCont {
+  width: 16rem;
+  height: 2.625rem;
+  padding-top: 1rem;
+  padding-right: 0;
+  padding-bottom: 0.625rem;
+  padding-left: 0;
+  border-top: solid 1px #e7e8ea;
+  border-bottom: solid 1px #e7e8ea;
+  float: left;
+  background: #ffffff;
+}
+.rankingCont_photo{
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-right: 0.875rem;
+  margin-bottom: 0;
+  margin-left: 0.65rem;
+  overflow: hidden;
+}
+.rankingCont_photo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.rankingContDiv {
+  float: left;
+}
+.rankingContDiv p:nth-child(1) {
+  width: 10.5rem;
+  height: 0.875rem;
+  font-size: 0.65rem;
+  line-height: 0.875rem;
+  color: #050505;
+}
+.rankingContDiv p:nth-child(2) {
+  width: 10.5rem;
+  height: 1.05rem;
+  font-size: 0.5rem;
+  line-height: 1.05rem;
+  color: #606060;
+}
+.rankingContDiv p:nth-child(3) {
+  width: 10.5rem;
+  height: 0.65rem;
+  font-size: 0.45rem;
+  line-height: 0.65rem;
+  color: #959595;
+}
+.userRanking {
+  float: left;
+}
+.userRanking .userRank {
+  padding-top: 0.6rem;
+  padding-right: 0;
+  padding-bottom: 0.575rem;
+  padding-left: 0;
+  width: 16rem;
+  float: left;
+  background: #ffffff;
+  border-top: solid 1px #ededed;
+}
+.userRank_span {
+  width: 1.025rem;
+  height: 2.1rem;
+  float: left;
+  margin-left: 0.45rem;
+}
+.userRank .one_s {
+  background: url(../img/ranking1.png) center no-repeat;
+  background-size: 1.025rem 1.3rem;
+}
+.userRank img {
+  width: 2.275rem;
+  height: 2.275rem;
+  margin-top: 0;
+  margin-right: 0.6rem;
+  margin-bottom: 0;
+  margin-left: 0.55rem;
+  float: left;
+  border: solid 1px #e5e5e5;
+  border-radius: 50%;
+}
+.userRank div {
+  width: 6.25rem;
+  float: left;
+}
+.userRank div p {
+  float: left;
+  display: block;
+}
+.userRank .Rank_userName {
+  padding-top: 0.25rem;
+  width: 100%;
+  font-size: 0.6rem;
+  line-height: 0.925rem;
+  color: #2c2c2c;
+}
+.userRank .Rank_userMoney {
+  font-size: 0.55rem;
+  line-height: 1.175rem;
+  color: #6d6d6d;
+}
+.userRank_a {
+  float: left;
+  width: 4.3rem;
+  height: 0.95rem;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.4rem;
+  line-height: 0.95rem;
+  text-align: center;
+  margin-top: 1.125rem;
+}
+.userRank .one_a {
+  background: #f48546;
+}
+.userRank .two_s {
+  background: url(../img/ranking2.png) center no-repeat;
+  background-size: 1.025rem 1.3rem;
+}
+.userRank .two_a {
+  background: #9cd950;
+}
+.userRank .three_s {
+  background: url(../img/ranking3.png) center no-repeat;
+  background-size: 1.025rem 1.3rem;
+}
+.userRank .three_a {
+  background: #7dbbfc;
+}
+.userRank_span_other {
+  float: left;
+  width: 0.95rem;
+  height: 0.95rem;
+  background: #57ab22;
+  color: #ffffff;
+  font-size: 0.5rem;
+  line-height: 0.95rem;
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-right: 0.1rem;
+  margin-bottom: 0;
+  margin-left: 0.45rem;
+  border-radius: 50%;
+}
+.rule_box {
+  width: 16rem;
+  background: rgba(153, 153, 153, 0.5);
+  position: absolute;
+}
+.rule {
+  width: 9.725rem;
+  height: 11.975rem;
+  padding-top: 0;
+  padding-right: 1.15rem;
+  padding-bottom: 0;
+  padding-left: 1.15rem;
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6rem;
+  margin-top: -6rem;
+}
+.rule h1 {
+  width: 100%;
+  float: left;
+  font-size: 0.7rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #020202;
+}
+.rule P {
+  color: #6a6a6a;
+}
+.rule P:nth-child(2) {
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+.rule P:nth-child(3) {
+  font-size: 0.5rem;
+  line-height: 1.15rem;
+}
+.rule P:nth-child(4) {
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+.rule .jinE {
+  font-size: 0.5rem;
+  line-height: 0.975rem;
+}
+.rule span {
+  width: 9.625rem;
+  height: 1.675rem;
+  font-size: 0.55rem;
+  line-height: 1.675rem;
+  border-radius: 10px;
+  background: #67c42d;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 0.8rem;
+}
+/*# sourceMappingURL=ranking.css.map */

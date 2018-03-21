@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../static/gold/css/public.css" />
+		<link rel="stylesheet" href="../../static/newmobile/css/brand.css" />
+	</head>
+	<body>
+		<div class="box">
+			<span class="index_logo"></span>
+			<span class="font_img"></span>
+			<p class="font_p">高价回收&nbsp;&nbsp;优质服务</p>
+			<a href="brand.html" class="go">价格查询</a>
+			<div class="skip">
+				<a href="list.html?bid=2&name=%u82F9%u679C" class="phone_skip">iPhone</a>
+				<a href="list.html?bid=1&name=%u4E09%u661F" class="phone_skip">三星</a>
+				<a href="list.html?bid=3&name=%u5C0F%u7C73" class="phone_skip">小米</a>
+				<a href="list.html?bid=4&name=%u534E%u4E3A" class="phone_skip">华为</a>
+			</div>
+			<div class="ewm">
+				<span class="ewm_img"></span>
+				<span class="ewm_last"></span>
+			</div>
+			<p class="index_last">更多品类扫码回收</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/shop/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/home/js/ajax_common.js"></script>
+	<script type="text/javascript" src="../../static/newmobile/ajax/request_newmobile.js"></script>
+	<script>
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=window.innerWidth/16+'px';
+		};
+		document.body.addEventListener('touchstart', function () { });
+	    window.ontouchstart = function(e) { 
+		    e.preventDefault(); 
+		};
+		var bheight = $(window).height();
+		$('.box').css('height',bheight+'px');
+	</script>
+	
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<title></title>	
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/cssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/bonusIncrease.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/c/css/navTopLeft.css"/>
+	</head>
+	<body>
+		<div class="shadow"></div>
+		<div class="navRuler">
+				<div id="luxuryCon">
+					<div class="orderSearch clearfix">
+						<h3 class="title fl">查询</h3>
+						<div class="newSearch fl">
+							<form id="search" style="float:left">
+							<input type="text" name='start' placeholder="邀请人数开始" class="jInput" onfocus="this.value=''" />
+							<input type="text" name='end' placeholder="邀请人数结束" class="jInput" onfocus="this.value=''" />
+							<input type="text" name="id" value="" placeholder="请输入用户编号" class="jInput" onfocus="this.value=''" />
+							<input type="text" name="summoney"style="width:120px" value="" placeholder="请输入奖金总收益" class="jInput" onfocus="this.value=''" />
+							<div class="statuSelect">
+								<b class="triangle-down"></b>
+								<select name="status">
+									<option value='0'>所有会员</option>
+									<option value='1'>年费会员</option>
+									<option value='2'>体验会员</option>
+								</select>
+							</div>
+								<span class="butn"></span>
+							</form>
+							<a class="jBtn" onclick="getorder(0,0)" style="cursor:pointer">开始查询</a>&nbsp;&nbsp;
+							<a class="showBut jBtn" onclick="addbrandJ();" style="cursor:pointer;margin-left:20px;">奖金鼓励</a>
+						</div>
+					</div>
+					<div class="luxuryBox">
+						<div class="luxuryList conHeight">
+							<div class="luxuryTitle">
+								<ul class="clearfix">
+									<li>用户编号</li>
+									<li>手机号码</li>
+									<li>注册时间</li>
+									<li>邀请人数</li>
+									<li>奖金总收益</li>
+									<li>会员状态</li>
+								</ul>
+							</div>
+							<div class="luxuryInfo">
+							</div>
+						</div>
+						<div class="pageNumber">
+							<ul class="pagination">
+							</ul>
+						</div>
+					</div>
+					<div class="addGainJ gain">
+				        <div class="rise">
+				            <input class="clbtn" type="button" value="×" onclick="eyebrow();"/>
+				        </div>
+				        <div class="motif">添加信息</div>
+				        <div class="addition">
+				            <span>随机奖励物品价格</span>
+						    <div class="modelMqu">
+			            		<input type="text" id="startM" class="modelMquInp">
+			            		<b>——</b>
+			            		<input type="text" id="endM" class="modelMquInp">
+			            	</div>
+				        </div>
+				        <div class="tier" align="center">
+				            <input type="button" value="确认添加" class="confirm" onclick="addbonus();reveal();"/>
+				        </div>
+				    </div>
+				</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/c/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../../static/c/js/publicJS.js"></script>
+	<script type="text/javascript" src="../../static/c/js/bonusIncrease.js"></script>
+	<script type="text/javascript" src="../../static/c/ajax/request_common.js"></script>
+	<script type="text/javascript" src="../../static/c/ajax/request_bonusIncrease.js"></script>
+	
+</html>

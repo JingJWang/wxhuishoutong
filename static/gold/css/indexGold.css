@@ -1,0 +1,297 @@
+body{
+    background: #ffffff;
+}
+.tradingHour{
+    width: 100%;
+    height: 1.35rem;
+    text-indent: 0.65rem;
+    background: #fdf4a7;
+    color: #e46620;
+    line-height: 1.35rem;
+    font-size: 0.5rem;
+    margin-top: 1.9rem;
+}
+article{
+    width: 16rem;
+    overflow: hidden;
+}
+.con_p{
+    float: left;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    padding: 0.65rem 0 0.95rem 0.65rem;
+    font-size: 0.5rem;
+    color: #6a6a6a;
+}
+/*贵金属切换*/
+.recycleSort{
+    float: left;
+    margin-bottom: 0.8rem;
+}
+.recycleSort li{
+    width: 2.575rem;
+    height: 2.575rem;
+    float: left;
+    border-radius: 50%;
+    border: solid 1px #dfdfdf;
+    color: #595959;
+    text-align: center;
+    margin-left: 1.2rem;
+    font-size: 0.6rem;
+    line-height: 2.575rem;
+}
+.recycleSort li:first-of-type{
+    margin-left: 0.95rem;
+}
+.recycleSort .recycleSortLi{
+    border: solid 1px #f36624;
+    color: #f36624;
+}
+form{
+    float: left;
+}
+.property_list{
+    background:#fff;
+    float: left;
+}
+.property_list dd{
+    border-bottom: 1px solid #e1e1e0;
+}
+.property_title{
+    width: 16rem;
+    background: #f5f5f5;
+    line-height:96px; 
+    height:1.5rem; 
+    color:#898989; 
+    cursor:pointer;
+    position:relative;
+}
+.property_title span{
+    display: block; 
+    width: 80px; 
+    height:1.5rem; 
+    line-height: 1.5rem; 
+    font-size: 0.65rem;
+    margin-left: 0.65rem;
+}
+.property_title .conTxt{
+    width: 140px; 
+    height:1.5rem;  
+    line-height: 1.5rem; 
+    margin: 0 0 0 0px; 
+    color: #575757; 
+    font-size: 15px;
+    font-size: 0.5rem;
+}
+.property_title .xiugai_btn{
+    width: 60px;
+    height:1.1rem; 
+    line-height: 1.1rem; 
+    text-align: center; 
+    display: block; 
+    margin-top: 0.2rem;
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+    color: #888;
+    font-size: 0.5rem;
+    float: right;
+    margin-right: 0.65rem;
+}
+/*纯度*/
+.pinggu_other{
+    width: 16rem;
+}
+.pinggu_other li{
+    display: block;
+    width: 6.75rem;
+    height: 1.6rem;
+    float: left;
+    border-radius: 5px;
+    margin: 0.65rem 0 0 0.65rem ;
+    border: solid 1px #e0e0e0;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0.5rem;
+    color: #696969;
+}
+.pinggu_other .hover_span{
+    border: solid 1px #f36624;
+    color: #f36624;
+}
+.pinggu_other .purity_span {
+  line-height: 1.6rem;
+}
+.pinggu_other .purity_span p{
+    line-height: 0.6rem;
+    font-size: 0.45rem;
+}
+.clear {
+  clear: both;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.pinggu_outherb{
+	display: none;
+}
+/*交易方式*/
+.property_list dd ul.pinggu_fangshi{
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+.pinggu_fangshi li{
+    width: 16rem;
+    height: 2.15rem;
+    float: left;
+    background-image: url(../img/label_b.png);
+    background-size: 16rem 2.15rem;
+    border-bottom: solid 1px #f7f7f7;
+    text-indent: 0.65rem;
+    line-height: 2.15rem;
+    font-size: 0.6rem;
+    color: #5c5c5c;
+}
+.pinggu_fangshi li.hover_li{
+    background-image: url(../img/label_a.png);
+}
+ul{
+    margin-bottom: 0.65rem;
+}
+/*克数*/
+.property_list dd ul.pinggu_keshu {
+  padding: 0 0 0.65rem 0.75rem;
+}
+.asNum{
+    float: left;
+    padding: 0.5rem 0rem 0rem 0rem;
+    color:#818181;
+    position: relative;
+    margin: 0 0 0.5rem 0.65rem;
+}
+.bigSort h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.65rem;
+}
+.asNum div{
+    width: 8.58rem;
+    height: 1.725rem;
+    float: left;
+    background-image: url(../img/asNum.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+.asNum .subtract{
+	display: block;
+    width: 1.78rem;
+    height: 1.725rem;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.asNum .add{
+	display: block;
+    width: 1.78rem;
+    height: 1.725rem;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.asNum .num{
+    -webkit-appearance:none;
+    width: 100%;
+    padding-top: 0.5rem;
+    float: left;
+    font-size: 0.55rem;
+    text-align: center;
+    border: none;
+    background: none;
+}
+.asNum p{
+    padding-left: 0.9rem;
+    line-height: 1.65rem;
+    font-size: 0.65rem;
+    height: 1.65rem;
+    float: left;
+}
+.dealManner{
+	width: 100%;
+	float: left;
+}
+.last_font{
+	height: 2.25rem;
+	padding: 0.425rem 1.15rem 0.275rem 1rem;
+	line-height: 0.825rem;
+	font-size: 0.45rem;
+	color: #838383;
+	float: left;
+	background-color: #f5f5f5;
+	margin-bottom: 2.5rem;
+}
+/*交易方式*/
+.bigSort ul{
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+}
+.bigSort ul li{
+	width: 16rem;
+	height: 2.15rem;
+	float: left;
+	background-image: url(../img/label_b.png);
+	background-size: 16rem 2.15rem;
+	border-bottom: solid 1px #f7f7f7;
+	text-indent: 0.65rem;
+	line-height: 2.15rem;
+	font-size: 0.6rem;
+	color: #5c5c5c;
+}
+.bigSort ul li.hover_li{
+	background-image: url(../img/label_a.png);
+}
+/*property_title  span添加内容*/
+.TextOverflow{
+	overflow: hidden;
+}
+/*最后添加手机号*/
+.usertel{
+	width: 16rem;
+	float: left;
+	background: #ffffff;
+}
+.usertel h2{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	float: left;
+	text-indent: 0.65rem;
+	color: #888888;
+	background-color: #f5f5f5;
+	font-weight: normal;
+	font-size: 0.65rem;
+}
+.usertel .tel{
+	width: 100%;
+	height: 2.55rem;
+	float: left;
+}
+.usertel .teltext {
+    margin: 0.5rem 0 0 0.8rem;
+    width: 12rem;
+    height: 1.3rem;
+    padding-left: 0.5rem;
+    font-size: 0.6rem;
+    color: #4a4949;
+}
